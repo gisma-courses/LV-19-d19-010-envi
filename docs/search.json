@@ -1,45 +1,24 @@
 [
   {
-    "objectID": "worksheets/ws-01.html",
-    "href": "worksheets/ws-01.html",
-    "title": "Worksheet 1: Warm up ENVImet and Climate Modeling",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Mikroklimamodellierung Envi_Met LV-19-d19-010-envi",
     "section": "",
-    "text": "ENVI-met V5.x is a three-dimensional, non-hydrostatic model for simulating surface-plant-air interactions, It is designed for the microscale with a typical horizontal resolution of 0.5 to 10 m and a typical time frame of 24 to 48 hours with a time step of 1 to 5 seconds. This resolution allows for the analysis of small-scale interactions between individual buildings, surfaces, and plants"
+    "text": "Widely used in applications as diverse as urban planning, architectural design and energy efficiency, ENVI-met is a 3D micro-climate simulation software. Its functionality goes beyond individual climate parameters and covers a wide spectrum. ENVI-met excels in simulating different climate conditions, including day and night temperatures, humidity, wind speed and solar radiation in urban environments. It can also simulate the impact of different building materials, such as glass and stone, on the surrounding environment.\nThe course will cover the following topics\nBasic concepts Definition of materials Modelling vegetation Preparing the model for simulation Creation of weather files Running a simulation Visualising the results Interpreting the results"
   },
   {
-    "objectID": "worksheets/ws-01.html#goals",
-    "href": "worksheets/ws-01.html#goals",
-    "title": "Worksheet 1: Warm up ENVImet and Climate Modeling",
-    "section": "Goals",
-    "text": "Goals\nThis task involves three sub-areas:\n\nto get a first overview about non-hydrostatic 4D climate modeling.\nto get a first insight into the application areas of such simulations.\nto install the software and perform a first simple tutorial simulation"
-  },
-  {
-    "objectID": "worksheets/ws-01.html#things-you-need",
-    "href": "worksheets/ws-01.html#things-you-need",
-    "title": "Worksheet 1: Warm up ENVImet and Climate Modeling",
-    "section": "Things you need",
-    "text": "Things you need\n\nCourse Data Server\nENVI-met software"
-  },
-  {
-    "objectID": "worksheets/ws-01.html#assignment",
-    "href": "worksheets/ws-01.html#assignment",
-    "title": "Worksheet 1: Warm up ENVImet and Climate Modeling",
-    "section": "Assignment",
-    "text": "Assignment\nThe studies are intended to provide a first overview of the possibilities of the application. It is a first overview about the subject\nThe tutorials are a selection from the Envimet download area. In particular session_1_apps.pdf and session_1_concepts.pdf are a compilation of the concepts of Envimet and the individual components for the workflow with the individual modules, respectively, created by me. You will also find the links to the Youtube channel if you prefer videos.\nThese two compilations from the Envimet help pages should be sufficient to perform the example modeling “Precipitation”.\nIn the folder Literature you will find chapter1.pdf and chapter3.pdf. Both are reasonably understandable basics for climate modeling from a Belgian textbook. In case of more detailed questions they are worth a look.\nThe task is then as follows:\n\nInstallation of ENVI-met on your computer\nRead session_1_conpepts.pdf for a first introduction to the ENVI-met model concepts (chapter3.pdf could also be helpful here for supplementation and deepening) =&gt; If available, articulate questions problems\nRead session_1_apps.pdf as a basis for the example modeling “Precipitation”. =&gt; If available, articulate questions, problems, etc.\nRun the precipitation simulation (check if it runs) =&gt; If available, articulate questions, problems etc.\nCross-reading of min 2 publications (What is the basic idea) =&gt; Prepare a short summary\n\nAny written notes please put them on Trello in the board for this course.\n\n\n\n\n\n\nPlease note: For Trello you need to register.\n\n\n\nIn Trello you will find the assignments again as a checklist and also empty lists where you can/should write cards with your questions or article summaries. So you can also read the papers without overlap and possibly answer each other in between time."
-  },
-  {
-    "objectID": "worksheets/ws-00.html",
-    "href": "worksheets/ws-00.html",
-    "title": "Worksheets HowTo",
+    "objectID": "mc_session/mc1.html",
+    "href": "mc_session/mc1.html",
+    "title": "Microclimate Sensors",
     "section": "",
-    "text": "The Working Sheets will provide weekly assignments related to the general task of reaching out for the course goals.\n\nMandatory assignments (Studienleistung) will be marked as \nGraded examinations (Prüfungsleistung) will be marked as"
+    "text": "froggit shop [DE]\n  \n  \n    \n     ecowitt shop [US]\n  \n  \n    \n     Fine Offset\n  \n\n      \nThe sensors from Fine Offset are re-branded and partly modified by the resellers. This article deals with sensors from the german re-seller froggit and the US re-seller ecowitt. More precise the DP-/GW SmartHubs WiFi Gateway with temperature, humidity & Pressure which is developed by fine offset. The unique selling point of the LoRa-Wifi gateway is the extraordinarily extensive possibility of connecting radio-bound sensors."
   },
   {
-    "objectID": "mc_session/mc3.html",
-    "href": "mc_session/mc3.html",
-    "title": "Spatial Interpolation",
-    "section": "",
-    "text": "test\n\n    \n    \n  \n\n\n\n#------------------------------------------------------------------------------\n# Name: FR_soilmoist.R\n# Type: control script \n# Author: Chris Reudenbach, creuden@gmail.com\n# Description:  calculates the soil moisture from Lacanau point data\n# Copyright:GPL (&gt;= 3) \n# Date: 2022-11-10 \n# V-2022-11-12; \n#------------------------------------------------------------------------------\n# 0 - project setup\n#------------------------------------------------------------------------------\n# geoAI course basic setup\n# Type: script\n# Name: geoAI_setup.R\n# Author: Chris Reudenbach, creuden@gmail.com\n# Description:  create/read project folder structure and returns pathes as list\n#               load all necessary packages \n#               sources all functions in a defined function folder\n# Dependencies:   \n# Output: list containing the folder strings as shortcuts\n# Copyright: Chris Reudenbach, thomas Nauss 2019-2021, GPL (&gt;= 3)\n# git clone https://github.com/gisma-courses/geoAI-scripts.git\n#------------------------------------------------------------------------------\n\n\n\n# basic packages\nlibrary(\"mapview\")\nlibrary(\"tmap\")\nlibrary(\"tmaptools\")\nlibrary(\"raster\")\nlibrary(\"terra\")\nlibrary(\"sf\")\nlibrary(\"dplyr\")\nlibrary(\"lidR\")\nlibrary(\"future\")\nlibrary(\"lwgeom\")\nlibrary(\"tmap\")\nlibrary(\"mapview\")\nlibrary(rprojroot)\n\nroot_folder = find_rstudio_root_file()\n#root_folder = getwd()\nndvi.col = function(n) {\n  rev(colorspace::sequential_hcl(n, \"Green-Yellow\"))\n}\n\nano.col = colorspace::diverging_hcl(7, palette = \"Red-Green\",  register = \"rg\")\n\n\n\n\n# # suppres gdal warnings\n# rgdal::set_thin_PROJ6_warnings(TRUE)\n# \n# \n# \n# # workaround subfolder\n# loc_name = \"harz\"\n# \n# # harz\n# epsg=25833\n# \n# attributename = c(\"Moisture_1_17Nov\",\"Moisture_2_17Nov\",\"Moisture_1_19Nov\",\"Moisture_2_19Nov\")\n# varname = c(\"soilmoist2022_08_17\",\"soilmoist2022_08_19\")\n# fnDTM = \"DTM_v3.vrt\"\n# fnsm_data = \"lacanau_moisture_measurements.csv\"\n# fnpos_data= \"ltrees.gpkg\"\n# \n# # read DTM\n# DTM = terra::rast(fnDTM)\n# # cast to SpatialPixelsDataFrame\n# DTM.spdf &lt;- as(raster(DTM),\n#                        'SpatialPixelsDataFrame')\n# colnames(DTM.spdf@data) &lt;- \"altitude\"\n# # read moist data \n# sm=read.csv2(fnsm_data,sep = \",\")\n# # read tree data\n# pos=st_read(fnpos_data)\n# # merge\n# sm$Point = paste0(\"TREE\",str_split_fixed(sm$TargetID, \"_\", 3)[,3])\n# m=merge(pos,sm)\n# \n# # extract altitudes for positions\n# em= exactextractr::exact_extract(DTM,st_buffer(m,1),\"mean\")\n# m$altitude=em\n# \n# # start kriging \n# for (i in 1:length(varname) ){\n#   z=i*2\n#   # mean\n#   m$var = (as.numeric(m[[attributename[z-1]]]) + as.numeric(m[[attributename[z]]]))/2\n#   # to sp\n#   m2 = as(m,\"Spatial\")    \n#   tm2 = spTransform(m2,\n#                     crs(\"+proj=utm +zone=30 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs\"))\n# \n#   # autofit variogramm for kriging \n#   vm.auto = automap::autofitVariogram(formula = as.formula(paste(\"var\", \"~ 1\")),\n#                                       input_data = tm2)\n#   plot(vm.auto)\n#   \n#   # kriging   \n#   print(paste0(\"kriging \", varname[i]))\n#   var.pred &lt;- gstat::krige(formula = as.formula(paste(\"var\", \"~ altitude\")),\n#                            locations = tm2,\n#                            newdata = DTM.spdf,\n#                            model = vm.auto$var_model,\n#                            debug.level=0,)\n#   \n#   r=rasterFromXYZ(as.data.frame(var.pred)[, c(\"x\", \"y\", \"var1.pred\")])\n#   \n#   # reclassify erratic values \n#   reclass_df &lt;- c(-Inf, 0, NA)\n#   # reshape the object into a matrix with columns and rows\n#   reclass_m &lt;- matrix(reclass_df,\n#                       ncol = 3,\n#                       byrow = TRUE)\n#   r_c &lt;- reclassify(r,reclass_m)\n# \n#   plot(r_c)\n#   # re assign crs\n#   crs(r_c) = crs(paste0(\"EPSG:\",epsg))\n#   raster::writeRaster(r_c,paste0(\"data/gis/France_Lacanau_PP_Gis/data_lev0/\",varname[i],\".tif\"),overwrite=TRUE)\n#   \n# }"
+    "objectID": "mc_session/mc1.html#calibration-concept",
+    "href": "mc_session/mc1.html#calibration-concept",
+    "title": "Microclimate Sensors",
+    "section": "Calibration Concept",
+    "text": "Calibration Concept\nThe low budget sensors are usually lacking of a stable measurement quality. To obtain reliable micro climate data a two step calibration process is suggested.\n\nThe measurements of all sensors (preferably in a climate chamber) will be statistically analysed to identify sensor which produce systematic and significant outliers.\nThe sensors are calibrated against an operational running high price reference station in the field.\n\n\n\n\n\n\n\nFuture Calibration Plans\n\n\n\n\n\nFor the future a machine learning approach including the radiation, azimuth, temperature and humidity as predictors for the calibrated temperature as the response variable will be used as an rolling calibration tool."
   },
   {
     "objectID": "mc_session/mc2.html",
@@ -91,20 +70,6 @@
     "text": "Risk Assessment\nHere you find the preliminary risk assesment for the installation and operation of 12 V solar power based energy supply units and measuring sensor systems."
   },
   {
-    "objectID": "mc_session/mc1.html",
-    "href": "mc_session/mc1.html",
-    "title": "Microclimate Sensors",
-    "section": "",
-    "text": "froggit shop [DE]\n  \n  \n    \n     ecowitt shop [US]\n  \n  \n    \n     Fine Offset\n  \n\n      \nThe sensors from Fine Offset are re-branded and partly modified by the resellers. This article deals with sensors from the german re-seller froggit and the US re-seller ecowitt. More precise the DP-/GW SmartHubs WiFi Gateway with temperature, humidity & Pressure which is developed by fine offset. The unique selling point of the LoRa-Wifi gateway is the extraordinarily extensive possibility of connecting radio-bound sensors."
-  },
-  {
-    "objectID": "mc_session/mc1.html#calibration-concept",
-    "href": "mc_session/mc1.html#calibration-concept",
-    "title": "Microclimate Sensors",
-    "section": "Calibration Concept",
-    "text": "Calibration Concept\nThe low budget sensors are usually lacking of a stable measurement quality. To obtain reliable micro climate data a two step calibration process is suggested.\n\nThe measurements of all sensors (preferably in a climate chamber) will be statistically analysed to identify sensor which produce systematic and significant outliers.\nThe sensors are calibrated against an operational running high price reference station in the field.\n\n\n\n\n\n\n\nFuture Calibration Plans\n\n\n\n\n\nFor the future a machine learning approach including the radiation, azimuth, temperature and humidity as predictors for the calibrated temperature as the response variable will be used as an rolling calibration tool."
-  },
-  {
     "objectID": "modeling/modeling-material.html",
     "href": "modeling/modeling-material.html",
     "title": "Data and Software",
@@ -140,46 +105,39 @@
     "text": "Additional data sources\nMarburg Open Forest data base Marburg Open Forest data base for static data. You will find some example R-code for manipulation and extraction. Additionally the data is in a QGIS pProject container."
   },
   {
-    "objectID": "base/faq.html",
-    "href": "base/faq.html",
-    "title": "Frequently asked Questions",
+    "objectID": "worksheets/ws-00.html",
+    "href": "worksheets/ws-00.html",
+    "title": "Worksheets HowTo",
     "section": "",
-    "text": "This is a senseless question to meet a meaningfull answer\n\n\n\n\n\n\n\n\n\nThis is a meaningful answer to a senseless question\n\n\n\n\n\n\n\n\n\nLearn More…\n\n\n\n\n\nThis is a even more meaningful answer to a senseless question"
+    "text": "The Working Sheets will provide weekly assignments related to the general task of reaching out for the course goals.\n\nMandatory assignments (Studienleistung) will be marked as \nGraded examinations (Prüfungsleistung) will be marked as"
   },
   {
-    "objectID": "base/faq.html#make-sense-topic",
-    "href": "base/faq.html#make-sense-topic",
-    "title": "Frequently asked Questions",
-    "section": "",
-    "text": "This is a senseless question to meet a meaningfull answer\n\n\n\n\n\n\n\n\n\nThis is a meaningful answer to a senseless question\n\n\n\n\n\n\n\n\n\nLearn More…\n\n\n\n\n\nThis is a even more meaningful answer to a senseless question"
-  },
-  {
-    "objectID": "worksheets/modellierung_warmup.html",
-    "href": "worksheets/modellierung_warmup.html",
+    "objectID": "worksheets/ws-01.html",
+    "href": "worksheets/ws-01.html",
     "title": "Worksheet 1: Warm up ENVImet and Climate Modeling",
     "section": "",
     "text": "ENVI-met V5.x is a three-dimensional, non-hydrostatic model for simulating surface-plant-air interactions, It is designed for the microscale with a typical horizontal resolution of 0.5 to 10 m and a typical time frame of 24 to 48 hours with a time step of 1 to 5 seconds. This resolution allows for the analysis of small-scale interactions between individual buildings, surfaces, and plants"
   },
   {
-    "objectID": "worksheets/modellierung_warmup.html#goals",
-    "href": "worksheets/modellierung_warmup.html#goals",
+    "objectID": "worksheets/ws-01.html#goals",
+    "href": "worksheets/ws-01.html#goals",
     "title": "Worksheet 1: Warm up ENVImet and Climate Modeling",
     "section": "Goals",
     "text": "Goals\nThis task involves three sub-areas:\n\nto get a first overview about non-hydrostatic 4D climate modeling.\nto get a first insight into the application areas of such simulations.\nto install the software and perform a first simple tutorial simulation"
   },
   {
-    "objectID": "worksheets/modellierung_warmup.html#things-you-need",
-    "href": "worksheets/modellierung_warmup.html#things-you-need",
+    "objectID": "worksheets/ws-01.html#things-you-need",
+    "href": "worksheets/ws-01.html#things-you-need",
     "title": "Worksheet 1: Warm up ENVImet and Climate Modeling",
     "section": "Things you need",
     "text": "Things you need\n\nCourse Data Server\nENVI-met software"
   },
   {
-    "objectID": "worksheets/modellierung_warmup.html#assignment",
-    "href": "worksheets/modellierung_warmup.html#assignment",
+    "objectID": "worksheets/ws-01.html#assignment",
+    "href": "worksheets/ws-01.html#assignment",
     "title": "Worksheet 1: Warm up ENVImet and Climate Modeling",
     "section": "Assignment",
-    "text": "Assignment\nThe studies are intended to provide a first overview of the possibilities of the application. It is a first overview about the subject\nThe tutorials are a selection from the Envimet download area. In particular session_1_apps.pdf and session_1_concepts.pdf are a compilation of the concepts of Envimet and the individual components for the workflow with the individual modules, respectively, created by me. You will also find the links to the Youtube channel if you prefer videos.\nThese two compilations from the Envimet help pages should be sufficient to perform the example modeling “Precipitation”.\nIn the folder Literature you will find chapter1.pdf and chapter3.pdf. Both are reasonably understandable basics for climate modeling from a Belgian textbook. In case of more detailed questions they are worth a look.\nThe task is then as follows:\n\nInstallation of ENVI-met on your computer\nRead session_1_conpepts.pdf for a first introduction to the ENVI-met model concepts (chapter3.pdf could also be helpful here for supplementation and deepening) =&gt; If available, articulate questions problems\nRead session_1_apps.pdf as a basis for the example modeling “Precipitation”. =&gt; If available, articulate questions, problems, etc.\nRun the precipitation simulation (check if it runs) =&gt; If available, articulate questions, problems etc.\nCross-reading of min 2 publications (What is the basic idea) =&gt; Prepare a short summary\n\nAny written notes please put them on Trello in the board for this course.\nPlease note: For Trello you need to register. {: .notice–warning}\nIn Trello you will find the assignments again as a checklist and also empty lists where you can/should write cards with your questions or article summaries. So you can also read the papers without overlap and possibly answer each other in between time."
+    "text": "Assignment\nThe studies are intended to provide a first overview of the possibilities of the application. It is a first overview about the subject\nThe tutorials are a selection from the Envimet download area. In particular session_1_apps.pdf and session_1_concepts.pdf are a compilation of the concepts of Envimet and the individual components for the workflow with the individual modules, respectively, created by me. You will also find the links to the Youtube channel if you prefer videos.\nThese two compilations from the Envimet help pages should be sufficient to perform the example modeling “Precipitation”.\nIn the folder Literature you will find chapter1.pdf and chapter3.pdf. Both are reasonably understandable basics for climate modeling from a Belgian textbook. In case of more detailed questions they are worth a look.\nThe task is then as follows:\n\nInstallation of ENVI-met on your computer\nRead session_1_conpepts.pdf for a first introduction to the ENVI-met model concepts (chapter3.pdf could also be helpful here for supplementation and deepening) =&gt; If available, articulate questions problems\nRead session_1_apps.pdf as a basis for the example modeling “Precipitation”. =&gt; If available, articulate questions, problems, etc.\nRun the precipitation simulation (check if it runs) =&gt; If available, articulate questions, problems etc.\nCross-reading of min 2 publications (What is the basic idea) =&gt; Prepare a short summary\n\nAny written notes please put them on Trello in the board for this course.\n\n\n\n\n\n\nPlease note: For Trello you need to register.\n\n\n\nIn Trello you will find the assignments again as a checklist and also empty lists where you can/should write cards with your questions or article summaries. So you can also read the papers without overlap and possibly answer each other in between time."
   },
   {
     "objectID": "worksheets/ws-02.html",
@@ -210,31 +168,17 @@
     "text": "Assignment\nDesign a concrete problem and a suitable associated modeling concept to assess the performance of Envimet to simulate essential microclimatic parameters in the specific setup of the Carolinen Haus. Consider the following aspects: * abiotic endowment of the model domain (relief, soil, site location). * biotic features of the model domain (simple/3D vegetation) * technical model domain (x,y,z extent, time steps nesting) * appropriate meteorology for model initialization (ideal, real values) * Validation strategy\n\nWork packages - What is to be done when and by whom?\nWP 1 technical and abiotic modell\nWP 2 meteo data initialization\nWP 3 Vegetation “simple\nWP 4 Vegetation “3D\nWP 5 Validation strategy\n\nThe task is then as follows:\nThe resulting concept should be prepared as a table (similar to the below example), also addressing the literature/data used as well as know shortcomings.\n\nWorkpackage 1\n\n\n\n\n\n\n\n\n\n\n\nitem\nsolution\nreferences\nressources needed\nlead\nteam\n\n\n\n\nrelief\nbuild-in version xy\nonline access\n?\n?\n?\n\n\nsoil properties\nsoil data\naccess has to be clarified\nwho knows\n?\n?\n\n\nsoil vertical structure\nfour levels temperature soil moisture build-in model\nenvi-met\n?\n?\n?\n\n\n…\n…\n…\n…\n…\n…\n\n\n\nAny written notes please put them on Trello in the board for this course.\nIt is strongly recommended that 1 Person take the lead for a specific workpackage and find 1 or more collaborators {: .notice–success}\n\nPlease upload /write the tables and necessary notes/explanations on cards.\nPlease prepare the GIS data and upload it to thje Hessenbox."
   },
   {
-    "objectID": "scripts/script-00-interpolation.html",
-    "href": "scripts/script-00-interpolation.html",
-    "title": "Spatial Interpolation",
+    "objectID": "base/faq.html",
+    "href": "base/faq.html",
+    "title": "Frequently asked Questions",
     "section": "",
-    "text": "test\n\n    \n  \n\n\n\n#------------------------------------------------------------------------------\n# Name: FR_soilmoist.R\n# Type: control script \n# Author: Chris Reudenbach, creuden@gmail.com\n# Description:  calculates the soil moisture from Lacanau point data\n# Copyright:GPL (&gt;= 3) \n# Date: 2022-11-10 \n# V-2022-11-12; \n#------------------------------------------------------------------------------\n# 0 - project setup\n#------------------------------------------------------------------------------\n# geoAI course basic setup\n# Type: script\n# Name: geoAI_setup.R\n# Author: Chris Reudenbach, creuden@gmail.com\n# Description:  create/read project folder structure and returns pathes as list\n#               load all necessary packages \n#               sources all functions in a defined function folder\n# Dependencies:   \n# Output: list containing the folder strings as shortcuts\n# Copyright: Chris Reudenbach, thomas Nauss 2019-2021, GPL (&gt;= 3)\n# git clone https://github.com/gisma-courses/geoAI-scripts.git\n#------------------------------------------------------------------------------\n\n\n\n# basic packages\nlibrary(\"mapview\")\nlibrary(\"tmap\")\nlibrary(\"tmaptools\")\nlibrary(\"raster\")\nlibrary(\"terra\")\nlibrary(\"sf\")\nlibrary(\"dplyr\")\nlibrary(\"lidR\")\nlibrary(\"future\")\nlibrary(\"lwgeom\")\nlibrary(\"tmap\")\nlibrary(\"mapview\")\nlibrary(rprojroot)\n\nroot_folder = find_rstudio_root_file()\n#root_folder = getwd()\nndvi.col = function(n) {\n  rev(colorspace::sequential_hcl(n, \"Green-Yellow\"))\n}\n\nano.col = colorspace::diverging_hcl(7, palette = \"Red-Green\",  register = \"rg\")\n\n\n\n\n# # suppres gdal warnings\n# rgdal::set_thin_PROJ6_warnings(TRUE)\n# \n# \n# \n# # workaround subfolder\n# loc_name = \"harz\"\n# \n# # harz\n# epsg=25833\n# \n# attributename = c(\"Moisture_1_17Nov\",\"Moisture_2_17Nov\",\"Moisture_1_19Nov\",\"Moisture_2_19Nov\")\n# varname = c(\"soilmoist2022_08_17\",\"soilmoist2022_08_19\")\n# fnDTM = \"DTM_v3.vrt\"\n# fnsm_data = \"lacanau_moisture_measurements.csv\"\n# fnpos_data= \"ltrees.gpkg\"\n# \n# # read DTM\n# DTM = terra::rast(fnDTM)\n# # cast to SpatialPixelsDataFrame\n# DTM.spdf &lt;- as(raster(DTM),\n#                        'SpatialPixelsDataFrame')\n# colnames(DTM.spdf@data) &lt;- \"altitude\"\n# # read moist data \n# sm=read.csv2(fnsm_data,sep = \",\")\n# # read tree data\n# pos=st_read(fnpos_data)\n# # merge\n# sm$Point = paste0(\"TREE\",str_split_fixed(sm$TargetID, \"_\", 3)[,3])\n# m=merge(pos,sm)\n# \n# # extract altitudes for positions\n# em= exactextractr::exact_extract(DTM,st_buffer(m,1),\"mean\")\n# m$altitude=em\n# \n# # start kriging \n# for (i in 1:length(varname) ){\n#   z=i*2\n#   # mean\n#   m$var = (as.numeric(m[[attributename[z-1]]]) + as.numeric(m[[attributename[z]]]))/2\n#   # to sp\n#   m2 = as(m,\"Spatial\")    \n#   tm2 = spTransform(m2,\n#                     crs(\"+proj=utm +zone=30 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs\"))\n# \n#   # autofit variogramm for kriging \n#   vm.auto = automap::autofitVariogram(formula = as.formula(paste(\"var\", \"~ 1\")),\n#                                       input_data = tm2)\n#   plot(vm.auto)\n#   \n#   # kriging   \n#   print(paste0(\"kriging \", varname[i]))\n#   var.pred &lt;- gstat::krige(formula = as.formula(paste(\"var\", \"~ altitude\")),\n#                            locations = tm2,\n#                            newdata = DTM.spdf,\n#                            model = vm.auto$var_model,\n#                            debug.level=0,)\n#   \n#   r=rasterFromXYZ(as.data.frame(var.pred)[, c(\"x\", \"y\", \"var1.pred\")])\n#   \n#   # reclassify erratic values \n#   reclass_df &lt;- c(-Inf, 0, NA)\n#   # reshape the object into a matrix with columns and rows\n#   reclass_m &lt;- matrix(reclass_df,\n#                       ncol = 3,\n#                       byrow = TRUE)\n#   r_c &lt;- reclassify(r,reclass_m)\n# \n#   plot(r_c)\n#   # re assign crs\n#   crs(r_c) = crs(paste0(\"EPSG:\",epsg))\n#   raster::writeRaster(r_c,paste0(\"data/gis/France_Lacanau_PP_Gis/data_lev0/\",varname[i],\".tif\"),overwrite=TRUE)\n#   \n# }"
+    "text": "This is a senseless question to meet a meaningfull answer\n\n\n\n\n\n\n\n\n\nThis is a meaningful answer to a senseless question\n\n\n\n\n\n\n\n\n\nLearn More…\n\n\n\n\n\nThis is a even more meaningful answer to a senseless question"
   },
   {
-    "objectID": "modeling/script-00-interpolation.html",
-    "href": "modeling/script-00-interpolation.html",
-    "title": "Spatial Interpolation",
+    "objectID": "base/faq.html#make-sense-topic",
+    "href": "base/faq.html#make-sense-topic",
+    "title": "Frequently asked Questions",
     "section": "",
-    "text": "Script: Spatial Interpolation\n\n#------------------------------------------------------------------------------\n# Name: FR_soilmoist.R\n# Type: control script \n# Author: Chris Reudenbach, creuden@gmail.com\n# Description:  calculates the soil moisture from Lacanau point data\n# Copyright:GPL (&gt;= 3) \n# Date: 2022-11-10 \n# V-2022-11-12; \n#------------------------------------------------------------------------------\n# 0 - project setup\n#------------------------------------------------------------------------------\n# geoAI course basic setup\n# Type: script\n# Name: geoAI_setup.R\n# Author: Chris Reudenbach, creuden@gmail.com\n# Description:  create/read project folder structure and returns pathes as list\n#               load all necessary packages \n#               sources all functions in a defined function folder\n# Dependencies:   \n# Output: list containing the folder strings as shortcuts\n# Copyright: Chris Reudenbach, thomas Nauss 2019-2021, GPL (&gt;= 3)\n# git clone https://github.com/gisma-courses/geoAI-scripts.git\n#------------------------------------------------------------------------------\n\n\n\n# basic packages\nlibrary(\"mapview\")\nlibrary(\"tmap\")\nlibrary(\"tmaptools\")\nlibrary(\"raster\")\nlibrary(\"terra\")\nlibrary(\"sf\")\nlibrary(\"dplyr\")\nlibrary(\"lidR\")\nlibrary(\"future\")\nlibrary(\"lwgeom\")\nlibrary(\"tmap\")\nlibrary(\"mapview\")\nlibrary(rprojroot)\n\nroot_folder = find_rstudio_root_file()\n#root_folder = getwd()\nndvi.col = function(n) {\n  rev(colorspace::sequential_hcl(n, \"Green-Yellow\"))\n}\n\nano.col = colorspace::diverging_hcl(7, palette = \"Red-Green\",  register = \"rg\")\n\n\n\n\n# # suppres gdal warnings\n# rgdal::set_thin_PROJ6_warnings(TRUE)\n# \n# \n# \n# # workaround subfolder\n# loc_name = \"harz\"\n# \n# # harz\n# epsg=25833\n# \n# attributename = c(\"Moisture_1_17Nov\",\"Moisture_2_17Nov\",\"Moisture_1_19Nov\",\"Moisture_2_19Nov\")\n# varname = c(\"soilmoist2022_08_17\",\"soilmoist2022_08_19\")\n# fnDTM = \"DTM_v3.vrt\"\n# fnsm_data = \"lacanau_moisture_measurements.csv\"\n# fnpos_data= \"ltrees.gpkg\"\n# \n# # read DTM\n# DTM = terra::rast(fnDTM)\n# # cast to SpatialPixelsDataFrame\n# DTM.spdf &lt;- as(raster(DTM),\n#                        'SpatialPixelsDataFrame')\n# colnames(DTM.spdf@data) &lt;- \"altitude\"\n# # read moist data \n# sm=read.csv2(fnsm_data,sep = \",\")\n# # read tree data\n# pos=st_read(fnpos_data)\n# # merge\n# sm$Point = paste0(\"TREE\",str_split_fixed(sm$TargetID, \"_\", 3)[,3])\n# m=merge(pos,sm)\n# \n# # extract altitudes for positions\n# em= exactextractr::exact_extract(DTM,st_buffer(m,1),\"mean\")\n# m$altitude=em\n# \n# # start kriging \n# for (i in 1:length(varname) ){\n#   z=i*2\n#   # mean\n#   m$var = (as.numeric(m[[attributename[z-1]]]) + as.numeric(m[[attributename[z]]]))/2\n#   # to sp\n#   m2 = as(m,\"Spatial\")    \n#   tm2 = spTransform(m2,\n#                     crs(\"+proj=utm +zone=30 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs\"))\n# \n#   # autofit variogramm for kriging \n#   vm.auto = automap::autofitVariogram(formula = as.formula(paste(\"var\", \"~ 1\")),\n#                                       input_data = tm2)\n#   plot(vm.auto)\n#   \n#   # kriging   \n#   print(paste0(\"kriging \", varname[i]))\n#   var.pred &lt;- gstat::krige(formula = as.formula(paste(\"var\", \"~ altitude\")),\n#                            locations = tm2,\n#                            newdata = DTM.spdf,\n#                            model = vm.auto$var_model,\n#                            debug.level=0,)\n#   \n#   r=rasterFromXYZ(as.data.frame(var.pred)[, c(\"x\", \"y\", \"var1.pred\")])\n#   \n#   # reclassify erratic values \n#   reclass_df &lt;- c(-Inf, 0, NA)\n#   # reshape the object into a matrix with columns and rows\n#   reclass_m &lt;- matrix(reclass_df,\n#                       ncol = 3,\n#                       byrow = TRUE)\n#   r_c &lt;- reclassify(r,reclass_m)\n# \n#   plot(r_c)\n#   # re assign crs\n#   crs(r_c) = crs(paste0(\"EPSG:\",epsg))\n#   raster::writeRaster(r_c,paste0(\"data/gis/France_Lacanau_PP_Gis/data_lev0/\",varname[i],\".tif\"),overwrite=TRUE)\n#   \n# }"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Mikroklimamodellierung Envi_Met LV-19-d19-010-envi",
-    "section": "",
-    "text": "Widely used in applications as diverse as urban planning, architectural design and energy efficiency, ENVI-met is a 3D micro-climate simulation software. Its functionality goes beyond individual climate parameters and covers a wide spectrum. ENVI-met excels in simulating different climate conditions, including day and night temperatures, humidity, wind speed and solar radiation in urban environments. It can also simulate the impact of different building materials, such as glass and stone, on the surrounding environment.\nThe course will cover the following topics\nBasic concepts Definition of materials Modelling vegetation Preparing the model for simulation Creation of weather files Running a simulation Visualising the results Interpreting the results"
-  },
-  {
-    "objectID": "index.html#new",
-    "href": "index.html#new",
-    "title": "Mikroklimamodellierung Envi_Met LV-19-d19-010-envi",
-    "section": "",
-    "text": "Widely used in applications as diverse as urban planning, architectural design and energy efficiency, ENVI-met is a 3D micro-climate simulation software. Its functionality goes beyond individual climate parameters and covers a wide spectrum. ENVI-met excels in simulating different climate conditions, including day and night temperatures, humidity, wind speed and solar radiation in urban environments. It can also simulate the impact of different building materials, such as glass and stone, on the surrounding environment.\nThe course will cover the following topics\nBasic concepts Definition of materials Modelling vegetation Preparing the model for simulation Creation of weather files Running a simulation Visualising the results Interpreting the results"
+    "text": "This is a senseless question to meet a meaningfull answer\n\n\n\n\n\n\n\n\n\nThis is a meaningful answer to a senseless question\n\n\n\n\n\n\n\n\n\nLearn More…\n\n\n\n\n\nThis is a even more meaningful answer to a senseless question"
   }
 ]

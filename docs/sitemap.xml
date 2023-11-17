@@ -1,51 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://gisma-courses.github.io/LV-19-d19-010-envi/worksheets/ws-01.html</loc>
-    <lastmod>2023-11-17T11:04:36.387Z</lastmod>
-  </url>
-  <url>
     <loc>https://gisma-courses.github.io/LV-19-d19-010-envi/index.html</loc>
-    <lastmod>2023-11-17T12:11:40.128Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gisma-courses.github.io/LV-19-d19-010-envi/worksheets/ws-00.html</loc>
-    <lastmod>2023-11-17T11:04:38.239Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gisma-courses.github.io/LV-19-d19-010-envi/mc_session/mc3.html</loc>
-    <lastmod>2023-11-17T10:56:29.408Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gisma-courses.github.io/LV-19-d19-010-envi/mc_session/mc2.html</loc>
-    <lastmod>2023-11-17T11:04:19.506Z</lastmod>
+    <lastmod>2023-11-17T12:20:54.038Z</lastmod>
   </url>
   <url>
     <loc>https://gisma-courses.github.io/LV-19-d19-010-envi/mc_session/mc1.html</loc>
-    <lastmod>2023-11-17T11:04:22.210Z</lastmod>
+    <lastmod>2023-11-17T12:18:32.283Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gisma-courses.github.io/LV-19-d19-010-envi/mc_session/mc2.html</loc>
+    <lastmod>2023-11-17T12:18:34.723Z</lastmod>
   </url>
   <url>
     <loc>https://gisma-courses.github.io/LV-19-d19-010-envi/modeling/modeling-material.html</loc>
-    <lastmod>2023-11-17T11:04:41.003Z</lastmod>
+    <lastmod>2023-11-17T12:20:47.966Z</lastmod>
   </url>
   <url>
-    <loc>https://gisma-courses.github.io/LV-19-d19-010-envi/base/faq.html</loc>
-    <lastmod>2023-11-17T11:04:25.983Z</lastmod>
+    <loc>https://gisma-courses.github.io/LV-19-d19-010-envi/worksheets/ws-00.html</loc>
+    <lastmod>2023-11-17T12:21:14.358Z</lastmod>
   </url>
   <url>
-    <loc>https://gisma-courses.github.io/LV-19-d19-010-envi/worksheets/modellierung_warmup.html</loc>
-    <lastmod>2023-11-17T11:04:27.807Z</lastmod>
+    <loc>https://gisma-courses.github.io/LV-19-d19-010-envi/worksheets/ws-01.html</loc>
+    <lastmod>2023-11-17T12:21:16.022Z</lastmod>
   </url>
   <url>
     <loc>https://gisma-courses.github.io/LV-19-d19-010-envi/worksheets/ws-02.html</loc>
-    <lastmod>2023-11-17T11:23:12.396Z</lastmod>
+    <lastmod>2023-11-17T12:21:17.954Z</lastmod>
   </url>
   <url>
-    <loc>https://gisma-courses.github.io/LV-19-d19-010-envi/scripts/script-00-interpolation.html</loc>
-    <lastmod>2023-11-17T11:25:09.790Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gisma-courses.github.io/LV-19-d19-010-envi/modeling/script-00-interpolation.html</loc>
-    <lastmod>2023-11-17T11:45:02.858Z</lastmod>
+    <loc>https://gisma-courses.github.io/LV-19-d19-010-envi/base/faq.html</loc>
+    <lastmod>2023-11-17T12:21:20.046Z</lastmod>
   </url>
 </urlset>
