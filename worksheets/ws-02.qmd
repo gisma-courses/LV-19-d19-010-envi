@@ -1,6 +1,6 @@
 ---
 title: "Worksheet 2: Envimet goes Reality"
-itle-block-banner: ../images/envi_met_title.png
+title-block-banner: ../images/envi_met_title.png
 title-block-banner-color: black 
 ---
 

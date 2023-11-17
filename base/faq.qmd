@@ -1,6 +1,7 @@
 ---
 title: "Frequently asked Questions"
-editor: visual
+title-block-banner: ../images/envi_met_title.png
+title-block-banner-color: black 
 ---
 
 ## Make sense topic

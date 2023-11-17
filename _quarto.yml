@@ -38,11 +38,11 @@ website:
         contents:
           - mc_session/mc1.qmd
           - mc_session/mc2.qmd
-          - mc_session/mc3.qmd
       - text: "---"
       - section: "Software & More"
         contents:
           - modeling/modeling-material.qmd
+          - modeling/script-00-interpolation.qmd
       - text: "---"
       - section: "Worksheets"
         contents:
