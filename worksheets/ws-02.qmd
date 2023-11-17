@@ -1,0 +1,63 @@
+---
+title: "Worksheet 2: Envimet goes Reality"
+itle-block-banner: ../images/envi_met_title.png
+title-block-banner-color: black 
+---
+
+![](../images/mandantory.png){width=10%}
+
+
+After the first attempts - specifically after the technical example simulations, a first review of the available literature as well as a rough structuring of the research questions, it is now necessary to design a concrete approach.
+
+
+
+## Goals 
+
+After the first attempts - specifically after the technical example simulations, a first review of the available literature as well as a rough structuring of the research questions, it is now necessary to design a concrete approach.
+
+
+## Things you need
+
+* [Course Data Server](https://hessenbox.uni-marburg.de/getlink/fi5p6EzMUrtUVFW3DnkFky/envimet) You will find here all kinds of data, literature and tutorials 
+* [ENVI-met software](https://envi-met.info/doku.php?id=start)
+* Please have a look at the **Monde Tutorial videos**
+
+## Assignment
+Design a concrete problem and a suitable associated modeling concept to assess the performance of Envimet to simulate essential microclimatic parameters in the specific setup of the Carolinen Haus.  Consider the following aspects:
+* abiotic endowment of the model domain (relief, soil, site location).
+* biotic features of the model domain (simple/3D vegetation)
+* technical model domain (x,y,z extent, time steps nesting)
+* appropriate meteorology for model initialization (ideal, real values)
+* Validation strategy
+
+
+* Work packages - What is to be done when and by whom?
+ * WP 1 technical and abiotic modell
+ * WP 2 meteo data initialization
+ * WP 3 Vegetation "simple
+ * WP 4 Vegetation "3D
+ * WP 5 Validation strategy
+
+
+
+The task is then as follows:
+
+The resulting concept should be prepared as a table (similar to the below example), also addressing the literature/data  used as well as know shortcomings.
+
+### Workpackage 1
+
+| item | solution | references | ressources needed | lead | team |
+|:-------:|:--------|:---------|:---------|:---------|:---------|
+| relief | build-in version xy | online access | ? | ? | ? |
+| soil properties | soil data  | access has to be clarified |  who knows| ? | ? |
+| soil vertical structure | four levels temperature soil moisture build-in model| envi-met | ? | ? | ? |
+|... |... |... |... |... |... |
+
+
+Any written notes please put them on [Trello](https://trello.com/b/mqXJIO7n/modellierung-envimet) in the board for this course. 
+
+It is strongly recommended that 1 Person take the lead for a specific workpackage and find 1 or more collaborators 
+{: .notice--success}
+
+* Please upload /write the tables and necessary notes/explanations on cards.
+* Please prepare the GIS data and upload it to thje [Hessenbox](https://hessenbox.uni-marburg.de/getlink/fi5p6EzMUrtUVFW3DnkFky/envimet).

@@ -1,0 +1,80 @@
+project: 
+  type: website
+  output-dir: docs
+website:
+  open-graph: true
+  page-navigation: true  
+  title: "Mikroklimamodellierung Envi_Met LV-19-d19-010-envi"
+  site-url: https://gisma-courses.github.io/LV-19-d19-010-envi
+  repo-url: https://github.com/gisma-courses/LV-19-d19-010-envi
+  repo-actions: [edit, issue]
+  search: 
+    location: navbar
+    type: textbox
+  page-footer: "LV-19-d19-010-envi (2023)" 
+  twitter-card:
+    creator: "@gisma"
+  comments:
+   utterances:
+     repo: gisma-courses/LV-19-d19-010-envi
+  navbar:
+    logo: /images/logooil.jpg
+
+
+  sidebar:
+    # logo: /images/logo.jpg
+    pinned: true
+    align: center
+    style: "docked"
+    collapse-level: 1
+    contents:
+      - section: "Modeling Microclimate"
+        contents:
+          - mc_session/mcm1.qmd
+          # - mc_session/mcm2.qmd
+          # - mc_session/mcm3.qmd
+      - text: "---"         
+      - section: "Measure Microclimate"
+        contents:
+          - mc_session/mc1.qmd
+          - mc_session/mc2.qmd
+          - mc_session/mc3.qmd
+      - text: "---"
+      - section: "Software & More"
+        contents:
+          - modeling/modeling-material.qmd
+      - text: "---"
+      - section: "Worksheets"
+        contents:
+          - worksheets/ws-00.qmd
+          - worksheets/ws-01.qmd
+          - worksheets/ws-02.qmd
+          
+          # - href: https://github.com/gisma-courses/LV-19-050-189-ABM/blob/main/assets/Challenge1Advanced.nlogo
+          #   text: Challenge One Advanced Model
+
+      #- text: "---"
+      #- section: "Machine Learning"
+      #  contents:
+      #    - Machine_Learning_Session/ML_AOA.qmd
+          # - href: https://gisma-courses.github.io/LV-uav-workflow/modules/module-introduction/
+          #   text: Basic Readings        
+          # - href: https://gisma-courses.github.io/LV-uav-workflow/modules/module-fieldwork/
+          #   text: uav/Flight Planning
+      - text: "---"
+##format: dokuwiki
+format:
+  html:
+    theme:
+      light: lumen
+      dark: [lumen, css/theme-dark.scss]
+    code-background: true
+    code-copy: true
+    css: css/styles.css
+    toc: true
+    link-external-icon: true
+    link-external-newwindow: true
+    link-external-filter: '^(?:http:|https:)\/\/www\.quarto\.org\/custom'
+# filters:
+#   - include-files.lua
+#   - quarto
