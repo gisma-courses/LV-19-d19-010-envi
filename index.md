@@ -1,6 +1,6 @@
 ---
 title: ""
-title-block-banner: /images/envi_met_title.png
+title-block-banner: /images/envimet.png
 title-block-banner-color: black
 
 open-graph:
@@ -9,19 +9,13 @@ open-graph:
 twitter-card:
   description: "Micro-Climate Modeling with Envi_Met"
   image: /images/envi_met_title.png
-
 comments: false
 ---
 
-```{=html}
-<style>
-  body {
-  background-image: url("/images/envimet.png");
+![](images/envimet.png)
 
-  background-repeat: no-repeat;
-}
-  
-</style>
-```
+Widely used in applications as diverse as urban planning, architectural design and energy efficiency, ENVI-met is a 3D micro-climate simulation software. Its functionality goes beyond individual climate parameters and covers a wide spectrum. ENVI-met excels in simulating different climate conditions, including day and night temperatures, humidity, wind speed and solar radiation in urban environments. It can also simulate the impact of different building materials, such as glass and stone, on the surrounding environment.
 
+The course will cover the following topics
 
+Basic concepts Definition of materials Modelling vegetation Preparing the model for simulation Creation of weather files Running a simulation Visualising the results Interpreting the results
