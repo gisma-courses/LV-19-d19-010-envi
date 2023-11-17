@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://gisma-courses.github.io/LV-19-d19-010-envi/index.html</loc>
-    <lastmod>2023-11-17T12:20:54.038Z</lastmod>
+    <lastmod>2023-11-17T12:23:43.697Z</lastmod>
   </url>
   <url>
     <loc>https://gisma-courses.github.io/LV-19-d19-010-envi/mc_session/mc1.html</loc>
@@ -31,5 +31,9 @@
   <url>
     <loc>https://gisma-courses.github.io/LV-19-d19-010-envi/base/faq.html</loc>
     <lastmod>2023-11-17T12:21:20.046Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gisma-courses.github.io/LV-19-d19-010-envi/modeling/script-00-interpolation.html</loc>
+    <lastmod>2023-11-17T12:48:23.089Z</lastmod>
   </url>
 </urlset>
