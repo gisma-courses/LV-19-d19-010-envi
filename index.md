@@ -16,7 +16,7 @@ comments: false
 ```{=html}
 <style>
   body {
-  background-image: url("../images/envi_met_title.png");
+  background-image: url("/images/envimet.png");
 
   background-repeat: no-repeat;
 }
