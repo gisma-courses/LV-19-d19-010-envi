@@ -1,6 +1,6 @@
 
 
-![Course Header](https://gisma-courses.github.io/LV-19-d19-010-envi/morea/envi_met_title.png "Image source: C.Reudenbach")
+![Course Header](https://gisma-courses.github.io/LV-19-d19-010-envi/images/envi_met_title.png "Image source: C.Reudenbach")
 
 # LV-19-d19-010-envi
 
