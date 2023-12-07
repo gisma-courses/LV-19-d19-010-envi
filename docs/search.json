@@ -513,28 +513,28 @@
   {
     "objectID": "worksheets/ws-03.html",
     "href": "worksheets/ws-03.html",
-    "title": "Worksheet 2: Envimet Interfacing to R",
+    "title": "Worksheet 3: Envimet Interfacing to R",
     "section": "",
     "text": "Lidar, which stands for Light Detection and Ranging, has emerged as a powerful tool in environmental science, particularly for assessing and characterizing forest structures. Lidar technology utilizes laser pulses to measure distances and generate highly detailed, three-dimensional maps of the Earth’s surface. In the context of forestry, Lidar data has proven instrumental in capturing intricate details of forest canopies, terrain, and vegetation. This information serves as a valuable resource for deriving comprehensive insights into forest structure, including tree height, canopy density, and spatial distribution. Lidar’s ability to provide accurate and high-resolution data has revolutionized the field, enabling researchers and foresters to make informed decisions related to forest management, conservation, and ecological studies. Furthermore, the derived Leaf Area Density (LAD) and canopy height from Lidar data are crucial components in understanding the microclimate within forests, influencing factors such as light penetration, temperature gradients, and overall ecosystem dynamics. This brief introduction sets the stage for exploring the multifaceted applications of Lidar technology in unlocking the secrets held within the complex ecosystems of our forests while emphasizing its significant impact on the microclimatic conditions that shape these environments."
   },
   {
     "objectID": "worksheets/ws-03.html#goals",
     "href": "worksheets/ws-03.html#goals",
-    "title": "Worksheet 2: Envimet Interfacing to R",
+    "title": "Worksheet 3: Envimet Interfacing to R",
     "section": "Goals",
     "text": "Goals\nThe defined goals aim to enhance the capabilities of Lidar-based analyses for characterizing forest structure with a focus on achieving more realistic representations of tree structures and a spatially heterogeneous distribution of tree parameters. The key objectives include refining algorithms to capture intricate details of tree architecture, optimizing the extraction of parameters for accuracy, integrating multisource data to provide a comprehensive view of the forest ecosystem, and establishing robust validation protocols. These goals collectively seek to advance the field, promoting more accurate and meaningful interpretations of forest structure that align closely with real-world conditions."
   },
   {
     "objectID": "worksheets/ws-03.html#things-you-need",
     "href": "worksheets/ws-03.html#things-you-need",
-    "title": "Worksheet 2: Envimet Interfacing to R",
+    "title": "Worksheet 3: Envimet Interfacing to R",
     "section": "Things you need",
     "text": "Things you need\n\nCourse Data Server You will find here all kinds of data, literature and tutorials\nENVI-met software\nMOF Envi_Met Interface to R Repository\n\n\nAdditional Repositories\n\nMOF Micro Climate Repository\nforenius-pp repository for additional functions"
   },
   {
     "objectID": "worksheets/ws-03.html#assignment",
     "href": "worksheets/ws-03.html#assignment",
-    "title": "Worksheet 2: Envimet Interfacing to R",
+    "title": "Worksheet 3: Envimet Interfacing to R",
     "section": "Assignment",
     "text": "Assignment\nDevelop an R-based interface to streamline the generation and customization of plant parameters within ENVI-met’s plant database, enhancing user accessibility and flexibility.\nUsers can access ENVI-met’s plant database via a menu within the software dedicated to plant-related settings. This panel include options for selecting and managing plant types. Basically the Plant Parameter Input defines within the interface how each plant is parameterized.\nParameters must include but are not limited to: * Plant Height: The height of the vegetation. * Leaf Area Index (LAI): A measure of the amount of leaves per unit ground area. * Leaf Area Density (LAD): The Leaf Area Density values for the selected vegetation types and levels. * Canopy Structure: Details related to the spatial arrangement of leaves and branches.\nENVI-met includes a default plant library with predefined plant types. Users can choose from this library, and each entry in the library comes with default parameter values. The plant database interface is seamlessly integrated into the overall model setup environment.\n\nTasks\n\nResearch ENVI-met’s plant database structure.\nResearch the given repositories for functionality dealing with the plant database and foest structure.\nCreate R functions for inputting plant parameters.\n\n\n\n\n\n\n\n\n\n\n\nHessenbox."
   }
