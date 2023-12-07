@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Mikroklimamodellierung Envi_Met LV-19-d19-010-envi - Worksheet 2: Envimet goes Reality</title>
+<title>Mikroklimamodellierung Envi_Met LV-19-d19-010-envi - WS-2: Envimet goes Reality</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,6 +29,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../worksheets/ws-03.html" rel="next">
 <link href="../worksheets/ws-01.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -82,13 +83,13 @@ background-size: cover;
 
 
 <link rel="stylesheet" href="../css/styles.css">
-<meta property="og:title" content="Mikroklimamodellierung Envi_Met LV-19-d19-010-envi - Worksheet 2: Envimet goes Reality">
+<meta property="og:title" content="Mikroklimamodellierung Envi_Met LV-19-d19-010-envi - WS-2: Envimet goes Reality">
 <meta property="og:description" content="">
 <meta property="og:image" content="https://gisma-courses.github.io/LV-19-d19-010-envi/images/mandantory.png">
 <meta property="og:site-name" content="Mikroklimamodellierung Envi_Met LV-19-d19-010-envi">
 <meta property="og:image:height" content="60">
 <meta property="og:image:width" content="173">
-<meta name="twitter:title" content="Mikroklimamodellierung Envi_Met LV-19-d19-010-envi - Worksheet 2: Envimet goes Reality">
+<meta name="twitter:title" content="Mikroklimamodellierung Envi_Met LV-19-d19-010-envi - WS-2: Envimet goes Reality">
 <meta name="twitter:description" content="">
 <meta name="twitter:image" content="https://gisma-courses.github.io/LV-19-d19-010-envi/images/mandantory.png">
 <meta name="twitter:creator" content="@gisma">
@@ -122,7 +123,7 @@ background-size: cover;
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../worksheets/ws-00.html">Worksheets</a></li><li class="breadcrumb-item"><a href="../worksheets/ws-02.html">Worksheet 2: Envimet goes Reality</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../worksheets/ws-00.html">Worksheets</a></li><li class="breadcrumb-item"><a href="../worksheets/ws-02.html">WS-2: Envimet goes Reality</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -132,7 +133,7 @@ background-size: cover;
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Worksheet 2: Envimet goes Reality</h1>
+      <h1 class="title">WS-2: Envimet goes Reality</h1>
                       </div>
   </div>
     
@@ -225,19 +226,25 @@ background-size: cover;
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../worksheets/ws-00.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Worksheets HowTo</span></a>
+ <span class="menu-text">WS-HowTo</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../worksheets/ws-01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Worksheet 1: Warm up ENVImet and Climate Modeling</span></a>
+ <span class="menu-text">WS-1: Warm up ENVImet and Climate Modeling</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../worksheets/ws-02.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Worksheet 2: Envimet goes Reality</span></a>
+ <span class="menu-text">WS-2: Envimet goes Reality</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../worksheets/ws-03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">WS-3: Envimet Interfacing to R</span></a>
   </div>
 </li>
       </ul>
@@ -351,7 +358,7 @@ background-size: cover;
 </tr>
 </tbody>
 </table>
-<p>Any written notes please put them on <code>comments</code>] below.</p>
+<p>Any written notes please put them on <code>comments</code> below.</p>
 <div class="callout callout-style-simple callout-tip">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
@@ -741,10 +748,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../worksheets/ws-01.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Worksheet 1: Warm up ENVImet and Climate Modeling</span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">WS-1: Warm up ENVImet and Climate Modeling</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="../worksheets/ws-03.html" class="pagination-link">
+        <span class="nav-page-text">WS-3: Envimet Interfacing to R</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

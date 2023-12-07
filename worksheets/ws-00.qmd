@@ -1,5 +1,5 @@
 ---
-title:  "Worksheets HowTo"
+title:  "WS-HowTo"
 
 title-block-banner: ../images/envi_met_title.png
 title-block-banner-color: black 

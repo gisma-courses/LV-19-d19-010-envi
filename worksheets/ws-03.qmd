@@ -1,5 +1,5 @@
 ---
-title: "Worksheet 3: Envimet Interfacing to R"
+title: "WS-3: Envimet Interfacing to R"
 title-block-banner: ../images/envi_met_title.png
 title-block-banner-color: black 
 ---

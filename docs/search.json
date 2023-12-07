@@ -107,65 +107,65 @@
   {
     "objectID": "worksheets/ws-00.html",
     "href": "worksheets/ws-00.html",
-    "title": "Worksheets HowTo",
+    "title": "WS-HowTo",
     "section": "",
     "text": "The Working Sheets will provide weekly assignments related to the general task of reaching out for the course goals.\n\nMandatory assignments (Studienleistung) will be marked as \nGraded examinations (Prüfungsleistung) will be marked as"
   },
   {
     "objectID": "worksheets/ws-01.html",
     "href": "worksheets/ws-01.html",
-    "title": "Worksheet 1: Warm up ENVImet and Climate Modeling",
+    "title": "WS-1: Warm up ENVImet and Climate Modeling",
     "section": "",
     "text": "ENVI-met V5.x is a three-dimensional, non-hydrostatic model for simulating surface-plant-air interactions, It is designed for the microscale with a typical horizontal resolution of 0.5 to 10 m and a typical time frame of 24 to 48 hours with a time step of 1 to 5 seconds. This resolution allows for the analysis of small-scale interactions between individual buildings, surfaces, and plants"
   },
   {
     "objectID": "worksheets/ws-01.html#goals",
     "href": "worksheets/ws-01.html#goals",
-    "title": "Worksheet 1: Warm up ENVImet and Climate Modeling",
+    "title": "WS-1: Warm up ENVImet and Climate Modeling",
     "section": "Goals",
     "text": "Goals\nThis task involves three sub-areas:\n\nto get a first overview about non-hydrostatic 4D climate modeling.\nto get a first insight into the application areas of such simulations.\nto install the software and perform a first simple tutorial simulation"
   },
   {
     "objectID": "worksheets/ws-01.html#things-you-need",
     "href": "worksheets/ws-01.html#things-you-need",
-    "title": "Worksheet 1: Warm up ENVImet and Climate Modeling",
+    "title": "WS-1: Warm up ENVImet and Climate Modeling",
     "section": "Things you need",
     "text": "Things you need\n\nCourse Data Server\nENVI-met software"
   },
   {
     "objectID": "worksheets/ws-01.html#assignment",
     "href": "worksheets/ws-01.html#assignment",
-    "title": "Worksheet 1: Warm up ENVImet and Climate Modeling",
+    "title": "WS-1: Warm up ENVImet and Climate Modeling",
     "section": "Assignment",
     "text": "Assignment\nThe studies are intended to provide a first overview of the possibilities of the application. It is a first overview about the subject\nThe tutorials are a selection from the Envimet download area. In particular session_1_apps.pdf and session_1_concepts.pdf are a compilation of the concepts of Envimet and the individual components for the workflow with the individual modules, respectively, created by me. You will also find the links to the Youtube channel if you prefer videos.\nThese two compilations from the Envimet help pages should be sufficient to perform the example modeling “Precipitation”.\nIn the folder Literature you will find chapter1.pdf and chapter3.pdf. Both are reasonably understandable basics for climate modeling from a Belgian textbook. In case of more detailed questions they are worth a look.\nThe task is then as follows:\n\nInstallation of ENVI-met on your computer\nRead session_1_conpepts.pdf for a first introduction to the ENVI-met model concepts (chapter3.pdf could also be helpful here for supplementation and deepening) =&gt; If available, articulate questions problems\nRead session_1_apps.pdf as a basis for the example modeling “Precipitation”. =&gt; If available, articulate questions, problems, etc.\nRun the precipitation simulation (check if it runs) =&gt; If available, articulate questions, problems etc.\nCross-reading of min 2 publications (What is the basic idea) =&gt; Prepare a short summary\n\nAny written notes please put them on Trello in the board for this course.\n\n\n\n\n\n\nPlease note: For Trello you need to register.\n\n\n\nIn Trello you will find the assignments again as a checklist and also empty lists where you can/should write cards with your questions or article summaries. So you can also read the papers without overlap and possibly answer each other in between time."
   },
   {
     "objectID": "worksheets/ws-02.html",
     "href": "worksheets/ws-02.html",
-    "title": "Worksheet 2: Envimet goes Reality",
+    "title": "WS-2: Envimet goes Reality",
     "section": "",
     "text": "After the first attempts - specifically after the technical example simulations, a first review of the available literature as well as a rough structuring of the research questions, it is now necessary to design a concrete approach."
   },
   {
     "objectID": "worksheets/ws-02.html#goals",
     "href": "worksheets/ws-02.html#goals",
-    "title": "Worksheet 2: Envimet goes Reality",
+    "title": "WS-2: Envimet goes Reality",
     "section": "Goals",
     "text": "Goals\nAfter the first attempts - specifically after the technical example simulations, a first review of the available literature as well as a rough structuring of the research questions, it is now necessary to design a concrete approach."
   },
   {
     "objectID": "worksheets/ws-02.html#things-you-need",
     "href": "worksheets/ws-02.html#things-you-need",
-    "title": "Worksheet 2: Envimet goes Reality",
+    "title": "WS-2: Envimet goes Reality",
     "section": "Things you need",
     "text": "Things you need\n\nCourse Data Server You will find here all kinds of data, literature and tutorials\nENVI-met software\nPlease have a look at the Monde Tutorial videos"
   },
   {
     "objectID": "worksheets/ws-02.html#assignment",
     "href": "worksheets/ws-02.html#assignment",
-    "title": "Worksheet 2: Envimet goes Reality",
+    "title": "WS-2: Envimet goes Reality",
     "section": "Assignment",
-    "text": "Assignment\nDesign a concrete problem and a suitable associated modeling concept to assess the performance of Envimet to simulate essential microclimatic parameters in the specific setup of the Carolinen Haus. Consider the following aspects: * abiotic endowment of the model domain (relief, soil, site location). * biotic features of the model domain (simple/3D vegetation) * technical model domain (x,y,z extent, time steps nesting) * appropriate meteorology for model initialization (ideal, real values) * Validation strategy\n\nWork packages - What is to be done when and by whom?\nWP 1 technical and abiotic model\nWP 2 meteo data initialization\nWP 3 Vegetation “simple\nWP 4 Vegetation “3D\nWP 5 Validation strategy\n\nThe task is then as follows:\nThe resulting concept should be prepared as a table (similar to the below example), also addressing the literature/data used as well as know shortcomings.\n\nWorkpackage 1\n\n\n\n\n\n\n\n\n\n\n\nitem\nsolution\nreferences\nressources needed\nlead\nteam\n\n\n\n\nrelief\nbuild-in version xy\nonline access\n?\n?\n?\n\n\nsoil properties\nsoil data\naccess has to be clarified\nwho knows\n?\n?\n\n\nsoil vertical structure\nfour levels temperature soil moisture build-in model\nenvi-met\n?\n?\n?\n\n\n…\n…\n…\n…\n…\n…\n\n\n\nAny written notes please put them on comments] below.\n\n\n\n\n\n\nIt is strongly recommended that you find 1 or more collaborators\n\n\n\n\nPlease upload /write the tables and necessary notes/explanations on cards.\nPlease prepare the GIS data and upload it to thje Hessenbox."
+    "text": "Assignment\nDesign a concrete problem and a suitable associated modeling concept to assess the performance of Envimet to simulate essential microclimatic parameters in the specific setup of the Carolinen Haus. Consider the following aspects: * abiotic endowment of the model domain (relief, soil, site location). * biotic features of the model domain (simple/3D vegetation) * technical model domain (x,y,z extent, time steps nesting) * appropriate meteorology for model initialization (ideal, real values) * Validation strategy\n\nWork packages - What is to be done when and by whom?\nWP 1 technical and abiotic model\nWP 2 meteo data initialization\nWP 3 Vegetation “simple\nWP 4 Vegetation “3D\nWP 5 Validation strategy\n\nThe task is then as follows:\nThe resulting concept should be prepared as a table (similar to the below example), also addressing the literature/data used as well as know shortcomings.\n\nWorkpackage 1\n\n\n\n\n\n\n\n\n\n\n\nitem\nsolution\nreferences\nressources needed\nlead\nteam\n\n\n\n\nrelief\nbuild-in version xy\nonline access\n?\n?\n?\n\n\nsoil properties\nsoil data\naccess has to be clarified\nwho knows\n?\n?\n\n\nsoil vertical structure\nfour levels temperature soil moisture build-in model\nenvi-met\n?\n?\n?\n\n\n…\n…\n…\n…\n…\n…\n\n\n\nAny written notes please put them on comments below.\n\n\n\n\n\n\nIt is strongly recommended that you find 1 or more collaborators\n\n\n\n\nPlease upload /write the tables and necessary notes/explanations on cards.\nPlease prepare the GIS data and upload it to thje Hessenbox."
   },
   {
     "objectID": "base/faq.html",
@@ -513,28 +513,28 @@
   {
     "objectID": "worksheets/ws-03.html",
     "href": "worksheets/ws-03.html",
-    "title": "Worksheet 3: Envimet Interfacing to R",
+    "title": "WS-3: Envimet Interfacing to R",
     "section": "",
     "text": "Lidar, which stands for Light Detection and Ranging, has emerged as a powerful tool in environmental science, particularly for assessing and characterizing forest structures. Lidar technology utilizes laser pulses to measure distances and generate highly detailed, three-dimensional maps of the Earth’s surface. In the context of forestry, Lidar data has proven instrumental in capturing intricate details of forest canopies, terrain, and vegetation. This information serves as a valuable resource for deriving comprehensive insights into forest structure, including tree height, canopy density, and spatial distribution. Lidar’s ability to provide accurate and high-resolution data has revolutionized the field, enabling researchers and foresters to make informed decisions related to forest management, conservation, and ecological studies. Furthermore, the derived Leaf Area Density (LAD) and canopy height from Lidar data are crucial components in understanding the microclimate within forests, influencing factors such as light penetration, temperature gradients, and overall ecosystem dynamics. This brief introduction sets the stage for exploring the multifaceted applications of Lidar technology in unlocking the secrets held within the complex ecosystems of our forests while emphasizing its significant impact on the microclimatic conditions that shape these environments."
   },
   {
     "objectID": "worksheets/ws-03.html#goals",
     "href": "worksheets/ws-03.html#goals",
-    "title": "Worksheet 3: Envimet Interfacing to R",
+    "title": "WS-3: Envimet Interfacing to R",
     "section": "Goals",
     "text": "Goals\nThe defined goals aim to enhance the capabilities of Lidar-based analyses for characterizing forest structure with a focus on achieving more realistic representations of tree structures and a spatially heterogeneous distribution of tree parameters. The key objectives include refining algorithms to capture intricate details of tree architecture, optimizing the extraction of parameters for accuracy, integrating multisource data to provide a comprehensive view of the forest ecosystem, and establishing robust validation protocols. These goals collectively seek to advance the field, promoting more accurate and meaningful interpretations of forest structure that align closely with real-world conditions."
   },
   {
     "objectID": "worksheets/ws-03.html#things-you-need",
     "href": "worksheets/ws-03.html#things-you-need",
-    "title": "Worksheet 3: Envimet Interfacing to R",
+    "title": "WS-3: Envimet Interfacing to R",
     "section": "Things you need",
     "text": "Things you need\n\nCourse Data Server You will find here all kinds of data, literature and tutorials\nENVI-met software\nMOF Envi_Met Interface to R Repository\n\n\nAdditional Repositories\n\nMOF Micro Climate Repository\nforenius-pp repository for additional functions"
   },
   {
     "objectID": "worksheets/ws-03.html#assignment",
     "href": "worksheets/ws-03.html#assignment",
-    "title": "Worksheet 3: Envimet Interfacing to R",
+    "title": "WS-3: Envimet Interfacing to R",
     "section": "Assignment",
     "text": "Assignment\nDevelop an R-based interface to streamline the generation and customization of plant parameters within ENVI-met’s plant database, enhancing user accessibility and flexibility.\nUsers can access ENVI-met’s plant database via a menu within the software dedicated to plant-related settings. This panel include options for selecting and managing plant types. Basically the Plant Parameter Input defines within the interface how each plant is parameterized.\nParameters must include but are not limited to: * Plant Height: The height of the vegetation. * Leaf Area Index (LAI): A measure of the amount of leaves per unit ground area. * Leaf Area Density (LAD): The Leaf Area Density values for the selected vegetation types and levels. * Canopy Structure: Details related to the spatial arrangement of leaves and branches.\nENVI-met includes a default plant library with predefined plant types. Users can choose from this library, and each entry in the library comes with default parameter values. The plant database interface is seamlessly integrated into the overall model setup environment.\n\nTasks\n\nResearch ENVI-met’s plant database structure.\nResearch the given repositories for functionality dealing with the plant database and foest structure.\nCreate R functions for inputting plant parameters.\n\n\n\n\n\n\n\n\n\n\n\nHessenbox."
   }
