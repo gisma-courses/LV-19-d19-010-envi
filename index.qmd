@@ -1,7 +1,5 @@
 ---
 title: ""
-title-block-banner: ../images/envimet.png
-title-block-banner-color: black
 
 open-graph:
   description: "Micro-Climate Modeling with Envi_Met "
