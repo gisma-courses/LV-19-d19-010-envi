@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Peter PAN">
 
-<title>Mikroklimamodellierung Envi_Met LV-19-d19-010-envi - Worksheet 2: Envimet goes Reality</title>
+<title>Mikroklimamodellierung Envi_Met LV-19-d19-010-envi - YOUR TITLE</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -29,7 +64,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../worksheets/ws-01.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -41,6 +75,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-contrib/roughnotation-0.5.1/rough-notation.iife.js"></script>
+<script src="../site_libs/quarto-contrib/roughnotation-init-1.0.0/rough.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -61,43 +97,25 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<style>
-
-      .quarto-title-block .quarto-title-banner h1,
-      .quarto-title-block .quarto-title-banner h2,
-      .quarto-title-block .quarto-title-banner h3,
-      .quarto-title-block .quarto-title-banner h4,
-      .quarto-title-block .quarto-title-banner h5,
-      .quarto-title-block .quarto-title-banner h6
-      {
-        color: black;
-      }
-
-      .quarto-title-block .quarto-title-banner {
-        color: black;
-background-image: url(../images/envi_met_title.png);
-background-size: cover;
-      }
-</style>
 
 
 <link rel="stylesheet" href="../css/styles.css">
-<meta property="og:title" content="Mikroklimamodellierung Envi_Met LV-19-d19-010-envi - Worksheet 2: Envimet goes Reality">
+<meta property="og:title" content="Mikroklimamodellierung Envi_Met LV-19-d19-010-envi - YOUR TITLE">
 <meta property="og:description" content="">
-<meta property="og:image" content="https://gisma-courses.github.io/LV-19-d19-010-envi/images/mandantory.png">
+<meta property="og:image" content="https://gisma-courses.github.io/LV-19-d19-010-envi/templates/slides-template_files/figure-html/unnamed-chunk-2-1.png">
 <meta property="og:site-name" content="Mikroklimamodellierung Envi_Met LV-19-d19-010-envi">
-<meta property="og:image:height" content="60">
-<meta property="og:image:width" content="173">
-<meta name="twitter:title" content="Mikroklimamodellierung Envi_Met LV-19-d19-010-envi - Worksheet 2: Envimet goes Reality">
+<meta property="og:image:height" content="1728">
+<meta property="og:image:width" content="3072">
+<meta name="twitter:title" content="Mikroklimamodellierung Envi_Met LV-19-d19-010-envi - YOUR TITLE">
 <meta name="twitter:description" content="">
-<meta name="twitter:image" content="https://gisma-courses.github.io/LV-19-d19-010-envi/images/mandantory.png">
+<meta name="twitter:image" content="https://gisma-courses.github.io/LV-19-d19-010-envi/templates/slides-template_files/figure-html/unnamed-chunk-2-1.png">
 <meta name="twitter:creator" content="@gisma">
-<meta name="twitter:image-height" content="60">
-<meta name="twitter:image-width" content="173">
+<meta name="twitter:image-height" content="1728">
+<meta name="twitter:image-width" content="3072">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-sidebar docked nav-fixed">
+<body class="nav-sidebar docked nav-fixed slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -122,30 +140,14 @@ background-size: cover;
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../worksheets/ws-00.html">Worksheets</a></li><li class="breadcrumb-item"><a href="../worksheets/ws-02.html">Worksheet 2: Envimet goes Reality</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">YOUR TITLE</li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
   </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Worksheet 2: Envimet goes Reality</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
     <div class="sidebar-menu-container"> 
@@ -215,13 +217,13 @@ background-size: cover;
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
  <span class="menu-text">Worksheets</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../worksheets/ws-00.html" class="sidebar-item-text sidebar-link">
@@ -236,7 +238,7 @@ background-size: cover;
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../worksheets/ws-02.html" class="sidebar-item-text sidebar-link active">
+  <a href="../worksheets/ws-02.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Worksheet 2: Envimet goes Reality</span></a>
   </div>
 </li>
@@ -253,125 +255,151 @@ background-size: cover;
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#goals" id="toc-goals" class="nav-link active" data-scroll-target="#goals">Goals</a></li>
-  <li><a href="#things-you-need" id="toc-things-you-need" class="nav-link" data-scroll-target="#things-you-need">Things you need</a></li>
-  <li><a href="#assignment" id="toc-assignment" class="nav-link" data-scroll-target="#assignment">Assignment</a>
+  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"></a></li>
+  <li><a href="#new-section" id="toc-new-section" class="nav-link" data-scroll-target="#new-section">NEW SECTION</a>
   <ul class="collapse">
-  <li><a href="#workpackage-1" id="toc-workpackage-1" class="nav-link" data-scroll-target="#workpackage-1">Workpackage 1</a></li>
+  <li><a href="#bullets" id="toc-bullets" class="nav-link" data-scroll-target="#bullets">Bullets</a></li>
+  <li><a href="#columns" id="toc-columns" class="nav-link" data-scroll-target="#columns">Columns</a></li>
+  <li><a href="#smaller-slide" id="toc-smaller-slide" class="nav-link" data-scroll-target="#smaller-slide">Smaller Slide</a></li>
+  </ul></li>
+  <li><a href="#speaker-notes" id="toc-speaker-notes" class="nav-link" data-scroll-target="#speaker-notes">Speaker Notes</a>
+  <ul class="collapse">
+  <li><a href="#sneaky-info-asides-bootnotes" id="toc-sneaky-info-asides-bootnotes" class="nav-link" data-scroll-target="#sneaky-info-asides-bootnotes">Sneaky Info (Asides &amp; Bootnotes)</a></li>
+  <li><a href="#scrolly-slide" id="toc-scrolly-slide" class="nav-link" data-scroll-target="#scrolly-slide">Scrolly Slide</a></li>
+  <li><a href="#bootnotes" id="toc-bootnotes" class="nav-link" data-scroll-target="#bootnotes">Bootnotes</a></li>
+  <li><a href="#a-slide-with-a-plot" id="toc-a-slide-with-a-plot" class="nav-link" data-scroll-target="#a-slide-with-a-plot">A slide with a plot</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/gisma-courses/LV-19-d19-010-envi/edit/main/worksheets/ws-02.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/gisma-courses/LV-19-d19-010-envi/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/gisma-courses/LV-19-d19-010-envi/edit/main/templates/slides-template.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/gisma-courses/LV-19-d19-010-envi/issues/new" class="toc-action">Report an issue</a></p></div></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="slides-template.html"><i class="bi bi-file-slides"></i>RevealJS (organization)</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">YOUR TITLE</h1>
+</div>
 
 
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Peter PAN </p>
+  </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            YOUR ORGANIZATION
+          </p>
+      </div>
+    </div>
 
+<div class="quarto-title-meta">
 
-<p><img src="../images/mandantory.png" class="img-fluid" style="width:10.0%"></p>
-<p>After the first attempts - specifically after the technical example simulations, a first review of the available literature as well as a rough structuring of the research questions, it is now necessary to design a concrete approach.</p>
-<section id="goals" class="level2">
-<h2 class="anchored" data-anchor-id="goals">Goals</h2>
-<p>After the first attempts - specifically after the technical example simulations, a first review of the available literature as well as a rough structuring of the research questions, it is now necessary to design a concrete approach.</p>
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">09 Nov, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="section" class="level2" data-background-image="preview-image-mof.png" data-background-opacity="0.7" data-background-size="contain">
+<h2 data-background-image="preview-image-mof.png" data-background-opacity="0.7" data-background-size="contain" class="anchored" data-anchor-id="section"></h2>
+<div class="header">
+<p>This is a slide with a background image</p>
+</div>
 </section>
-<section id="things-you-need" class="level2">
-<h2 class="anchored" data-anchor-id="things-you-need">Things you need</h2>
-<ul>
-<li><a href="https://hessenbox.uni-marburg.de/getlink/fi5p6EzMUrtUVFW3DnkFky/envimet">Course Data Server</a> You will find here all kinds of data, literature and tutorials</li>
-<li><a href="https://envi-met.info/doku.php?id=start">ENVI-met software</a></li>
-<li>Please have a look at the <strong>Monde Tutorial videos</strong></li>
+<section id="new-section" class="level1">
+<h1>NEW SECTION</h1>
+<section id="bullets" class="level2">
+<h2 class="anchored" data-anchor-id="bullets">Bullets</h2>
+<p>Remove the incremental ::: bracketed div for plain lists</p>
+<div class="incremental">
+<ul class="incremental">
+<li>the quick</li>
+<li>brown fox</li>
+<li>jumps over</li>
+<li>the lazy dog</li>
 </ul>
+</div>
 </section>
-<section id="assignment" class="level2">
-<h2 class="anchored" data-anchor-id="assignment">Assignment</h2>
-<p>Design a concrete problem and a suitable associated modeling concept to assess the performance of Envimet to simulate essential microclimatic parameters in the specific setup of the Carolinen Haus. Consider the following aspects: * abiotic endowment of the model domain (relief, soil, site location). * biotic features of the model domain (simple/3D vegetation) * technical model domain (x,y,z extent, time steps nesting) * appropriate meteorology for model initialization (ideal, real values) * Validation strategy</p>
-<ul>
-<li>Work packages - What is to be done when and by whom?</li>
-<li>WP 1 technical and abiotic model</li>
-<li>WP 2 meteo data initialization</li>
-<li>WP 3 Vegetation “simple</li>
-<li>WP 4 Vegetation “3D</li>
-<li>WP 5 Validation strategy</li>
-</ul>
-<p>The task is then as follows:</p>
-<p>The resulting concept should be prepared as a table (similar to the below example), also addressing the literature/data used as well as know shortcomings.</p>
-<section id="workpackage-1" class="level3">
-<h3 class="anchored" data-anchor-id="workpackage-1">Workpackage 1</h3>
-<table class="table">
-<colgroup>
-<col style="width: 15%">
-<col style="width: 15%">
-<col style="width: 17%">
-<col style="width: 17%">
-<col style="width: 17%">
-<col style="width: 17%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">item</th>
-<th style="text-align: left;">solution</th>
-<th style="text-align: left;">references</th>
-<th style="text-align: left;">ressources needed</th>
-<th style="text-align: left;">lead</th>
-<th style="text-align: left;">team</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">relief</td>
-<td style="text-align: left;">build-in version xy</td>
-<td style="text-align: left;">online access</td>
-<td style="text-align: left;">?</td>
-<td style="text-align: left;">?</td>
-<td style="text-align: left;">?</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">soil properties</td>
-<td style="text-align: left;">soil data</td>
-<td style="text-align: left;">access has to be clarified</td>
-<td style="text-align: left;">who knows</td>
-<td style="text-align: left;">?</td>
-<td style="text-align: left;">?</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">soil vertical structure</td>
-<td style="text-align: left;">four levels temperature soil moisture build-in model</td>
-<td style="text-align: left;">envi-met</td>
-<td style="text-align: left;">?</td>
-<td style="text-align: left;">?</td>
-<td style="text-align: left;">?</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">…</td>
-<td style="text-align: left;">…</td>
-<td style="text-align: left;">…</td>
-<td style="text-align: left;">…</td>
-<td style="text-align: left;">…</td>
-<td style="text-align: left;">…</td>
-</tr>
-</tbody>
-</table>
-<p>Any written notes please put them on <code>comments</code>] below.</p>
-<div class="callout callout-style-simple callout-tip">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>It is strongly recommended that you find 1 or more collaborators</p>
+<section id="columns" class="level2">
+<h2 class="anchored" data-anchor-id="columns">Columns</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Some text on the left of the slide</p>
+</div><div class="column" style="width:50%;">
+<p>Some text on the right of the slide</p>
 </div>
 </div>
+</section>
+<section id="smaller-slide" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="smaller-slide">Smaller Slide</h2>
+<p>The text on this slide will be, um, <em>smaller</em>.</p>
+</section>
+</section>
+<section id="speaker-notes" class="level1 page-columns page-full">
+<h1>Speaker Notes</h1>
+<p>This is how to add speaker notes and replace the footer on a single slide.</p>
+<p><strong>SPEAKER NOTES REQUIRE A WEB SERVER</strong></p>
+<div class="footer">
+<p>Custom!</p>
 </div>
-<ul>
-<li>Please upload /write the tables and necessary notes/explanations on cards.</li>
-<li>Please prepare the GIS data and upload it to thje <a href="https://hessenbox.uni-marburg.de/getlink/fi5p6EzMUrtUVFW3DnkFky/envimet">Hessenbox</a>.</li>
-</ul>
+<div class="notes">
+<p>do re me fa so la ti doh!</p>
+</div>
+<section id="sneaky-info-asides-bootnotes" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="sneaky-info-asides-bootnotes">Sneaky Info (Asides &amp; Bootnotes)</h2>
+<p>This is cool! <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>Add <code>reference-location: document</code> to the YAML for end notes.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>I am at the bottom of the slide</p>
+</div></div></section>
+<section id="scrolly-slide" class="level2 scrollable">
+<h2 class="scrollable anchored" data-anchor-id="scrolly-slide">Scrolly Slide</h2>
+<p>Overflowed content will be scrollable on this slide.</p>
+</section>
+<section id="bootnotes" class="level2">
+<h2 class="anchored" data-anchor-id="bootnotes">Bootnotes</h2>
+</section>
+<section id="a-slide-with-a-plot" class="level2">
+<h2 class="anchored" data-anchor-id="a-slide-with-a-plot">A slide with a plot</h2>
+<div class="cell" data-output-location="column">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ^^ could be fragment, slide, column, column-fragment</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">data =</span> mtcars,</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(wt, mpg),</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">"goldenrod"</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Some Dots"</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  ) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="slides-template_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="1536"></p>
+</div>
+</div>
 
 
 </section>
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>No it is not<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -738,15 +766,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <script src="https://utteranc.es/client.js" repo="gisma-courses/LV-19-d19-010-envi" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../worksheets/ws-01.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Worksheet 1: Warm up ENVImet and Climate Modeling</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

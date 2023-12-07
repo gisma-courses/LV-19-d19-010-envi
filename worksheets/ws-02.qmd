@@ -32,7 +32,7 @@ Design a concrete problem and a suitable associated modeling concept to assess t
 
 
 * Work packages - What is to be done when and by whom?
- * WP 1 technical and abiotic modell
+ * WP 1 technical and abiotic model
  * WP 2 meteo data initialization
  * WP 3 Vegetation "simple
  * WP 4 Vegetation "3D
@@ -54,10 +54,11 @@ The resulting concept should be prepared as a table (similar to the below exampl
 |... |... |... |... |... |... |
 
 
-Any written notes please put them on [Trello](https://trello.com/b/mqXJIO7n/modellierung-envimet) in the board for this course. 
+Any written notes please put them on `comments` below. 
 
-It is strongly recommended that 1 Person take the lead for a specific workpackage and find 1 or more collaborators 
-{: .notice--success}
+::: {.callout-tip appearance="simple"}
+It is strongly recommended that you find 1 or more collaborators 
+:::
 
 * Please upload /write the tables and necessary notes/explanations on cards.
 * Please prepare the GIS data and upload it to thje [Hessenbox](https://hessenbox.uni-marburg.de/getlink/fi5p6EzMUrtUVFW3DnkFky/envimet).
