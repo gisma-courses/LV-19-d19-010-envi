@@ -1,10 +1,136 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Mikroklimamodellierung Envi_Met LV-19-d19-010-envi",
+    "objectID": "templates/slides-template.html#section",
+    "href": "templates/slides-template.html#section",
+    "title": "YOUR TITLE",
     "section": "",
-    "text": "Widely used in applications as diverse as urban planning, architectural design and energy efficiency, ENVI-met is a 3D micro-climate simulation software. Its functionality goes beyond individual climate parameters and covers a wide spectrum. ENVI-met excels in simulating different climate conditions, including day and night temperatures, humidity, wind speed and solar radiation in urban environments. It can also simulate the impact of different building materials, such as glass and stone, on the surrounding environment.\nThe course will cover the following topics\nBasic concepts Definition of materials Modelling vegetation Preparing the model for simulation Creation of weather files Running a simulation Visualising the results Interpreting the results"
+    "text": "This is a slide with a background image"
+  },
+  {
+    "objectID": "templates/slides-template.html#bullets",
+    "href": "templates/slides-template.html#bullets",
+    "title": "YOUR TITLE",
+    "section": "Bullets",
+    "text": "Bullets\nRemove the incremental ::: bracketed div for plain lists\n\n\nthe quick\nbrown fox\njumps over\nthe lazy dog"
+  },
+  {
+    "objectID": "templates/slides-template.html#columns",
+    "href": "templates/slides-template.html#columns",
+    "title": "YOUR TITLE",
+    "section": "Columns",
+    "text": "Columns\n\n\nSome text on the left of the slide\n\nSome text on the right of the slide"
+  },
+  {
+    "objectID": "templates/slides-template.html#smaller-slide",
+    "href": "templates/slides-template.html#smaller-slide",
+    "title": "YOUR TITLE",
+    "section": "Smaller Slide",
+    "text": "Smaller Slide\nThe text on this slide will be, um, smaller."
+  },
+  {
+    "objectID": "templates/slides-template.html#sneaky-info-asides-bootnotes",
+    "href": "templates/slides-template.html#sneaky-info-asides-bootnotes",
+    "title": "YOUR TITLE",
+    "section": "Sneaky Info (Asides & Bootnotes)",
+    "text": "Sneaky Info (Asides & Bootnotes)\nThis is cool! 1\nAdd reference-location: document to the YAML for end notes.\n\n\nI am at the bottom of the slide\nNo it is not"
+  },
+  {
+    "objectID": "templates/slides-template.html#scrolly-slide",
+    "href": "templates/slides-template.html#scrolly-slide",
+    "title": "YOUR TITLE",
+    "section": "Scrolly Slide",
+    "text": "Scrolly Slide\nOverflowed content will be scrollable on this slide."
+  },
+  {
+    "objectID": "templates/slides-template.html#bootnotes",
+    "href": "templates/slides-template.html#bootnotes",
+    "title": "YOUR TITLE",
+    "section": "Bootnotes",
+    "text": "Bootnotes"
+  },
+  {
+    "objectID": "templates/slides-template.html#a-slide-with-a-plot",
+    "href": "templates/slides-template.html#a-slide-with-a-plot",
+    "title": "YOUR TITLE",
+    "section": "A slide with a plot",
+    "text": "A slide with a plot\n\n\n# ^^ could be fragment, slide, column, column-fragment\nggplot() +\n  geom_point(\n    data = mtcars,\n    aes(wt, mpg),\n    color = \"goldenrod\"\n  ) +\n  labs(\n    title = \"Some Dots\"\n  ) \n\n\n\n\n\n\n\n\n\n\n\n\n\nYOUR ORG\n\n\n\n\n\n\n\n \n\n\nthe incredible talk about making sense scales"
+  },
+  {
+    "objectID": "modules/de-git-module.html#modulüberblick",
+    "href": "modules/de-git-module.html#modulüberblick",
+    "title": "Git, GitHub & Rstudio [DE]",
+    "section": "Modulüberblick",
+    "text": "Modulüberblick\nIn diesem Modul geht es um die Versionskontrolle Git, die Cloud-Dienste GitHub/GitLab und deren Verwendung mit RStudio als IDE.\nGit ist ein Versionskontrollsystem, das es uns ermöglicht, Snapshots einer Datei oder sogar eines ganzen Projekts zu bestimmten Zeitpunkten zu erstellen. Außerdem bietet es eine komfortable Möglichkeit, diese Snapshots mit denen von Kollegen zu kombinieren.\nGitHub/GitLab bauen auf Git auf und sind die beiden beliebtesten Cloud-basierten Arbeitsumgebungen, die auf Git basieren und darüber hinaus eine breite Palette webbasierter Tools und Dienste anbieten.\nRStudio ist eine typische Desktop-Anwendung, eine sogenannte integrierte Entwicklungsumgebung (IDE), die nicht nur auf R/Python/JS und Markup Language basiert, sondern auch das Lesen/Schreiben, Manipulieren und Visualisieren von Daten und Texten ermöglicht und nahezu vollständige Unterstützung bei der Erstellung von Dokumenten in Form von Texten aller denkbaren Ausgabeformate, interaktiven Dokumenten und Websites bietet.\nNeben vielen kollaborativen Diensten und grundlegenden Versionskontrollfunktionen ist das Wichtigste, dass man eigentlich nichts kaputt machen kann.\n\nLernziele\nDie Lektionen dieses Moduls sind\n\nWas ist Versionskontrolle und GitHub?\nGit: Pull, Status, Add, Commit, Push\nVerzweigungen in GitHub\nUmgang mit Konflikten"
+  },
+  {
+    "objectID": "modules/de-git-module.html#git-und-github-leicht-gemacht",
+    "href": "modules/de-git-module.html#git-und-github-leicht-gemacht",
+    "title": "Git, GitHub & Rstudio [DE]",
+    "section": "Git und GitHub leicht gemacht",
+    "text": "Git und GitHub leicht gemacht\n\nLernziele\nIn dieser Lektion lernst du\n\nVersionskontrolle verstehen\nGitHub und Git verstehen\n\n\n\nVorkenntnisse\n\nMit deinem spezifischen Dateimanager navigieren und arbeiten.\nOrdnerstrukturen verstehen\n\n\n\nÜberblick\nIn gängigen Office-Systemen können Sie z.B. AutoSave aktivieren, um kontinuierlich, zu bestimmten Zeiten oder manuell ein Backup zu erstellen. Die Versionskontrolle git funktioniert auf ähnliche Weise für von dir definierte Ordnerverzeichnisse.\nDu hast zum Beispiel einen Ordner, in dem du ein Projekt hast, das aus verschiedenen Dateien besteht (Text, Programmcode, Bilder, Sounddateien usw.) und du möchtest die Änderungen, die du an diesen Dateien gemacht hast, im Auge behalten.\nGit protokolliert alle Änderungen an diesen Dateien. 1. Git mitteilen, dass eine Datei oder ein Verzeichnis verfolgt werden soll. 2. dass der Zustand der Datei zu einem bestimmten Zeitpunkt aufgezeichnet werden soll.\nIm Gegensatz zum kontinuierlichen Backup von z.B. Google Docs (das keine Wiederherstellung erlaubt) ist dieser Prozess notwendigerweise in 2 Schritte aufgeteilt, um definierte Änderungen vornehmen zu können, bevor diese bestätigt und mit einem commit als Snapshot gespeichert werden.\n\nGit - Erste Schritte\nBei der Verwendung von Git muss zunächst ein Repository in einem Verzeichnis auf dem lokalen Rechner aktiviert werden. Dies geschieht mit dem Befehl git init. Nun weiß Git wo, aber nicht was es verfolgen soll.\n\nWährend der Arbeit muss Git “informiert” werden, was mit diesen Dateien geschehen soll. Dies geschieht mit den beiden Befehlen git add und git commit.\nEin wichtiger zusätzlicher Befehl, git push, wird verwendet, um den aktuellen Verzeichnis-Snapshot in ein entferntes Repository (z.B. Github, GitLab) zu übertragen.\n\nDer letzte Befehl ist git status. Du solltest diesen Befehl benutzen, wenn du an deinem Projekt arbeitest, damit du weißt, was du noch nicht getrackt hast. Die Ausgabe dieses Befehls besteht aus mehreren Teilen Du solltest in der Lage sein, die Ausgabe dieses Befehls zu interpretieren:\n\nWenn du mehr über Git erfahren möchtest, findest du hier weitere hilfreiche Ressourcen:\n\nPro Git: Kapitel Git Grundlagen\nHappy Git mit R"
+  },
+  {
+    "objectID": "modules/de-git-module.html#gitgithub-pull-status-add-commit-push",
+    "href": "modules/de-git-module.html#gitgithub-pull-status-add-commit-push",
+    "title": "Git, GitHub & Rstudio [DE]",
+    "section": "Git/GitHub: pull, status, add, commit, push",
+    "text": "Git/GitHub: pull, status, add, commit, push\n\nLernziele\nIn dieser Lektion lernst du\n\nein lokales Projektarchiv in einem Ordner anlegst\nÄnderungen an einem entfernten Repository vornehmen\nein lokales Repository zu verwalten\n\n\n\nVoraussetzungen\n\nEinrichten eines GitHub-Accounts\nHerunterladen der Git Bash\n\n\n\nEinrichtung von git und GitHub\nEs gibt zwei typische Szenarien für die Einrichtung von Git und GitHub.\n\ndu hast das Projekt noch nicht gestartet und möchtest ein GitHub-Repository, das du als Vorlage auf deinen Rechner kopieren (klonen) und dann lokal mit Dateien und Verzeichnissen nach deinen Wünschen füllen kannst.\nDu hast das Projekt bereits lokal gestartet und möchtest es auf GitHub kopieren.\n\nBeide Szenarien werden von Jenny Bryan exzellent erläutert:\n\nSzenario 1: Happy Git With R: Kapitel 15 Neues Projekt GitHub\nSzenario 2: Happy Git With R: Kapitel 17 Bestehendes Projekt, GitHub\n\n\n\nSelbst-Check\n\n\n\n\n\nGut zu wissen\n\n\nDu versuchst, git commit auszuführen, nachdem du Änderungen an einer Datei vorgenommen hast, aber du trackst diese Datei(en) nicht. Deshalb müssen Sie zuerst git add ausführen.\nDu versuchst git push auszuführen, um Deine Aktualisierungen in das entfernte Repository zu übertragen, aber dieses existiert nicht.\nDu versuchst git push auszuführen, um deine Aktualisierungen in das entfernte Repository zu übertragen, obwohl es bereits neue Aktualisierungen im entfernten Repository gibt (z.B. von einem anderen Teammitglied), die du noch nicht in das lokale Projekt übertragen hast. Die Fehlermeldung, die du bekommst, wird in etwa so aussehen:\n\n\nFehler: Deine lokalen Änderungen an den folgenden Dateien würden beim Zusammenführen überschrieben: … Bitte übertrage oder speichere deine Änderungen vor dem Zusammenführen.\n\nDu weist also dein lokales git an, deine eigenen Änderungen hinzuzufügen, ohne die Änderungen deines Teamkollegen zu berücksichtigen - ein klassischer Loyalitätskonflikt. Der beste Weg, dieses Problem zu vermeiden, ist immer einen git pull durchzuführen, bevor man mit dem lokalen Editieren beginnt.\nFür ein besseres Verständnis lies die folgenden Texte:\n\nPull tricky.\nGit Grundlagen\nGit und R\nRstudio - git - GitHub"
+  },
+  {
+    "objectID": "modules/de-git-module.html#fork-und-branches-auf-github",
+    "href": "modules/de-git-module.html#fork-und-branches-auf-github",
+    "title": "Git, GitHub & Rstudio [DE]",
+    "section": "Fork und Branches auf GitHub",
+    "text": "Fork und Branches auf GitHub\n\nLernziele\nIn dieser Lektion lernst du\n\nWas ein Fork/Branch eines GitHub-Repositorys ist.\nWie man einen Branch eines GitHub Repositories erstellt.\nWie Du ein GitHub Repository von einem Branch aus aktualisierst.\n\n\n\nVorausetzungen\n\nVertrautheit mit GitHub-Repositorys.\nGit muss auf deinem Computer installiert sein.\nEin GitHub Konto!\n\n\n\nWas ist ein Fork/Branch?\nWenn man in Gruppen an GitHub-Projekten arbeitet, wird es lästig, wenn eine Person den gesamten Code alleine in das Repository einpflegen muss. Hier kommen Forks und Branches ins Spiel. - Mit Branches kannst Du eine Kopie des aktuellen GitHub-Projekts nehmen und auf Deinem eigenen Computer Änderungen vornehmen. Sobald Du und Deine Gruppe Änderungen am Code vorgenommen habt, könnt Ihr die Änderungen wieder in Eure ursprüngliche Projektgruppe einfügen. - Branches können auch verwendet werden, wenn Du an einem Teil eines Projekts getrennt von den anderen Teilen arbeiten möchtest. - Forks sind sehr ähnlich, mit dem Unterschied, dass sie Kopien bzw Klone eines kompletten Projekts an einem anderen Ort sind.\n\nWie erstelle ich einen Branch?\nUm einen Branch von einem GitHub Repository zu erstellen, gehe zu dem Hauptrepository, an dem du arbeiten möchtest und klicke auf das Dropdown-Menü, das “main” heißen sollte. Es sollte wie das folgende Bild aussehen.\n\nSobald man auf dieses Menü klickt, erscheint auf GitHub ein Textfeld mit der Aufschrift “Find or create a branch…”, man gibt einen neuen Namen für den Zweig ein, z.B. ‘newbranch1’. Da dieser Zweig noch nicht existiert, fragt dich GitHub, ob du einen Zweig mit dem Namen “newbranch1” erstellen möchtest. Klicke auf “Create branch: newbranch1” und der neue Zweig wird für Dich erstellt, wie in der folgenden Abbildung zu sehen ist.\n\n\n\nWie stellt man einen Pull Request?\nEine Pull-Anfrage ermöglicht es dem Eigentümer des GitHub-Projekts, Deine Änderungen zu überprüfen, um sicherzustellen, dass sie in das aktuelle Repository passen und keine Konflikte in Deinem Repository verursachen.\nUm eine Pull-Anfrage von Deinem Zweig aus zu stellen, musst Du zuerst eine Änderung an Deinem Zweig-Repository vornehmen. Sobald Du eine Änderung an Deinem Zweig vorgenommen hast, erscheint ein gelber Balken auf Deinem Bildschirm, der Dich fragt, ob Du eine Pull-Anfrage stellen möchtest. Wie Du auf dem Bild unten sehen kannst, gibt es einen grünen Button, und sobald Du darauf klickst, kannst Du eine Pull-Anfrage erstellen.\n\nSobald Du auf den Button klickst, informiert Dich GitHub, ob es Probleme beim Zusammenführen des Zweigs mit dem Hauptprojekt gibt. Wenn es keine Probleme gibt, setzt GitHub ein Häkchen und zeigt “Able to merge” an. Du kannst dann einen Titel und einen Kommentar zu Deiner Pull-Anfrage hinzufügen, um den Besitzer des Repositorys darüber zu informieren, was Du getan hast. Sobald Du einen Kommentar und einen Titel eingegeben hast, kannst Du auf “Create a pull request” klicken. Wenn Du dies getan hast, wird eine Benachrichtigung an den Besitzer des Repositorys gesendet, dass Deine Änderungen zur Überprüfung bereit sind.\nNachdem Du Deine Anfrage abgeschickt hast, kann der Besitzer des GitHub-Projekts auf die Seite des Projekts gehen und auf den Reiter “Pull Requests” klicken. Auf dieser Seite wird eine Liste von Pull Requests angezeigt, aus der der Eigentümer Deine Anfrage auswählen kann. Sobald der Besitzer auf der Pull Request Seite angekommen ist, sieht er eine Schaltfläche mit der Aufschrift “Merge pull request” (ähnlich der Abbildung unten).\n\nSobald der Eigentümer auf die grüne Schaltfläche klickt, wird er erneut gefragt, ob er die Änderung vornehmen möchte. Wenn er erneut auf den Button klickt, wird die Änderung mit dem Hauptzweig zusammengeführt und er sieht etwas wie das folgende Bild…\n\n\n\n\nEin Repository in einem Branch (oder Fork) aktualisieren\nWenn jemand in deiner Gruppe eine Änderung am Master Repo vornimmt, gibt es eine Möglichkeit, deinen Zweig zu aktualisieren, damit du die Änderungen sehen kannst. Wenn eine Änderung vorgenommen wurde, wird auf der Webseite des verzweigten Repos angezeigt, dass Dein Repo “1 Commit behind the Master” ist. Das bedeutet, dass es 1 Änderung zwischen Deinem Fork und dem Main Repository gibt.\nWenn Du Deinen Fork aktualisieren möchtest, klicke auf die Schaltfläche “Änderungen”. Du wirst dann auf eine Seite geleitet, die sagt “main is up to date with all commits from branch. Versuchen Sie die Basis zu ändern”. Klicke auf “Change base”. Dann wird angezeigt, ob der Zweig zusammengeführt werden kann. Wenn ja, klicke auf “Create pull request” (Titel und Kommentar für deine Anfrage) und erstelle eine Pull-Anfrage.\nNun klicke auf Merge pull request, dann auf Confirm merge und dein Zweig wird aktualisiert!\n\n\nSelbst-Check\n\n\n\n\n\nGut zu wissen\n\n\nLerne wie man Branches mit dem Terminal erstellt: Arbeiten mit Branches\nLerne die Verwendung von Pull Requests und Issues: Issues und Pull Requests\nLerne, wie man ein GitHub-Repository forkt: Forken eines Repositories"
+  },
+  {
+    "objectID": "modules/de-git-module.html#umgang-mit-konflikten",
+    "href": "modules/de-git-module.html#umgang-mit-konflikten",
+    "title": "Git, GitHub & Rstudio [DE]",
+    "section": "Umgang mit Konflikten",
+    "text": "Umgang mit Konflikten\n\nLernziele\nIn dieser Lektion lernst du\n\nWie man mit Konflikten umgeht, die bei der Arbeit mit GitHub auftreten.\nWie man mit Merge-Konflikten in GitHub umgeht.\n\n\n\nVorausetzungen\n\nVertrautheit mit GitHub.\nGit installiert haben.\nEin GitHub Konto haben.\n\n\n\nVersionskonflikte was ist das?\nVersionskonflikte entstehen normalerweise, wenn verschiedene Versionen derselben Datei gleichzeitig in das Hauptrepository gepusht werden und die Priorisierung der Dateien nicht klar ist, also:\n\nwenn man sein persönliches GitHub-Repository aktualisiert (kein Pull vor Push).\nwenn mehrere Personen gleichzeitig an derselben Datei arbeiten\n\n\n\nPush & Pull Konflikte\nEin typisches Szenario ist, dass Du etwas online auf GitHub bearbeitest und diese Änderung nicht gleichzeitig oder später in Rstudio synchronisierst. Der Konflikt könnte z.B. sein, dass Du einen Tippfehler in der README korrigierst und vergisst, die aktuelle Version im Rstudio-Projekt zu aktualisieren.\n\nAlso immer pull vor push, sonst hat GitHub zwei verschiedene Änderungen gespeichert und weiß nicht, welche zu verwenden ist.\n\nEin komplizierterer Fall ist, wenn eine Änderung im Master-Repository gemacht wurde und jemand anderes in seinem Branch-/Fork-Repository ebenfalls eine Änderung an der gleichen Datei bzw. dem gleichen Inhalt gemacht hat. Wenn eine Pull-Anfrage gestellt wird, wird GitHub den Unterschied bemerken. Auch hier kann es sich um etwas so Einfaches handeln, wie zwei Personen, die die README auf unterschiedliche Weise aktualisieren, was GitHub dazu veranlasst, ein Problem zu melden.\nIn diesem Fall muss manuell entschieden werden, welche Variante Vorrang hat.\nWenn Du eine Änderung an Deinem GitHub-Repository vornimmst und es gibt einen Konflikt, zeigt Dir R an, dass Deine Version dem Haupt-Repository voraus ist, wenn Du Deine Änderung überträgst. Wenn Du dies siehst, bedeutet es, dass es einen Unterschied zwischen den Dateien gibt. Wenn Du versuchst zu pullen und es gibt ein Problem, wird GitHub Dir etwas sagen wie\n\nUpdates wurden abgelehnt, weil das entfernte Repository Arbeit enthält, die Du lokal nicht hast. Dies wird normalerweise durch ein anderes Repository verursacht, das auf die gleiche Referenz pusht.\n\nWenn diese Meldung erscheint, empfiehlt GitHub, dass Du einen Pull von Deinem Master-Repository durchführst, um den Fehler zu finden. Häufig erhältst Du die Fehlermeldung\n\nCONFLICT (content): Konflikt beim Zusammenführen in [Datei]. Automatisches Zusammenführen fehlgeschlagen; Konflikte lösen und dann das Ergebnis übertragen.\n\nDie Datei mit dem Problem wird dann in Ihrem RStudio geöffnet und zeigt den gefundenen Fehler an. Es wird angezeigt, welche Änderungen vorgenommen wurden und welche Unterschiede zum Hauptzweig bestehen (die Änderungen werden unter &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD angezeigt, der Inhalt des Hauptzweigs wird darunter angezeigt). Du musst den Fehler zwischen den beiden Versionen beheben, indem Du entweder das beibehältst, was GitHub bereits hat, oder indem Du Deine Änderung so anpasst, dass sie dem entspricht, was Du machen wolltest. Wenn Du mit Deiner Änderung zufrieden bist, rufe das Terminal auf (es befindet sich in R, einem Tab über der Konsole). Im Terminal gibst Du git add [Dateiname] ein, drückst die Eingabetaste und gehst zurück zum Git-Tab oben rechts im RStudio-Fenster. Wähle die Datei aus, in der der Fehler aufgetreten ist und überschreibe sie, um den Fehler zu beheben.\n\n\nMerge Konflikte\nWenn mehrere Personen am selben GitHub-Repository arbeiten oder Du nur einen Zweig verwendest, besteht die Möglichkeit, dass ein Merge-Konflikt auftritt. Zusammenführungskonflikte treten auf, wenn Änderungen am Haupt-Repository und an einem Zweig vorgenommen werden, die nicht übereinstimmen. Sobald eine Pull-Anfrage gestellt wird, muss der Eigentümer des Projektarchivs die Änderungen manuell überprüfen, sie können dann nicht automatisch zusammengeführt werden.\nFolglich teilt GitHub Dir mit, dass es die Versionen nicht automatisch zusammenführen kann, aber es wird Dir trotzdem erlauben, die Pull-Anfrage zu stellen. Wenn Du Dich entscheidest, die Pull-Anfrage zu senden, wird der Repo-Besitzer nicht in der Lage sein, auf den grünen Merge Button zu klicken, sondern er wird eine Meldung sehen, die besagt:\n\nDieser Zweig hat Konflikte, die gelöst werden müssen.\n\nRechts neben dieser Meldung befindet sich die Schaltfläche Konflikte auflösen.\nWenn du auf die Schaltfläche Konflikte auflösen klickst, wirst du zu einer Seite weitergeleitet, die ähnlich aussieht wie bei Push- oder Pull-Fehlernt. Du siehst die vorgeschlagenen Änderungen aus dem Zweig und Haupt-Repository. An dieser Stelle können dann Änderungen durchgeführt werden und zuletzt mit Als gelöst markieren und anschließend Merge bestätigen erfolgreich für einen Merge bereitgestellt werden. Zuletzt muss der Eigentümer auf Merge Pull Request und dann auf Commit Merge klicken, um die Änderung im Haupt-Repository zu vorzunehmen.\n\n\nSelbst-Check\n\n\n\n\n\nGut zu wissen\n\nWeitere Informationen über den Umgang mit Konflikten in GitHub findest Du hier:\n\nWie gehe ich mit Merge Konflikten um?"
+  },
+  {
+    "objectID": "modules/de-git-module.html#rstudio---all-inclusive",
+    "href": "modules/de-git-module.html#rstudio---all-inclusive",
+    "title": "Git, GitHub & Rstudio [DE]",
+    "section": "RStudio - All Inclusive",
+    "text": "RStudio - All Inclusive\n\nLernziele\n\nEinsatz von GitHub direkt aus RStudio\n\n\n\nVorausetzungen\n\nÜbung im Umgang mit GitHub und git\n\n\n\nExistierendes GitHub Repo in R einbinden\nBevor du mit einem GitHub-Repository in RStudio arbeitest, stelle sicher, dass du ein GitHub-Repository hast, mit dem du arbeiten kannst.\nNachdem du das Repository erstellt hast, kannst du auf die grüne Schaltfläche klicken, um einen Link zu erhalten, mit dem du das Repository klonen kannst. Um es in R zu öffnen, öffne R und klicke auf den Würfel mit dem Pluszeichen, um ein neues Projekt zu erstellen, klicke auf Versionskontrolle und dann auf Git. Nun fügt man die zuvor kopierte URL ein und erstellt das Projekt. Jetzt hast du ein Projekt in R, das mit GitHub verbunden ist. Nun kannst du neue Dateien erstellen und sie auf GitHub hochladen, damit andere sie sehen können.\n\n\nErklärung der Schaltflächen/Befehle\nOben rechts (je nach Konfiguration von RStudio) befinden sich die Reiter Environment, History... Wähle die Registerkarte Git, um die Git-Befehle zu sehen. In diesem Bereich kannst Du entscheiden, welche Dateien hochgeladen/gelöscht, welche Änderungen übernommen, welche Dateien aus dem Haupt-Repository gezogen, welche Dateien in das Haupt-Repository geschoben werden sollen. Die vorgenommenen Änderungen werden hier überprüft und es können Branches erstellt oder geändert wrden. Sehen wir uns nun an, was die einzelnen Befehle/Schaltflächen bewirken.\n\nDiff Wenn du auf Diff klickst, öffnet sich ein neues Fenster in R. In diesem Fenster werden alle Dateien angezeigt, die sich geändert haben (im Vergleich zum Haupt-Repository) und auch die Änderungen, die du vorgenommen hast. Du kannst dieses Fenster auch verwenden, um die Änderungen zu übertragen und aus dem Haupt-Repository herauszuziehen.\nCommit Die Verwendung von Commit im kleineren Fenster ist ähnlich wie im Diff-Fenster, Du musst nur die Dateien auswählen, die Du ins Repository übertragen möchtest und dann die Änderungen committen.\nPull Pull ist ziemlich selbsterklärend, es zieht Dateien aus dem GitHub Repository. Es ist wichtig, Dateien vor dem Pushen zu ziehen, um mögliche Konflikte mit überlappenden Dateien zu vermeiden.\nPush Push schiebt die Dateien in das GitHub Repository. Diese Funktion wird verwendet, wenn Du die Änderungen an Deinen Dateien abgeschlossen hast und bereit bist, sie hochzuladen, damit andere die neuen Dateien ansehen können. Die Reihenfolge beim Hochladen dieser Dateien wäre: Änderungen übertragen, aus dem Repository ziehen und dann in das Repository pushen.\nHistory Das nächste Symbol ist eine kleine Uhr, die die Historie Deiner Arbeit darstellt. Sie zeigt die bisherigen Übertragungen und was bei jeder Übertragung geändert wurde.\nRevert, Ignore und Shell Diese Befehle findest Du in einem Dropdown-Menü, nachdem Du auf das Zahnrad neben der Uhr geklickt hast. Mit Revert kannst Du alle Änderungen rückgängig machen, mit Ignore kannst Du einen Gitignore einrichten (nützlich, um Dateien zu blockieren, die Du nicht hochladen willst) und mit Shell kannst Du Dein Terminal öffnen und dort Git-Befehle ausführen.\nBranches Das nächste Symbol steht für Zweige. Wenn Du auf dieses Symbol klickst, wirst Du gefragt, ob Du einen neuen Zweig erstellen möchtest. Wie Du im Modul Zweige des Toolkits gelernt hast, sind Zweige nützlich, um Änderungen zu testen, ohne dass sie sich auf den Hauptzweig auswirken, falls ein Fehler auftritt. Du kannst das Dropdown-Menü rechts neben dem Zweigsymbol verwenden, um zwischen den Zweigen zu wechseln.\nTerminal (optional) Du kannst diese GitHub-Befehle mit den RStudio-Befehlen ausführen, aber du kannst auch das Terminal in R verwenden, um das gleiche zu tun. Alle GitHub-Befehle sind in der Form “git _____” und Du kannst sie finden, indem Du “git” in Dein Terminal eingibst. Dies macht dasselbe wie das R-Panel, aber wenn Du mit dem Schreiben von Git-Befehlen in einem Terminal vertrauter bist, funktioniert es vielleicht besser für Dich.\n\n\nEin R-Projekt in ein GitHub-Repositorium verwandeln\nManchmal arbeitet man an einem Projekt in R und hat vergessen, ein GitHub-Repository dafür zu erstellen. In diesem Fall kann Ihnen das Paket usethis helfen, ein Repo aus RStudio heraus zu erstellen. Mit der Funktion usethis::use_git kann das aktuelle Projekt in ein GitHub Repo umgewandelt werden, so dass die Dateien hochgeladen werden können. - Wenn Du diese Funktion zum ersten Mal ausführst, wirst Du wahrscheinlich einen Fehler erhalten, da Du dafür ein Token von GitHub benötigst. Nach dem Aufruf von usethis::browse_github_token öffnet sich ein neues Fenster, in dem man aufgefordert wird, sich in seinen GitHub-Account einzuloggen. Nach dem Einloggen können Berechtigungen mit dem Token gesetzt und kopiert werden. Sobald du den Token kopiert hast, rufe usethis::edit_r_environment() auf und speichere deinen Token als “GITHUB_PAT=token”.\nSobald dein Token gesetzt und dein R zurückgesetzt ist, kannst du use_git benutzen und es wird Dich fragen, ob es okay ist, deine Dateien zu GitHub zu committen. Wenn du diese Frage bejahst, wirst du aufgefordert, dein RStudio-Fenster neu zu starten, um das Git-Fenster zu öffnen und deine Dateien hochzuladen. Nach dem Neustart von RStudio die geänderten Dateien (falls vorhanden) mit dem Diff-Button hochladen. Benutze nun usethis::use_github, um deine Dateien in ein GitHub-Repository zu senden. - use_github wird Dich fragen, ob Du einen ssh Schlüssel hast, was Du wahrscheinlich nicht hast, also wähle https. Dann wird man gefragt, ob Titel und Beschreibung akzeptabel sind. Wenn ja, kannst Du mit Ja antworten und die Datei auf GitHub hochladen!\n\n\n\nRStudio und GitHub\n\n\n\n\n\n\n\nSelbst-Check\n\n\n\n\n\nGut zu wissen\n\nWeitere Informationen zur Verwendung von GitHub in RStudio findest Du unter folgendem Link:\n\nDer Blog-Eintrag GitHub & Rstudio zeigt, wie man Git in RStudio benutzt und geht dabei besonders auf die Terminal-Befehle ein."
+  },
+  {
+    "objectID": "modules/de-git-module.html#danksagung",
+    "href": "modules/de-git-module.html#danksagung",
+    "title": "Git, GitHub & Rstudio [DE]",
+    "section": "Danksagung",
+    "text": "Danksagung\nDas Tutorial basiert auf dem DoSStoolkit. Sowohl die Inhalte als auch die Self Assessments basieren dem Modul Git outta here von Mariam Walaa & Matthew Wankiewicz. Die Übersetzungen und Veränderungen vom Autor dieser Seite.\nDas Originalmodul kann mit dem folgenden R-Befehl aufgerufen werden.\n\nlearnr::run_tutorial(\"git_outta_here\", package = \"DoSStoolkit\")"
+  },
+  {
+    "objectID": "modeling/script-00-interpolation.html",
+    "href": "modeling/script-00-interpolation.html",
+    "title": "Spatial Interpolation",
+    "section": "",
+    "text": "Script: Spatial Interpolation\n\n#------------------------------------------------------------------------------\n# Name: FR_soilmoist.R\n# Type: control script \n# Author: Chris Reudenbach, creuden@gmail.com\n# Description:  calculates the soil moisture from Lacanau point data\n# Copyright:GPL (&gt;= 3) \n# Date: 2022-11-10 \n# V-2022-11-12; \n#------------------------------------------------------------------------------\n# 0 - project setup\n#------------------------------------------------------------------------------\n# geoAI course basic setup\n# Type: script\n# Name: geoAI_setup.R\n# Author: Chris Reudenbach, creuden@gmail.com\n# Description:  create/read project folder structure and returns pathes as list\n#               load all necessary packages \n#               sources all functions in a defined function folder\n# Dependencies:   \n# Output: list containing the folder strings as shortcuts\n# Copyright: Chris Reudenbach, thomas Nauss 2019-2021, GPL (&gt;= 3)\n# git clone https://github.com/gisma-courses/geoAI-scripts.git\n#------------------------------------------------------------------------------\n\n\n\n# basic packages\nlibrary(\"mapview\")\nlibrary(\"tmap\")\nlibrary(\"tmaptools\")\nlibrary(\"raster\")\nlibrary(\"terra\")\nlibrary(\"sf\")\nlibrary(\"dplyr\")\nlibrary(\"lidR\")\nlibrary(\"future\")\nlibrary(\"lwgeom\")\nlibrary(\"tmap\")\nlibrary(\"mapview\")\nlibrary(rprojroot)\n\nroot_folder = find_rstudio_root_file()\n#root_folder = getwd()\nndvi.col = function(n) {\n  rev(colorspace::sequential_hcl(n, \"Green-Yellow\"))\n}\n\nano.col = colorspace::diverging_hcl(7, palette = \"Red-Green\",  register = \"rg\")\n\n\n\n\n# # suppres gdal warnings\n# rgdal::set_thin_PROJ6_warnings(TRUE)\n# \n# \n# \n# # workaround subfolder\n# loc_name = \"harz\"\n# \n# # harz\n# epsg=25833\n# \n# attributename = c(\"Moisture_1_17Nov\",\"Moisture_2_17Nov\",\"Moisture_1_19Nov\",\"Moisture_2_19Nov\")\n# varname = c(\"soilmoist2022_08_17\",\"soilmoist2022_08_19\")\n# fnDTM = \"DTM_v3.vrt\"\n# fnsm_data = \"lacanau_moisture_measurements.csv\"\n# fnpos_data= \"ltrees.gpkg\"\n# \n# # read DTM\n# DTM = terra::rast(fnDTM)\n# # cast to SpatialPixelsDataFrame\n# DTM.spdf &lt;- as(raster(DTM),\n#                        'SpatialPixelsDataFrame')\n# colnames(DTM.spdf@data) &lt;- \"altitude\"\n# # read moist data \n# sm=read.csv2(fnsm_data,sep = \",\")\n# # read tree data\n# pos=st_read(fnpos_data)\n# # merge\n# sm$Point = paste0(\"TREE\",str_split_fixed(sm$TargetID, \"_\", 3)[,3])\n# m=merge(pos,sm)\n# \n# # extract altitudes for positions\n# em= exactextractr::exact_extract(DTM,st_buffer(m,1),\"mean\")\n# m$altitude=em\n# \n# # start kriging \n# for (i in 1:length(varname) ){\n#   z=i*2\n#   # mean\n#   m$var = (as.numeric(m[[attributename[z-1]]]) + as.numeric(m[[attributename[z]]]))/2\n#   # to sp\n#   m2 = as(m,\"Spatial\")    \n#   tm2 = spTransform(m2,\n#                     crs(\"+proj=utm +zone=30 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs\"))\n# \n#   # autofit variogramm for kriging \n#   vm.auto = automap::autofitVariogram(formula = as.formula(paste(\"var\", \"~ 1\")),\n#                                       input_data = tm2)\n#   plot(vm.auto)\n#   \n#   # kriging   \n#   print(paste0(\"kriging \", varname[i]))\n#   var.pred &lt;- gstat::krige(formula = as.formula(paste(\"var\", \"~ altitude\")),\n#                            locations = tm2,\n#                            newdata = DTM.spdf,\n#                            model = vm.auto$var_model,\n#                            debug.level=0,)\n#   \n#   r=rasterFromXYZ(as.data.frame(var.pred)[, c(\"x\", \"y\", \"var1.pred\")])\n#   \n#   # reclassify erratic values \n#   reclass_df &lt;- c(-Inf, 0, NA)\n#   # reshape the object into a matrix with columns and rows\n#   reclass_m &lt;- matrix(reclass_df,\n#                       ncol = 3,\n#                       byrow = TRUE)\n#   r_c &lt;- reclassify(r,reclass_m)\n# \n#   plot(r_c)\n#   # re assign crs\n#   crs(r_c) = crs(paste0(\"EPSG:\",epsg))\n#   raster::writeRaster(r_c,paste0(\"data/gis/France_Lacanau_PP_Gis/data_lev0/\",varname[i],\".tif\"),overwrite=TRUE)\n#   \n# }"
+  },
+  {
+    "objectID": "base/about.html",
+    "href": "base/about.html",
+    "title": "About this site",
+    "section": "",
+    "text": "About this site\nThis page summarizes the essential workflows , basic literature and web resources from the distributed course systems , documents and field protocols into a knowledge base.\nAlthough the web space is topic-centered any keyword can be searched using the full text search.\nThe creation of new pages, the editing of existing pages can be triggered directly via the right column online.\nOffline there are several visual editors and full integration with Rstudio etc."
+  },
+  {
+    "objectID": "base/faq.html",
+    "href": "base/faq.html",
+    "title": "Frequently asked Questions",
+    "section": "",
+    "text": "This is a senseless question to meet a meaningfull answer\n\n\n\n\n\n\n\n\n\nThis is a meaningful answer to a senseless question\n\n\n\n\n\n\n\n\n\nLearn More…\n\n\n\n\n\nThis is a even more meaningful answer to a senseless question"
+  },
+  {
+    "objectID": "base/faq.html#make-sense-topic",
+    "href": "base/faq.html#make-sense-topic",
+    "title": "Frequently asked Questions",
+    "section": "",
+    "text": "This is a senseless question to meet a meaningfull answer\n\n\n\n\n\n\n\n\n\nThis is a meaningful answer to a senseless question\n\n\n\n\n\n\n\n\n\nLearn More…\n\n\n\n\n\nThis is a even more meaningful answer to a senseless question"
   },
   {
     "objectID": "mc_session/mc1.html",
@@ -70,284 +196,99 @@
     "text": "Risk Assessment\nHere you find the preliminary risk assesment for the installation and operation of 12 V solar power based energy supply units and measuring sensor systems."
   },
   {
-    "objectID": "modeling/modeling-material.html",
-    "href": "modeling/modeling-material.html",
-    "title": "Data and Software",
-    "section": "",
-    "text": "Please find all Data Downloads at theCourse Data Server Data folder for any file exchange and data related purposes."
-  },
-  {
-    "objectID": "modeling/modeling-material.html#data-set-for-training-purposes",
-    "href": "modeling/modeling-material.html#data-set-for-training-purposes",
-    "title": "Data and Software",
-    "section": "",
-    "text": "Please find all Data Downloads at theCourse Data Server Data folder for any file exchange and data related purposes."
-  },
-  {
-    "objectID": "modeling/modeling-material.html#specific-modeling-software",
-    "href": "modeling/modeling-material.html#specific-modeling-software",
-    "title": "Data and Software",
-    "section": "Specific modeling software",
-    "text": "Specific modeling software\nPlease find all Downloads according to ENVI-met at the ENVI-met landing page"
-  },
-  {
-    "objectID": "modeling/modeling-material.html#common-software",
-    "href": "modeling/modeling-material.html#common-software",
-    "title": "Data and Software",
-    "section": "Common Software",
-    "text": "Common Software\nShell — any command line environment will do for the exercises. For Linux we recommend the bash shell. For Windows the Windows command line can be used.\n\nQGIS has become one of the most promising and most integrative open source GIS systems over the last years. Through the processing plugin, it additionally integrates modules from the other leading free GIS solutions. We will need it (if necessary) to prepare or manipulate some of the data.\n\nRegarding installation, for Ubuntu Linux, the Ubuntu GIS package is a good choice. For Windows, we strongly recommend installing everything via the OSGeo4W environment and not the standalone QGIS installation tool.\nFor most of the data pre and postprocessing, we will use the statistical scripting language R and we highly recommend the Rstudio integrated developing environment.\nPlease follow the instructions according to your operating system."
-  },
-  {
-    "objectID": "modeling/modeling-material.html#additional-data-sources",
-    "href": "modeling/modeling-material.html#additional-data-sources",
-    "title": "Data and Software",
-    "section": "Additional data sources",
-    "text": "Additional data sources\nMarburg Open Forest data base Marburg Open Forest data base for static data. You will find some example R-code for manipulation and extraction. Additionally the data is in a QGIS pProject container."
-  },
-  {
-    "objectID": "worksheets/ws-00.html",
-    "href": "worksheets/ws-00.html",
-    "title": "WS-HowTo",
-    "section": "",
-    "text": "The Working Sheets will provide weekly assignments related to the general task of reaching out for the course goals.\n\nMandatory assignments (Studienleistung) will be marked as \nGraded examinations (Prüfungsleistung) will be marked as"
-  },
-  {
     "objectID": "worksheets/ws-01.html",
     "href": "worksheets/ws-01.html",
     "title": "WS-1: Warm up ENVImet and Climate Modeling",
     "section": "",
-    "text": "ENVI-met V5.x is a three-dimensional, non-hydrostatic model for simulating surface-plant-air interactions, It is designed for the microscale with a typical horizontal resolution of 0.5 to 10 m and a typical time frame of 24 to 48 hours with a time step of 1 to 5 seconds. This resolution allows for the analysis of small-scale interactions between individual buildings, surfaces, and plants"
+    "text": "ENVI-met V5.x is a three-dimensional, non-hydrostatic model for simulating surface-plant-air interactions, It is designed for the microscale with a typical horizontal resolution of 0.5 to 10 m and a typical time frame of 24 to 48 hours with a time step of 1 to 5 seconds. This resolution allows for the analysis of small-scale interactions between individual buildings, surfaces, and plants",
+    "crumbs": [
+      "Worksheets",
+      "WS-1: Warm up ENVImet and Climate Modeling"
+    ]
   },
   {
     "objectID": "worksheets/ws-01.html#goals",
     "href": "worksheets/ws-01.html#goals",
     "title": "WS-1: Warm up ENVImet and Climate Modeling",
     "section": "Goals",
-    "text": "Goals\nThis task involves three sub-areas:\n\nto get a first overview about non-hydrostatic 4D climate modeling.\nto get a first insight into the application areas of such simulations.\nto install the software and perform a first simple tutorial simulation"
+    "text": "Goals\nThis task involves three sub-areas:\n\nto get a first overview about non-hydrostatic 4D climate modeling.\nto get a first insight into the application areas of such simulations.\nto install the software and perform a first simple tutorial simulation",
+    "crumbs": [
+      "Worksheets",
+      "WS-1: Warm up ENVImet and Climate Modeling"
+    ]
   },
   {
     "objectID": "worksheets/ws-01.html#things-you-need",
     "href": "worksheets/ws-01.html#things-you-need",
     "title": "WS-1: Warm up ENVImet and Climate Modeling",
     "section": "Things you need",
-    "text": "Things you need\n\nCourse Data Server\nENVI-met software"
+    "text": "Things you need\n\nCourse Data Server Tutorials\nCourse Data Server Literature\nENVI-met software",
+    "crumbs": [
+      "Worksheets",
+      "WS-1: Warm up ENVImet and Climate Modeling"
+    ]
   },
   {
     "objectID": "worksheets/ws-01.html#assignment",
     "href": "worksheets/ws-01.html#assignment",
     "title": "WS-1: Warm up ENVImet and Climate Modeling",
     "section": "Assignment",
-    "text": "Assignment\nThe studies are intended to provide a first overview of the possibilities of the application. It is a first overview about the subject\nThe tutorials are a selection from the Envimet download area. In particular session_1_apps.pdf and session_1_concepts.pdf are a compilation of the concepts of Envimet and the individual components for the workflow with the individual modules, respectively, created by me. You will also find the links to the Youtube channel if you prefer videos.\nThese two compilations from the Envimet help pages should be sufficient to perform the example modeling “Precipitation”.\nIn the folder Literature you will find chapter1.pdf and chapter3.pdf. Both are reasonably understandable basics for climate modeling from a Belgian textbook. In case of more detailed questions they are worth a look.\nThe task is then as follows:\n\nInstallation of ENVI-met on your computer\nRead session_1_conpepts.pdf for a first introduction to the ENVI-met model concepts (chapter3.pdf could also be helpful here for supplementation and deepening) =&gt; If available, articulate questions problems\nRead session_1_apps.pdf as a basis for the example modeling “Precipitation”. =&gt; If available, articulate questions, problems, etc.\nRun the precipitation simulation (check if it runs) =&gt; If available, articulate questions, problems etc.\nCross-reading of min 2 publications (What is the basic idea) =&gt; Prepare a short summary\n\nAny written notes please put them on Trello in the board for this course.\n\n\n\n\n\n\nPlease note: For Trello you need to register.\n\n\n\nIn Trello you will find the assignments again as a checklist and also empty lists where you can/should write cards with your questions or article summaries. So you can also read the papers without overlap and possibly answer each other in between time."
+    "text": "Assignment\nThe studies are intended to provide a first overview of the possibilities of the application. It is a first overview about the subject\nThe tutorials are a selection from the Envimet download area. In particular session_1_apps.pdf and session_1_concepts.pdf are a compilation of the concepts of Envimet and the individual components for the workflow with the individual modules, respectively, created by me. You will also find the links to the Youtube channel if you prefer videos.\nThese two compilations from the Envimet help pages should be sufficient to perform the example modeling “Precipitation”.\nIn the folder Literature you will find chapter1.pdf and chapter3.pdf. Both are reasonably understandable basics for climate modeling from a Belgian textbook. In case of more detailed questions they are worth a look.\nThe task is then as follows:\n\nInstallation of ENVI-met on your computer\nRead session_1_conpepts.pdf for a first introduction to the ENVI-met model concepts (chapter3.pdf could also be helpful here for supplementation and deepening) =&gt; If available, articulate questions problems\nRead session_1_apps.pdf as a basis for the example modeling “Precipitation”. =&gt; If available, articulate questions, problems, etc.\nRun the precipitation simulation (check if it runs) =&gt; If available, articulate questions, problems etc.\nCross-reading of min 2 tutorials (What is the basic idea) =&gt; Prepare a short summary",
+    "crumbs": [
+      "Worksheets",
+      "WS-1: Warm up ENVImet and Climate Modeling"
+    ]
   },
   {
     "objectID": "worksheets/ws-02.html",
     "href": "worksheets/ws-02.html",
     "title": "WS-2: Envimet goes Reality",
     "section": "",
-    "text": "After the first attempts - specifically after the technical example simulations, a first review of the available literature as well as a rough structuring of the research questions, it is now necessary to design a concrete approach."
+    "text": "After the first attempts - specifically after the technical example simulations, a first review of the available literature as well as a rough structuring of the research questions, it is now necessary to design a concrete approach.",
+    "crumbs": [
+      "Worksheets",
+      "WS-2: Envimet goes Reality"
+    ]
   },
   {
     "objectID": "worksheets/ws-02.html#goals",
     "href": "worksheets/ws-02.html#goals",
     "title": "WS-2: Envimet goes Reality",
     "section": "Goals",
-    "text": "Goals\nAfter the first attempts - specifically after the technical example simulations, a first review of the available literature as well as a rough structuring of the research questions, it is now necessary to design a concrete approach."
+    "text": "Goals\nAfter the first attempts - specifically after the technical example simulations, a first review of the available literature as well as a rough structuring of the research questions, it is now necessary to design a concrete approach.",
+    "crumbs": [
+      "Worksheets",
+      "WS-2: Envimet goes Reality"
+    ]
   },
   {
     "objectID": "worksheets/ws-02.html#things-you-need",
     "href": "worksheets/ws-02.html#things-you-need",
     "title": "WS-2: Envimet goes Reality",
     "section": "Things you need",
-    "text": "Things you need\n\nCourse Data Server You will find here all kinds of data, literature and tutorials\nENVI-met software\nPlease have a look at the Monde Tutorial videos"
+    "text": "Things you need\n\nCourse Data Server You will find here all kinds of data, literature and tutorials\nENVI-met software\nPlease have a look at the Monde Tutorial videos",
+    "crumbs": [
+      "Worksheets",
+      "WS-2: Envimet goes Reality"
+    ]
   },
   {
     "objectID": "worksheets/ws-02.html#assignment",
     "href": "worksheets/ws-02.html#assignment",
     "title": "WS-2: Envimet goes Reality",
     "section": "Assignment",
-    "text": "Assignment\nDesign a concrete problem and a suitable associated modeling concept to assess the performance of Envimet to simulate essential microclimatic parameters in the specific setup of the Carolinen Haus. Consider the following aspects: * abiotic endowment of the model domain (relief, soil, site location). * biotic features of the model domain (simple/3D vegetation) * technical model domain (x,y,z extent, time steps nesting) * appropriate meteorology for model initialization (ideal, real values) * Validation strategy\n\nWork packages - What is to be done when and by whom?\nWP 1 technical and abiotic model\nWP 2 meteo data initialization\nWP 3 Vegetation “simple\nWP 4 Vegetation “3D\nWP 5 Validation strategy\n\nThe task is then as follows:\nThe resulting concept should be prepared as a table (similar to the below example), also addressing the literature/data used as well as know shortcomings.\n\nWorkpackage 1\n\n\n\n\n\n\n\n\n\n\n\nitem\nsolution\nreferences\nressources needed\nlead\nteam\n\n\n\n\nrelief\nbuild-in version xy\nonline access\n?\n?\n?\n\n\nsoil properties\nsoil data\naccess has to be clarified\nwho knows\n?\n?\n\n\nsoil vertical structure\nfour levels temperature soil moisture build-in model\nenvi-met\n?\n?\n?\n\n\n…\n…\n…\n…\n…\n…\n\n\n\nAny written notes please put them on comments below.\n\n\n\n\n\n\nIt is strongly recommended that you find 1 or more collaborators\n\n\n\n\nPlease upload /write the tables and necessary notes/explanations on cards.\nPlease prepare the GIS data and upload it to thje Hessenbox."
+    "text": "Assignment\nDesign a concrete problem and a suitable associated modeling concept to assess the performance of Envimet to simulate essential microclimatic parameters in the specific setup of the Carolinen Haus. Consider the following aspects: * abiotic endowment of the model domain (relief, soil, site location). * biotic features of the model domain (simple/3D vegetation) * technical model domain (x,y,z extent, time steps nesting) * appropriate meteorology for model initialization (ideal, real values) * Validation strategy\n\nWork packages - What is to be done when and by whom?\nWP 1 technical and abiotic model\nWP 2 meteo data initialization\nWP 3 Vegetation “simple\nWP 4 Vegetation “3D\nWP 5 Validation strategy\n\nThe task is then as follows:\nThe resulting concept should be prepared as a table (similar to the below example), also addressing the literature/data used as well as know shortcomings.\n\nWorkpackage 1\n\n\n\n\n\n\n\n\n\n\n\nitem\nsolution\nreferences\nressources needed\nlead\nteam\n\n\n\n\nrelief\nbuild-in version xy\nonline access\n?\n?\n?\n\n\nsoil properties\nsoil data\naccess has to be clarified\nwho knows\n?\n?\n\n\nsoil vertical structure\nfour levels temperature soil moisture build-in model\nenvi-met\n?\n?\n?\n\n\n…\n…\n…\n…\n…\n…\n\n\n\nAny written notes please put them on comments below.\n\n\n\n\n\n\nIt is strongly recommended that you find 1 or more collaborators\n\n\n\n\nPlease upload /write the tables and necessary notes/explanations on cards.\nPlease prepare the GIS data and upload it to thje Hessenbox.",
+    "crumbs": [
+      "Worksheets",
+      "WS-2: Envimet goes Reality"
+    ]
   },
   {
-    "objectID": "base/faq.html",
-    "href": "base/faq.html",
-    "title": "Frequently asked Questions",
+    "objectID": "slides/slidelist.html",
+    "href": "slides/slidelist.html",
+    "title": "Presentations",
     "section": "",
-    "text": "This is a senseless question to meet a meaningfull answer\n\n\n\n\n\n\n\n\n\nThis is a meaningful answer to a senseless question\n\n\n\n\n\n\n\n\n\nLearn More…\n\n\n\n\n\nThis is a even more meaningful answer to a senseless question"
-  },
-  {
-    "objectID": "base/faq.html#make-sense-topic",
-    "href": "base/faq.html#make-sense-topic",
-    "title": "Frequently asked Questions",
-    "section": "",
-    "text": "This is a senseless question to meet a meaningfull answer\n\n\n\n\n\n\n\n\n\nThis is a meaningful answer to a senseless question\n\n\n\n\n\n\n\n\n\nLearn More…\n\n\n\n\n\nThis is a even more meaningful answer to a senseless question"
-  },
-  {
-    "objectID": "modeling/script-00-interpolation.html",
-    "href": "modeling/script-00-interpolation.html",
-    "title": "Spatial Interpolation",
-    "section": "",
-    "text": "Script: Spatial Interpolation\n\n#------------------------------------------------------------------------------\n# Name: FR_soilmoist.R\n# Type: control script \n# Author: Chris Reudenbach, creuden@gmail.com\n# Description:  calculates the soil moisture from Lacanau point data\n# Copyright:GPL (&gt;= 3) \n# Date: 2022-11-10 \n# V-2022-11-12; \n#------------------------------------------------------------------------------\n# 0 - project setup\n#------------------------------------------------------------------------------\n# geoAI course basic setup\n# Type: script\n# Name: geoAI_setup.R\n# Author: Chris Reudenbach, creuden@gmail.com\n# Description:  create/read project folder structure and returns pathes as list\n#               load all necessary packages \n#               sources all functions in a defined function folder\n# Dependencies:   \n# Output: list containing the folder strings as shortcuts\n# Copyright: Chris Reudenbach, thomas Nauss 2019-2021, GPL (&gt;= 3)\n# git clone https://github.com/gisma-courses/geoAI-scripts.git\n#------------------------------------------------------------------------------\n\n\n\n# basic packages\nlibrary(\"mapview\")\nlibrary(\"tmap\")\nlibrary(\"tmaptools\")\nlibrary(\"raster\")\nlibrary(\"terra\")\nlibrary(\"sf\")\nlibrary(\"dplyr\")\nlibrary(\"lidR\")\nlibrary(\"future\")\nlibrary(\"lwgeom\")\nlibrary(\"tmap\")\nlibrary(\"mapview\")\nlibrary(rprojroot)\n\nroot_folder = find_rstudio_root_file()\n#root_folder = getwd()\nndvi.col = function(n) {\n  rev(colorspace::sequential_hcl(n, \"Green-Yellow\"))\n}\n\nano.col = colorspace::diverging_hcl(7, palette = \"Red-Green\",  register = \"rg\")\n\n\n\n\n# # suppres gdal warnings\n# rgdal::set_thin_PROJ6_warnings(TRUE)\n# \n# \n# \n# # workaround subfolder\n# loc_name = \"harz\"\n# \n# # harz\n# epsg=25833\n# \n# attributename = c(\"Moisture_1_17Nov\",\"Moisture_2_17Nov\",\"Moisture_1_19Nov\",\"Moisture_2_19Nov\")\n# varname = c(\"soilmoist2022_08_17\",\"soilmoist2022_08_19\")\n# fnDTM = \"DTM_v3.vrt\"\n# fnsm_data = \"lacanau_moisture_measurements.csv\"\n# fnpos_data= \"ltrees.gpkg\"\n# \n# # read DTM\n# DTM = terra::rast(fnDTM)\n# # cast to SpatialPixelsDataFrame\n# DTM.spdf &lt;- as(raster(DTM),\n#                        'SpatialPixelsDataFrame')\n# colnames(DTM.spdf@data) &lt;- \"altitude\"\n# # read moist data \n# sm=read.csv2(fnsm_data,sep = \",\")\n# # read tree data\n# pos=st_read(fnpos_data)\n# # merge\n# sm$Point = paste0(\"TREE\",str_split_fixed(sm$TargetID, \"_\", 3)[,3])\n# m=merge(pos,sm)\n# \n# # extract altitudes for positions\n# em= exactextractr::exact_extract(DTM,st_buffer(m,1),\"mean\")\n# m$altitude=em\n# \n# # start kriging \n# for (i in 1:length(varname) ){\n#   z=i*2\n#   # mean\n#   m$var = (as.numeric(m[[attributename[z-1]]]) + as.numeric(m[[attributename[z]]]))/2\n#   # to sp\n#   m2 = as(m,\"Spatial\")    \n#   tm2 = spTransform(m2,\n#                     crs(\"+proj=utm +zone=30 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs\"))\n# \n#   # autofit variogramm for kriging \n#   vm.auto = automap::autofitVariogram(formula = as.formula(paste(\"var\", \"~ 1\")),\n#                                       input_data = tm2)\n#   plot(vm.auto)\n#   \n#   # kriging   \n#   print(paste0(\"kriging \", varname[i]))\n#   var.pred &lt;- gstat::krige(formula = as.formula(paste(\"var\", \"~ altitude\")),\n#                            locations = tm2,\n#                            newdata = DTM.spdf,\n#                            model = vm.auto$var_model,\n#                            debug.level=0,)\n#   \n#   r=rasterFromXYZ(as.data.frame(var.pred)[, c(\"x\", \"y\", \"var1.pred\")])\n#   \n#   # reclassify erratic values \n#   reclass_df &lt;- c(-Inf, 0, NA)\n#   # reshape the object into a matrix with columns and rows\n#   reclass_m &lt;- matrix(reclass_df,\n#                       ncol = 3,\n#                       byrow = TRUE)\n#   r_c &lt;- reclassify(r,reclass_m)\n# \n#   plot(r_c)\n#   # re assign crs\n#   crs(r_c) = crs(paste0(\"EPSG:\",epsg))\n#   raster::writeRaster(r_c,paste0(\"data/gis/France_Lacanau_PP_Gis/data_lev0/\",varname[i],\".tif\"),overwrite=TRUE)\n#   \n# }"
-  },
-  {
-    "objectID": "templates/slides-template.html",
-    "href": "templates/slides-template.html",
-    "title": "YOUR TITLE",
-    "section": "",
-    "text": "This is a slide with a background image"
-  },
-  {
-    "objectID": "templates/slides-template.html#section",
-    "href": "templates/slides-template.html#section",
-    "title": "YOUR TITLE",
-    "section": "",
-    "text": "This is a slide with a background image"
-  },
-  {
-    "objectID": "templates/slides-template.html#bullets",
-    "href": "templates/slides-template.html#bullets",
-    "title": "YOUR TITLE",
-    "section": "Bullets",
-    "text": "Bullets\nRemove the incremental ::: bracketed div for plain lists\n\n\nthe quick\nbrown fox\njumps over\nthe lazy dog"
-  },
-  {
-    "objectID": "templates/slides-template.html#columns",
-    "href": "templates/slides-template.html#columns",
-    "title": "YOUR TITLE",
-    "section": "Columns",
-    "text": "Columns\n\n\nSome text on the left of the slide\n\nSome text on the right of the slide"
-  },
-  {
-    "objectID": "templates/slides-template.html#smaller-slide",
-    "href": "templates/slides-template.html#smaller-slide",
-    "title": "YOUR TITLE",
-    "section": "Smaller Slide",
-    "text": "Smaller Slide\nThe text on this slide will be, um, smaller."
-  },
-  {
-    "objectID": "templates/slides-template.html#sneaky-info-asides-bootnotes",
-    "href": "templates/slides-template.html#sneaky-info-asides-bootnotes",
-    "title": "YOUR TITLE",
-    "section": "Sneaky Info (Asides & Bootnotes)",
-    "text": "Sneaky Info (Asides & Bootnotes)\nThis is cool! 1\nAdd reference-location: document to the YAML for end notes.\n\n\nI am at the bottom of the slide"
-  },
-  {
-    "objectID": "templates/slides-template.html#scrolly-slide",
-    "href": "templates/slides-template.html#scrolly-slide",
-    "title": "YOUR TITLE",
-    "section": "Scrolly Slide",
-    "text": "Scrolly Slide\nOverflowed content will be scrollable on this slide."
-  },
-  {
-    "objectID": "templates/slides-template.html#bootnotes",
-    "href": "templates/slides-template.html#bootnotes",
-    "title": "YOUR TITLE",
-    "section": "Bootnotes",
-    "text": "Bootnotes"
-  },
-  {
-    "objectID": "templates/slides-template.html#a-slide-with-a-plot",
-    "href": "templates/slides-template.html#a-slide-with-a-plot",
-    "title": "YOUR TITLE",
-    "section": "A slide with a plot",
-    "text": "A slide with a plot\n\n# ^^ could be fragment, slide, column, column-fragment\nggplot() +\n  geom_point(\n    data = mtcars,\n    aes(wt, mpg),\n    color = \"goldenrod\"\n  ) +\n  labs(\n    title = \"Some Dots\"\n  )"
-  },
-  {
-    "objectID": "templates/slides-template.html#footnotes",
-    "href": "templates/slides-template.html#footnotes",
-    "title": "YOUR TITLE",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nNo it is not↩︎"
-  },
-  {
-    "objectID": "templates/allformats-odt-docx-examples.html",
-    "href": "templates/allformats-odt-docx-examples.html",
-    "title": "Scales in Geography and Ecology\nA neverending story",
-    "section": "",
-    "text": "Ecology is the study of how organisms interact with each other and their environment. Scales and processes are two fundamental concepts in ecology that are used to understand ecological patterns and dynamics.\nScales in ecology refer to the spatial and temporal dimensions of ecological phenomena. Ecological phenomena occur at different scales, ranging from individual organisms to entire ecosystems and from seconds to millennia. Understanding the appropriate scale is crucial for understanding the ecological processes that occur within that scale. The selection of an appropriate scale also influences the accuracy and precision of ecological data and the interpretation of ecological patterns.\nProcesses in ecology refer to the biological and physical mechanisms that underlie ecological phenomena. Ecological processes occur at different scales, ranging from the molecular level to the landscape level. Ecological processes include biotic interactions, such as competition, predation, and mutualism, as well as abiotic interactions, such as climate, nutrient cycling, and disturbances. Understanding the underlying processes is essential for predicting how ecological systems will respond to changing conditions and for developing effective conservation and management strategies.\nOverall, scales and processes are essential concepts in ecology that are used to understand the complex interactions between organisms and their environment."
-  },
-  {
-    "objectID": "templates/allformats-odt-docx-examples.html#subsection",
-    "href": "templates/allformats-odt-docx-examples.html#subsection",
-    "title": "Scales in Geography and Ecology\nA neverending story",
-    "section": "Subsection",
-    "text": "Subsection\nAny study that examines the effects of area-based attributes on individual behaviors or outcomes faces another fundamental methodological problem besides the modifiable areal unit problem (MAUP). It is the problem that results about these effects can be affected by how contextual units or neighborhoods are geographically delineated and the extent to which these areal units deviate from the true geographic context. The problem arises because of the spatial uncertainty in the actual areas that exert the contextual influences under study and the temporal uncertainty in the timing and duration in which individuals experienced these contextual influences. Using neighborhood effects and environmental health research as a point of departure, this article clarifies the nature and sources of this problem, which is referred to as the uncertain geographic context problem (UGCoP). It highlights some of the inferential errors that the UGCoP might cause and discusses some means for mitigating the problem. It reviews recent studies to show that both contextual variables and research findings are sensitive to different delineations of contextual units. The article argues that the UGCoP is a problem as fundamental as the MAUP but is a different kind of problem. Future research needs to pay explicit attention to its potential confounding effects on research results and to methods for mitigating the problem (Kwan 2012).\n\n\n\n\n\nFigure 1: There are four lights"
-  },
-  {
-    "objectID": "templates/allformats-odt-docx-examples.html#subsection-1",
-    "href": "templates/allformats-odt-docx-examples.html#subsection-1",
-    "title": "Scales in Geography and Ecology\nA neverending story",
-    "section": "subsection",
-    "text": "subsection\nTime can have a significant effect on scale in geography. This is because spatial relationships and patterns can change over time, and the appropriate scale to study a phenomenon may also change as a result. For example, the appropriate scale to study a natural disaster such as a hurricane may change as the storm approaches and intensifies, and then again as it makes landfall and moves inland. Similarly, the appropriate scale to study urban growth may change over time as the city expands and new neighborhoods or suburbs emerge.\nIn addition, the temporal scale at which data is collected and analyzed can also impact the understanding of geographic phenomena. For example, studying population changes over a decade may reveal different patterns and trends than studying changes over a single year.\nOverall, time is an important consideration in determining the appropriate scale to study a phenomenon and in interpreting the results of geographic analyses. It is essential to consider how spatial patterns and relationships change over time, and to collect and analyze data at appropriate temporal scales in order to gain a comprehensive understanding of geographic phenomena.\n\n3rd level\nYes, there are several theories in geography that relate to the effects of time on scale. One of the most well-known is the concept of temporal scale developed by geographer David Harvey. According to Harvey, temporal scale refers to the length of time over which a phenomenon can be observed, and it is an important consideration in understanding the spatial relationships and patterns that exist within a particular geographic context. In addition, Harvey argues that the temporal scale at which data is collected and analyzed can have a significant impact on the conclusions that can be drawn from the data.\nAnother theory related to the effects of time on scale is the concept of time-space compression developed by geographer David Harvey and others. This theory suggests that advances in technology and communication have led to a compression of time and space, making the world feel smaller and more connected. As a result, geographic phenomena may be influenced by factors that exist at different spatial and temporal scales, and it is important to consider these factors in analyzing and interpreting geographic data.\nOverall, the theories related to the effects of time on scale in geography highlight the complex and dynamic relationships between spatial and temporal phenomena, and the importance of considering these relationships in geographic analyses (Harvey 1996).\n\n4th level\nTime-space compression is a concept that has been developed and elaborated upon by several geographers, including David Harvey, Doreen Massey, and Henri Lefebvre. At its core, time-space compression refers to the idea that advances in transportation and communication technologies have created a sense of “shrinking” in terms of the time and space required for social and economic interactions.\nOne way in which time-space compression is manifested is through the increasing speed and ease of transportation and communication. For example, air travel, high-speed rail, and the internet have all made it possible to move goods, people, and information across vast distances in relatively short periods of time. This has led to a blurring of traditional spatial boundaries, and the emergence of global networks of exchange and interaction.\nHowever, time-space compression is not a neutral or uniform process, and its effects are felt differently by different people and in different places. For example, the increased speed of global trade may benefit some individuals and communities while harming others, and the intensification of global networks can lead to a sense of dislocation or disorientation for some people.\nOverall, time-space compression is an important concept in geography because it helps to explain how the spatial relationships and patterns that exist within a particular geographic context are shaped and transformed by technological change and globalization."
-  },
-  {
-    "objectID": "modules/de-git-module.html#modulüberblick",
-    "href": "modules/de-git-module.html#modulüberblick",
-    "title": "Git, GitHub & Rstudio [DE]",
-    "section": "Modulüberblick",
-    "text": "Modulüberblick\nIn diesem Modul geht es um die Versionskontrolle Git, die Cloud-Dienste GitHub/GitLab und deren Verwendung mit RStudio als IDE.\nGit ist ein Versionskontrollsystem, das es uns ermöglicht, Snapshots einer Datei oder sogar eines ganzen Projekts zu bestimmten Zeitpunkten zu erstellen. Außerdem bietet es eine komfortable Möglichkeit, diese Snapshots mit denen von Kollegen zu kombinieren.\nGitHub/GitLab bauen auf Git auf und sind die beiden beliebtesten Cloud-basierten Arbeitsumgebungen, die auf Git basieren und darüber hinaus eine breite Palette webbasierter Tools und Dienste anbieten.\nRStudio ist eine typische Desktop-Anwendung, eine sogenannte integrierte Entwicklungsumgebung (IDE), die nicht nur auf R/Python/JS und Markup Language basiert, sondern auch das Lesen/Schreiben, Manipulieren und Visualisieren von Daten und Texten ermöglicht und nahezu vollständige Unterstützung bei der Erstellung von Dokumenten in Form von Texten aller denkbaren Ausgabeformate, interaktiven Dokumenten und Websites bietet.\nNeben vielen kollaborativen Diensten und grundlegenden Versionskontrollfunktionen ist das Wichtigste, dass man eigentlich nichts kaputt machen kann.\n\nLernziele\nDie Lektionen dieses Moduls sind\n\nWas ist Versionskontrolle und GitHub?\nGit: Pull, Status, Add, Commit, Push\nVerzweigungen in GitHub\nUmgang mit Konflikten"
-  },
-  {
-    "objectID": "modules/de-git-module.html#git-und-github-leicht-gemacht",
-    "href": "modules/de-git-module.html#git-und-github-leicht-gemacht",
-    "title": "Git, GitHub & Rstudio [DE]",
-    "section": "Git und GitHub leicht gemacht",
-    "text": "Git und GitHub leicht gemacht\n\nLernziele\nIn dieser Lektion lernst du\n\nVersionskontrolle verstehen\nGitHub und Git verstehen\n\n\n\nVorkenntnisse\n\nMit deinem spezifischen Dateimanager navigieren und arbeiten.\nOrdnerstrukturen verstehen\n\n\n\nÜberblick\nIn gängigen Office-Systemen können Sie z.B. AutoSave aktivieren, um kontinuierlich, zu bestimmten Zeiten oder manuell ein Backup zu erstellen. Die Versionskontrolle git funktioniert auf ähnliche Weise für von dir definierte Ordnerverzeichnisse.\nDu hast zum Beispiel einen Ordner, in dem du ein Projekt hast, das aus verschiedenen Dateien besteht (Text, Programmcode, Bilder, Sounddateien usw.) und du möchtest die Änderungen, die du an diesen Dateien gemacht hast, im Auge behalten.\nGit protokolliert alle Änderungen an diesen Dateien. 1. Git mitteilen, dass eine Datei oder ein Verzeichnis verfolgt werden soll. 2. dass der Zustand der Datei zu einem bestimmten Zeitpunkt aufgezeichnet werden soll.\nIm Gegensatz zum kontinuierlichen Backup von z.B. Google Docs (das keine Wiederherstellung erlaubt) ist dieser Prozess notwendigerweise in 2 Schritte aufgeteilt, um definierte Änderungen vornehmen zu können, bevor diese bestätigt und mit einem commit als Snapshot gespeichert werden.\n\nGit - Erste Schritte\nBei der Verwendung von Git muss zunächst ein Repository in einem Verzeichnis auf dem lokalen Rechner aktiviert werden. Dies geschieht mit dem Befehl git init. Nun weiß Git wo, aber nicht was es verfolgen soll.\n\nWährend der Arbeit muss Git “informiert” werden, was mit diesen Dateien geschehen soll. Dies geschieht mit den beiden Befehlen git add und git commit.\nEin wichtiger zusätzlicher Befehl, git push, wird verwendet, um den aktuellen Verzeichnis-Snapshot in ein entferntes Repository (z.B. Github, GitLab) zu übertragen.\n\nDer letzte Befehl ist git status. Du solltest diesen Befehl benutzen, wenn du an deinem Projekt arbeitest, damit du weißt, was du noch nicht getrackt hast. Die Ausgabe dieses Befehls besteht aus mehreren Teilen Du solltest in der Lage sein, die Ausgabe dieses Befehls zu interpretieren:\n\nWenn du mehr über Git erfahren möchtest, findest du hier weitere hilfreiche Ressourcen:\n\nPro Git: Kapitel Git Grundlagen\nHappy Git mit R"
-  },
-  {
-    "objectID": "modules/de-git-module.html#gitgithub-pull-status-add-commit-push",
-    "href": "modules/de-git-module.html#gitgithub-pull-status-add-commit-push",
-    "title": "Git, GitHub & Rstudio [DE]",
-    "section": "Git/GitHub: pull, status, add, commit, push",
-    "text": "Git/GitHub: pull, status, add, commit, push\n\nLernziele\nIn dieser Lektion lernst du\n\nein lokales Projektarchiv in einem Ordner anlegst\nÄnderungen an einem entfernten Repository vornehmen\nein lokales Repository zu verwalten\n\n\n\nVoraussetzungen\n\nEinrichten eines GitHub-Accounts\nHerunterladen der Git Bash\n\n\n\nEinrichtung von git und GitHub\nEs gibt zwei typische Szenarien für die Einrichtung von Git und GitHub.\n\ndu hast das Projekt noch nicht gestartet und möchtest ein GitHub-Repository, das du als Vorlage auf deinen Rechner kopieren (klonen) und dann lokal mit Dateien und Verzeichnissen nach deinen Wünschen füllen kannst.\nDu hast das Projekt bereits lokal gestartet und möchtest es auf GitHub kopieren.\n\nBeide Szenarien werden von Jenny Bryan exzellent erläutert:\n\nSzenario 1: Happy Git With R: Kapitel 15 Neues Projekt GitHub\nSzenario 2: Happy Git With R: Kapitel 17 Bestehendes Projekt, GitHub\n\n\n\nSelbst-Check\n\n\n\n\n\n\n\n\n\nGut zu wissen\n\n\nDu versuchst, git commit auszuführen, nachdem du Änderungen an einer Datei vorgenommen hast, aber du trackst diese Datei(en) nicht. Deshalb müssen Sie zuerst git add ausführen.\nDu versuchst git push auszuführen, um Deine Aktualisierungen in das entfernte Repository zu übertragen, aber dieses existiert nicht.\nDu versuchst git push auszuführen, um deine Aktualisierungen in das entfernte Repository zu übertragen, obwohl es bereits neue Aktualisierungen im entfernten Repository gibt (z.B. von einem anderen Teammitglied), die du noch nicht in das lokale Projekt übertragen hast. Die Fehlermeldung, die du bekommst, wird in etwa so aussehen:\n\n\nFehler: Deine lokalen Änderungen an den folgenden Dateien würden beim Zusammenführen überschrieben: … Bitte übertrage oder speichere deine Änderungen vor dem Zusammenführen.\n\nDu weist also dein lokales git an, deine eigenen Änderungen hinzuzufügen, ohne die Änderungen deines Teamkollegen zu berücksichtigen - ein klassischer Loyalitätskonflikt. Der beste Weg, dieses Problem zu vermeiden, ist immer einen git pull durchzuführen, bevor man mit dem lokalen Editieren beginnt.\nFür ein besseres Verständnis lies die folgenden Texte:\n\nPull tricky.\nGit Grundlagen\nGit und R\nRstudio - git - GitHub"
-  },
-  {
-    "objectID": "modules/de-git-module.html#fork-und-branches-auf-github",
-    "href": "modules/de-git-module.html#fork-und-branches-auf-github",
-    "title": "Git, GitHub & Rstudio [DE]",
-    "section": "Fork und Branches auf GitHub",
-    "text": "Fork und Branches auf GitHub\n\nLernziele\nIn dieser Lektion lernst du\n\nWas ein Fork/Branch eines GitHub-Repositorys ist.\nWie man einen Branch eines GitHub Repositories erstellt.\nWie Du ein GitHub Repository von einem Branch aus aktualisierst.\n\n\n\nVorausetzungen\n\nVertrautheit mit GitHub-Repositorys.\nGit muss auf deinem Computer installiert sein.\nEin GitHub Konto!\n\n\n\nWas ist ein Fork/Branch?\nWenn man in Gruppen an GitHub-Projekten arbeitet, wird es lästig, wenn eine Person den gesamten Code alleine in das Repository einpflegen muss. Hier kommen Forks und Branches ins Spiel. - Mit Branches kannst Du eine Kopie des aktuellen GitHub-Projekts nehmen und auf Deinem eigenen Computer Änderungen vornehmen. Sobald Du und Deine Gruppe Änderungen am Code vorgenommen habt, könnt Ihr die Änderungen wieder in Eure ursprüngliche Projektgruppe einfügen. - Branches können auch verwendet werden, wenn Du an einem Teil eines Projekts getrennt von den anderen Teilen arbeiten möchtest. - Forks sind sehr ähnlich, mit dem Unterschied, dass sie Kopien bzw Klone eines kompletten Projekts an einem anderen Ort sind.\n\nWie erstelle ich einen Branch?\nUm einen Branch von einem GitHub Repository zu erstellen, gehe zu dem Hauptrepository, an dem du arbeiten möchtest und klicke auf das Dropdown-Menü, das “main” heißen sollte. Es sollte wie das folgende Bild aussehen.\n\nSobald man auf dieses Menü klickt, erscheint auf GitHub ein Textfeld mit der Aufschrift “Find or create a branch…”, man gibt einen neuen Namen für den Zweig ein, z.B. ‘newbranch1’. Da dieser Zweig noch nicht existiert, fragt dich GitHub, ob du einen Zweig mit dem Namen “newbranch1” erstellen möchtest. Klicke auf “Create branch: newbranch1” und der neue Zweig wird für Dich erstellt, wie in der folgenden Abbildung zu sehen ist.\n\n\n\nWie stellt man einen Pull Request?\nEine Pull-Anfrage ermöglicht es dem Eigentümer des GitHub-Projekts, Deine Änderungen zu überprüfen, um sicherzustellen, dass sie in das aktuelle Repository passen und keine Konflikte in Deinem Repository verursachen.\nUm eine Pull-Anfrage von Deinem Zweig aus zu stellen, musst Du zuerst eine Änderung an Deinem Zweig-Repository vornehmen. Sobald Du eine Änderung an Deinem Zweig vorgenommen hast, erscheint ein gelber Balken auf Deinem Bildschirm, der Dich fragt, ob Du eine Pull-Anfrage stellen möchtest. Wie Du auf dem Bild unten sehen kannst, gibt es einen grünen Button, und sobald Du darauf klickst, kannst Du eine Pull-Anfrage erstellen.\n\nSobald Du auf den Button klickst, informiert Dich GitHub, ob es Probleme beim Zusammenführen des Zweigs mit dem Hauptprojekt gibt. Wenn es keine Probleme gibt, setzt GitHub ein Häkchen und zeigt “Able to merge” an. Du kannst dann einen Titel und einen Kommentar zu Deiner Pull-Anfrage hinzufügen, um den Besitzer des Repositorys darüber zu informieren, was Du getan hast. Sobald Du einen Kommentar und einen Titel eingegeben hast, kannst Du auf “Create a pull request” klicken. Wenn Du dies getan hast, wird eine Benachrichtigung an den Besitzer des Repositorys gesendet, dass Deine Änderungen zur Überprüfung bereit sind.\nNachdem Du Deine Anfrage abgeschickt hast, kann der Besitzer des GitHub-Projekts auf die Seite des Projekts gehen und auf den Reiter “Pull Requests” klicken. Auf dieser Seite wird eine Liste von Pull Requests angezeigt, aus der der Eigentümer Deine Anfrage auswählen kann. Sobald der Besitzer auf der Pull Request Seite angekommen ist, sieht er eine Schaltfläche mit der Aufschrift “Merge pull request” (ähnlich der Abbildung unten).\n\nSobald der Eigentümer auf die grüne Schaltfläche klickt, wird er erneut gefragt, ob er die Änderung vornehmen möchte. Wenn er erneut auf den Button klickt, wird die Änderung mit dem Hauptzweig zusammengeführt und er sieht etwas wie das folgende Bild…\n\n\n\n\nEin Repository in einem Branch (oder Fork) aktualisieren\nWenn jemand in deiner Gruppe eine Änderung am Master Repo vornimmt, gibt es eine Möglichkeit, deinen Zweig zu aktualisieren, damit du die Änderungen sehen kannst. Wenn eine Änderung vorgenommen wurde, wird auf der Webseite des verzweigten Repos angezeigt, dass Dein Repo “1 Commit behind the Master” ist. Das bedeutet, dass es 1 Änderung zwischen Deinem Fork und dem Main Repository gibt.\nWenn Du Deinen Fork aktualisieren möchtest, klicke auf die Schaltfläche “Änderungen”. Du wirst dann auf eine Seite geleitet, die sagt “main is up to date with all commits from branch. Versuchen Sie die Basis zu ändern”. Klicke auf “Change base”. Dann wird angezeigt, ob der Zweig zusammengeführt werden kann. Wenn ja, klicke auf “Create pull request” (Titel und Kommentar für deine Anfrage) und erstelle eine Pull-Anfrage.\nNun klicke auf Merge pull request, dann auf Confirm merge und dein Zweig wird aktualisiert!\n\n\nSelbst-Check\n\n\n\n\n\n\n\n\n\nGut zu wissen\n\n\nLerne wie man Branches mit dem Terminal erstellt: Arbeiten mit Branches\nLerne die Verwendung von Pull Requests und Issues: Issues und Pull Requests\nLerne, wie man ein GitHub-Repository forkt: Forken eines Repositories"
-  },
-  {
-    "objectID": "modules/de-git-module.html#umgang-mit-konflikten",
-    "href": "modules/de-git-module.html#umgang-mit-konflikten",
-    "title": "Git, GitHub & Rstudio [DE]",
-    "section": "Umgang mit Konflikten",
-    "text": "Umgang mit Konflikten\n\nLernziele\nIn dieser Lektion lernst du\n\nWie man mit Konflikten umgeht, die bei der Arbeit mit GitHub auftreten.\nWie man mit Merge-Konflikten in GitHub umgeht.\n\n\n\nVorausetzungen\n\nVertrautheit mit GitHub.\nGit installiert haben.\nEin GitHub Konto haben.\n\n\n\nVersionskonflikte was ist das?\nVersionskonflikte entstehen normalerweise, wenn verschiedene Versionen derselben Datei gleichzeitig in das Hauptrepository gepusht werden und die Priorisierung der Dateien nicht klar ist, also:\n\nwenn man sein persönliches GitHub-Repository aktualisiert (kein Pull vor Push).\nwenn mehrere Personen gleichzeitig an derselben Datei arbeiten\n\n\n\nPush & Pull Konflikte\nEin typisches Szenario ist, dass Du etwas online auf GitHub bearbeitest und diese Änderung nicht gleichzeitig oder später in Rstudio synchronisierst. Der Konflikt könnte z.B. sein, dass Du einen Tippfehler in der README korrigierst und vergisst, die aktuelle Version im Rstudio-Projekt zu aktualisieren.\n\nAlso immer pull vor push, sonst hat GitHub zwei verschiedene Änderungen gespeichert und weiß nicht, welche zu verwenden ist.\n\nEin komplizierterer Fall ist, wenn eine Änderung im Master-Repository gemacht wurde und jemand anderes in seinem Branch-/Fork-Repository ebenfalls eine Änderung an der gleichen Datei bzw. dem gleichen Inhalt gemacht hat. Wenn eine Pull-Anfrage gestellt wird, wird GitHub den Unterschied bemerken. Auch hier kann es sich um etwas so Einfaches handeln, wie zwei Personen, die die README auf unterschiedliche Weise aktualisieren, was GitHub dazu veranlasst, ein Problem zu melden.\nIn diesem Fall muss manuell entschieden werden, welche Variante Vorrang hat.\nWenn Du eine Änderung an Deinem GitHub-Repository vornimmst und es gibt einen Konflikt, zeigt Dir R an, dass Deine Version dem Haupt-Repository voraus ist, wenn Du Deine Änderung überträgst. Wenn Du dies siehst, bedeutet es, dass es einen Unterschied zwischen den Dateien gibt. Wenn Du versuchst zu pullen und es gibt ein Problem, wird GitHub Dir etwas sagen wie\n\nUpdates wurden abgelehnt, weil das entfernte Repository Arbeit enthält, die Du lokal nicht hast. Dies wird normalerweise durch ein anderes Repository verursacht, das auf die gleiche Referenz pusht.\n\nWenn diese Meldung erscheint, empfiehlt GitHub, dass Du einen Pull von Deinem Master-Repository durchführst, um den Fehler zu finden. Häufig erhältst Du die Fehlermeldung\n\nCONFLICT (content): Konflikt beim Zusammenführen in [Datei]. Automatisches Zusammenführen fehlgeschlagen; Konflikte lösen und dann das Ergebnis übertragen.\n\nDie Datei mit dem Problem wird dann in Ihrem RStudio geöffnet und zeigt den gefundenen Fehler an. Es wird angezeigt, welche Änderungen vorgenommen wurden und welche Unterschiede zum Hauptzweig bestehen (die Änderungen werden unter &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD angezeigt, der Inhalt des Hauptzweigs wird darunter angezeigt). Du musst den Fehler zwischen den beiden Versionen beheben, indem Du entweder das beibehältst, was GitHub bereits hat, oder indem Du Deine Änderung so anpasst, dass sie dem entspricht, was Du machen wolltest. Wenn Du mit Deiner Änderung zufrieden bist, rufe das Terminal auf (es befindet sich in R, einem Tab über der Konsole). Im Terminal gibst Du git add [Dateiname] ein, drückst die Eingabetaste und gehst zurück zum Git-Tab oben rechts im RStudio-Fenster. Wähle die Datei aus, in der der Fehler aufgetreten ist und überschreibe sie, um den Fehler zu beheben.\n\n\nMerge Konflikte\nWenn mehrere Personen am selben GitHub-Repository arbeiten oder Du nur einen Zweig verwendest, besteht die Möglichkeit, dass ein Merge-Konflikt auftritt. Zusammenführungskonflikte treten auf, wenn Änderungen am Haupt-Repository und an einem Zweig vorgenommen werden, die nicht übereinstimmen. Sobald eine Pull-Anfrage gestellt wird, muss der Eigentümer des Projektarchivs die Änderungen manuell überprüfen, sie können dann nicht automatisch zusammengeführt werden.\nFolglich teilt GitHub Dir mit, dass es die Versionen nicht automatisch zusammenführen kann, aber es wird Dir trotzdem erlauben, die Pull-Anfrage zu stellen. Wenn Du Dich entscheidest, die Pull-Anfrage zu senden, wird der Repo-Besitzer nicht in der Lage sein, auf den grünen Merge Button zu klicken, sondern er wird eine Meldung sehen, die besagt:\n\nDieser Zweig hat Konflikte, die gelöst werden müssen.\n\nRechts neben dieser Meldung befindet sich die Schaltfläche Konflikte auflösen.\nWenn du auf die Schaltfläche Konflikte auflösen klickst, wirst du zu einer Seite weitergeleitet, die ähnlich aussieht wie bei Push- oder Pull-Fehlernt. Du siehst die vorgeschlagenen Änderungen aus dem Zweig und Haupt-Repository. An dieser Stelle können dann Änderungen durchgeführt werden und zuletzt mit Als gelöst markieren und anschließend Merge bestätigen erfolgreich für einen Merge bereitgestellt werden. Zuletzt muss der Eigentümer auf Merge Pull Request und dann auf Commit Merge klicken, um die Änderung im Haupt-Repository zu vorzunehmen.\n\n\nSelbst-Check\n\n\n\n\n\n\n\n\n\nGut zu wissen\n\nWeitere Informationen über den Umgang mit Konflikten in GitHub findest Du hier:\n\nWie gehe ich mit Merge Konflikten um?"
-  },
-  {
-    "objectID": "modules/de-git-module.html#rstudio---all-inclusive",
-    "href": "modules/de-git-module.html#rstudio---all-inclusive",
-    "title": "Git, GitHub & Rstudio [DE]",
-    "section": "RStudio - All Inclusive",
-    "text": "RStudio - All Inclusive\n\nLernziele\n\nEinsatz von GitHub direkt aus RStudio\n\n\n\nVorausetzungen\n\nÜbung im Umgang mit GitHub und git\n\n\n\nExistierendes GitHub Repo in R einbinden\nBevor du mit einem GitHub-Repository in RStudio arbeitest, stelle sicher, dass du ein GitHub-Repository hast, mit dem du arbeiten kannst.\nNachdem du das Repository erstellt hast, kannst du auf die grüne Schaltfläche klicken, um einen Link zu erhalten, mit dem du das Repository klonen kannst. Um es in R zu öffnen, öffne R und klicke auf den Würfel mit dem Pluszeichen, um ein neues Projekt zu erstellen, klicke auf Versionskontrolle und dann auf Git. Nun fügt man die zuvor kopierte URL ein und erstellt das Projekt. Jetzt hast du ein Projekt in R, das mit GitHub verbunden ist. Nun kannst du neue Dateien erstellen und sie auf GitHub hochladen, damit andere sie sehen können.\n\n\nErklärung der Schaltflächen/Befehle\nOben rechts (je nach Konfiguration von RStudio) befinden sich die Reiter Environment, History... Wähle die Registerkarte Git, um die Git-Befehle zu sehen. In diesem Bereich kannst Du entscheiden, welche Dateien hochgeladen/gelöscht, welche Änderungen übernommen, welche Dateien aus dem Haupt-Repository gezogen, welche Dateien in das Haupt-Repository geschoben werden sollen. Die vorgenommenen Änderungen werden hier überprüft und es können Branches erstellt oder geändert wrden. Sehen wir uns nun an, was die einzelnen Befehle/Schaltflächen bewirken.\n\nDiff Wenn du auf Diff klickst, öffnet sich ein neues Fenster in R. In diesem Fenster werden alle Dateien angezeigt, die sich geändert haben (im Vergleich zum Haupt-Repository) und auch die Änderungen, die du vorgenommen hast. Du kannst dieses Fenster auch verwenden, um die Änderungen zu übertragen und aus dem Haupt-Repository herauszuziehen.\nCommit Die Verwendung von Commit im kleineren Fenster ist ähnlich wie im Diff-Fenster, Du musst nur die Dateien auswählen, die Du ins Repository übertragen möchtest und dann die Änderungen committen.\nPull Pull ist ziemlich selbsterklärend, es zieht Dateien aus dem GitHub Repository. Es ist wichtig, Dateien vor dem Pushen zu ziehen, um mögliche Konflikte mit überlappenden Dateien zu vermeiden.\nPush Push schiebt die Dateien in das GitHub Repository. Diese Funktion wird verwendet, wenn Du die Änderungen an Deinen Dateien abgeschlossen hast und bereit bist, sie hochzuladen, damit andere die neuen Dateien ansehen können. Die Reihenfolge beim Hochladen dieser Dateien wäre: Änderungen übertragen, aus dem Repository ziehen und dann in das Repository pushen.\nHistory Das nächste Symbol ist eine kleine Uhr, die die Historie Deiner Arbeit darstellt. Sie zeigt die bisherigen Übertragungen und was bei jeder Übertragung geändert wurde.\nRevert, Ignore und Shell Diese Befehle findest Du in einem Dropdown-Menü, nachdem Du auf das Zahnrad neben der Uhr geklickt hast. Mit Revert kannst Du alle Änderungen rückgängig machen, mit Ignore kannst Du einen Gitignore einrichten (nützlich, um Dateien zu blockieren, die Du nicht hochladen willst) und mit Shell kannst Du Dein Terminal öffnen und dort Git-Befehle ausführen.\nBranches Das nächste Symbol steht für Zweige. Wenn Du auf dieses Symbol klickst, wirst Du gefragt, ob Du einen neuen Zweig erstellen möchtest. Wie Du im Modul Zweige des Toolkits gelernt hast, sind Zweige nützlich, um Änderungen zu testen, ohne dass sie sich auf den Hauptzweig auswirken, falls ein Fehler auftritt. Du kannst das Dropdown-Menü rechts neben dem Zweigsymbol verwenden, um zwischen den Zweigen zu wechseln.\nTerminal (optional) Du kannst diese GitHub-Befehle mit den RStudio-Befehlen ausführen, aber du kannst auch das Terminal in R verwenden, um das gleiche zu tun. Alle GitHub-Befehle sind in der Form “git _____” und Du kannst sie finden, indem Du “git” in Dein Terminal eingibst. Dies macht dasselbe wie das R-Panel, aber wenn Du mit dem Schreiben von Git-Befehlen in einem Terminal vertrauter bist, funktioniert es vielleicht besser für Dich.\n\n\nEin R-Projekt in ein GitHub-Repositorium verwandeln\nManchmal arbeitet man an einem Projekt in R und hat vergessen, ein GitHub-Repository dafür zu erstellen. In diesem Fall kann Ihnen das Paket usethis helfen, ein Repo aus RStudio heraus zu erstellen. Mit der Funktion usethis::use_git kann das aktuelle Projekt in ein GitHub Repo umgewandelt werden, so dass die Dateien hochgeladen werden können. - Wenn Du diese Funktion zum ersten Mal ausführst, wirst Du wahrscheinlich einen Fehler erhalten, da Du dafür ein Token von GitHub benötigst. Nach dem Aufruf von usethis::browse_github_token öffnet sich ein neues Fenster, in dem man aufgefordert wird, sich in seinen GitHub-Account einzuloggen. Nach dem Einloggen können Berechtigungen mit dem Token gesetzt und kopiert werden. Sobald du den Token kopiert hast, rufe usethis::edit_r_environment() auf und speichere deinen Token als “GITHUB_PAT=token”.\nSobald dein Token gesetzt und dein R zurückgesetzt ist, kannst du use_git benutzen und es wird Dich fragen, ob es okay ist, deine Dateien zu GitHub zu committen. Wenn du diese Frage bejahst, wirst du aufgefordert, dein RStudio-Fenster neu zu starten, um das Git-Fenster zu öffnen und deine Dateien hochzuladen. Nach dem Neustart von RStudio die geänderten Dateien (falls vorhanden) mit dem Diff-Button hochladen. Benutze nun usethis::use_github, um deine Dateien in ein GitHub-Repository zu senden. - use_github wird Dich fragen, ob Du einen ssh Schlüssel hast, was Du wahrscheinlich nicht hast, also wähle https. Dann wird man gefragt, ob Titel und Beschreibung akzeptabel sind. Wenn ja, kannst Du mit Ja antworten und die Datei auf GitHub hochladen!\n\n\n\nRStudio und GitHub\n\n\n\n\n\n\n\nSelbst-Check\n\n\n\n\n\n\n\n\n\nGut zu wissen\n\nWeitere Informationen zur Verwendung von GitHub in RStudio findest Du unter folgendem Link:\n\nDer Blog-Eintrag GitHub & Rstudio zeigt, wie man Git in RStudio benutzt und geht dabei besonders auf die Terminal-Befehle ein."
-  },
-  {
-    "objectID": "modules/de-git-module.html#danksagung",
-    "href": "modules/de-git-module.html#danksagung",
-    "title": "Git, GitHub & Rstudio [DE]",
-    "section": "Danksagung",
-    "text": "Danksagung\nDas Tutorial basiert auf dem DoSStoolkit. Sowohl die Inhalte als auch die Self Assessments basieren dem Modul Git outta here von Mariam Walaa & Matthew Wankiewicz. Die Übersetzungen und Veränderungen vom Autor dieser Seite.\nDas Originalmodul kann mit dem folgenden R-Befehl aufgerufen werden.\n\nlearnr::run_tutorial(\"git_outta_here\", package = \"DoSStoolkit\")"
-  },
-  {
-    "objectID": "base/about.html",
-    "href": "base/about.html",
-    "title": "About this site",
-    "section": "",
-    "text": "About this site\nThis page summarizes the essential workflows , basic literature and web resources from the distributed course systems , documents and field protocols into a knowledge base.\nAlthough the web space is topic-centered any keyword can be searched using the full text search.\nThe creation of new pages, the editing of existing pages can be triggered directly via the right column online.\nOffline there are several visual editors and full integration with Rstudio etc."
-  },
-  {
-    "objectID": "mc_session/mc3.html",
-    "href": "mc_session/mc3.html",
-    "title": "Spatial Interpolation",
-    "section": "",
-    "text": "test\n\n    \n    \n  \n\n\n\n#------------------------------------------------------------------------------\n# Name: FR_soilmoist.R\n# Type: control script \n# Author: Chris Reudenbach, creuden@gmail.com\n# Description:  calculates the soil moisture from Lacanau point data\n# Copyright:GPL (&gt;= 3) \n# Date: 2022-11-10 \n# V-2022-11-12; \n#------------------------------------------------------------------------------\n# 0 - project setup\n#------------------------------------------------------------------------------\n# geoAI course basic setup\n# Type: script\n# Name: geoAI_setup.R\n# Author: Chris Reudenbach, creuden@gmail.com\n# Description:  create/read project folder structure and returns pathes as list\n#               load all necessary packages \n#               sources all functions in a defined function folder\n# Dependencies:   \n# Output: list containing the folder strings as shortcuts\n# Copyright: Chris Reudenbach, thomas Nauss 2019-2021, GPL (&gt;= 3)\n# git clone https://github.com/gisma-courses/geoAI-scripts.git\n#------------------------------------------------------------------------------\n\n\n\n# basic packages\nlibrary(\"mapview\")\nlibrary(\"tmap\")\nlibrary(\"tmaptools\")\nlibrary(\"raster\")\nlibrary(\"terra\")\nlibrary(\"sf\")\nlibrary(\"dplyr\")\nlibrary(\"lidR\")\nlibrary(\"future\")\nlibrary(\"lwgeom\")\nlibrary(\"tmap\")\nlibrary(\"mapview\")\nlibrary(rprojroot)\n\nroot_folder = find_rstudio_root_file()\n#root_folder = getwd()\nndvi.col = function(n) {\n  rev(colorspace::sequential_hcl(n, \"Green-Yellow\"))\n}\n\nano.col = colorspace::diverging_hcl(7, palette = \"Red-Green\",  register = \"rg\")\n\n\n\n\n# # suppres gdal warnings\n# rgdal::set_thin_PROJ6_warnings(TRUE)\n# \n# \n# \n# # workaround subfolder\n# loc_name = \"harz\"\n# \n# # harz\n# epsg=25833\n# \n# attributename = c(\"Moisture_1_17Nov\",\"Moisture_2_17Nov\",\"Moisture_1_19Nov\",\"Moisture_2_19Nov\")\n# varname = c(\"soilmoist2022_08_17\",\"soilmoist2022_08_19\")\n# fnDTM = \"DTM_v3.vrt\"\n# fnsm_data = \"lacanau_moisture_measurements.csv\"\n# fnpos_data= \"ltrees.gpkg\"\n# \n# # read DTM\n# DTM = terra::rast(fnDTM)\n# # cast to SpatialPixelsDataFrame\n# DTM.spdf &lt;- as(raster(DTM),\n#                        'SpatialPixelsDataFrame')\n# colnames(DTM.spdf@data) &lt;- \"altitude\"\n# # read moist data \n# sm=read.csv2(fnsm_data,sep = \",\")\n# # read tree data\n# pos=st_read(fnpos_data)\n# # merge\n# sm$Point = paste0(\"TREE\",str_split_fixed(sm$TargetID, \"_\", 3)[,3])\n# m=merge(pos,sm)\n# \n# # extract altitudes for positions\n# em= exactextractr::exact_extract(DTM,st_buffer(m,1),\"mean\")\n# m$altitude=em\n# \n# # start kriging \n# for (i in 1:length(varname) ){\n#   z=i*2\n#   # mean\n#   m$var = (as.numeric(m[[attributename[z-1]]]) + as.numeric(m[[attributename[z]]]))/2\n#   # to sp\n#   m2 = as(m,\"Spatial\")    \n#   tm2 = spTransform(m2,\n#                     crs(\"+proj=utm +zone=30 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs\"))\n# \n#   # autofit variogramm for kriging \n#   vm.auto = automap::autofitVariogram(formula = as.formula(paste(\"var\", \"~ 1\")),\n#                                       input_data = tm2)\n#   plot(vm.auto)\n#   \n#   # kriging   \n#   print(paste0(\"kriging \", varname[i]))\n#   var.pred &lt;- gstat::krige(formula = as.formula(paste(\"var\", \"~ altitude\")),\n#                            locations = tm2,\n#                            newdata = DTM.spdf,\n#                            model = vm.auto$var_model,\n#                            debug.level=0,)\n#   \n#   r=rasterFromXYZ(as.data.frame(var.pred)[, c(\"x\", \"y\", \"var1.pred\")])\n#   \n#   # reclassify erratic values \n#   reclass_df &lt;- c(-Inf, 0, NA)\n#   # reshape the object into a matrix with columns and rows\n#   reclass_m &lt;- matrix(reclass_df,\n#                       ncol = 3,\n#                       byrow = TRUE)\n#   r_c &lt;- reclassify(r,reclass_m)\n# \n#   plot(r_c)\n#   # re assign crs\n#   crs(r_c) = crs(paste0(\"EPSG:\",epsg))\n#   raster::writeRaster(r_c,paste0(\"data/gis/France_Lacanau_PP_Gis/data_lev0/\",varname[i],\".tif\"),overwrite=TRUE)\n#   \n# }"
-  },
-  {
-    "objectID": "slides/slide1.html",
-    "href": "slides/slide1.html",
-    "title": "Slides and extensions",
-    "section": "",
-    "text": "The title slide is configured by the following part of the yaml header:"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nSlides and extensions\n\n\ngisma team\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "slides/slide1.html#header-12",
@@ -438,14 +379,69 @@
     "href": "slides/slide1.html#basic-reference",
     "title": "Slides and extensions",
     "section": "Basic Reference",
-    "text": "Basic Reference\nFind more informations at Quarto RevealJS Documentation"
+    "text": "Basic Reference\nFind more informations at Quarto RevealJS Documentation\n\n\n\n&lt;gisma 2023&gt;\n\n\n\n\n\n\n\n \n\n\nThis is the header extension"
   },
   {
-    "objectID": "slides/slidelist.html",
-    "href": "slides/slidelist.html",
-    "title": "Presentations",
+    "objectID": "worksheets/ws-00.html",
+    "href": "worksheets/ws-00.html",
+    "title": "WS-HowTo",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nSlides and extensions\n\n\ngisma team\n\n\n\n\n\n\nNo matching items"
+    "text": "The Working Sheets will provide weekly assignments related to the general task of reaching out for the course goals.\n\nMandatory assignments (Studienleistung) will be marked as \nGraded examinations (Prüfungsleistung) will be marked as",
+    "crumbs": [
+      "Worksheets",
+      "WS-HowTo"
+    ]
+  },
+  {
+    "objectID": "worksheets/ws-03.html",
+    "href": "worksheets/ws-03.html",
+    "title": "WS-3: Envimet Interfacing to R",
+    "section": "",
+    "text": "Lidar, which stands for Light Detection and Ranging, has emerged as a powerful tool in environmental science, particularly for assessing and characterizing forest structures. Lidar technology utilizes laser pulses to measure distances and generate highly detailed, three-dimensional maps of the Earth’s surface. In the context of forestry, Lidar data has proven instrumental in capturing intricate details of forest canopies, terrain, and vegetation. This information serves as a valuable resource for deriving comprehensive insights into forest structure, including tree height, canopy density, and spatial distribution. Lidar’s ability to provide accurate and high-resolution data has revolutionized the field, enabling researchers and foresters to make informed decisions related to forest management, conservation, and ecological studies. Furthermore, the derived Leaf Area Density (LAD) and canopy height from Lidar data are crucial components in understanding the microclimate within forests, influencing factors such as light penetration, temperature gradients, and overall ecosystem dynamics. This brief introduction sets the stage for exploring the multifaceted applications of Lidar technology in unlocking the secrets held within the complex ecosystems of our forests while emphasizing its significant impact on the microclimatic conditions that shape these environments.",
+    "crumbs": [
+      "Worksheets",
+      "WS-3: Envimet Interfacing to R"
+    ]
+  },
+  {
+    "objectID": "worksheets/ws-03.html#goals",
+    "href": "worksheets/ws-03.html#goals",
+    "title": "WS-3: Envimet Interfacing to R",
+    "section": "Goals",
+    "text": "Goals\nThe defined goals aim to enhance the capabilities of Lidar-based analyses for characterizing forest structure with a focus on achieving more realistic representations of tree structures and a spatially heterogeneous distribution of tree parameters. The key objectives include refining algorithms to capture intricate details of tree architecture, optimizing the extraction of parameters for accuracy, integrating multisource data to provide a comprehensive view of the forest ecosystem, and establishing robust validation protocols. These goals collectively seek to advance the field, promoting more accurate and meaningful interpretations of forest structure that align closely with real-world conditions.",
+    "crumbs": [
+      "Worksheets",
+      "WS-3: Envimet Interfacing to R"
+    ]
+  },
+  {
+    "objectID": "worksheets/ws-03.html#things-you-need",
+    "href": "worksheets/ws-03.html#things-you-need",
+    "title": "WS-3: Envimet Interfacing to R",
+    "section": "Things you need",
+    "text": "Things you need\n\nCourse Data Server You will find here all kinds of data, literature and tutorials\nENVI-met software\nMOF Envi_Met Interface to R Repository\n\n\nAdditional Repositories\n\nMOF Micro Climate Repository\nforenius-pp repository for additional functions",
+    "crumbs": [
+      "Worksheets",
+      "WS-3: Envimet Interfacing to R"
+    ]
+  },
+  {
+    "objectID": "worksheets/ws-03.html#assignment",
+    "href": "worksheets/ws-03.html#assignment",
+    "title": "WS-3: Envimet Interfacing to R",
+    "section": "Assignment",
+    "text": "Assignment\nDevelop an R-based interface to streamline the generation and customization of plant parameters within ENVI-met’s plant database, enhancing user accessibility and flexibility.\nUsers can access ENVI-met’s plant database via a menu within the software dedicated to plant-related settings. This panel include options for selecting and managing plant types. Basically the Plant Parameter Input defines within the interface how each plant is parameterized.\nParameters must include but are not limited to: * Plant Height: The height of the vegetation. * Leaf Area Index (LAI): A measure of the amount of leaves per unit ground area. * Leaf Area Density (LAD): The Leaf Area Density values for the selected vegetation types and levels. * Canopy Structure: Details related to the spatial arrangement of leaves and branches.\nENVI-met includes a default plant library with predefined plant types. Users can choose from this library, and each entry in the library comes with default parameter values. The plant database interface is seamlessly integrated into the overall model setup environment.\n\nTasks\n\nResearch ENVI-met’s plant database structure.\nResearch the given repositories for functionality dealing with the plant database and foest structure.\nCreate R functions for inputting plant parameters.\n\n\n\n\n\n\n\n\n\n\n\nHessenbox.",
+    "crumbs": [
+      "Worksheets",
+      "WS-3: Envimet Interfacing to R"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Mikroklimamodellierung Envi_Met LV-19-d19-010-envi",
+    "section": "",
+    "text": "Widely used in applications as diverse as urban planning, architectural design and energy efficiency, ENVI-met is a 3D micro-climate simulation software. Its functionality goes beyond individual climate parameters and covers a wide spectrum. ENVI-met excels in simulating different climate conditions, including day and night temperatures, humidity, wind speed and solar radiation in urban environments. It can also simulate the impact of different building materials, such as glass and stone, on the surrounding environment.\nThe course will cover the following topics\nBasic concepts Definition of materials Modelling vegetation Preparing the model for simulation Creation of weather files Running a simulation Visualising the results Interpreting the results"
   },
   {
     "objectID": "assessment/slidelist.html",
@@ -453,6 +449,24 @@
     "title": "Assessments",
     "section": "",
     "text": "Basic Exercise\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGit, GitHub & Rstudio [DE]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGit, GitHub & Rstudio [EN]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "mc_session/mcm1.html",
+    "href": "mc_session/mcm1.html",
+    "title": "Microclimate Modeling",
+    "section": "",
+    "text": "Microclimate, the localized atmospheric conditions that vary from the surrounding area, plays a pivotal role in influencing ecosystems, human activities, and environmental processes. Defined as the set of climatic conditions unique to a specific small-scale geographic area, microclimates encompass nuances in temperature, humidity, wind patterns, and other climatic variables that distinguish a particular locale from its broader surroundings. These localized variations, often influenced by terrain, vegetation, and human activities, constitute the intricate tapestry of microclimates that shape our immediate environments.\nThe study and modeling of microclimates have become increasingly vital in understanding the intricate dynamics of temperature, humidity, wind patterns, and other climatic variables at a fine spatial scale. As global climate change continues to underscore the significance of regional variations, the need for accurate and comprehensive microclimate models becomes more pronounced.\nMicroclimate modeling involves the application of various computational, observational, and analytical techniques to simulate and predict the climatic conditions in specific geographic locations. This interdisciplinary field draws on expertise from meteorology, climatology, ecology, urban planning, and computational sciences to unravel the complex interactions that define microclimates.\nThis comprehensive review delves into the diverse methodologies and advancements employed in modeling microclimates, addressing both the theoretical foundations and practical applications across various domains. From computational approaches like Computational Fluid Dynamics (CFD) to data-driven methods leveraging machine learning, the spectrum of modeling techniques continues to evolve, providing nuanced insights into localized environmental phenomena.\nUnderstanding microclimates is crucial in a range of contexts, including agriculture, urban planning, ecological research, and public health. The intricacies of urban microclimates, for example, influence factors such as heat islands and air quality, impacting the well-being of urban populations. In ecological studies, microclimate modeling is instrumental in elucidating species distributions, biodiversity patterns, and the resilience of ecosystems to environmental changes.\nAdvancements in sensor technologies, including ground-based sensors, unmanned aerial vehicles (UAVs), and satellite observations, contribute to the collection of high-resolution and real-time microclimate data. These technologies enhance the accuracy of models, allowing for more precise simulations and predictions.\nHowever, challenges persist, ranging from the need for improved data resolution and model validation to addressing computational complexities and resource constraints. As we stand at the intersection of technological innovation and environmental awareness, the review navigates through the current state of microclimate modeling, offering insights into ongoing research, case studies exemplifying successful applications, and future directions for advancements in the field.\nBy comprehensively exploring the methodologies, applications, and challenges in microclimate modeling, this review aims to serve as a foundational resource for researchers, practitioners, and policymakers engaged in unraveling the mysteries of localized climatic conditions. In doing so, it contributes to the collective efforts aimed at enhancing our understanding of microclimates and their profound implications on the natural world and human societies.",
+    "crumbs": [
+      "Modeling Microclimate",
+      "Microclimate Modeling"
+    ]
+  },
+  {
+    "objectID": "mc_session/mc3.html",
+    "href": "mc_session/mc3.html",
+    "title": "Spatial Interpolation",
+    "section": "",
+    "text": "test\n\n    \n    \n  \n\n\n\n#------------------------------------------------------------------------------\n# Name: FR_soilmoist.R\n# Type: control script \n# Author: Chris Reudenbach, creuden@gmail.com\n# Description:  calculates the soil moisture from Lacanau point data\n# Copyright:GPL (&gt;= 3) \n# Date: 2022-11-10 \n# V-2022-11-12; \n#------------------------------------------------------------------------------\n# 0 - project setup\n#------------------------------------------------------------------------------\n# geoAI course basic setup\n# Type: script\n# Name: geoAI_setup.R\n# Author: Chris Reudenbach, creuden@gmail.com\n# Description:  create/read project folder structure and returns pathes as list\n#               load all necessary packages \n#               sources all functions in a defined function folder\n# Dependencies:   \n# Output: list containing the folder strings as shortcuts\n# Copyright: Chris Reudenbach, thomas Nauss 2019-2021, GPL (&gt;= 3)\n# git clone https://github.com/gisma-courses/geoAI-scripts.git\n#------------------------------------------------------------------------------\n\n\n\n# basic packages\nlibrary(\"mapview\")\nlibrary(\"tmap\")\nlibrary(\"tmaptools\")\nlibrary(\"raster\")\nlibrary(\"terra\")\nlibrary(\"sf\")\nlibrary(\"dplyr\")\nlibrary(\"lidR\")\nlibrary(\"future\")\nlibrary(\"lwgeom\")\nlibrary(\"tmap\")\nlibrary(\"mapview\")\nlibrary(rprojroot)\n\nroot_folder = find_rstudio_root_file()\n#root_folder = getwd()\nndvi.col = function(n) {\n  rev(colorspace::sequential_hcl(n, \"Green-Yellow\"))\n}\n\nano.col = colorspace::diverging_hcl(7, palette = \"Red-Green\",  register = \"rg\")\n\n\n\n\n# # suppres gdal warnings\n# rgdal::set_thin_PROJ6_warnings(TRUE)\n# \n# \n# \n# # workaround subfolder\n# loc_name = \"harz\"\n# \n# # harz\n# epsg=25833\n# \n# attributename = c(\"Moisture_1_17Nov\",\"Moisture_2_17Nov\",\"Moisture_1_19Nov\",\"Moisture_2_19Nov\")\n# varname = c(\"soilmoist2022_08_17\",\"soilmoist2022_08_19\")\n# fnDTM = \"DTM_v3.vrt\"\n# fnsm_data = \"lacanau_moisture_measurements.csv\"\n# fnpos_data= \"ltrees.gpkg\"\n# \n# # read DTM\n# DTM = terra::rast(fnDTM)\n# # cast to SpatialPixelsDataFrame\n# DTM.spdf &lt;- as(raster(DTM),\n#                        'SpatialPixelsDataFrame')\n# colnames(DTM.spdf@data) &lt;- \"altitude\"\n# # read moist data \n# sm=read.csv2(fnsm_data,sep = \",\")\n# # read tree data\n# pos=st_read(fnpos_data)\n# # merge\n# sm$Point = paste0(\"TREE\",str_split_fixed(sm$TargetID, \"_\", 3)[,3])\n# m=merge(pos,sm)\n# \n# # extract altitudes for positions\n# em= exactextractr::exact_extract(DTM,st_buffer(m,1),\"mean\")\n# m$altitude=em\n# \n# # start kriging \n# for (i in 1:length(varname) ){\n#   z=i*2\n#   # mean\n#   m$var = (as.numeric(m[[attributename[z-1]]]) + as.numeric(m[[attributename[z]]]))/2\n#   # to sp\n#   m2 = as(m,\"Spatial\")    \n#   tm2 = spTransform(m2,\n#                     crs(\"+proj=utm +zone=30 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs\"))\n# \n#   # autofit variogramm for kriging \n#   vm.auto = automap::autofitVariogram(formula = as.formula(paste(\"var\", \"~ 1\")),\n#                                       input_data = tm2)\n#   plot(vm.auto)\n#   \n#   # kriging   \n#   print(paste0(\"kriging \", varname[i]))\n#   var.pred &lt;- gstat::krige(formula = as.formula(paste(\"var\", \"~ altitude\")),\n#                            locations = tm2,\n#                            newdata = DTM.spdf,\n#                            model = vm.auto$var_model,\n#                            debug.level=0,)\n#   \n#   r=rasterFromXYZ(as.data.frame(var.pred)[, c(\"x\", \"y\", \"var1.pred\")])\n#   \n#   # reclassify erratic values \n#   reclass_df &lt;- c(-Inf, 0, NA)\n#   # reshape the object into a matrix with columns and rows\n#   reclass_m &lt;- matrix(reclass_df,\n#                       ncol = 3,\n#                       byrow = TRUE)\n#   r_c &lt;- reclassify(r,reclass_m)\n# \n#   plot(r_c)\n#   # re assign crs\n#   crs(r_c) = crs(paste0(\"EPSG:\",epsg))\n#   raster::writeRaster(r_c,paste0(\"data/gis/France_Lacanau_PP_Gis/data_lev0/\",varname[i],\".tif\"),overwrite=TRUE)\n#   \n# }"
   },
   {
     "objectID": "base/impressum.html#content-responsibility",
@@ -476,6 +490,61 @@
     "text": "Comments & Suggestions"
   },
   {
+    "objectID": "modeling/modeling-material.html",
+    "href": "modeling/modeling-material.html",
+    "title": "Data and Software",
+    "section": "",
+    "text": "Please find all Data Downloads at theCourse Data Server Data folder for any file exchange and data related purposes.",
+    "crumbs": [
+      "Software & More",
+      "Data and Software"
+    ]
+  },
+  {
+    "objectID": "modeling/modeling-material.html#data-set-for-training-purposes",
+    "href": "modeling/modeling-material.html#data-set-for-training-purposes",
+    "title": "Data and Software",
+    "section": "",
+    "text": "Please find all Data Downloads at theCourse Data Server Data folder for any file exchange and data related purposes.",
+    "crumbs": [
+      "Software & More",
+      "Data and Software"
+    ]
+  },
+  {
+    "objectID": "modeling/modeling-material.html#specific-modeling-software",
+    "href": "modeling/modeling-material.html#specific-modeling-software",
+    "title": "Data and Software",
+    "section": "Specific modeling software",
+    "text": "Specific modeling software\nPlease find all Downloads according to ENVI-met at the ENVI-met landing page",
+    "crumbs": [
+      "Software & More",
+      "Data and Software"
+    ]
+  },
+  {
+    "objectID": "modeling/modeling-material.html#common-software",
+    "href": "modeling/modeling-material.html#common-software",
+    "title": "Data and Software",
+    "section": "Common Software",
+    "text": "Common Software\nShell — any command line environment will do for the exercises. For Linux we recommend the bash shell. For Windows the Windows command line can be used.\n\nQGIS has become one of the most promising and most integrative open source GIS systems over the last years. Through the processing plugin, it additionally integrates modules from the other leading free GIS solutions. We will need it (if necessary) to prepare or manipulate some of the data.\n\nRegarding installation, for Ubuntu Linux, the Ubuntu GIS package is a good choice. For Windows, we strongly recommend installing everything via the OSGeo4W environment and not the standalone QGIS installation tool.\nFor most of the data pre and postprocessing, we will use the statistical scripting language R and we highly recommend the Rstudio integrated developing environment.\nPlease follow the instructions according to your operating system.",
+    "crumbs": [
+      "Software & More",
+      "Data and Software"
+    ]
+  },
+  {
+    "objectID": "modeling/modeling-material.html#additional-data-sources",
+    "href": "modeling/modeling-material.html#additional-data-sources",
+    "title": "Data and Software",
+    "section": "Additional data sources",
+    "text": "Additional data sources\nMarburg Open Forest data base Marburg Open Forest data base for static data. You will find some example R-code for manipulation and extraction. Additionally the data is in a QGIS pProject container.",
+    "crumbs": [
+      "Software & More",
+      "Data and Software"
+    ]
+  },
+  {
     "objectID": "modules/en-git-module.html#module-overview",
     "href": "modules/en-git-module.html#module-overview",
     "title": "Git, GitHub & Rstudio [EN]",
@@ -488,68 +557,5 @@
     "title": "Self-study modules",
     "section": "",
     "text": "Git, GitHub & Rstudio [DE]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGit, GitHub & Rstudio [EN]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "templates/journals-examples-default.html",
-    "href": "templates/journals-examples-default.html",
-    "title": "Scales in Geography and Ecology\nA neverending story",
-    "section": "",
-    "text": "Ecology is the study of how organisms interact with each other and their environment. Scales and processes are two fundamental concepts in ecology that are used to understand ecological patterns and dynamics.\nScales in ecology refer to the spatial and temporal dimensions of ecological phenomena. Ecological phenomena occur at different scales, ranging from individual organisms to entire ecosystems and from seconds to millennia. Understanding the appropriate scale is crucial for understanding the ecological processes that occur within that scale. The selection of an appropriate scale also influences the accuracy and precision of ecological data and the interpretation of ecological patterns.\nProcesses in ecology refer to the biological and physical mechanisms that underlie ecological phenomena. Ecological processes occur at different scales, ranging from the molecular level to the landscape level. Ecological processes include biotic interactions, such as competition, predation, and mutualism, as well as abiotic interactions, such as climate, nutrient cycling, and disturbances. Understanding the underlying processes is essential for predicting how ecological systems will respond to changing conditions and for developing effective conservation and management strategies.\nOverall, scales and processes are essential concepts in ecology that are used to understand the complex interactions between organisms and their environment."
-  },
-  {
-    "objectID": "templates/journals-examples-default.html#subsection",
-    "href": "templates/journals-examples-default.html#subsection",
-    "title": "Scales in Geography and Ecology\nA neverending story",
-    "section": "Subsection",
-    "text": "Subsection\nAny study that examines the effects of area-based attributes on individual behaviors or outcomes faces another fundamental methodological problem besides the modifiable areal unit problem (MAUP). It is the problem that results about these effects can be affected by how contextual units or neighborhoods are geographically delineated and the extent to which these areal units deviate from the true geographic context. The problem arises because of the spatial uncertainty in the actual areas that exert the contextual influences under study and the temporal uncertainty in the timing and duration in which individuals experienced these contextual influences. Using neighborhood effects and environmental health research as a point of departure, this article clarifies the nature and sources of this problem, which is referred to as the uncertain geographic context problem (UGCoP). It highlights some of the inferential errors that the UGCoP might cause and discusses some means for mitigating the problem. It reviews recent studies to show that both contextual variables and research findings are sensitive to different delineations of contextual units. The article argues that the UGCoP is a problem as fundamental as the MAUP but is a different kind of problem. Future research needs to pay explicit attention to its potential confounding effects on research results and to methods for mitigating the problem (Kwan 2012).\n\n\n\n\n\nFigure 1: There are four lights"
-  },
-  {
-    "objectID": "templates/journals-examples-default.html#subsection-1",
-    "href": "templates/journals-examples-default.html#subsection-1",
-    "title": "Scales in Geography and Ecology\nA neverending story",
-    "section": "subsection",
-    "text": "subsection\nTime can have a significant effect on scale in geography. This is because spatial relationships and patterns can change over time, and the appropriate scale to study a phenomenon may also change as a result. For example, the appropriate scale to study a natural disaster such as a hurricane may change as the storm approaches and intensifies, and then again as it makes landfall and moves inland. Similarly, the appropriate scale to study urban growth may change over time as the city expands and new neighborhoods or suburbs emerge.\nIn addition, the temporal scale at which data is collected and analyzed can also impact the understanding of geographic phenomena. For example, studying population changes over a decade may reveal different patterns and trends than studying changes over a single year.\nOverall, time is an important consideration in determining the appropriate scale to study a phenomenon and in interpreting the results of geographic analyses. It is essential to consider how spatial patterns and relationships change over time, and to collect and analyze data at appropriate temporal scales in order to gain a comprehensive understanding of geographic phenomena.\n\n3rd level\nYes, there are several theories in geography that relate to the effects of time on scale. One of the most well-known is the concept of temporal scale developed by geographer David Harvey. According to Harvey, temporal scale refers to the length of time over which a phenomenon can be observed, and it is an important consideration in understanding the spatial relationships and patterns that exist within a particular geographic context. In addition, Harvey argues that the temporal scale at which data is collected and analyzed can have a significant impact on the conclusions that can be drawn from the data.\nAnother theory related to the effects of time on scale is the concept of time-space compression developed by geographer David Harvey and others. This theory suggests that advances in technology and communication have led to a compression of time and space, making the world feel smaller and more connected. As a result, geographic phenomena may be influenced by factors that exist at different spatial and temporal scales, and it is important to consider these factors in analyzing and interpreting geographic data.\nOverall, the theories related to the effects of time on scale in geography highlight the complex and dynamic relationships between spatial and temporal phenomena, and the importance of considering these relationships in geographic analyses (Harvey 1996).\n\n4th level\nTime-space compression is a concept that has been developed and elaborated upon by several geographers, including David Harvey, Doreen Massey, and Henri Lefebvre. At its core, time-space compression refers to the idea that advances in transportation and communication technologies have created a sense of “shrinking” in terms of the time and space required for social and economic interactions.\nOne way in which time-space compression is manifested is through the increasing speed and ease of transportation and communication. For example, air travel, high-speed rail, and the internet have all made it possible to move goods, people, and information across vast distances in relatively short periods of time. This has led to a blurring of traditional spatial boundaries, and the emergence of global networks of exchange and interaction.\nHowever, time-space compression is not a neutral or uniform process, and its effects are felt differently by different people and in different places. For example, the increased speed of global trade may benefit some individuals and communities while harming others, and the intensification of global networks can lead to a sense of dislocation or disorientation for some people.\nOverall, time-space compression is an important concept in geography because it helps to explain how the spatial relationships and patterns that exist within a particular geographic context are shaped and transformed by technological change and globalization."
-  },
-  {
-    "objectID": "worksheets/ws-03.html",
-    "href": "worksheets/ws-03.html",
-    "title": "WS-3: Envimet Interfacing to R",
-    "section": "",
-    "text": "Lidar, which stands for Light Detection and Ranging, has emerged as a powerful tool in environmental science, particularly for assessing and characterizing forest structures. Lidar technology utilizes laser pulses to measure distances and generate highly detailed, three-dimensional maps of the Earth’s surface. In the context of forestry, Lidar data has proven instrumental in capturing intricate details of forest canopies, terrain, and vegetation. This information serves as a valuable resource for deriving comprehensive insights into forest structure, including tree height, canopy density, and spatial distribution. Lidar’s ability to provide accurate and high-resolution data has revolutionized the field, enabling researchers and foresters to make informed decisions related to forest management, conservation, and ecological studies. Furthermore, the derived Leaf Area Density (LAD) and canopy height from Lidar data are crucial components in understanding the microclimate within forests, influencing factors such as light penetration, temperature gradients, and overall ecosystem dynamics. This brief introduction sets the stage for exploring the multifaceted applications of Lidar technology in unlocking the secrets held within the complex ecosystems of our forests while emphasizing its significant impact on the microclimatic conditions that shape these environments."
-  },
-  {
-    "objectID": "worksheets/ws-03.html#goals",
-    "href": "worksheets/ws-03.html#goals",
-    "title": "WS-3: Envimet Interfacing to R",
-    "section": "Goals",
-    "text": "Goals\nThe defined goals aim to enhance the capabilities of Lidar-based analyses for characterizing forest structure with a focus on achieving more realistic representations of tree structures and a spatially heterogeneous distribution of tree parameters. The key objectives include refining algorithms to capture intricate details of tree architecture, optimizing the extraction of parameters for accuracy, integrating multisource data to provide a comprehensive view of the forest ecosystem, and establishing robust validation protocols. These goals collectively seek to advance the field, promoting more accurate and meaningful interpretations of forest structure that align closely with real-world conditions."
-  },
-  {
-    "objectID": "worksheets/ws-03.html#things-you-need",
-    "href": "worksheets/ws-03.html#things-you-need",
-    "title": "WS-3: Envimet Interfacing to R",
-    "section": "Things you need",
-    "text": "Things you need\n\nCourse Data Server You will find here all kinds of data, literature and tutorials\nENVI-met software\nMOF Envi_Met Interface to R Repository\n\n\nAdditional Repositories\n\nMOF Micro Climate Repository\nforenius-pp repository for additional functions"
-  },
-  {
-    "objectID": "worksheets/ws-03.html#assignment",
-    "href": "worksheets/ws-03.html#assignment",
-    "title": "WS-3: Envimet Interfacing to R",
-    "section": "Assignment",
-    "text": "Assignment\nDevelop an R-based interface to streamline the generation and customization of plant parameters within ENVI-met’s plant database, enhancing user accessibility and flexibility.\nUsers can access ENVI-met’s plant database via a menu within the software dedicated to plant-related settings. This panel include options for selecting and managing plant types. Basically the Plant Parameter Input defines within the interface how each plant is parameterized.\nParameters must include but are not limited to: * Plant Height: The height of the vegetation. * Leaf Area Index (LAI): A measure of the amount of leaves per unit ground area. * Leaf Area Density (LAD): The Leaf Area Density values for the selected vegetation types and levels. * Canopy Structure: Details related to the spatial arrangement of leaves and branches.\nENVI-met includes a default plant library with predefined plant types. Users can choose from this library, and each entry in the library comes with default parameter values. The plant database interface is seamlessly integrated into the overall model setup environment.\n\nTasks\n\nResearch ENVI-met’s plant database structure.\nResearch the given repositories for functionality dealing with the plant database and foest structure.\nCreate R functions for inputting plant parameters.\n\n\n\n\n\n\n\n\n\n\n\nHessenbox."
-  },
-  {
-    "objectID": "mc_session/mcm1.html",
-    "href": "mc_session/mcm1.html",
-    "title": "Microclimate Modeling",
-    "section": "",
-    "text": "Microclimate, the localized atmospheric conditions that vary from the surrounding area, plays a pivotal role in influencing ecosystems, human activities, and environmental processes. Defined as the set of climatic conditions unique to a specific small-scale geographic area, microclimates encompass nuances in temperature, humidity, wind patterns, and other climatic variables that distinguish a particular locale from its broader surroundings. These localized variations, often influenced by terrain, vegetation, and human activities, constitute the intricate tapestry of microclimates that shape our immediate environments.\nThe study and modeling of microclimates have become increasingly vital in understanding the intricate dynamics of temperature, humidity, wind patterns, and other climatic variables at a fine spatial scale. As global climate change continues to underscore the significance of regional variations, the need for accurate and comprehensive microclimate models becomes more pronounced.\nMicroclimate modeling involves the application of various computational, observational, and analytical techniques to simulate and predict the climatic conditions in specific geographic locations. This interdisciplinary field draws on expertise from meteorology, climatology, ecology, urban planning, and computational sciences to unravel the complex interactions that define microclimates.\nThis comprehensive review delves into the diverse methodologies and advancements employed in modeling microclimates, addressing both the theoretical foundations and practical applications across various domains. From computational approaches like Computational Fluid Dynamics (CFD) to data-driven methods leveraging machine learning, the spectrum of modeling techniques continues to evolve, providing nuanced insights into localized environmental phenomena.\nUnderstanding microclimates is crucial in a range of contexts, including agriculture, urban planning, ecological research, and public health. The intricacies of urban microclimates, for example, influence factors such as heat islands and air quality, impacting the well-being of urban populations. In ecological studies, microclimate modeling is instrumental in elucidating species distributions, biodiversity patterns, and the resilience of ecosystems to environmental changes.\nAdvancements in sensor technologies, including ground-based sensors, unmanned aerial vehicles (UAVs), and satellite observations, contribute to the collection of high-resolution and real-time microclimate data. These technologies enhance the accuracy of models, allowing for more precise simulations and predictions.\nHowever, challenges persist, ranging from the need for improved data resolution and model validation to addressing computational complexities and resource constraints. As we stand at the intersection of technological innovation and environmental awareness, the review navigates through the current state of microclimate modeling, offering insights into ongoing research, case studies exemplifying successful applications, and future directions for advancements in the field.\nBy comprehensively exploring the methodologies, applications, and challenges in microclimate modeling, this review aims to serve as a foundational resource for researchers, practitioners, and policymakers engaged in unraveling the mysteries of localized climatic conditions. In doing so, it contributes to the collective efforts aimed at enhancing our understanding of microclimates and their profound implications on the natural world and human societies."
-  },
-  {
-    "objectID": "mc_session/mcm1.html#calibration-concept",
-    "href": "mc_session/mcm1.html#calibration-concept",
-    "title": "Microclimate Sensors",
-    "section": "Calibration Concept",
-    "text": "Calibration Concept\nThe low budget sensors are usually lacking of a stable measurement quality. To obtain reliable micro climate data a two step calibration process is suggested.\n\nThe measurements of all sensors (preferably in a climate chamber) will be statistically analysed to identify sensor which produce systematic and significant outliers.\nThe sensors are calibrated against an operational running high price reference station in the field.\n\n\n\n\n\n\n\nFuture Calibration Plans\n\n\n\n\n\nFor the future a machine learning approach including the radiation, azimuth, temperature and humidity as predictors for the calibrated temperature as the response variable will be used as an rolling calibration tool."
   }
 ]

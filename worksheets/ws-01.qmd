@@ -21,7 +21,8 @@ This task involves three sub-areas:
 
 ## Things you need 
 
-* [Course Data Server](https://hessenbox.uni-marburg.de/getlink/fi5p6EzMUrtUVFW3DnkFky/envimet) 
+* [Course Data Server Tutorials](https://hessenbox.uni-marburg.de/getlink/fiJAUcwQcWLUSKjunzuEPk/Tutorials) 
+* [Course Data Server Literature](https://hessenbox.uni-marburg.de/getlink/fiT7Zz2jUBuJgLf36zLnL4/literatur) 
 * [ENVI-met software](https://envi-met.info/doku.php?id=start)
 
 
@@ -48,14 +49,12 @@ The task is then as follows:
 * Run the precipitation simulation (check if it runs)
 => If available, articulate questions, problems etc.
 
-* Cross-reading of min 2 publications (What is the basic idea)
+* Cross-reading of min 2 tutorials (What is the basic idea)
 => Prepare a short summary
 
-Any written notes please put them on [Trello](https://trello.com/b/mqXJIO7n/modellierung-envimet) in the board for this course. 
 
 ::: {.callout-tip appearance="simple"}
-Please note: For Trello you need to register.
+
 :::
 
-In Trello you will find the assignments again as a checklist and also empty lists where you can/should write cards with your questions or article summaries. So you can also read the papers without overlap and possibly answer each other in between time.
 
