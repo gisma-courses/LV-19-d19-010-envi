@@ -7,7 +7,7 @@ title-block-banner-color: black
 ![](../images/mandantory.png){width=10%}
 
 
-After the first attempts - specifically after the technical example simulations, a first review of the available literature as well as a rough structuring of the research questions, it is now necessary to design a concrete approach.
+After the first attempts - specifically after the technical example simulations as well as a rough structuring of the research questions, it is now necessary to design a concrete approach.
 
 
 
@@ -23,7 +23,7 @@ After the first attempts - specifically after the technical example simulations,
 * Please have a look at the **Monde Tutorial videos**
 
 ## Assignment
-Design a concrete problem and a suitable associated modeling concept to assess the performance of Envimet to simulate essential microclimatic parameters in the specific setup of the Carolinen Haus.  Consider the following aspects:
+Design a concrete modeling approach and a suitable associated modeling concept to assess the performance of Envimet to simulate how are the effects of the Hasenkopf build up plans affecting the fresh air support of Marburg.   Consider the following aspects:
 * abiotic endowment of the model domain (relief, soil, site location).
 * biotic features of the model domain (simple/3D vegetation)
 * technical model domain (x,y,z extent, time steps nesting)
@@ -57,8 +57,6 @@ The resulting concept should be prepared as a table (similar to the below exampl
 Any written notes please put them on `comments` below. 
 
 ::: {.callout-tip appearance="simple"}
-It is strongly recommended that you find 1 or more collaborators 
+It is strongly recommended that you work in group(s)
 :::
 
-* Please upload /write the tables and necessary notes/explanations on cards.
-* Please prepare the GIS data and upload it to thje [Hessenbox](https://hessenbox.uni-marburg.de/getlink/fi5p6EzMUrtUVFW3DnkFky/envimet).
