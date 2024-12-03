@@ -1,8 +1,9 @@
 [
   {
-    "listing": "/slides/slidelist.html",
+    "listing": "/modules/slidelist.html",
     "items": [
-      "/slides/slide1.html"
+      "/modules/de-git-module.html",
+      "/modules/en-git-module.html"
     ]
   },
   {
@@ -11,13 +12,6 @@
       "/assessment/learnr_app-2.html",
       "/assessment/git-more.html",
       "/assessment/en-git-more.html"
-    ]
-  },
-  {
-    "listing": "/modules/slidelist.html",
-    "items": [
-      "/modules/de-git-module.html",
-      "/modules/en-git-module.html"
     ]
   }
 ]

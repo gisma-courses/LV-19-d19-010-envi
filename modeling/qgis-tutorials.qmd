@@ -10,7 +10,7 @@ title-block-banner-color: black
 
 ## Data set for training purposes
 
-Please find all Data Downloads at the [Course Data Server](https://hessenbox.uni-marburg.de/getlink/fi5p6EzMUrtUVFW3DnkFky/envimet) Data folder for any file exchange and data related purposes.
+Please find all Data Downloads at the[Course Data Server](https://hessenbox.uni-marburg.de/getlink/fi5p6EzMUrtUVFW3DnkFky/envimet) Data folder for any file exchange and data related purposes.
 
 
 ## Specific modeling software 
@@ -26,21 +26,9 @@ Shell — any command line environment will do for the exercises. For Linux we r
 
 Regarding installation, for Ubuntu Linux, the [Ubuntu GIS package](https://wiki.ubuntu.com/UbuntuGIS) is a good choice. For Windows, we strongly recommend installing everything via the [OSGeo4W](http://trac.osgeo.org/osgeo4w/) environment and not the standalone QGIS installation tool. 
 
-For most of the data pre and postprocessing, we will use the statistical scripting language [R](https://cran.r-project.org/) and we highly recommend the  [Rstudio](https://rstudio.com/) integrated developing environment. 
 
-Please follow the instructions according to your operating system.
 
 
 ## Additional data sources
-
-You can find information about the "Zukunftsquartier Hasenkopf" in various places:
-
-- City of Marburg [Zukunftsquartier Hasenkopf](https://www.marburg.de/portal/seiten/zukunftsquartier-hasenkopf-900003397-23001.html)
-- [Slides](file:///C:/Users/creu/Downloads/2021_09_07_livestream_hasenkopf_wettbewerb_folien_klugm.pdf) including the winning design
-- Citizens' initiative wirsindhasenkopf [Flyer](https://wirsindhasenkopf.de/pdf/Flyer_Hasenkopf_Stand_Jan24.pdf) and here “We argue”
-
-
-
-
 
 

@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.553">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Mikroklimamodellierung Envi_Met LV-19-d19-010-envi - WS-3: Envimet Interfacing to R</title>
+<title>WS-3: Envimet goes Reality - Concept and data – Microclimate Modeling - Envi_Met LV-19-d19-010-envi</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,6 +29,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../worksheets/ws-04.html" rel="next">
 <link href="../worksheets/ws-02.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -88,10 +89,10 @@ background-size: cover;
 
 
 <link rel="stylesheet" href="../css/styles.css">
-<meta property="og:title" content="Mikroklimamodellierung Envi_Met LV-19-d19-010-envi - WS-3: Envimet Interfacing to R">
+<meta property="og:title" content="WS-3: Envimet goes Reality - Concept and data – Microclimate Modeling - Envi_Met LV-19-d19-010-envi">
 <meta property="og:description" content="">
-<meta property="og:site_name" content="Mikroklimamodellierung Envi_Met LV-19-d19-010-envi">
-<meta name="twitter:title" content="Mikroklimamodellierung Envi_Met LV-19-d19-010-envi - WS-3: Envimet Interfacing to R">
+<meta property="og:site_name" content="Microclimate Modeling - Envi_Met LV-19-d19-010-envi">
+<meta name="twitter:title" content="WS-3: Envimet goes Reality - Concept and data – Microclimate Modeling - Envi_Met LV-19-d19-010-envi">
 <meta name="twitter:description" content="">
 <meta name="twitter:creator" content="@gisma">
 <meta name="twitter:card" content="summary">
@@ -108,7 +109,7 @@ background-size: cover;
     <img src="../images/logooil.jpg" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Mikroklimamodellierung Envi_Met LV-19-d19-010-envi</span>
+    <span class="navbar-title">Microclimate Modeling - Envi_Met LV-19-d19-010-envi</span>
     </a>
   </div>
         <div class="quarto-navbar-tools tools-end">
@@ -119,20 +120,20 @@ background-size: cover;
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../worksheets/ws-00.html">Worksheets</a></li><li class="breadcrumb-item"><a href="../worksheets/ws-03.html">WS-3: Envimet Interfacing to R</a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
+        <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+          <h1 class="quarto-secondary-nav-title">WS-3: Envimet goes Reality - Concept and data</h1>
+        </a>     
     </div>
   </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../worksheets/ws-00.html">Worksheets</a></li><li class="breadcrumb-item"><a href="../worksheets/ws-03.html">WS-3: Envimet Interfacing to R</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">WS-3: Envimet Interfacing to R</h1>
+      <h1 class="title d-none d-lg-block">WS-3: Envimet goes Reality - Concept and data</h1>
                       </div>
   </div>
     
@@ -152,9 +153,9 @@ background-size: cover;
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">Modeling Microclimate</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -170,9 +171,9 @@ background-size: cover;
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
  <span class="menu-text">Software &amp; More</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -188,9 +189,9 @@ background-size: cover;
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
  <span class="menu-text">Worksheets</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -210,13 +211,19 @@ background-size: cover;
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../worksheets/ws-02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">WS-2: Envimet goes Reality</span></a>
+ <span class="menu-text">WS-2: Envimet - simple world Hasenkopf</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../worksheets/ws-03.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">WS-3: Envimet Interfacing to R</span></a>
+ <span class="menu-text">WS-3: Envimet goes Reality - Concept and data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../worksheets/ws-04.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">WS-4: Envimet goes Reality - QGIS data manipulation</span></a>
   </div>
 </li>
       </ul>
@@ -236,7 +243,8 @@ background-size: cover;
   <li><a href="#things-you-need" id="toc-things-you-need" class="nav-link" data-scroll-target="#things-you-need">Things you need</a></li>
   <li><a href="#assignment" id="toc-assignment" class="nav-link" data-scroll-target="#assignment">Assignment</a>
   <ul class="collapse">
-  <li><a href="#tasks" id="toc-tasks" class="nav-link" data-scroll-target="#tasks">Tasks</a></li>
+  <li><a href="#assignment-1" id="toc-assignment-1" class="nav-link" data-scroll-target="#assignment-1">Assignment 1</a></li>
+  <li><a href="#assignment-2" id="toc-assignment-2" class="nav-link" data-scroll-target="#assignment-2">Assignment 2</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/gisma-courses/LV-19-d19-010-envi/edit/main/worksheets/ws-03.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gisma-courses/LV-19-d19-010-envi/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -248,50 +256,121 @@ background-size: cover;
 
 
 
-<p><img src="../images/mandantory.png" class="img-fluid" style="width:10.0%"> Lidar, which stands for Light Detection and Ranging, has emerged as a powerful tool in environmental science, particularly for assessing and characterizing forest structures. Lidar technology utilizes laser pulses to measure distances and generate highly detailed, three-dimensional maps of the Earth’s surface. In the context of forestry, Lidar data has proven instrumental in capturing intricate details of forest canopies, terrain, and vegetation. This information serves as a valuable resource for deriving comprehensive insights into forest structure, including tree height, canopy density, and spatial distribution. Lidar’s ability to provide accurate and high-resolution data has revolutionized the field, enabling researchers and foresters to make informed decisions related to forest management, conservation, and ecological studies. Furthermore, the derived Leaf Area Density (LAD) and canopy height from Lidar data are crucial components in understanding the microclimate within forests, influencing factors such as light penetration, temperature gradients, and overall ecosystem dynamics. This brief introduction sets the stage for exploring the multifaceted applications of Lidar technology in unlocking the secrets held within the complex ecosystems of our forests while emphasizing its significant impact on the microclimatic conditions that shape these environments.</p>
+<p><img src="../images/mandantory.png" class="img-fluid" style="width:10.0%"></p>
 <section id="goals" class="level2">
 <h2 class="anchored" data-anchor-id="goals">Goals</h2>
-<p>The defined goals aim to enhance the capabilities of Lidar-based analyses for characterizing forest structure with a focus on achieving more realistic representations of tree structures and a spatially heterogeneous distribution of tree parameters. The key objectives include refining algorithms to capture intricate details of tree architecture, optimizing the extraction of parameters for accuracy, integrating multisource data to provide a comprehensive view of the forest ecosystem, and establishing robust validation protocols. These goals collectively seek to advance the field, promoting more accurate and meaningful interpretations of forest structure that align closely with real-world conditions.</p>
+<p>Now that the first steps have been taken - namely, the technical and simple hasenkopf example simulations and a rough structuring of the research questions - it is necessary to design a concrete approach.</p>
 </section>
 <section id="things-you-need" class="level2">
 <h2 class="anchored" data-anchor-id="things-you-need">Things you need</h2>
 <ul>
 <li><a href="https://hessenbox.uni-marburg.de/getlink/fi5p6EzMUrtUVFW3DnkFky/envimet">Course Data Server</a> You will find here all kinds of data, literature and tutorials</li>
 <li><a href="https://envi-met.info/doku.php?id=start">ENVI-met software</a></li>
-<li><a href="https://github.com/gisma/envimetR">MOF Envi_Met Interface to R Repository</a></li>
+<li>Please have a look at the <strong>Monde Tutorial videos</strong></li>
+<li>QGIS</li>
 </ul>
-<section id="additional-repositories" class="level4">
-<h4 class="anchored" data-anchor-id="additional-repositories">Additional Repositories</h4>
-<ul>
-<li><a href="https://github.com/gisma/MOF-Microclimate">MOF Micro Climate Repository</a></li>
-<li><a href="https://gitlab.uni-marburg.de/reudenba/forgenius-pp">forenius-pp repository for additional functions</a></li>
-</ul>
-</section>
 </section>
 <section id="assignment" class="level2">
 <h2 class="anchored" data-anchor-id="assignment">Assignment</h2>
-<p>Develop an R-based interface to streamline the generation and customization of plant parameters within ENVI-met’s plant database, enhancing user accessibility and flexibility.</p>
-<p>Users can access ENVI-met’s plant database via a menu within the software dedicated to plant-related settings. This panel include options for selecting and managing plant types. Basically the <em>Plant Parameter Input</em> defines within the interface how each plant is parameterized.</p>
-<p>Parameters must include but are not limited to: * Plant Height: The height of the vegetation. * Leaf Area Index (LAI): A measure of the amount of leaves per unit ground area. * Leaf Area Density (LAD): The Leaf Area Density values for the selected vegetation types and levels. * Canopy Structure: Details related to the spatial arrangement of leaves and branches.</p>
-<p>ENVI-met includes a default plant library with predefined plant types. Users can choose from this library, and each entry in the library comes with default parameter values. The plant database interface is seamlessly integrated into the overall model setup environment.</p>
-<section id="tasks" class="level3">
-<h3 class="anchored" data-anchor-id="tasks">Tasks</h3>
+<p>Design a concrete modeling approach and a suitable associated modeling concept to assess the performance of Envimet to simulate how are the effects of the Hasenkopf build up plans affecting the fresh air support of Marburg.</p>
+<p>Consider the following aspects:</p>
 <ul>
-<li>Research ENVI-met’s plant database structure.</li>
-<li>Research the given repositories for functionality dealing with the plant database and foest structure.</li>
-<li>Create R functions for inputting plant parameters.</li>
+<li>abiotic endowment of the model domain (relief, soil, site location).</li>
+<li>biotic features of the model domain (simple/3D vegetation)</li>
+<li>appropriate meteorology for model initialization (ideal, real values)</li>
+<li>technical model domain (x,y,z extent, time steps nesting)</li>
+<li>Validation strategy</li>
 </ul>
+<p>Design the necessary work packages you need to divide your team into groups/single workers to achieve the goal.</p>
+<ul>
+<li>WP 1 data aquisition (DEM/DSM, vegetation, soil, build up areas, planned hasenkopf build up area, meteo data )</li>
+<li>WP 2 data manipulation using QGIS
+<ul>
+<li>WP 2a Vegetation “simple</li>
+<li>WP 2b Vegetation “3D</li>
+<li>WP 2c buildings</li>
+<li>WP 2d Terrain, soil etc.</li>
+</ul></li>
+<li>WP 3 Meteorological data</li>
+<li>WP 4 Model Setup</li>
+<li>WP 6 Simulation</li>
+<li>WP 7 Presentation</li>
+</ul>
+<p>The task is then as follows:</p>
+<p>The resulting concept should be prepared as a table (similar to the below example), also addressing the literature/data used as well as know shortcomings.</p>
+<section id="assignment-1" class="level3">
+<h3 class="anchored" data-anchor-id="assignment-1">Assignment 1</h3>
+<p>From your knowledge now prepare a table containing the following information</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">ressources needed</th>
+<th style="text-align: left;">solution</th>
+<th style="text-align: left;">references</th>
+<th style="text-align: left;">needs manipulation</th>
+<th style="text-align: left;">knowledge available</th>
+<th style="text-align: left;">Who is doing it</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">relief</td>
+<td style="text-align: left;">1 m DOM</td>
+<td style="text-align: left;">download link etc.</td>
+<td style="text-align: left;">yes, what kind of</td>
+<td style="text-align: left;">no, what aditional knowledge do you need</td>
+<td style="text-align: left;">Name(s)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">soil properties</td>
+<td style="text-align: left;">soil data</td>
+<td style="text-align: left;">access has to be clarified</td>
+<td style="text-align: left;">who knows</td>
+<td style="text-align: left;">?</td>
+<td style="text-align: left;">?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">soil vertical structure</td>
+<td style="text-align: left;">four levels temperature soil moisture build-in model</td>
+<td style="text-align: left;">envi-met</td>
+<td style="text-align: left;">?</td>
+<td style="text-align: left;">?</td>
+<td style="text-align: left;">?</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">…</td>
+<td style="text-align: left;">…</td>
+<td style="text-align: left;">…</td>
+<td style="text-align: left;">…</td>
+<td style="text-align: left;">…</td>
+<td style="text-align: left;">…</td>
+</tr>
+</tbody>
+</table>
+<p>Any written notes please put them on <code>comments</code> below.</p>
+</section>
+<section id="assignment-2" class="level3">
+<h3 class="anchored" data-anchor-id="assignment-2">Assignment 2</h3>
+<p>Identify the critical shortcomings to solve these problems. State them clearly and try to offer a solution.</p>
 <div class="callout callout-style-simple callout-tip">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-
+<p>It is very important to understand what needs to be done and in which order by looking at the previous sessions and the tutorial.</p>
+<p>The focus is on identifying the required data, the appropriate data preparation (also think about 3D problems!) and the standard initialisation of Envimet.</p>
 </div>
 </div>
 </div>
-<p><a href="https://hessenbox.uni-marburg.de/getlink/fi5p6EzMUrtUVFW3DnkFky/envimet">Hessenbox</a>.</p>
 
 
 </section>
@@ -477,18 +556,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -520,7 +588,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp("^(?:http:|https:)\/\/www\.quarto\.org\/custom");
@@ -528,7 +618,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -862,11 +952,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../worksheets/ws-02.html" class="pagination-link" aria-label="WS-2: Envimet goes Reality">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">WS-2: Envimet goes Reality</span>
+      <a href="../worksheets/ws-02.html" class="pagination-link" aria-label="WS-2: Envimet - simple world Hasenkopf">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">WS-2: Envimet - simple world Hasenkopf</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="../worksheets/ws-04.html" class="pagination-link" aria-label="WS-4: Envimet goes Reality - QGIS data manipulation">
+        <span class="nav-page-text">WS-4: Envimet goes Reality - QGIS data manipulation</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

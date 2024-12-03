@@ -1,54 +1,77 @@
 ---
-title: "WS-3: Envimet Interfacing to R"
+title: "WS-3: Envimet goes Reality - Concept and data"
 title-block-banner: ../images/envi_met_title.png
 title-block-banner-color: black 
 ---
 
 ![](../images/mandantory.png){width=10%}
-Lidar, which stands for Light Detection and Ranging, has emerged as a powerful tool in environmental science, particularly for assessing and characterizing forest structures. Lidar technology utilizes laser pulses to measure distances and generate highly detailed, three-dimensional maps of the Earth's surface. In the context of forestry, Lidar data has proven instrumental in capturing intricate details of forest canopies, terrain, and vegetation. This information serves as a valuable resource for deriving comprehensive insights into forest structure, including tree height, canopy density, and spatial distribution. Lidar's ability to provide accurate and high-resolution data has revolutionized the field, enabling researchers and foresters to make informed decisions related to forest management, conservation, and ecological studies. Furthermore, the derived Leaf Area Density (LAD) and canopy height from Lidar data are crucial components in understanding the microclimate within forests, influencing factors such as light penetration, temperature gradients, and overall ecosystem dynamics. This brief introduction sets the stage for exploring the multifaceted applications of Lidar technology in unlocking the secrets held within the complex ecosystems of our forests while emphasizing its significant impact on the microclimatic conditions that shape these environments.
-
-
-
 
 ## Goals 
 
-The defined goals aim to enhance the capabilities of Lidar-based analyses for characterizing forest structure with a focus on achieving more realistic representations of tree structures and a spatially heterogeneous distribution of tree parameters. The key objectives include refining algorithms to capture intricate details of tree architecture, optimizing the extraction of parameters for accuracy, integrating multisource data to provide a comprehensive view of the forest ecosystem, and establishing robust validation protocols. These goals collectively seek to advance the field, promoting more accurate and meaningful interpretations of forest structure that align closely with real-world conditions.
+Now that the first steps have been taken - namely, the technical and simple hasenkopf example simulations and a rough structuring of the research questions - it is necessary to design a concrete approach.
+
+
 
 
 ## Things you need
 
 * [Course Data Server](https://hessenbox.uni-marburg.de/getlink/fi5p6EzMUrtUVFW3DnkFky/envimet) You will find here all kinds of data, literature and tutorials 
 * [ENVI-met software](https://envi-met.info/doku.php?id=start)
-* [MOF Envi_Met Interface to R Repository](https://github.com/gisma/envimetR)
-
-#### Additional Repositories
-
-* [MOF Micro Climate Repository](https://github.com/gisma/MOF-Microclimate)
-* [forenius-pp repository for additional functions](https://gitlab.uni-marburg.de/reudenba/forgenius-pp)
+* Please have a look at the **Monde Tutorial videos**
+* QGIS
 
 ## Assignment
-Develop an R-based interface to streamline the generation and customization of plant parameters within ENVI-met's plant database, enhancing user accessibility and flexibility.
+Design a concrete modeling approach and a suitable associated modeling concept to assess the performance of Envimet to simulate how are the effects of the Hasenkopf build up plans affecting the fresh air support of Marburg.  
 
-Users can access ENVI-met's plant database via a menu within the software dedicated to plant-related settings. This panel include options for selecting and managing plant types. Basically the  *Plant Parameter Input* defines within the interface how each plant is parameterized. 
+Consider the following aspects:
 
-Parameters must include but are not limited to:
-* Plant Height: The height of the vegetation.
-* Leaf Area Index (LAI): A measure of the amount of leaves per unit ground area.
-* Leaf Area Density (LAD): The Leaf Area Density values for the selected vegetation types and levels. 
-* Canopy Structure: Details related to the spatial arrangement of leaves and branches.
+* abiotic endowment of the model domain (relief, soil, site location).
+* biotic features of the model domain (simple/3D vegetation)
+* appropriate meteorology for model initialization (ideal, real values)
+* technical model domain (x,y,z extent, time steps nesting)
+* Validation strategy
 
-ENVI-met includes a default plant library with predefined plant types. Users can choose from this library, and each entry in the library comes with default parameter values. The plant database interface is seamlessly integrated into the overall model setup environment. 
+Design the necessary work packages you need to divide your team into groups/single workers to achieve the goal.
+
+ * WP 1 data aquisition (DEM/DSM, vegetation, soil, build up areas, planned hasenkopf build up area, meteo data )
+ * WP 2 data manipulation using QGIS 
+   - WP 2a Vegetation "simple
+   - WP 2b Vegetation "3D
+   - WP 2c buildings
+   - WP 2d Terrain, soil etc.
+ * WP 3 Meteorological data
+ * WP 4 Model Setup
+ * WP 6 Simulation
+ * WP 7 Presentation
+ 
+ 
+The task is then as follows:
+
+The resulting concept should be prepared as a table (similar to the below example), also addressing the literature/data  used as well as know shortcomings.
+
+### Assignment 1
+
+From your knowledge now prepare a table containing the following information 
+
+| ressources needed | solution | references | needs manipulation | knowledge available | Who is doing it |
+|:-------:|:--------|:---------|:---------|:---------|:---------|
+| relief | 1 m DOM |  download link etc. | yes, what kind of | no, what aditional knowledge do you need | Name(s) |
+| soil properties | soil data  | access has to be clarified |  who knows| ? | ? |
+| soil vertical structure | four levels temperature soil moisture build-in model| envi-met | ? | ? | ? |
+|... |... |... |... |... |... |
 
 
-### Tasks
+Any written notes please put them on `comments` below. 
 
-* Research ENVI-met's plant database structure.
-* Research the given repositories for functionality dealing with the plant database and foest structure.
-* Create R functions for inputting plant parameters.
+### Assignment 2
 
+Identify the critical shortcomings to solve these problems. State them clearly and try to offer a solution.
 
 ::: {.callout-tip appearance="simple"}
 
+It is very important to understand what needs to be done and in which order by looking at the previous sessions and the tutorial. 
+
+The focus is on identifying the required data, the appropriate data preparation (also think about 3D problems!) and the standard initialisation of Envimet.
+
 :::
 
- [Hessenbox](https://hessenbox.uni-marburg.de/getlink/fi5p6EzMUrtUVFW3DnkFky/envimet).

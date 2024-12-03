@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.553">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Mikroklimamodellierung Envi_Met LV-19-d19-010-envi - Power Supply</title>
+<title>WS-4: Envimet goes Reality - QGIS data manipulation – Microclimate Modeling - Envi_Met LV-19-d19-010-envi</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,9 +29,11 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../worksheets/ws-03.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
@@ -65,24 +67,40 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>
+
+      .quarto-title-block .quarto-title-banner h1,
+      .quarto-title-block .quarto-title-banner h2,
+      .quarto-title-block .quarto-title-banner h3,
+      .quarto-title-block .quarto-title-banner h4,
+      .quarto-title-block .quarto-title-banner h5,
+      .quarto-title-block .quarto-title-banner h6
+      {
+        color: black;
+      }
+
+      .quarto-title-block .quarto-title-banner {
+        color: black;
+background-image: url(../images/envi_met_title.png);
+background-size: cover;
+      }
+</style>
 
 
 <link rel="stylesheet" href="../css/styles.css">
-<meta property="og:title" content="Mikroklimamodellierung Envi_Met LV-19-d19-010-envi - Power Supply">
+<meta property="og:title" content="WS-4: Envimet goes Reality - QGIS data manipulation – Microclimate Modeling - Envi_Met LV-19-d19-010-envi">
 <meta property="og:description" content="">
-<meta property="og:image" content="https://gisma-courses.github.io/LV-19-d19-010-envi/images/battery_box/top_box.jpg">
-<meta property="og:site_name" content="Mikroklimamodellierung Envi_Met LV-19-d19-010-envi">
-<meta name="twitter:title" content="Mikroklimamodellierung Envi_Met LV-19-d19-010-envi - Power Supply">
+<meta property="og:site_name" content="Microclimate Modeling - Envi_Met LV-19-d19-010-envi">
+<meta name="twitter:title" content="WS-4: Envimet goes Reality - QGIS data manipulation – Microclimate Modeling - Envi_Met LV-19-d19-010-envi">
 <meta name="twitter:description" content="">
-<meta name="twitter:image" content="https://gisma-courses.github.io/LV-19-d19-010-envi/images/battery_box/top_box.jpg">
 <meta name="twitter:creator" content="@gisma">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -90,7 +108,7 @@ ul.task-list li input[type="checkbox"] {
     <img src="../images/logooil.jpg" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Mikroklimamodellierung Envi_Met LV-19-d19-010-envi</span>
+    <span class="navbar-title">Microclimate Modeling - Envi_Met LV-19-d19-010-envi</span>
     </a>
   </div>
         <div class="quarto-navbar-tools tools-end">
@@ -101,26 +119,42 @@ ul.task-list li input[type="checkbox"] {
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Power Supply</li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
+        <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+          <h1 class="quarto-secondary-nav-title">WS-4: Envimet goes Reality - QGIS data manipulation</h1>
+        </a>     
     </div>
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title d-none d-lg-block">WS-4: Envimet goes Reality - QGIS data manipulation</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">Modeling Microclimate</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -136,9 +170,9 @@ ul.task-list li input[type="checkbox"] {
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
  <span class="menu-text">Software &amp; More</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -154,13 +188,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
  <span class="menu-text">Worksheets</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../worksheets/ws-00.html" class="sidebar-item-text sidebar-link">
@@ -176,13 +210,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../worksheets/ws-02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">WS-2: Envimet goes Reality</span></a>
+ <span class="menu-text">WS-2: Envimet - simple world Hasenkopf</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../worksheets/ws-03.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">WS-3: Envimet Interfacing to R</span></a>
+ <span class="menu-text">WS-3: Envimet goes Reality - Concept and data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../worksheets/ws-04.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">WS-4: Envimet goes Reality - QGIS data manipulation</span></a>
   </div>
 </li>
       </ul>
@@ -198,114 +238,119 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#switching-scheme" id="toc-switching-scheme" class="nav-link active" data-scroll-target="#switching-scheme">Switching scheme</a></li>
-  <li><a href="#wiring" id="toc-wiring" class="nav-link" data-scroll-target="#wiring">Wiring</a></li>
-  <li><a href="#mounting" id="toc-mounting" class="nav-link" data-scroll-target="#mounting">Mounting</a></li>
-  <li><a href="#station-setup-in-the-field" id="toc-station-setup-in-the-field" class="nav-link" data-scroll-target="#station-setup-in-the-field">Station setup in the field</a></li>
-  <li><a href="#final-check" id="toc-final-check" class="nav-link" data-scroll-target="#final-check">Final check</a></li>
-  <li><a href="#risk-assessment" id="toc-risk-assessment" class="nav-link" data-scroll-target="#risk-assessment">Risk Assessment</a></li>
+  <li><a href="#goals" id="toc-goals" class="nav-link active" data-scroll-target="#goals">Goals</a></li>
+  <li><a href="#things-you-need" id="toc-things-you-need" class="nav-link" data-scroll-target="#things-you-need">Things you need</a></li>
+  <li><a href="#assignment" id="toc-assignment" class="nav-link" data-scroll-target="#assignment">Assignment</a>
+  <ul class="collapse">
+  <li><a href="#workpackage-1" id="toc-workpackage-1" class="nav-link" data-scroll-target="#workpackage-1">Workpackage 1</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/gisma-courses/LV-19-d19-010-envi/edit/main/mc_session/mc2.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gisma-courses/LV-19-d19-010-envi/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/gisma-courses/LV-19-d19-010-envi/edit/main/worksheets/ws-04.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gisma-courses/LV-19-d19-010-envi/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<div class="quarto-about-solana column-body content">
-  <div class="about-entity">
-    <div class="entity-contents">
-      <header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Power Supply</h1>
-</div>
-<div class="quarto-title-meta">
-  </div>
-</header> 
-      <div class="about-contents"><div id="image-heading">
-<p>The power supply box is designed to safely supply a range of demanding energy consumers with power. It consists of industry standard components.</p>
-</div></div>
-    </div>
-    <img src="../images/../images/battery_box/top_box.jpg" class="about-image
-  round " style="height: 10em; width: 10em;">
-  </div>
-</div>
 
-<section id="switching-scheme" class="level2">
-<h2 data-anchor-id="switching-scheme">Switching scheme</h2>
-<p>The battery box has a very simple design. Besides the cabling, it contains a solar charge regulator, a fuse panel for the protection of the consumers and an AGM 120aH battery.</p>
-<p><img src="../images/battery_box/switching_scheme.png" class="img-fluid" style="width:75.0%"> ## Components * Sealable, durable Wham Bam Heavy Duty Box, 62 L, 59,5 x 40 x 37 cm, PP Recycling Plastic <a href="https://www.whatmoreuk.com/product/wham-bam-62l-h-duty-box-lid-black-recycled/">Wham Bam Box</a>. The “Wham Bam Box” made of recycled PP plastic was chosen for its extreme mechanical strength and almost complete biochemical resistance. The bad temperature spectrum for thermal stability is from approx. -10 -140 °C., it is acid and alkali resistant and waterproof. By additionally equipping the box with a fire protection mat, the almost airtight closure offers a virtually complete reduction of fire load inside and outside the box. * 12V deep-cycle battery <a href="https://www.batteriespezialist.de/Solarbatterien/Solar-120Ah-Versorgungsbatterie::422.html">BSA Audio Solar Technologie 120 Ah 12V C100</a> * 3 x <a href="https://www.neutrik.com/en/product/nac3fpx">Neutrik powerCON TRUE1 NAC3FPX</a> outlets and <a href="https://www.neutrik.com/en/product/scnac-fpx">Neutrik SCNAC-FPX</a> sealing cover. * <a href="https://www.ebay.de/i/321606050013">Fuse Box</a> for car fuses up to max. 15A per fuse, maximum 30A per fuse box, With sealed cover, splash-proof, Material: PA6.6, 12 connections on the side * Nominal voltage: 32 V/DC * Nominal current (per output): 15 A * Temperature range: -20 - +85 °C * Connections: Flat plug 8x 6,3 x 0,8 mm lateral * Solar charge controller, 20A (ALLPOWERS, available from various brands) <a href="http://iallpowers.com/index.php?c=product&amp;id=372">Specification ALLPOWERS</a></p>
+<p><img src="../images/mandantory.png" class="img-fluid" style="width:10.0%"></p>
+<p>After the first attempts - specifically after the technical example simulations as well as a rough structuring of the research questions, it is now necessary to design a concrete approach.</p>
+<section id="goals" class="level2">
+<h2 class="anchored" data-anchor-id="goals">Goals</h2>
+<p>After the first attempts - specifically after the technical example simulations, a first review of the available literature as well as a rough structuring of the research questions, it is now necessary to design a concrete approach.</p>
 </section>
-<section id="wiring" class="level2">
-<h2 data-anchor-id="wiring">Wiring</h2>
+<section id="things-you-need" class="level2">
+<h2 class="anchored" data-anchor-id="things-you-need">Things you need</h2>
 <ul>
-<li>Battery to solar charger:
-<ul>
-<li>Pole terminal connectors (+ and -)</li>
-<li>6 mm<sup>2</sup> cables (red and black)</li>
-<li>2 x Crimp cable shoes</li>
-</ul></li>
-<li>Solar panel to solar charger
-<ul>
-<li>MC4 photovoltaic connectors (+ and -) <a href="https://www.voelkner.de/products/687644/Weidmueller-Photovoltaik-Steckverbinder-PV-Stick-PV-STICK-SET-Schwarz-Inhalt-1St..html">Weidemüller</a></li>
-<li>6 mm<sup>2</sup> cables (red and black)</li>
-<li>2x Crimp cable shoes</li>
-</ul></li>
-<li>Solar charger fuse box outlets
-<ul>
-<li>6 x 1,5 mm<sup>2</sup> cables, red</li>
-<li>6 x 1/4’’ FASTON terminals <a href="https://www.ebay.de/i/321606050013">Fuse Box</a></li>
-<li>3 x 1,5 mm<sup>2</sup> cables, black</li>
-<li>2 x Crimp cable shoes (holding 3 wires)</li>
-<li>6 x 6,35mm / 1/4’’ crimp <a href="https://en.wikipedia.org/wiki/FASTON_terminal">FASTON terminals</a></li>
-</ul></li>
-</ul>
-<p>Please note the following points: * Silicone cables, solar cables, plugs and fuse box fulfills industry standards. All cable lugs are crimped and checked. * The cable lugs are not screwed to the charging cables with cable lugs but through the crimp connection with the end sleeve. * A main fuse (e.g.&nbsp;40A automatic circuit breaker) must be installed</p>
-<p>See also the figure below.</p>
-<p><img src="../images/battery_box/solarcharer_wiring_fuse.jpg" class="img-fluid"></p>
-<p><img src="../images/battery_box/battery_wiring.jpg" class="img-fluid"> <img src="../images/battery_box/battery_fuse.jpg" class="img-fluid"></p>
-</section>
-<section id="mounting" class="level2">
-<h2 data-anchor-id="mounting">Mounting</h2>
-<ul>
-<li>Outlets: 6x M3 screw (12mm), washers and nuts</li>
-<li>Solar connectors: 2 x waterproof cable glands</li>
-<li>Solar charger and fuse box:
-<ul>
-<li>Wooden plate, glued to the box</li>
-<li>4 screws for Solar Charge Controller</li>
-<li>4 screws for fuse box Cable lugs and plugs are covered with self-vulcanizing tape and additionally insulated.</li>
-</ul></li>
+<li><a href="https://hessenbox.uni-marburg.de/getlink/fi5p6EzMUrtUVFW3DnkFky/envimet">Course Data Server</a> You will find here all kinds of data, literature and tutorials</li>
+<li><a href="https://envi-met.info/doku.php?id=start">ENVI-met software</a></li>
+<li>Please have a look at the <strong>Monde Tutorial videos</strong></li>
 </ul>
 </section>
-<section id="station-setup-in-the-field" class="level2">
-<h2 data-anchor-id="station-setup-in-the-field">Station setup in the field</h2>
-<p>For safe operation, the following points must be taken into account when setting up the box:</p>
-<p>1.) The box must be placed horizontally. Preferable at on a clearing to reduce impacts of falling branches or similar. <img src="../images/battery_box/0_raw_installation.jpg" class="img-fluid"> 2.) One square meter around the box must be cleared of any vegetation and the A-horizon (depending on the slope, even more).</p>
-<p><img src="../images/battery_box/01_cleaning area_from_organic_material.jpg" class="img-fluid"> 3.) Around this area a further strip with a diameter of at least 1 meter must also be cleared of organic material, especially leaves. Dig up the A-horizon and exclude roots and organic stuff. Note that the wiring sections must also be cleared of combustible organic material.</p>
-<p><img src="../images/battery_box/02_cleaning _box_plot_from_vegetation.jpg" class="img-fluid"> 4.) Check cables and screws for proper seating and integrity.</p>
-<p><img src="../images/battery_box/06_check_cables.jpg" class="img-fluid"></p>
-<p>5.) Check proper installation of the solar panel. Mount the panel on a simple wooden slat attached to the frame to avoid damage to the protective foil on the back. Such damage will destroy the panel.</p>
-<p><img src="../images/battery_box/06_simple_rack.jpg" class="img-fluid"></p>
-<p>6.) Attach the solar connectors to the panel. This avoids ground contact and provides good weather protection. This can be done very easily by threading cable ties through the plugs and the junction box. {% include figure image_path=“../images/battery_box/07_solar_plugs.jpg” alt=“Attach the solar connectors to the panel.” %} <img src="../images/battery_box/07_solar_plugs.jpg" class="img-fluid"> 7.) Finally, the box should be secured against unauthorized or accidental opening. For this purpose there is a steel cable with a number lock, which is to be attached in the way it is placed there.</p>
-<p><img src="../images/battery_box/08_safety_cable.jpg" class="img-fluid"></p>
+<section id="assignment" class="level2">
+<h2 class="anchored" data-anchor-id="assignment">Assignment</h2>
+<p>Design a concrete modeling approach and a suitable associated modeling concept to assess the performance of Envimet to simulate how are the effects of the Hasenkopf build up plans affecting the fresh air support of Marburg. Consider the following aspects: * abiotic endowment of the model domain (relief, soil, site location). * biotic features of the model domain (simple/3D vegetation) * technical model domain (x,y,z extent, time steps nesting) * appropriate meteorology for model initialization (ideal, real values) * Validation strategy</p>
+<ul>
+<li>Work packages - What is to be done when and by whom?</li>
+<li>WP 1 technical and abiotic model</li>
+<li>WP 2 meteo data initialization</li>
+<li>WP 3 Vegetation “simple</li>
+<li>WP 4 Vegetation “3D</li>
+<li>WP 5 Validation strategy</li>
+</ul>
+<p>The task is then as follows:</p>
+<p>The resulting concept should be prepared as a table (similar to the below example), also addressing the literature/data used as well as know shortcomings.</p>
+<section id="workpackage-1" class="level3">
+<h3 class="anchored" data-anchor-id="workpackage-1">Workpackage 1</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">item</th>
+<th style="text-align: left;">solution</th>
+<th style="text-align: left;">references</th>
+<th style="text-align: left;">ressources needed</th>
+<th style="text-align: left;">lead</th>
+<th style="text-align: left;">team</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">relief</td>
+<td style="text-align: left;">build-in version xy</td>
+<td style="text-align: left;">online access</td>
+<td style="text-align: left;">?</td>
+<td style="text-align: left;">?</td>
+<td style="text-align: left;">?</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">soil properties</td>
+<td style="text-align: left;">soil data</td>
+<td style="text-align: left;">access has to be clarified</td>
+<td style="text-align: left;">who knows</td>
+<td style="text-align: left;">?</td>
+<td style="text-align: left;">?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">soil vertical structure</td>
+<td style="text-align: left;">four levels temperature soil moisture build-in model</td>
+<td style="text-align: left;">envi-met</td>
+<td style="text-align: left;">?</td>
+<td style="text-align: left;">?</td>
+<td style="text-align: left;">?</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">…</td>
+<td style="text-align: left;">…</td>
+<td style="text-align: left;">…</td>
+<td style="text-align: left;">…</td>
+<td style="text-align: left;">…</td>
+<td style="text-align: left;">…</td>
+</tr>
+</tbody>
+</table>
+<p>Any written notes please put them on <code>comments</code> below.</p>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>It is strongly recommended that you work in group(s)</p>
+</div>
+</div>
+</div>
+
+
 </section>
-<section id="final-check" class="level2">
-<h2 data-anchor-id="final-check">Final check</h2>
-<ol type="1">
-<li>All contacts and cables must be checked for proper seating and integrity. Especially the charging cables on the battery must be screwed tightly.</li>
-<li>All cables are to be laid without tension.</li>
-<li>The solar cables are to be laid separately to avoid a short circuit, so that an animal crossing etc. does not cause them to come into contact.</li>
-<li>The box is secured and tight.</li>
-</ol>
-</section>
-<section id="risk-assessment" class="level2">
-<h2 data-anchor-id="risk-assessment">Risk Assessment</h2>
-<p>Here you find the preliminary <a href="{{site.baseurl}}../imgages/battery_box/GFB-12V Anlagen_Natur40.pdf">risk assesment</a> for the installation and operation of 12 V solar power based energy supply units and measuring sensor systems.</p>
-
-
-
 </section>
 
 </main> <!-- /main -->
@@ -473,6 +518,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   } else {
     toggleColorMode(false);
   }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
@@ -481,18 +533,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -524,7 +565,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp("^(?:http:|https:)\/\/www\.quarto\.org\/custom");
@@ -532,7 +595,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -864,6 +927,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <script src="https://utteranc.es/client.js" repo="gisma-courses/LV-19-d19-010-envi" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../worksheets/ws-03.html" class="pagination-link" aria-label="WS-3: Envimet goes Reality - Concept and data">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">WS-3: Envimet goes Reality - Concept and data</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -872,7 +944,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
 <p>LV-19-d19-010-envi (2023)</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/gisma-courses/LV-19-d19-010-envi/edit/main/mc_session/mc2.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gisma-courses/LV-19-d19-010-envi/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/gisma-courses/LV-19-d19-010-envi/edit/main/worksheets/ws-04.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gisma-courses/LV-19-d19-010-envi/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
