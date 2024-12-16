@@ -52,6 +52,7 @@ website:
           - worksheets/ws-02.qmd
           - worksheets/ws-03.qmd
           - worksheets/ws-04.qmd
+          - worksheets/ws-99.qmd
           
           # - href: https://github.com/gisma-courses/LV-19-050-189-ABM/blob/main/assets/Challenge1Advanced.nlogo
           #   text: Challenge One Advanced Model

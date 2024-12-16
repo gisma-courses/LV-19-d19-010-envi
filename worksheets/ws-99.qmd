@@ -1,5 +1,5 @@
 ---
-title:  "Workflow Hasenkopf"
+title:  "Workflow Hasenkopf - OSM data to Envi-met"
 
 title-block-banner: ../images/envi_met_title.png
 title-block-banner-color: black 
@@ -12,7 +12,7 @@ title-block-banner-color: black
       * OSMDownloader
       * QuickOSM
 
-![](../images/mandantory.png){width=10% height=9% fig-align="right"}
+
 
 ## Data Aquisition
 
@@ -32,32 +32,34 @@ For the selected question of cold air production in the Hasenkopf area, the free
 ### DEM & DOM
 The [DEM]( https://gds.hessen.de/downloadcenter/20241217/3D-Daten/Digitales%20Gel%C3%A4ndemodell%20(DGM1)/Landkreis%20Marburg-Biedenkopf/Marburg%20-%20DGM1.zip) and [DOM](https://gds.hessen.de/downloadcenter/20241217/3D-Daten/Digitales%20Oberfl%C3%A4chenmodell%20(DOM1)/Landkreis%20Marburg-Biedenkopf/Marburg%20-%20DOM1.zip) files relevant for Marburg can be downloaded from the [website](https://gds.hessen.de/INTERSHOP/web/WFS/HLBG-Geodaten-Site/de_DE/-/EUR/ViewDownloadcenter-Start) of the Hessian Administration for Land Management and Geoinformation
 
-### OSM Data
+### OSM data
 
-Open downloaded OSM file and selct for the following items (main keys "landuse" and "natural")
+Open the downloaded OSM file and search for the following elements (main keys "landuse" and "natural")
+
 
 
 
 ```
  'allotments'  'farmland'  'farmyard'  'forest'  'grass'   'meadow'  'orchard'  'village_green'  'grassland'  'scrub'  'wood' 
 ```
-Export and project it (EPSG:32632) naming it `vegtypes.gpkg`.
+Export and project it (EPSG:32632) and name it `vegtypes.gpkg`.
 
 
-Then select multistrings (key "highway"). 
+Then select multistrings (`highway`  key). 
 
 ```
-'primary'  'primary_link'  'residential'  'secondary'  'secondary_link'  'tertiary'  'tertiary_link'  'track'
+primary' 'primary_link' 'residential' 'secondary' 'secondary_link' 'tertiary' 'tertiary_link' 'track
 ```
-Export and project it (EPSG:32632) naming it `surftypes_2.gpkg`.
+Export and project it (EPSG:32632) and name it `surftypes_2.gpkg`.
 
-### polygons vegetation
+### Polygons vegetation
 
-Open the attribute table of `vegtypes.gpkg` and then the `field calculator`. Note to New Field with 6 alphanumeric charcters named `ENVIMET_ID`. then process the following expressions:
+Open the attribute table of `vegtypes.gpkg` and then the `field calculator`. Note a new field with 6 alphanumeric characters named `ENVIMET_ID`. then process the following expressions
 
 ![](../images/field_calc.png){width="75%"}
 
 ``` 
+CASE 
 CASE 
   WHEN "landuse" =   'grass'       THEN '000000'
 	WHEN "landuse" =   'meadow'        THEN '000000'
@@ -75,9 +77,9 @@ END
 
 Save the file.
 
-### polygons surface 1
+### Polygons surface 1
 
-Open the attribute table of `vegtypes.gpkg` and the field calculator and process the following expressions:
+Open the attribute table of `vegtypes.gpkg` and the field calculator and edit the following expressions:
 
 ```
 CASE 
@@ -87,16 +89,16 @@ CASE
   ELSE '0200AK'
 ```
 
-Save the file naming it `polygons_surface_1.gpkg`.
+Save the file and name it `polygons_surface_1.gpkg`.
 
 ### Line surface types
 
 Buffer the different road types with 8m (primary) 5m (secondary) 4m (tertiary) and 2.5m (tracks).
 
-Then process the following Expression:
+Then edit the following expression:
 
 ```
-lines buffered
+
 CASE 
   WHEN "highway" =   'primary'        THEN '0200AK'
   WHEN "highway" =   'primary_link'   THEN '0200AK'
@@ -117,10 +119,10 @@ ELSE '0200TS'
 END
 ```
 
-Save the file using `line_surface_1.gpgk`. Now merge `polygons_surface_1.gpkg`and `line_surface_1.gpgk` to `all_surfaces.gpgk`.
+Save the file as `line_surface_1.gpgk`. Now merge `polygons_surface_1.gpkg` and `line_surface_1.gpgk` into `all_surfaces.gpgk`.
 
 
-Now you can start the `Convert Geodata to Envimet` Plugin.
+Now you can run the `Convert Geodata to Envimet` plugin.
 
 
   

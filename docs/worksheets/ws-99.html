@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Microclimate Modeling - Envi_Met LV-19-d19-010-envi - Workflow Hasenkopf</title>
+<title>Microclimate Modeling - Envi_Met LV-19-d19-010-envi - Workflow Hasenkopf - OSM data to Envi-met</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,6 +29,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../worksheets/ws-04.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -87,10 +88,10 @@ background-size: cover;
 
 
 <link rel="stylesheet" href="../css/styles.css">
-<meta property="og:title" content="Microclimate Modeling - Envi_Met LV-19-d19-010-envi - Workflow Hasenkopf">
+<meta property="og:title" content="Microclimate Modeling - Envi_Met LV-19-d19-010-envi - Workflow Hasenkopf - OSM data to Envi-met">
 <meta property="og:description" content="">
 <meta property="og:site_name" content="Microclimate Modeling - Envi_Met LV-19-d19-010-envi">
-<meta name="twitter:title" content="Microclimate Modeling - Envi_Met LV-19-d19-010-envi - Workflow Hasenkopf">
+<meta name="twitter:title" content="Microclimate Modeling - Envi_Met LV-19-d19-010-envi - Workflow Hasenkopf - OSM data to Envi-met">
 <meta name="twitter:description" content="">
 <meta name="twitter:creator" content="@gisma">
 <meta name="twitter:card" content="summary">
@@ -122,7 +123,7 @@ background-size: cover;
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <a class="flex-grow-1 no-decor" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-          <h1 class="quarto-secondary-nav-title">Workflow Hasenkopf</h1>
+          <h1 class="quarto-secondary-nav-title">Workflow Hasenkopf - OSM data to Envi-met</h1>
         </a>     
     </div>
   </nav>
@@ -131,7 +132,7 @@ background-size: cover;
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title d-none d-lg-block">Workflow Hasenkopf</h1>
+      <h1 class="title d-none d-lg-block">Workflow Hasenkopf - OSM data to Envi-met</h1>
                       </div>
   </div>
     
@@ -187,13 +188,13 @@ background-size: cover;
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
  <span class="menu-text">Worksheets</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../worksheets/ws-00.html" class="sidebar-item-text sidebar-link">
@@ -224,6 +225,12 @@ background-size: cover;
  <span class="menu-text">WS-4: Envimet goes Reality - QGIS data manipulation</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../worksheets/ws-99.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Workflow Hasenkopf - OSM data to Envi-met</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="px-0"><hr class="sidebar-divider hi "></li>
@@ -241,9 +248,9 @@ background-size: cover;
   <li><a href="#download-of-the-data" id="toc-download-of-the-data" class="nav-link" data-scroll-target="#download-of-the-data">Download of the data</a>
   <ul class="collapse">
   <li><a href="#dem-dom" id="toc-dem-dom" class="nav-link" data-scroll-target="#dem-dom">DEM &amp; DOM</a></li>
-  <li><a href="#osm-data" id="toc-osm-data" class="nav-link" data-scroll-target="#osm-data">OSM Data</a></li>
-  <li><a href="#polygons-vegetation" id="toc-polygons-vegetation" class="nav-link" data-scroll-target="#polygons-vegetation">polygons vegetation</a></li>
-  <li><a href="#polygons-surface-1" id="toc-polygons-surface-1" class="nav-link" data-scroll-target="#polygons-surface-1">polygons surface 1</a></li>
+  <li><a href="#osm-data" id="toc-osm-data" class="nav-link" data-scroll-target="#osm-data">OSM data</a></li>
+  <li><a href="#polygons-vegetation" id="toc-polygons-vegetation" class="nav-link" data-scroll-target="#polygons-vegetation">Polygons vegetation</a></li>
+  <li><a href="#polygons-surface-1" id="toc-polygons-surface-1" class="nav-link" data-scroll-target="#polygons-surface-1">Polygons surface 1</a></li>
   <li><a href="#line-surface-types" id="toc-line-surface-types" class="nav-link" data-scroll-target="#line-surface-types">Line surface types</a></li>
   </ul></li>
   </ul>
@@ -268,11 +275,6 @@ background-size: cover;
 </ul></li>
 </ul></li>
 </ul>
-<div class="quarto-figure quarto-figure-right">
-<figure class="figure">
-<p><img src="../images/mandantory.png" class="quarto-figure quarto-figure-right figure-img" style="width:10.0%;height:9.0%"></p>
-</figure>
-</div>
 <section id="data-aquisition" class="level2">
 <h2 class="anchored" data-anchor-id="data-aquisition">Data Aquisition</h2>
 <p>The preparation of the modelling environment for an Envimet model run can be as complex as desired, but the following criteria should always be kept in mind 1. the size and desired resolution of the model domain (depending on the research question) 2. scientific or planning level of detail of the research question 4. focus of the modelling (wind field, plant respiration, micrometeorological parameters). The input data must be selected according to these factors. In hilly terrain, a high resolution digital terrain model or digital surface model is essential. In addition, at least a rough estimate of land use and soil type is required. The three-dimensional structure of the model requires at least good estimates of vegetation and building heights in the selected model area.</p>
@@ -285,19 +287,20 @@ background-size: cover;
 <p>The <a href="https://gds.hessen.de/downloadcenter/20241217/3D-Daten/Digitales%20Gel%C3%A4ndemodell%20(DGM1)/Landkreis%20Marburg-Biedenkopf/Marburg%20-%20DGM1.zip">DEM</a> and <a href="https://gds.hessen.de/downloadcenter/20241217/3D-Daten/Digitales%20Oberfl%C3%A4chenmodell%20(DOM1)/Landkreis%20Marburg-Biedenkopf/Marburg%20-%20DOM1.zip">DOM</a> files relevant for Marburg can be downloaded from the <a href="https://gds.hessen.de/INTERSHOP/web/WFS/HLBG-Geodaten-Site/de_DE/-/EUR/ViewDownloadcenter-Start">website</a> of the Hessian Administration for Land Management and Geoinformation</p>
 </section>
 <section id="osm-data" class="level3">
-<h3 class="anchored" data-anchor-id="osm-data">OSM Data</h3>
-<p>Open downloaded OSM file and selct for the following items (main keys “landuse” and “natural”)</p>
+<h3 class="anchored" data-anchor-id="osm-data">OSM data</h3>
+<p>Open the downloaded OSM file and search for the following elements (main keys “landuse” and “natural”)</p>
 <pre><code> 'allotments'  'farmland'  'farmyard'  'forest'  'grass'   'meadow'  'orchard'  'village_green'  'grassland'  'scrub'  'wood' </code></pre>
-<p>Export and project it (EPSG:32632) naming it <code>vegtypes.gpkg</code>.</p>
-<p>Then select multistrings (key “highway”).</p>
-<pre><code>'primary'  'primary_link'  'residential'  'secondary'  'secondary_link'  'tertiary'  'tertiary_link'  'track'</code></pre>
-<p>Export and project it (EPSG:32632) naming it <code>surftypes_2.gpkg</code>.</p>
+<p>Export and project it (EPSG:32632) and name it <code>vegtypes.gpkg</code>.</p>
+<p>Then select multistrings (<code>highway</code> key).</p>
+<pre><code>primary' 'primary_link' 'residential' 'secondary' 'secondary_link' 'tertiary' 'tertiary_link' 'track</code></pre>
+<p>Export and project it (EPSG:32632) and name it <code>surftypes_2.gpkg</code>.</p>
 </section>
 <section id="polygons-vegetation" class="level3">
-<h3 class="anchored" data-anchor-id="polygons-vegetation">polygons vegetation</h3>
-<p>Open the attribute table of <code>vegtypes.gpkg</code> and then the <code>field calculator</code>. Note to New Field with 6 alphanumeric charcters named <code>ENVIMET_ID</code>. then process the following expressions:</p>
+<h3 class="anchored" data-anchor-id="polygons-vegetation">Polygons vegetation</h3>
+<p>Open the attribute table of <code>vegtypes.gpkg</code> and then the <code>field calculator</code>. Note a new field with 6 alphanumeric characters named <code>ENVIMET_ID</code>. then process the following expressions</p>
 <p><img src="../images/field_calc.png" class="img-fluid" style="width:75.0%"></p>
 <pre><code>CASE 
+CASE 
   WHEN "landuse" =   'grass'       THEN '000000'
     WHEN "landuse" =   'meadow'        THEN '000000'
     WHEN "landuse" =   'farmyard'      THEN '0201H4'
@@ -312,20 +315,20 @@ END</code></pre>
 <p>Save the file.</p>
 </section>
 <section id="polygons-surface-1" class="level3">
-<h3 class="anchored" data-anchor-id="polygons-surface-1">polygons surface 1</h3>
-<p>Open the attribute table of <code>vegtypes.gpkg</code> and the field calculator and process the following expressions:</p>
+<h3 class="anchored" data-anchor-id="polygons-surface-1">Polygons surface 1</h3>
+<p>Open the attribute table of <code>vegtypes.gpkg</code> and the field calculator and edit the following expressions:</p>
 <pre><code>CASE 
     WHEN "landuse" =   'farmland'      THEN '02AGSS'
     WHEN "landuse" =   'residental'    THEN '02AGSS'    
     WHEN "landuse" =   'industrial'    THEN '0200AK'
   ELSE '0200AK'</code></pre>
-<p>Save the file naming it <code>polygons_surface_1.gpkg</code>.</p>
+<p>Save the file and name it <code>polygons_surface_1.gpkg</code>.</p>
 </section>
 <section id="line-surface-types" class="level3">
 <h3 class="anchored" data-anchor-id="line-surface-types">Line surface types</h3>
 <p>Buffer the different road types with 8m (primary) 5m (secondary) 4m (tertiary) and 2.5m (tracks).</p>
-<p>Then process the following Expression:</p>
-<pre><code>lines buffered
+<p>Then edit the following expression:</p>
+<pre><code>
 CASE 
   WHEN "highway" =   'primary'        THEN '0200AK'
   WHEN "highway" =   'primary_link'   THEN '0200AK'
@@ -344,8 +347,8 @@ CASE
     WHEN "surface" =   'compacted'      THEN '0200BS'
 ELSE '0200TS'
 END</code></pre>
-<p>Save the file using <code>line_surface_1.gpgk</code>. Now merge <code>polygons_surface_1.gpkg</code>and <code>line_surface_1.gpgk</code> to <code>all_surfaces.gpgk</code>.</p>
-<p>Merge Dissolve Symmetrische Differenz</p>
+<p>Save the file as <code>line_surface_1.gpgk</code>. Now merge <code>polygons_surface_1.gpkg</code> and <code>line_surface_1.gpgk</code> into <code>all_surfaces.gpgk</code>.</p>
+<p>Now you can run the <code>Convert Geodata to Envimet</code> plugin.</p>
 
 
 </section>
@@ -914,6 +917,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <script src="https://utteranc.es/client.js" repo="gisma-courses/LV-19-d19-010-envi" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../worksheets/ws-04.html" class="pagination-link" aria-label="WS-4: Envimet goes Reality - QGIS data manipulation">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">WS-4: Envimet goes Reality - QGIS data manipulation</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
