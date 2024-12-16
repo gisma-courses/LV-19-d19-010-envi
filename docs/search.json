@@ -394,7 +394,7 @@
     "href": "worksheets/ws-04.html#things-you-need",
     "title": "WS-4: Envimet goes Reality - QGIS data manipulation",
     "section": "Things you need",
-    "text": "Things you need\n\nCourse Data Server You will find here all kinds of data, literature and tutorials\nENVI-met software\nPlease have a look at the Monde Tutorial videos",
+    "text": "Things you need\n\nCourse Data Server You will find here all kinds of data, literature and tutorials\nENVI-met software\nPlease have a look at the Monde Tutorial videos\nCurrent LTR Qgis Installation\n\nInstallation of Plugins\n\nGeodata to ENVI-met\nOSMDownloader\nQuickOSM",
     "crumbs": [
       "Worksheets",
       "WS-4: Envimet goes Reality - QGIS data manipulation"
@@ -405,7 +405,7 @@
     "href": "worksheets/ws-04.html#assignment",
     "title": "WS-4: Envimet goes Reality - QGIS data manipulation",
     "section": "Assignment",
-    "text": "Assignment\nDesign a concrete modeling approach and a suitable associated modeling concept to assess the performance of Envimet to simulate how are the effects of the Hasenkopf build up plans affecting the fresh air support of Marburg. Consider the following aspects: * abiotic endowment of the model domain (relief, soil, site location). * biotic features of the model domain (simple/3D vegetation) * technical model domain (x,y,z extent, time steps nesting) * appropriate meteorology for model initialization (ideal, real values) * Validation strategy\n\nWork packages - What is to be done when and by whom?\nWP 1 technical and abiotic model\nWP 2 meteo data initialization\nWP 3 Vegetation “simple\nWP 4 Vegetation “3D\nWP 5 Validation strategy\n\nThe task is then as follows:\nThe resulting concept should be prepared as a table (similar to the below example), also addressing the literature/data used as well as know shortcomings.\n\nWorkpackage 1\n\n\n\n\n\n\n\n\n\n\n\nitem\nsolution\nreferences\nressources needed\nlead\nteam\n\n\n\n\nrelief\nbuild-in version xy\nonline access\n?\n?\n?\n\n\nsoil properties\nsoil data\naccess has to be clarified\nwho knows\n?\n?\n\n\nsoil vertical structure\nfour levels temperature soil moisture build-in model\nenvi-met\n?\n?\n?\n\n\n…\n…\n…\n…\n…\n…\n\n\n\nAny written notes please put them on comments below.\n\n\n\n\n\n\nIt is strongly recommended that you work in group(s)",
+    "text": "Assignment\nDesign a concrete modeling approach and a suitable associated modeling concept to assess the performance of Envimet to simulate how are the effects of the Hasenkopf build up plans affecting the fresh air support of Marburg. Consider the following aspects: * abiotic endowment of the model domain (relief, soil, site location). * biotic features of the model domain (simple/3D vegetation) * technical model domain (x,y,z extent, time steps nesting) * appropriate meteorology for model initialization (ideal, real values) * Validation strategy",
     "crumbs": [
       "Worksheets",
       "WS-4: Envimet goes Reality - QGIS data manipulation"
@@ -532,5 +532,38 @@
     "title": "Data and Software",
     "section": "Additional data sources",
     "text": "Additional data sources"
+  },
+  {
+    "objectID": "worksheets/ws-04.html#hands-on---data-aquisition",
+    "href": "worksheets/ws-04.html#hands-on---data-aquisition",
+    "title": "WS-4: Envimet goes Reality - QGIS data manipulation",
+    "section": "Hands on - Data Aquisition",
+    "text": "Hands on - Data Aquisition\nThe preparation of the modelling environment for an Envimet model run can be as complex as desired, but the following criteria should always be kept in mind 1. the size and desired resolution of the model domain (depending on the research question) 2. scientific or planning level of detail of the research question 4. focus of the modelling (wind field, plant respiration, micrometeorological parameters). The input data must be selected according to these factors. In hilly terrain, a high resolution digital terrain model or digital surface model is essential. In addition, at least a rough estimate of land use and soil type is required. The three-dimensional structure of the model requires at least good estimates of vegetation and building heights in the selected model area.\nFor the selected question of cold air production in the Hasenkopf area, the freely available data from the State of Hesse and the Hessian Administration for Land Management and Geoinformation, as well as the Openstreetmap data, are well suited. In addition, some planning maps have to be digitised manually.",
+    "crumbs": [
+      "Worksheets",
+      "WS-4: Envimet goes Reality - QGIS data manipulation"
+    ]
+  },
+  {
+    "objectID": "worksheets/ws-04.html#download-of-the-data",
+    "href": "worksheets/ws-04.html#download-of-the-data",
+    "title": "WS-4: Envimet goes Reality - QGIS data manipulation",
+    "section": "Download of the data",
+    "text": "Download of the data\n\nDEM & DOM\nThe DEM and DOM files relevant for Marburg can be downloaded from the website of the Hessian Administration for Land Management and Geoinformation\n\n\nOSM data\nOpen the downloaded OSM file and search for the following elements (main keys “landuse” and “natural”)\n 'allotments'  'farmland'  'farmyard'  'forest'  'grass'   'meadow'  'orchard'  'village_green'  'grassland'  'scrub'  'wood' \nExport and project it (EPSG:32632) and name it vegtypes.gpkg.\nThen select multistrings (highway key).\nprimary' 'primary_link' 'residential' 'secondary' 'secondary_link' 'tertiary' 'tertiary_link' 'track\nExport and project it (EPSG:32632) and name it surftypes_2.gpkg.",
+    "crumbs": [
+      "Worksheets",
+      "WS-4: Envimet goes Reality - QGIS data manipulation"
+    ]
+  },
+  {
+    "objectID": "worksheets/ws-04.html#data-preprocessing",
+    "href": "worksheets/ws-04.html#data-preprocessing",
+    "title": "WS-4: Envimet goes Reality - QGIS data manipulation",
+    "section": "Data preprocessing",
+    "text": "Data preprocessing\n\nPolygons vegetation\nOpen the attribute table of vegtypes.gpkg and then the field calculator. Note a new field with 6 alphanumeric characters named ENVIMET_ID. then process the following expressions\n\nCASE \nCASE \n  WHEN \"landuse\" =   'grass'       THEN '000000'\n    WHEN \"landuse\" =   'meadow'        THEN '000000'\n    WHEN \"landuse\" =   'farmyard'      THEN '0201H4'\n    WHEN \"landuse\" =   'forest'        THEN '0000SM'\n    WHEN \"landuse\" =   'allotments'    THEN '0201H4'\n    WHEN \"landuse\" =   'orchard'       THEN '000051'\n  WHEN \"natural\" =   'grassland'     THEN '000000'  \n  WHEN \"natural\" =   'wood'          THEN '0000SM'\n    WHEN \"natural\" =   'scrub'         THEN '0100H2'  \n    ELSE '000000'\nEND\nSave the file.\n\n\nPolygons surface 1\nOpen the attribute table of vegtypes.gpkg and the field calculator and edit the following expressions:\nCASE \n    WHEN \"landuse\" =   'farmland'      THEN '02AGSS'\n    WHEN \"landuse\" =   'residental'    THEN '02AGSS'    \n    WHEN \"landuse\" =   'industrial'    THEN '0200AK'\n  ELSE '0200AK'\nSave the file and name it polygons_surface_1.gpkg.\n\n\nLine surface types\nBuffer the different road types with 8m (primary) 5m (secondary) 4m (tertiary) and 2.5m (tracks).\nThen edit the following expression:\n\nCASE \n  WHEN \"highway\" =   'primary'        THEN '0200AK'\n  WHEN \"highway\" =   'primary_link'   THEN '0200AK'\n  WHEN \"highway\" =   'secondary'      THEN '0200AK'\n  WHEN \"highway\" =   'secondary_link' THEN '0200AK'\n  WHEN \"highway\" =   'tertiary'       THEN '0200AK'\n  WHEN \"highway\" =   'tertiary_link'  THEN '0200AK'  \n  WHEN \"surface\" =   'asphalt'        THEN '0200AK'\n    WHEN \"surface\" =   'ground'         THEN '0200TS'\n    WHEN \"surface\" =   'dirt'           THEN '0200TS'\n    WHEN \"surface\" =   'mud'            THEN '0200TS'\n    WHEN \"surface\" =   'fine_gravel'    THEN '0200BS'\n    WHEN \"surface\" =   'gravel'         THEN '0200BS'\n    WHEN \"surface\" =   'grass'          THEN '02AGSS'\n    WHEN \"surface\" =   'unpaved'        THEN '0200TS'\n    WHEN \"surface\" =   'compacted'      THEN '0200BS'\nELSE '0200TS'\nEND\nSave the file as line_surface_1.gpgk. Now merge polygons_surface_1.gpkg and line_surface_1.gpgk into all_surfaces.gpgk.\nNow you can run the Convert Geodata to Envimet plugin.",
+    "crumbs": [
+      "Worksheets",
+      "WS-4: Envimet goes Reality - QGIS data manipulation"
+    ]
   }
 ]

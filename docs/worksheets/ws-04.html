@@ -29,7 +29,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../worksheets/ws-99.html" rel="next">
 <link href="../worksheets/ws-03.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -226,12 +225,6 @@ background-size: cover;
  <span class="menu-text">WS-4: Envimet goes Reality - QGIS data manipulation</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../worksheets/ws-99.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Workflow Hasenkopf - OSM data to Envi-met</span></a>
-  </div>
-</li>
       </ul>
   </li>
         <li class="px-0"><hr class="sidebar-divider hi "></li>
@@ -247,9 +240,18 @@ background-size: cover;
   <ul>
   <li><a href="#goals" id="toc-goals" class="nav-link active" data-scroll-target="#goals">Goals</a></li>
   <li><a href="#things-you-need" id="toc-things-you-need" class="nav-link" data-scroll-target="#things-you-need">Things you need</a></li>
-  <li><a href="#assignment" id="toc-assignment" class="nav-link" data-scroll-target="#assignment">Assignment</a>
+  <li><a href="#assignment" id="toc-assignment" class="nav-link" data-scroll-target="#assignment">Assignment</a></li>
+  <li><a href="#hands-on---data-aquisition" id="toc-hands-on---data-aquisition" class="nav-link" data-scroll-target="#hands-on---data-aquisition">Hands on - Data Aquisition</a></li>
+  <li><a href="#download-of-the-data" id="toc-download-of-the-data" class="nav-link" data-scroll-target="#download-of-the-data">Download of the data</a>
   <ul class="collapse">
-  <li><a href="#workpackage-1" id="toc-workpackage-1" class="nav-link" data-scroll-target="#workpackage-1">Workpackage 1</a></li>
+  <li><a href="#dem-dom" id="toc-dem-dom" class="nav-link" data-scroll-target="#dem-dom">DEM &amp; DOM</a></li>
+  <li><a href="#osm-data" id="toc-osm-data" class="nav-link" data-scroll-target="#osm-data">OSM data</a></li>
+  </ul></li>
+  <li><a href="#data-preprocessing" id="toc-data-preprocessing" class="nav-link" data-scroll-target="#data-preprocessing">Data preprocessing</a>
+  <ul class="collapse">
+  <li><a href="#polygons-vegetation" id="toc-polygons-vegetation" class="nav-link" data-scroll-target="#polygons-vegetation">Polygons vegetation</a></li>
+  <li><a href="#polygons-surface-1" id="toc-polygons-surface-1" class="nav-link" data-scroll-target="#polygons-surface-1">Polygons surface 1</a></li>
+  <li><a href="#line-surface-types" id="toc-line-surface-types" class="nav-link" data-scroll-target="#line-surface-types">Line surface types</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/gisma-courses/LV-19-d19-010-envi/edit/main/worksheets/ws-04.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gisma-courses/LV-19-d19-010-envi/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -273,88 +275,98 @@ background-size: cover;
 <li><a href="https://hessenbox.uni-marburg.de/getlink/fi5p6EzMUrtUVFW3DnkFky/envimet">Course Data Server</a> You will find here all kinds of data, literature and tutorials</li>
 <li><a href="https://envi-met.info/doku.php?id=start">ENVI-met software</a></li>
 <li>Please have a look at the <strong>Monde Tutorial videos</strong></li>
+<li>Current LTR Qgis Installation
+<ul>
+<li>Installation of Plugins
+<ul>
+<li>Geodata to ENVI-met</li>
+<li>OSMDownloader</li>
+<li>QuickOSM</li>
+</ul></li>
+</ul></li>
 </ul>
 </section>
 <section id="assignment" class="level2">
 <h2 class="anchored" data-anchor-id="assignment">Assignment</h2>
 <p>Design a concrete modeling approach and a suitable associated modeling concept to assess the performance of Envimet to simulate how are the effects of the Hasenkopf build up plans affecting the fresh air support of Marburg. Consider the following aspects: * abiotic endowment of the model domain (relief, soil, site location). * biotic features of the model domain (simple/3D vegetation) * technical model domain (x,y,z extent, time steps nesting) * appropriate meteorology for model initialization (ideal, real values) * Validation strategy</p>
-<ul>
-<li>Work packages - What is to be done when and by whom?</li>
-<li>WP 1 technical and abiotic model</li>
-<li>WP 2 meteo data initialization</li>
-<li>WP 3 Vegetation “simple</li>
-<li>WP 4 Vegetation “3D</li>
-<li>WP 5 Validation strategy</li>
-</ul>
-<p>The task is then as follows:</p>
-<p>The resulting concept should be prepared as a table (similar to the below example), also addressing the literature/data used as well as know shortcomings.</p>
-<section id="workpackage-1" class="level3">
-<h3 class="anchored" data-anchor-id="workpackage-1">Workpackage 1</h3>
-<table class="table">
-<colgroup>
-<col style="width: 15%">
-<col style="width: 15%">
-<col style="width: 17%">
-<col style="width: 17%">
-<col style="width: 17%">
-<col style="width: 17%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">item</th>
-<th style="text-align: left;">solution</th>
-<th style="text-align: left;">references</th>
-<th style="text-align: left;">ressources needed</th>
-<th style="text-align: left;">lead</th>
-<th style="text-align: left;">team</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">relief</td>
-<td style="text-align: left;">build-in version xy</td>
-<td style="text-align: left;">online access</td>
-<td style="text-align: left;">?</td>
-<td style="text-align: left;">?</td>
-<td style="text-align: left;">?</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">soil properties</td>
-<td style="text-align: left;">soil data</td>
-<td style="text-align: left;">access has to be clarified</td>
-<td style="text-align: left;">who knows</td>
-<td style="text-align: left;">?</td>
-<td style="text-align: left;">?</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">soil vertical structure</td>
-<td style="text-align: left;">four levels temperature soil moisture build-in model</td>
-<td style="text-align: left;">envi-met</td>
-<td style="text-align: left;">?</td>
-<td style="text-align: left;">?</td>
-<td style="text-align: left;">?</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">…</td>
-<td style="text-align: left;">…</td>
-<td style="text-align: left;">…</td>
-<td style="text-align: left;">…</td>
-<td style="text-align: left;">…</td>
-<td style="text-align: left;">…</td>
-</tr>
-</tbody>
-</table>
-<p>Any written notes please put them on <code>comments</code> below.</p>
-<div class="callout callout-style-simple callout-tip">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>It is strongly recommended that you work in group(s)</p>
-</div>
-</div>
-</div>
+</section>
+<section id="hands-on---data-aquisition" class="level2">
+<h2 class="anchored" data-anchor-id="hands-on---data-aquisition">Hands on - Data Aquisition</h2>
+<p>The preparation of the modelling environment for an Envimet model run can be as complex as desired, but the following criteria should always be kept in mind 1. the size and desired resolution of the model domain (depending on the research question) 2. scientific or planning level of detail of the research question 4. focus of the modelling (wind field, plant respiration, micrometeorological parameters). The input data must be selected according to these factors. In hilly terrain, a high resolution digital terrain model or digital surface model is essential. In addition, at least a rough estimate of land use and soil type is required. The three-dimensional structure of the model requires at least good estimates of vegetation and building heights in the selected model area.</p>
+<p>For the selected question of cold air production in the Hasenkopf area, the freely available data from the State of Hesse and the Hessian Administration for Land Management and Geoinformation, as well as the Openstreetmap data, are well suited. In addition, some planning maps have to be digitised manually.</p>
+</section>
+<section id="download-of-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="download-of-the-data">Download of the data</h2>
+<section id="dem-dom" class="level3">
+<h3 class="anchored" data-anchor-id="dem-dom">DEM &amp; DOM</h3>
+<p>The <a href="https://gds.hessen.de/downloadcenter/20241217/3D-Daten/Digitales%20Gel%C3%A4ndemodell%20(DGM1)/Landkreis%20Marburg-Biedenkopf/Marburg%20-%20DGM1.zip">DEM</a> and <a href="https://gds.hessen.de/downloadcenter/20241217/3D-Daten/Digitales%20Oberfl%C3%A4chenmodell%20(DOM1)/Landkreis%20Marburg-Biedenkopf/Marburg%20-%20DOM1.zip">DOM</a> files relevant for Marburg can be downloaded from the <a href="https://gds.hessen.de/INTERSHOP/web/WFS/HLBG-Geodaten-Site/de_DE/-/EUR/ViewDownloadcenter-Start">website</a> of the Hessian Administration for Land Management and Geoinformation</p>
+</section>
+<section id="osm-data" class="level3">
+<h3 class="anchored" data-anchor-id="osm-data">OSM data</h3>
+<p>Open the downloaded OSM file and search for the following elements (main keys “landuse” and “natural”)</p>
+<pre><code> 'allotments'  'farmland'  'farmyard'  'forest'  'grass'   'meadow'  'orchard'  'village_green'  'grassland'  'scrub'  'wood' </code></pre>
+<p>Export and project it (EPSG:32632) and name it <code>vegtypes.gpkg</code>.</p>
+<p>Then select multistrings (<code>highway</code> key).</p>
+<pre><code>primary' 'primary_link' 'residential' 'secondary' 'secondary_link' 'tertiary' 'tertiary_link' 'track</code></pre>
+<p>Export and project it (EPSG:32632) and name it <code>surftypes_2.gpkg</code>.</p>
+</section>
+</section>
+<section id="data-preprocessing" class="level2">
+<h2 class="anchored" data-anchor-id="data-preprocessing">Data preprocessing</h2>
+<section id="polygons-vegetation" class="level3">
+<h3 class="anchored" data-anchor-id="polygons-vegetation">Polygons vegetation</h3>
+<p>Open the attribute table of <code>vegtypes.gpkg</code> and then the <code>field calculator</code>. Note a new field with 6 alphanumeric characters named <code>ENVIMET_ID</code>. then process the following expressions</p>
+<p><img src="../images/field_calc.png" class="img-fluid" style="width:75.0%"></p>
+<pre><code>CASE 
+CASE 
+  WHEN "landuse" =   'grass'       THEN '000000'
+    WHEN "landuse" =   'meadow'        THEN '000000'
+    WHEN "landuse" =   'farmyard'      THEN '0201H4'
+    WHEN "landuse" =   'forest'        THEN '0000SM'
+    WHEN "landuse" =   'allotments'    THEN '0201H4'
+    WHEN "landuse" =   'orchard'       THEN '000051'
+  WHEN "natural" =   'grassland'     THEN '000000'  
+  WHEN "natural" =   'wood'          THEN '0000SM'
+    WHEN "natural" =   'scrub'         THEN '0100H2'  
+    ELSE '000000'
+END</code></pre>
+<p>Save the file.</p>
+</section>
+<section id="polygons-surface-1" class="level3">
+<h3 class="anchored" data-anchor-id="polygons-surface-1">Polygons surface 1</h3>
+<p>Open the attribute table of <code>vegtypes.gpkg</code> and the field calculator and edit the following expressions:</p>
+<pre><code>CASE 
+    WHEN "landuse" =   'farmland'      THEN '02AGSS'
+    WHEN "landuse" =   'residental'    THEN '02AGSS'    
+    WHEN "landuse" =   'industrial'    THEN '0200AK'
+  ELSE '0200AK'</code></pre>
+<p>Save the file and name it <code>polygons_surface_1.gpkg</code>.</p>
+</section>
+<section id="line-surface-types" class="level3">
+<h3 class="anchored" data-anchor-id="line-surface-types">Line surface types</h3>
+<p>Buffer the different road types with 8m (primary) 5m (secondary) 4m (tertiary) and 2.5m (tracks).</p>
+<p>Then edit the following expression:</p>
+<pre><code>
+CASE 
+  WHEN "highway" =   'primary'        THEN '0200AK'
+  WHEN "highway" =   'primary_link'   THEN '0200AK'
+  WHEN "highway" =   'secondary'      THEN '0200AK'
+  WHEN "highway" =   'secondary_link' THEN '0200AK'
+  WHEN "highway" =   'tertiary'       THEN '0200AK'
+  WHEN "highway" =   'tertiary_link'  THEN '0200AK'  
+  WHEN "surface" =   'asphalt'        THEN '0200AK'
+    WHEN "surface" =   'ground'         THEN '0200TS'
+    WHEN "surface" =   'dirt'           THEN '0200TS'
+    WHEN "surface" =   'mud'            THEN '0200TS'
+    WHEN "surface" =   'fine_gravel'    THEN '0200BS'
+    WHEN "surface" =   'gravel'         THEN '0200BS'
+    WHEN "surface" =   'grass'          THEN '02AGSS'
+    WHEN "surface" =   'unpaved'        THEN '0200TS'
+    WHEN "surface" =   'compacted'      THEN '0200BS'
+ELSE '0200TS'
+END</code></pre>
+<p>Save the file as <code>line_surface_1.gpgk</code>. Now merge <code>polygons_surface_1.gpkg</code> and <code>line_surface_1.gpgk</code> into <code>all_surfaces.gpgk</code>.</p>
+<p>Now you can run the <code>Convert Geodata to Envimet</code> plugin.</p>
 
 
 </section>
@@ -930,9 +942,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../worksheets/ws-99.html" class="pagination-link" aria-label="Workflow Hasenkopf - OSM data to Envi-met">
-        <span class="nav-page-text">Workflow Hasenkopf - OSM data to Envi-met</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
