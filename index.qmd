@@ -12,9 +12,9 @@ comments: false
 
 ::: {#fig-envimet-models layout-ncol=2}
 
-![Current situation at the Hasenkopf site](images/hasenkopf_original.bmp){width="50%"} 
+![Current situation at the Hasenkopf site](images/hasenkopf_original.bmp){width="100%"} 
 
-![Planned situation at the Hasenkopf site](images/hasenkopf_planung.bmp){width="50%"}
+![Planned situation at the Hasenkopf site](images/hasenkopf_planung.bmp){width="100%"}
 
 Hasenkopf residential area expansion
 

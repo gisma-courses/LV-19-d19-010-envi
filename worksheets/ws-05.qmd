@@ -1,6 +1,6 @@
 ---
 title: "WS-5: Envimet simulation runs Hasenkopf"
-title-block-banner: ../images/hasenkopf_planung.bmp
+title-block-banner: ../images/envi_met_title.png
 title-block-banner-color: black 
 ---
 
@@ -50,4 +50,7 @@ Is everything OK?
 * Save and start the Envi-Core module. Open the created simulation and start it...
 
 
+::: {.callout-tip appearance="simple"}
+In the archive subfolder `envimet_files` you will find the simulation and model files for both runs. You can use these to compare with your own files. 
+:::
 
