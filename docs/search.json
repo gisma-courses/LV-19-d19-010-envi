@@ -190,7 +190,7 @@
     "href": "worksheets/ws-04.html#receptors",
     "title": "WS-4: Envimet goes Reality - QGIS data manipulation",
     "section": "Receptors",
-    "text": "Receptors\nSo-called receptors can be set up to compare and locally measure continuous values. These work like complex measuring stations in the terrain. To do this, we use the tool Vector-&gt;Research Tools-&gt;Regular Points (https://youtu.be/ExgfFEEgeWA?si=nZWgiZR299VQBAR1). We can, for example, create a point every 100 meters. Points at the edge, in buildings, etc. can then be deleted manually, as they require a considerable amount of additional computing time during the simulation. There should not be many more than 50-60 points… Save the file as receptors.gpkg.",
+    "text": "Receptors\nSo-called receptors can be set up to compare and locally measure continuous values. These work like complex measuring stations in the terrain. To do this, we use the tool [Vector-&gt;Research Tools-&gt;Regular Points] (https://youtu.be/ExgfFEEgeWA?si=nZWgiZR299VQBAR1). We can, for example, create a point every 100 meters. Points at the edge, in buildings, etc. can then be deleted manually, as they require a considerable amount of additional computing time during the simulation. There should not be many more than 50-60 points… Save the file as receptors.gpkg.",
     "crumbs": [
       "Worksheets",
       "WS-4: Envimet goes Reality - QGIS data manipulation"
