@@ -44,6 +44,18 @@ See the corresponding grouped folders.
 * For the first simulation, the Envimet_Plugin is started and the data from the original folder is assigned. The DGM is used as the DEM. Note: Enter the ENVIMETID as a reference field for the library values to be read. 
 * Save the model and check it for errors using the Envimet Spaces module.
 
+
+::: {#fig-envimet-models layout-ncol=2}
+
+![Current situation at the Hasenkopf site](images/hasenkopf_original.bmp){width="100%"} 
+
+![Planned situation at the Hasenkopf site](images/hasenkopf_planung.bmp){width="100%"}
+
+Hasenkopf residential area expansion
+
+:::
+
+
 Is everything OK? 
 
 * Then start the Envi_met tool Envi-Guide and set up a simulation environment for July 21, 2024 that will run for at least 36 hours.
