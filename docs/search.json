@@ -113,7 +113,7 @@
     "href": "worksheets/ws-04.html#goals",
     "title": "WS-4: Envimet goes Reality - QGIS data manipulation",
     "section": "Goals",
-    "text": "Goals\nAfter the first attempts - specifically after the technical example simulations, a first review of the available literature as well as a rough structuring of the research questions, it is now necessary to design a concrete approach.",
+    "text": "Goals\nDesign and impementation of a concrete approach.",
     "crumbs": [
       "Worksheets",
       "WS-4: Envimet goes Reality - QGIS data manipulation"
@@ -142,22 +142,11 @@
     ]
   },
   {
-    "objectID": "worksheets/ws-04.html#hands-on---data-aquisition",
-    "href": "worksheets/ws-04.html#hands-on---data-aquisition",
+    "objectID": "worksheets/ws-04.html#hands-on",
+    "href": "worksheets/ws-04.html#hands-on",
     "title": "WS-4: Envimet goes Reality - QGIS data manipulation",
-    "section": "Hands on - Data Aquisition",
-    "text": "Hands on - Data Aquisition\nThe preparation of the modelling environment for an Envimet model run can be as complex as desired, but the following criteria should always be kept in mind 1. the size and desired resolution of the model domain (depending on the research question) 2. scientific or planning level of detail of the research question 4. focus of the modelling (wind field, plant respiration, micrometeorological parameters). The input data must be selected according to these factors. In hilly terrain, a high resolution digital terrain model or digital surface model is essential. In addition, at least a rough estimate of land use and soil type is required. The three-dimensional structure of the model requires at least good estimates of vegetation and building heights in the selected model area.\nFor the selected question of cold air production in the Hasenkopf area, the freely available data from the State of Hesse and the Hessian Administration for Land Management and Geoinformation, as well as the Openstreetmap data, are well suited. In addition, some planning maps have to be digitised manually.",
-    "crumbs": [
-      "Worksheets",
-      "WS-4: Envimet goes Reality - QGIS data manipulation"
-    ]
-  },
-  {
-    "objectID": "worksheets/ws-04.html#download-of-the-data",
-    "href": "worksheets/ws-04.html#download-of-the-data",
-    "title": "WS-4: Envimet goes Reality - QGIS data manipulation",
-    "section": "Download of the data",
-    "text": "Download of the data\n\nDEM & DOM\nThe DEM and DOM files relevant for Marburg can be downloaded from the website of the Hessian Administration for Land Management and Geoinformation\n\n\nOSM data\nOpen the downloaded OSM file and search for the following elements (main keys “landuse” and “natural”)\n 'allotments'  'farmland'  'farmyard'  'forest'  'grass'   'meadow'  'orchard'  'village_green'  'grassland'  'scrub'  'wood' \nExport and project it (EPSG:32632) and name it vegtypes.gpkg.\nThen select multistrings (highway key).\nprimary' 'primary_link' 'residential' 'secondary' 'secondary_link' 'tertiary' 'tertiary_link' 'track\nExport and project it (EPSG:32632) and name it surftypes_2.gpkg.",
+    "section": "Hands on",
+    "text": "Hands on\nThe preparation of the modelling environment for an Envi_met model run can be as complex as desired, but the following criteria should always be kept in mind:\n\nthe size and desired resolution of the model domain (depending on the research question AND computing costs)\nscientific or planning level of detail of the research question\nfocus of the modelling (wind field, plant respiration, micrometeorological parameters).\n\nThe input data sources must be selected according to these factors. In hilly terrain, a high resolution digital terrain model or digital surface model is essential. In addition, at least a rough estimate of land use and soil type is required. In addition the three-dimensional structure of the model requires at least good estimates of vegetation and building heights in the selected model area.\nFor the modeling of cold air drainage (i.e. fresh air production) in the Hasenkopf area, the terrain, land use and meteorologically critical situations are of central importance. If you do not want to collect all the data in the field manually (which may be a sensible approach), Open Street Map data and aerial images are particularly useful for land use and possible follow-up surveys. Terrain data is now available in high resolution in the 1m range for large parts of Europe and the world. This data must be downloaded and prepared accordingly (for the Envi_met logic). There is now a powerful and largely functional plugin for QGIS ‘Geodata to Envi_met’, which intuitively specifies how this data is to be organized.\n\n\n\n\n\n\nFor the above question of cold air production, the freely available data from the State of Hesse and the Hessian Administration for Land Management and Geoinformation, as well as the Openstreetmap data, are well suited. In addition, some planning maps have to be digitised manually.\n\n\n\n\nDownload of the data\n\nDEM and DOM files relevant for Marburg can be downloaded from the website of the Hessian Administration for Land Management and Geoinformation\nFor downloading the OSM data it is recommended to use the OSMDownloader extension to QGIS. It simply provides the ability to draw a rectangle and download the complete and currently available OSM data to a file named hasenkopf.osm.\nIf the data has to be digitised manually, it is advisable to use an up-to-date aerial photograph from Bing or Google. These can be easily integrated via XYZ tiles\nThe planning data for the development and sealing were taken from page 23 of the presentation of the winning design via screenshot.",
     "crumbs": [
       "Worksheets",
       "WS-4: Envimet goes Reality - QGIS data manipulation"
@@ -168,7 +157,51 @@
     "href": "worksheets/ws-04.html#data-preprocessing",
     "title": "WS-4: Envimet goes Reality - QGIS data manipulation",
     "section": "Data preprocessing",
-    "text": "Data preprocessing\n\nPolygons vegetation\nOpen the attribute table of vegtypes.gpkg and then the field calculator. Note a new field with 6 alphanumeric characters named ENVIMET_ID. then process the following expressions\n\nCASE \nCASE \n  WHEN \"landuse\" =   'grass'       THEN '000000'\n    WHEN \"landuse\" =   'meadow'        THEN '000000'\n    WHEN \"landuse\" =   'farmyard'      THEN '0201H4'\n    WHEN \"landuse\" =   'forest'        THEN '0000SM'\n    WHEN \"landuse\" =   'allotments'    THEN '0201H4'\n    WHEN \"landuse\" =   'orchard'       THEN '000051'\n  WHEN \"natural\" =   'grassland'     THEN '000000'  \n  WHEN \"natural\" =   'wood'          THEN '0000SM'\n    WHEN \"natural\" =   'scrub'         THEN '0100H2'  \n    ELSE '000000'\nEND\nSave the file.\n\n\nPolygons surface 1\nOpen the attribute table of vegtypes.gpkg and the field calculator and edit the following expressions:\nCASE \n    WHEN \"landuse\" =   'farmland'      THEN '02AGSS'\n    WHEN \"landuse\" =   'residental'    THEN '02AGSS'    \n    WHEN \"landuse\" =   'industrial'    THEN '0200AK'\n  ELSE '0200AK'\nSave the file and name it polygons_surface_1.gpkg.\n\n\nLine surface types\nBuffer the different road types with 8m (primary) 5m (secondary) 4m (tertiary) and 2.5m (tracks).\nThen edit the following expression:\n\nCASE \n  WHEN \"highway\" =   'primary'        THEN '0200AK'\n  WHEN \"highway\" =   'primary_link'   THEN '0200AK'\n  WHEN \"highway\" =   'secondary'      THEN '0200AK'\n  WHEN \"highway\" =   'secondary_link' THEN '0200AK'\n  WHEN \"highway\" =   'tertiary'       THEN '0200AK'\n  WHEN \"highway\" =   'tertiary_link'  THEN '0200AK'  \n  WHEN \"surface\" =   'asphalt'        THEN '0200AK'\n    WHEN \"surface\" =   'ground'         THEN '0200TS'\n    WHEN \"surface\" =   'dirt'           THEN '0200TS'\n    WHEN \"surface\" =   'mud'            THEN '0200TS'\n    WHEN \"surface\" =   'fine_gravel'    THEN '0200BS'\n    WHEN \"surface\" =   'gravel'         THEN '0200BS'\n    WHEN \"surface\" =   'grass'          THEN '02AGSS'\n    WHEN \"surface\" =   'unpaved'        THEN '0200TS'\n    WHEN \"surface\" =   'compacted'      THEN '0200BS'\nELSE '0200TS'\nEND\nSave the file as line_surface_1.gpgk. Now merge polygons_surface_1.gpkg and line_surface_1.gpgk into all_surfaces.gpgk.\nNow you can run the Convert Geodata to Envimet plugin.",
+    "text": "Data preprocessing\nStarting with the OSM base data. Open the downloaded OSM file using the vector import dialogue box in a new group called OSM.\n\nNow open the attribute table and the function editor and select all natural and land use areas.\nMain keys: landuse natural with the values:\n'allotments','farmland','farmyard','forest','grass','meadow','orchard','village_green','grassland','scrub','wood'\nThis can be done very easily with the following expression:\n\"landuse\" IN ('allotments','farmland','farmyard','forest','grass','meadow','orchard','village_green','grassland','scrub','wood')\n OR  \n\"natural\" IN ('allotments','farmland','farmyard','forest','grass','meadow','orchard','village_green','grassland','scrub','wood')\n\n\nPress Select Objects Button and Export selected Values only (do not forget to assign the correct projection EPSG:32632) and name it vegtypes.gpkg.\nNext do the same with the hasenkopf — multilinestrings\nMain key: highway with the values:\nprimary','primary_link','residential','secondary','secondary_link','tertiary' 'tertiary_link','track'\nPress Select Objects Button and Export selected Values only (do not forget to assign the correct projection EPSG:32632) and name it surftypes_roads_ml.gpkg.\n\nPolygons to Envi_met vegetation\nIn the next step, Envimet IDs are assigned to the vegetation polygons, which are either taken from the Envimet database or created by the user. This is done very simply as follows: Open the vegtypes.gpkg attribute table and then the field calculator. Create a new field with 6 alphanumeric characters and the name ENVIMET_ID. Then process the following expression. This assigns the corresponding vegetation database identifier to the new ‘ENVIMET_ID’ field.\nCASE \nCASE \n  WHEN \"landuse\" =   'grass'       THEN '000000'\n    WHEN \"landuse\" =   'meadow'        THEN '000000'\n    WHEN \"landuse\" =   'farmyard'      THEN '0201H4'\n    WHEN \"landuse\" =   'forest'        THEN '0000SM'\n    WHEN \"landuse\" =   'allotments'    THEN '0201H4'\n    WHEN \"landuse\" =   'orchard'       THEN '000051'\n  WHEN \"natural\" =   'grassland'     THEN '000000'  \n  WHEN \"natural\" =   'wood'          THEN '0000SM'\n    WHEN \"natural\" =   'scrub'         THEN '0100H2'  \n    WHEN \"landuse\" =   'farmland'      THEN '02AGSS'\n    WHEN \"landuse\" =   'residental'    THEN '02AGSS'    \n    WHEN \"landuse\" =   'industrial'    THEN '0200AK'    \n    ELSE '000000'\nEND\n\nSave the file.\nOn the same file, we need to edit the non-vegetated surfaces in a corresponding way:\nCASE \n    WHEN \"landuse\" =   'farmland'      THEN '02AGSS'\n    WHEN \"landuse\" =   'residental'    THEN '02AGSS'    \n    WHEN \"landuse\" =   'industrial'    THEN '0200AK'\n  ELSE '0200AK'\nPress Select Objects Button and Export selected Values only (do not forget to assign the correct projection EPSG:32632) and name it polygons_surfaces.gpkg.\n\n\nLine surface types\nWe need polygon data for the spatial setup of the envimet model domain. Line data is one-dimensional, so a simple approach is to buffer roads according to their priority. Therefore we buffer the different road types with 8m (primary), 5m (secondary), 4m (tertiary) and 2.5m (tracks).\nThen process the following expression to assign the ENVIMET_IDs:\n\nCASE \n  WHEN \"highway\" =   'primary'        THEN '0200AK'\n  WHEN \"highway\" =   'primary_link'   THEN '0200AK'\n  WHEN \"highway\" =   'secondary'      THEN '0200AK'\n  WHEN \"highway\" =   'secondary_link' THEN '0200AK'\n  WHEN \"highway\" =   'tertiary'       THEN '0200AK'\n  WHEN \"highway\" =   'tertiary_link'  THEN '0200AK'  \n  WHEN \"surface\" =   'asphalt'        THEN '0200AK'\n    WHEN \"surface\" =   'ground'         THEN '0200TS'\n    WHEN \"surface\" =   'dirt'           THEN '0200TS'\n    WHEN \"surface\" =   'mud'            THEN '0200TS'\n    WHEN \"surface\" =   'fine_gravel'    THEN '0200BS'\n    WHEN \"surface\" =   'gravel'         THEN '0200BS'\n    WHEN \"surface\" =   'grass'          THEN '02AGSS'\n    WHEN \"surface\" =   'unpaved'        THEN '0200TS'\n    WHEN \"surface\" =   'compacted'      THEN '0200BS'\nELSE '0200TS'\nEND\nSave the file as line_surfaces.gpgk.\nNext merge polygons_surfaces.gpkg and line_surface.gpgk into all_surfaces.gpgk.",
+    "crumbs": [
+      "Worksheets",
+      "WS-4: Envimet goes Reality - QGIS data manipulation"
+    ]
+  },
+  {
+    "objectID": "worksheets/ws-04.html#buildings",
+    "href": "worksheets/ws-04.html#buildings",
+    "title": "WS-4: Envimet goes Reality - QGIS data manipulation",
+    "section": "Buildings",
+    "text": "Buildings\nUse the OSM polygon data again and select all buildings that do not have the value NULL.\n \"building\" is not NULL\nSave the file as buildings.gpgk.\nWe need the heights of the buildings, so we extract the data from the surface height model (SHM) for each building using the zonal statistics tool, which we previously calculated using the raster computer from the difference between the digital surface model (DSM) and the digital elevation model (DEM).",
+    "crumbs": [
+      "Worksheets",
+      "WS-4: Envimet goes Reality - QGIS data manipulation"
+    ]
+  },
+  {
+    "objectID": "worksheets/ws-04.html#check-for-missing-data",
+    "href": "worksheets/ws-04.html#check-for-missing-data",
+    "title": "WS-4: Envimet goes Reality - QGIS data manipulation",
+    "section": "Check for missing data",
+    "text": "Check for missing data\nHide all data and activate only the generated vegetation, surface and building data. Check in the following order:\n\nis there still surface data without information?\nare there vegetation areas without information?\nare all buildings present?\n\n\nRegarding 1: It is likely that important information is missing, especially for the surfaces. All streets and sealed surfaces should be present here, but the surfaces under vegetation, etc. have no information. The easiest way is to assign a soil type code to this total area. This is most easily done by calculating a symmetric difference between the surface data and the model area; the resulting polygon is a negative of the existing surfaces. This polygon is then assigned a field ‘ENVIMET_ID’ and the corresponding soil value is entered. The file is then merged with the existing surface file (merge tool).\nRegarding 2: If areas are unclear, they must be digitized manual. To do this, open the Bing/Google aerial map and open the corresponding vegetation file, make it editable and re-digitize it. It is important that the correct ENVIMET_ID is assigned at the end of each polygon.\nRegarding 3: Simply compare the aerial image to see if all buildings are present in the model area. If not, digitize them again and then use the zonal statistics tool again.",
+    "crumbs": [
+      "Worksheets",
+      "WS-4: Envimet goes Reality - QGIS data manipulation"
+    ]
+  },
+  {
+    "objectID": "worksheets/ws-04.html#receptors",
+    "href": "worksheets/ws-04.html#receptors",
+    "title": "WS-4: Envimet goes Reality - QGIS data manipulation",
+    "section": "Receptors",
+    "text": "Receptors\nSo-called receptors can be set up to compare and locally measure continuous values. These work like complex measuring stations in the terrain. To do this, we use the tool Vector-&gt;Research Tools-&gt;Regular Points (https://youtu.be/ExgfFEEgeWA?si=nZWgiZR299VQBAR1). We can, for example, create a point every 100 meters. Points at the edge, in buildings, etc. can then be deleted manually, as they require a considerable amount of additional computing time during the simulation. There should not be many more than 50-60 points… Save the file as receptors.gpkg.",
+    "crumbs": [
+      "Worksheets",
+      "WS-4: Envimet goes Reality - QGIS data manipulation"
+    ]
+  },
+  {
+    "objectID": "worksheets/ws-04.html#convert-geodata-to-envimet",
+    "href": "worksheets/ws-04.html#convert-geodata-to-envimet",
+    "title": "WS-4: Envimet goes Reality - QGIS data manipulation",
+    "section": "Convert Geodata to envimet",
+    "text": "Convert Geodata to envimet\nBasically you could now run the Convert Geodata to Envimet plugin.",
     "crumbs": [
       "Worksheets",
       "WS-4: Envimet goes Reality - QGIS data manipulation"
