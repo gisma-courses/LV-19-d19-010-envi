@@ -95,7 +95,7 @@
     "href": "index.html",
     "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
     "section": "",
-    "text": "Widely used in applications as diverse as urban planning, architectural design and energy efficiency, ENVI-met is a 3D micro-climate simulation software. Its functionality goes beyond individual climate parameters and covers a wide spectrum. ENVI-met excels in simulating different climate conditions, including day and night temperatures, humidity, wind speed and solar radiation in urban environments. It can also simulate the impact of different building materials, such as glass and stone, on the surrounding environment.\nThe course will cover the following topics\nBasic concepts Definition of materials Modelling vegetation Preparing the model for simulation Creation of weather files Running a simulation Visualising the results Interpreting the results"
+    "text": "Current situation at the Hasenkopf site\n\n\n\n\n\n\n\nPlanned situation at the Hasenkopf site\n\n\n\n\n\n\nFigure 1: Hasenkopf residential area expansion\n\n\n\nWidely used in applications as diverse as urban planning, architectural design and energy efficiency, ENVI-met is a 3D micro-climate simulation software. Its functionality goes beyond individual climate parameters and covers a wide spectrum. ENVI-met excels in simulating different climate conditions, including day and night temperatures, humidity, wind speed and solar radiation in urban environments. It can also simulate the impact of different building materials, such as glass and stone, on the surrounding environment.\nThe course will cover the following topics\nBasic concepts Definition of materials Modelling vegetation Preparing the model for simulation Creation of weather files Running a simulation Visualising the results Interpreting the results"
   },
   {
     "objectID": "worksheets/ws-01.html",
@@ -186,103 +186,8 @@
     ]
   },
   {
-    "objectID": "worksheets/ws-00.html",
-    "href": "worksheets/ws-00.html",
-    "title": "WS-HowTo",
-    "section": "",
-    "text": "The Working Sheets will provide weekly assignments related to the general task of reaching out for the course goals.\n\nMandatory assignments (Studienleistung) will be marked as \nGraded examinations (Prüfungsleistung) will be marked as",
-    "crumbs": [
-      "Worksheets",
-      "WS-HowTo"
-    ]
-  },
-  {
-    "objectID": "assets/qgis/hasenkopf-roads.html",
-    "href": "assets/qgis/hasenkopf-roads.html",
-    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
-    "section": "",
-    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright      0 0     false"
-  },
-  {
-    "objectID": "assets/qgis/hasenkopf-forest_32632.html",
-    "href": "assets/qgis/hasenkopf-forest_32632.html",
-    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
-    "section": "",
-    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright     +proj=longlat +datum=WGS84 +no_defs 0 0     false"
-  },
-  {
-    "objectID": "assets/qgis/hasenkopf-grass.html",
-    "href": "assets/qgis/hasenkopf-grass.html",
-    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
-    "section": "",
-    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright      0 0     false"
-  },
-  {
-    "objectID": "assets/qgis/hasenkopf-farmland.html",
-    "href": "assets/qgis/hasenkopf-farmland.html",
-    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
-    "section": "",
-    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright      0 0     false"
-  },
-  {
-    "objectID": "assets/qgis/hasenkopf-residental.html",
-    "href": "assets/qgis/hasenkopf-residental.html",
-    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
-    "section": "",
-    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright      0 0     false"
-  },
-  {
-    "objectID": "assets/qgis/hasenkopf-buildings_32632.html",
-    "href": "assets/qgis/hasenkopf-buildings_32632.html",
-    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
-    "section": "",
-    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright     +proj=longlat +datum=WGS84 +no_defs 0 0     false"
-  },
-  {
-    "objectID": "assets/qgis/stadtwald_32632.html",
-    "href": "assets/qgis/stadtwald_32632.html",
-    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
-    "section": "",
-    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     dataset\n\n\n                GEOGCRS[“WGS 84”,ENSEMBLE[“World Geodetic System 1984 ensemble”,MEMBER[“World Geodetic System 1984 (Transit)”],MEMBER[“World Geodetic System 1984 (G730)”],MEMBER[“World Geodetic System 1984 (G873)”],MEMBER[“World Geodetic System 1984 (G1150)”],MEMBER[“World Geodetic System 1984 (G1674)”],MEMBER[“World Geodetic System 1984 (G1762)”],MEMBER[“World Geodetic System 1984 (G2139)”],MEMBER[“World Geodetic System 1984 (G2296)”],ELLIPSOID[“WGS 84”,6378137,298.257223563,LENGTHUNIT[“metre”,1]],ENSEMBLEACCURACY[2.0]],PRIMEM[“Greenwich”,0,ANGLEUNIT[“degree”,0.0174532925199433]],CS[ellipsoidal,2],AXIS[“geodetic latitude (Lat)”,north,ORDER[1],ANGLEUNIT[“degree”,0.0174532925199433]],AXIS[“geodetic longitude (Lon)”,east,ORDER[2],ANGLEUNIT[“degree”,0.0174532925199433]],USAGE[SCOPE[“Horizontal component of 3D system.”],AREA[“World.”],BBOX[-90,-180,90,180]],ID[“EPSG”,4326]] +proj=longlat +datum=WGS84 +no_defs 3452 4326 EPSG:4326 WGS 84 longlat EPSG:7030 true"
-  },
-  {
-    "objectID": "assets/qgis/hasenkopf-buildings.html",
-    "href": "assets/qgis/hasenkopf-buildings.html",
-    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
-    "section": "",
-    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright      0 0     false"
-  },
-  {
-    "objectID": "assets/qgis/hasenkopf-scrub_32632.html",
-    "href": "assets/qgis/hasenkopf-scrub_32632.html",
-    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
-    "section": "",
-    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright     +proj=longlat +datum=WGS84 +no_defs 0 0     false"
-  },
-  {
-    "objectID": "assets/qgis/hasenkopf-forest.html",
-    "href": "assets/qgis/hasenkopf-forest.html",
-    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
-    "section": "",
-    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright      0 0     false"
-  },
-  {
-    "objectID": "assets/qgis/hasenkopf-farmland_32632.html",
-    "href": "assets/qgis/hasenkopf-farmland_32632.html",
-    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
-    "section": "",
-    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright     +proj=longlat +datum=WGS84 +no_defs 0 0     false"
-  },
-  {
-    "objectID": "assets/qgis/hasenkopf-scrub.html",
-    "href": "assets/qgis/hasenkopf-scrub.html",
-    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
-    "section": "",
-    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright      0 0     false"
-  },
-  {
-    "objectID": "assets/qgis/hasenkopf-residental_32632.html",
-    "href": "assets/qgis/hasenkopf-residental_32632.html",
+    "objectID": "assets/qgis/hasenkopf-roads_32632.html",
+    "href": "assets/qgis/hasenkopf-roads_32632.html",
     "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
     "section": "",
     "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright     +proj=longlat +datum=WGS84 +no_defs 0 0     false"
@@ -295,43 +200,105 @@
     "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright     +proj=longlat +datum=WGS84 +no_defs 0 0     false"
   },
   {
-    "objectID": "assets/qgis/hasenkopf-roads_32632.html",
-    "href": "assets/qgis/hasenkopf-roads_32632.html",
+    "objectID": "assets/qgis/hasenkopf-residental_32632.html",
+    "href": "assets/qgis/hasenkopf-residental_32632.html",
     "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
     "section": "",
     "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright     +proj=longlat +datum=WGS84 +no_defs 0 0     false"
   },
   {
-    "objectID": "worksheets/ws-99.html",
-    "href": "worksheets/ws-99.html",
-    "title": "Workflow Hasenkopf - OSM data to Envi-met",
+    "objectID": "assets/qgis/hasenkopf-scrub.html",
+    "href": "assets/qgis/hasenkopf-scrub.html",
+    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
     "section": "",
-    "text": "Preliminary Preparation\n\nCurrent LTR Qgis Installation\nInstallation of Plugins\n\nGeodata to ENVI-met\nOSMDownloader\nQuickOSM",
-    "crumbs": [
-      "Worksheets",
-      "Workflow Hasenkopf - OSM data to Envi-met"
-    ]
+    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright      0 0     false"
   },
   {
-    "objectID": "worksheets/ws-99.html#data-aquisition",
-    "href": "worksheets/ws-99.html#data-aquisition",
-    "title": "Workflow Hasenkopf - OSM data to Envi-met",
-    "section": "Data Aquisition",
-    "text": "Data Aquisition\nThe preparation of the modelling environment for an Envimet model run can be as complex as desired, but the following criteria should always be kept in mind 1. the size and desired resolution of the model domain (depending on the research question) 2. scientific or planning level of detail of the research question 4. focus of the modelling (wind field, plant respiration, micrometeorological parameters). The input data must be selected according to these factors. In hilly terrain, a high resolution digital terrain model or digital surface model is essential. In addition, at least a rough estimate of land use and soil type is required. The three-dimensional structure of the model requires at least good estimates of vegetation and building heights in the selected model area.\nFor the selected question of cold air production in the Hasenkopf area, the freely available data from the State of Hesse and the Hessian Administration for Land Management and Geoinformation, as well as the Openstreetmap data, are well suited. In addition, some planning maps have to be digitised manually.",
-    "crumbs": [
-      "Worksheets",
-      "Workflow Hasenkopf - OSM data to Envi-met"
-    ]
+    "objectID": "assets/qgis/hasenkopf-farmland_32632.html",
+    "href": "assets/qgis/hasenkopf-farmland_32632.html",
+    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
+    "section": "",
+    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright     +proj=longlat +datum=WGS84 +no_defs 0 0     false"
   },
   {
-    "objectID": "worksheets/ws-99.html#download-of-the-data",
-    "href": "worksheets/ws-99.html#download-of-the-data",
-    "title": "Workflow Hasenkopf - OSM data to Envi-met",
-    "section": "Download of the data",
-    "text": "Download of the data\n\nDEM & DOM\nThe DEM and DOM files relevant for Marburg can be downloaded from the website of the Hessian Administration for Land Management and Geoinformation\n\n\nOSM data\nOpen the downloaded OSM file and search for the following elements (main keys “landuse” and “natural”)\n 'allotments'  'farmland'  'farmyard'  'forest'  'grass'   'meadow'  'orchard'  'village_green'  'grassland'  'scrub'  'wood' \nExport and project it (EPSG:32632) and name it vegtypes.gpkg.\nThen select multistrings (highway key).\nprimary' 'primary_link' 'residential' 'secondary' 'secondary_link' 'tertiary' 'tertiary_link' 'track\nExport and project it (EPSG:32632) and name it surftypes_2.gpkg.\n\n\nPolygons vegetation\nOpen the attribute table of vegtypes.gpkg and then the field calculator. Note a new field with 6 alphanumeric characters named ENVIMET_ID. then process the following expressions\n\nCASE \nCASE \n  WHEN \"landuse\" =   'grass'       THEN '000000'\n    WHEN \"landuse\" =   'meadow'        THEN '000000'\n    WHEN \"landuse\" =   'farmyard'      THEN '0201H4'\n    WHEN \"landuse\" =   'forest'        THEN '0000SM'\n    WHEN \"landuse\" =   'allotments'    THEN '0201H4'\n    WHEN \"landuse\" =   'orchard'       THEN '000051'\n  WHEN \"natural\" =   'grassland'     THEN '000000'  \n  WHEN \"natural\" =   'wood'          THEN '0000SM'\n    WHEN \"natural\" =   'scrub'         THEN '0100H2'  \n    ELSE '000000'\nEND\nSave the file.\n\n\nPolygons surface 1\nOpen the attribute table of vegtypes.gpkg and the field calculator and edit the following expressions:\nCASE \n    WHEN \"landuse\" =   'farmland'      THEN '02AGSS'\n    WHEN \"landuse\" =   'residental'    THEN '02AGSS'    \n    WHEN \"landuse\" =   'industrial'    THEN '0200AK'\n  ELSE '0200AK'\nSave the file and name it polygons_surface_1.gpkg.\n\n\nLine surface types\nBuffer the different road types with 8m (primary) 5m (secondary) 4m (tertiary) and 2.5m (tracks).\nThen edit the following expression:\n\nCASE \n  WHEN \"highway\" =   'primary'        THEN '0200AK'\n  WHEN \"highway\" =   'primary_link'   THEN '0200AK'\n  WHEN \"highway\" =   'secondary'      THEN '0200AK'\n  WHEN \"highway\" =   'secondary_link' THEN '0200AK'\n  WHEN \"highway\" =   'tertiary'       THEN '0200AK'\n  WHEN \"highway\" =   'tertiary_link'  THEN '0200AK'  \n  WHEN \"surface\" =   'asphalt'        THEN '0200AK'\n    WHEN \"surface\" =   'ground'         THEN '0200TS'\n    WHEN \"surface\" =   'dirt'           THEN '0200TS'\n    WHEN \"surface\" =   'mud'            THEN '0200TS'\n    WHEN \"surface\" =   'fine_gravel'    THEN '0200BS'\n    WHEN \"surface\" =   'gravel'         THEN '0200BS'\n    WHEN \"surface\" =   'grass'          THEN '02AGSS'\n    WHEN \"surface\" =   'unpaved'        THEN '0200TS'\n    WHEN \"surface\" =   'compacted'      THEN '0200BS'\nELSE '0200TS'\nEND\nSave the file as line_surface_1.gpgk. Now merge polygons_surface_1.gpkg and line_surface_1.gpgk into all_surfaces.gpgk.\nNow you can run the Convert Geodata to Envimet plugin.",
+    "objectID": "assets/qgis/hasenkopf-forest.html",
+    "href": "assets/qgis/hasenkopf-forest.html",
+    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
+    "section": "",
+    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright      0 0     false"
+  },
+  {
+    "objectID": "assets/qgis/hasenkopf-scrub_32632.html",
+    "href": "assets/qgis/hasenkopf-scrub_32632.html",
+    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
+    "section": "",
+    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright     +proj=longlat +datum=WGS84 +no_defs 0 0     false"
+  },
+  {
+    "objectID": "assets/qgis/hasenkopf-buildings.html",
+    "href": "assets/qgis/hasenkopf-buildings.html",
+    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
+    "section": "",
+    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright      0 0     false"
+  },
+  {
+    "objectID": "assets/qgis/stadtwald_32632.html",
+    "href": "assets/qgis/stadtwald_32632.html",
+    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
+    "section": "",
+    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     dataset\n\n\n                GEOGCRS[“WGS 84”,ENSEMBLE[“World Geodetic System 1984 ensemble”,MEMBER[“World Geodetic System 1984 (Transit)”],MEMBER[“World Geodetic System 1984 (G730)”],MEMBER[“World Geodetic System 1984 (G873)”],MEMBER[“World Geodetic System 1984 (G1150)”],MEMBER[“World Geodetic System 1984 (G1674)”],MEMBER[“World Geodetic System 1984 (G1762)”],MEMBER[“World Geodetic System 1984 (G2139)”],MEMBER[“World Geodetic System 1984 (G2296)”],ELLIPSOID[“WGS 84”,6378137,298.257223563,LENGTHUNIT[“metre”,1]],ENSEMBLEACCURACY[2.0]],PRIMEM[“Greenwich”,0,ANGLEUNIT[“degree”,0.0174532925199433]],CS[ellipsoidal,2],AXIS[“geodetic latitude (Lat)”,north,ORDER[1],ANGLEUNIT[“degree”,0.0174532925199433]],AXIS[“geodetic longitude (Lon)”,east,ORDER[2],ANGLEUNIT[“degree”,0.0174532925199433]],USAGE[SCOPE[“Horizontal component of 3D system.”],AREA[“World.”],BBOX[-90,-180,90,180]],ID[“EPSG”,4326]] +proj=longlat +datum=WGS84 +no_defs 3452 4326 EPSG:4326 WGS 84 longlat EPSG:7030 true"
+  },
+  {
+    "objectID": "assets/qgis/hasenkopf-buildings_32632.html",
+    "href": "assets/qgis/hasenkopf-buildings_32632.html",
+    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
+    "section": "",
+    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright     +proj=longlat +datum=WGS84 +no_defs 0 0     false"
+  },
+  {
+    "objectID": "assets/qgis/hasenkopf-residental.html",
+    "href": "assets/qgis/hasenkopf-residental.html",
+    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
+    "section": "",
+    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright      0 0     false"
+  },
+  {
+    "objectID": "assets/qgis/hasenkopf-farmland.html",
+    "href": "assets/qgis/hasenkopf-farmland.html",
+    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
+    "section": "",
+    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright      0 0     false"
+  },
+  {
+    "objectID": "assets/qgis/hasenkopf-grass.html",
+    "href": "assets/qgis/hasenkopf-grass.html",
+    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
+    "section": "",
+    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright      0 0     false"
+  },
+  {
+    "objectID": "assets/qgis/hasenkopf-forest_32632.html",
+    "href": "assets/qgis/hasenkopf-forest_32632.html",
+    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
+    "section": "",
+    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright     +proj=longlat +datum=WGS84 +no_defs 0 0     false"
+  },
+  {
+    "objectID": "assets/qgis/hasenkopf-roads.html",
+    "href": "assets/qgis/hasenkopf-roads.html",
+    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
+    "section": "",
+    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright      0 0     false"
+  },
+  {
+    "objectID": "worksheets/ws-00.html",
+    "href": "worksheets/ws-00.html",
+    "title": "WS-HowTo",
+    "section": "",
+    "text": "The Working Sheets will provide weekly assignments related to the general task of reaching out for the course goals.\n\nMandatory assignments (Studienleistung) will be marked as \nGraded examinations (Prüfungsleistung) will be marked as",
     "crumbs": [
       "Worksheets",
-      "Workflow Hasenkopf - OSM data to Envi-met"
+      "WS-HowTo"
     ]
   },
   {
@@ -406,6 +373,39 @@
     "title": "WS-4: Envimet goes Reality - QGIS data manipulation",
     "section": "Assignment",
     "text": "Assignment\nDesign a concrete modeling approach and a suitable associated modeling concept to assess the performance of Envimet to simulate how are the effects of the Hasenkopf build up plans affecting the fresh air support of Marburg. Consider the following aspects: * abiotic endowment of the model domain (relief, soil, site location). * biotic features of the model domain (simple/3D vegetation) * technical model domain (x,y,z extent, time steps nesting) * appropriate meteorology for model initialization (ideal, real values) * Validation strategy",
+    "crumbs": [
+      "Worksheets",
+      "WS-4: Envimet goes Reality - QGIS data manipulation"
+    ]
+  },
+  {
+    "objectID": "worksheets/ws-04.html#hands-on---data-aquisition",
+    "href": "worksheets/ws-04.html#hands-on---data-aquisition",
+    "title": "WS-4: Envimet goes Reality - QGIS data manipulation",
+    "section": "Hands on - Data Aquisition",
+    "text": "Hands on - Data Aquisition\nThe preparation of the modelling environment for an Envimet model run can be as complex as desired, but the following criteria should always be kept in mind 1. the size and desired resolution of the model domain (depending on the research question) 2. scientific or planning level of detail of the research question 4. focus of the modelling (wind field, plant respiration, micrometeorological parameters). The input data must be selected according to these factors. In hilly terrain, a high resolution digital terrain model or digital surface model is essential. In addition, at least a rough estimate of land use and soil type is required. The three-dimensional structure of the model requires at least good estimates of vegetation and building heights in the selected model area.\nFor the selected question of cold air production in the Hasenkopf area, the freely available data from the State of Hesse and the Hessian Administration for Land Management and Geoinformation, as well as the Openstreetmap data, are well suited. In addition, some planning maps have to be digitised manually.",
+    "crumbs": [
+      "Worksheets",
+      "WS-4: Envimet goes Reality - QGIS data manipulation"
+    ]
+  },
+  {
+    "objectID": "worksheets/ws-04.html#download-of-the-data",
+    "href": "worksheets/ws-04.html#download-of-the-data",
+    "title": "WS-4: Envimet goes Reality - QGIS data manipulation",
+    "section": "Download of the data",
+    "text": "Download of the data\n\nDEM & DOM\nThe DEM and DOM files relevant for Marburg can be downloaded from the website of the Hessian Administration for Land Management and Geoinformation\n\n\nOSM data\nOpen the downloaded OSM file and search for the following elements (main keys “landuse” and “natural”)\n 'allotments'  'farmland'  'farmyard'  'forest'  'grass'   'meadow'  'orchard'  'village_green'  'grassland'  'scrub'  'wood' \nExport and project it (EPSG:32632) and name it vegtypes.gpkg.\nThen select multistrings (highway key).\nprimary' 'primary_link' 'residential' 'secondary' 'secondary_link' 'tertiary' 'tertiary_link' 'track\nExport and project it (EPSG:32632) and name it surftypes_2.gpkg.",
+    "crumbs": [
+      "Worksheets",
+      "WS-4: Envimet goes Reality - QGIS data manipulation"
+    ]
+  },
+  {
+    "objectID": "worksheets/ws-04.html#data-preprocessing",
+    "href": "worksheets/ws-04.html#data-preprocessing",
+    "title": "WS-4: Envimet goes Reality - QGIS data manipulation",
+    "section": "Data preprocessing",
+    "text": "Data preprocessing\n\nPolygons vegetation\nOpen the attribute table of vegtypes.gpkg and then the field calculator. Note a new field with 6 alphanumeric characters named ENVIMET_ID. then process the following expressions\n\nCASE \nCASE \n  WHEN \"landuse\" =   'grass'       THEN '000000'\n    WHEN \"landuse\" =   'meadow'        THEN '000000'\n    WHEN \"landuse\" =   'farmyard'      THEN '0201H4'\n    WHEN \"landuse\" =   'forest'        THEN '0000SM'\n    WHEN \"landuse\" =   'allotments'    THEN '0201H4'\n    WHEN \"landuse\" =   'orchard'       THEN '000051'\n  WHEN \"natural\" =   'grassland'     THEN '000000'  \n  WHEN \"natural\" =   'wood'          THEN '0000SM'\n    WHEN \"natural\" =   'scrub'         THEN '0100H2'  \n    ELSE '000000'\nEND\nSave the file.\n\n\nPolygons surface 1\nOpen the attribute table of vegtypes.gpkg and the field calculator and edit the following expressions:\nCASE \n    WHEN \"landuse\" =   'farmland'      THEN '02AGSS'\n    WHEN \"landuse\" =   'residental'    THEN '02AGSS'    \n    WHEN \"landuse\" =   'industrial'    THEN '0200AK'\n  ELSE '0200AK'\nSave the file and name it polygons_surface_1.gpkg.\n\n\nLine surface types\nBuffer the different road types with 8m (primary) 5m (secondary) 4m (tertiary) and 2.5m (tracks).\nThen edit the following expression:\n\nCASE \n  WHEN \"highway\" =   'primary'        THEN '0200AK'\n  WHEN \"highway\" =   'primary_link'   THEN '0200AK'\n  WHEN \"highway\" =   'secondary'      THEN '0200AK'\n  WHEN \"highway\" =   'secondary_link' THEN '0200AK'\n  WHEN \"highway\" =   'tertiary'       THEN '0200AK'\n  WHEN \"highway\" =   'tertiary_link'  THEN '0200AK'  \n  WHEN \"surface\" =   'asphalt'        THEN '0200AK'\n    WHEN \"surface\" =   'ground'         THEN '0200TS'\n    WHEN \"surface\" =   'dirt'           THEN '0200TS'\n    WHEN \"surface\" =   'mud'            THEN '0200TS'\n    WHEN \"surface\" =   'fine_gravel'    THEN '0200BS'\n    WHEN \"surface\" =   'gravel'         THEN '0200BS'\n    WHEN \"surface\" =   'grass'          THEN '02AGSS'\n    WHEN \"surface\" =   'unpaved'        THEN '0200TS'\n    WHEN \"surface\" =   'compacted'      THEN '0200BS'\nELSE '0200TS'\nEND\nSave the file as line_surface_1.gpgk. Now merge polygons_surface_1.gpkg and line_surface_1.gpgk into all_surfaces.gpgk.\nNow you can run the Convert Geodata to Envimet plugin.",
     "crumbs": [
       "Worksheets",
       "WS-4: Envimet goes Reality - QGIS data manipulation"
@@ -532,38 +532,5 @@
     "title": "Data and Software",
     "section": "Additional data sources",
     "text": "Additional data sources"
-  },
-  {
-    "objectID": "worksheets/ws-04.html#hands-on---data-aquisition",
-    "href": "worksheets/ws-04.html#hands-on---data-aquisition",
-    "title": "WS-4: Envimet goes Reality - QGIS data manipulation",
-    "section": "Hands on - Data Aquisition",
-    "text": "Hands on - Data Aquisition\nThe preparation of the modelling environment for an Envimet model run can be as complex as desired, but the following criteria should always be kept in mind 1. the size and desired resolution of the model domain (depending on the research question) 2. scientific or planning level of detail of the research question 4. focus of the modelling (wind field, plant respiration, micrometeorological parameters). The input data must be selected according to these factors. In hilly terrain, a high resolution digital terrain model or digital surface model is essential. In addition, at least a rough estimate of land use and soil type is required. The three-dimensional structure of the model requires at least good estimates of vegetation and building heights in the selected model area.\nFor the selected question of cold air production in the Hasenkopf area, the freely available data from the State of Hesse and the Hessian Administration for Land Management and Geoinformation, as well as the Openstreetmap data, are well suited. In addition, some planning maps have to be digitised manually.",
-    "crumbs": [
-      "Worksheets",
-      "WS-4: Envimet goes Reality - QGIS data manipulation"
-    ]
-  },
-  {
-    "objectID": "worksheets/ws-04.html#download-of-the-data",
-    "href": "worksheets/ws-04.html#download-of-the-data",
-    "title": "WS-4: Envimet goes Reality - QGIS data manipulation",
-    "section": "Download of the data",
-    "text": "Download of the data\n\nDEM & DOM\nThe DEM and DOM files relevant for Marburg can be downloaded from the website of the Hessian Administration for Land Management and Geoinformation\n\n\nOSM data\nOpen the downloaded OSM file and search for the following elements (main keys “landuse” and “natural”)\n 'allotments'  'farmland'  'farmyard'  'forest'  'grass'   'meadow'  'orchard'  'village_green'  'grassland'  'scrub'  'wood' \nExport and project it (EPSG:32632) and name it vegtypes.gpkg.\nThen select multistrings (highway key).\nprimary' 'primary_link' 'residential' 'secondary' 'secondary_link' 'tertiary' 'tertiary_link' 'track\nExport and project it (EPSG:32632) and name it surftypes_2.gpkg.",
-    "crumbs": [
-      "Worksheets",
-      "WS-4: Envimet goes Reality - QGIS data manipulation"
-    ]
-  },
-  {
-    "objectID": "worksheets/ws-04.html#data-preprocessing",
-    "href": "worksheets/ws-04.html#data-preprocessing",
-    "title": "WS-4: Envimet goes Reality - QGIS data manipulation",
-    "section": "Data preprocessing",
-    "text": "Data preprocessing\n\nPolygons vegetation\nOpen the attribute table of vegtypes.gpkg and then the field calculator. Note a new field with 6 alphanumeric characters named ENVIMET_ID. then process the following expressions\n\nCASE \nCASE \n  WHEN \"landuse\" =   'grass'       THEN '000000'\n    WHEN \"landuse\" =   'meadow'        THEN '000000'\n    WHEN \"landuse\" =   'farmyard'      THEN '0201H4'\n    WHEN \"landuse\" =   'forest'        THEN '0000SM'\n    WHEN \"landuse\" =   'allotments'    THEN '0201H4'\n    WHEN \"landuse\" =   'orchard'       THEN '000051'\n  WHEN \"natural\" =   'grassland'     THEN '000000'  \n  WHEN \"natural\" =   'wood'          THEN '0000SM'\n    WHEN \"natural\" =   'scrub'         THEN '0100H2'  \n    ELSE '000000'\nEND\nSave the file.\n\n\nPolygons surface 1\nOpen the attribute table of vegtypes.gpkg and the field calculator and edit the following expressions:\nCASE \n    WHEN \"landuse\" =   'farmland'      THEN '02AGSS'\n    WHEN \"landuse\" =   'residental'    THEN '02AGSS'    \n    WHEN \"landuse\" =   'industrial'    THEN '0200AK'\n  ELSE '0200AK'\nSave the file and name it polygons_surface_1.gpkg.\n\n\nLine surface types\nBuffer the different road types with 8m (primary) 5m (secondary) 4m (tertiary) and 2.5m (tracks).\nThen edit the following expression:\n\nCASE \n  WHEN \"highway\" =   'primary'        THEN '0200AK'\n  WHEN \"highway\" =   'primary_link'   THEN '0200AK'\n  WHEN \"highway\" =   'secondary'      THEN '0200AK'\n  WHEN \"highway\" =   'secondary_link' THEN '0200AK'\n  WHEN \"highway\" =   'tertiary'       THEN '0200AK'\n  WHEN \"highway\" =   'tertiary_link'  THEN '0200AK'  \n  WHEN \"surface\" =   'asphalt'        THEN '0200AK'\n    WHEN \"surface\" =   'ground'         THEN '0200TS'\n    WHEN \"surface\" =   'dirt'           THEN '0200TS'\n    WHEN \"surface\" =   'mud'            THEN '0200TS'\n    WHEN \"surface\" =   'fine_gravel'    THEN '0200BS'\n    WHEN \"surface\" =   'gravel'         THEN '0200BS'\n    WHEN \"surface\" =   'grass'          THEN '02AGSS'\n    WHEN \"surface\" =   'unpaved'        THEN '0200TS'\n    WHEN \"surface\" =   'compacted'      THEN '0200BS'\nELSE '0200TS'\nEND\nSave the file as line_surface_1.gpgk. Now merge polygons_surface_1.gpkg and line_surface_1.gpgk into all_surfaces.gpgk.\nNow you can run the Convert Geodata to Envimet plugin.",
-    "crumbs": [
-      "Worksheets",
-      "WS-4: Envimet goes Reality - QGIS data manipulation"
-    ]
   }
 ]

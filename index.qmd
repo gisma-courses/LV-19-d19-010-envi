@@ -10,7 +10,16 @@ twitter-card:
 comments: false
 ---
 
-![](images/heiligengrund.png)
+::: {#fig-envimet-models layout-ncol=2}
+
+![Current situation at the Hasenkopf site](images/hasenkopf_original.bmp){width="50%"} 
+
+![Planned situation at the Hasenkopf site](images/hasenkopf_planung.bmp){width="50%"}
+
+Hasenkopf residential area expansion
+
+:::
+
 
 Widely used in applications as diverse as urban planning, architectural design and energy efficiency, ENVI-met is a 3D micro-climate simulation software. Its functionality goes beyond individual climate parameters and covers a wide spectrum. ENVI-met excels in simulating different climate conditions, including day and night temperatures, humidity, wind speed and solar radiation in urban environments. It can also simulate the impact of different building materials, such as glass and stone, on the surrounding environment.
 
