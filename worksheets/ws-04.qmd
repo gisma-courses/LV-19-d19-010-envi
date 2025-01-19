@@ -246,5 +246,5 @@ You can now run the [`Convert Geodata to Envimet`](https://youtu.be/FgW1_PRPMWo?
 ## Help
 
 ::: {.callout-tip appearance="simple"}
-All files, GCP and the model files and simulation control files generated from it, are included in the [Envi-met Hasenkopf GIS and Modeldata](https://github.com/gisma-courses/LV-19-d19-010-envi/raw/refs/heads/master/assets/hasenkopf_core_area.zip)) Archive file.
+All files, GCP and the model files and simulation control files generated from it, are included in the [Envi-met Hasenkopf GIS and Modeldata](https://github.com/gisma-courses/LV-19-d19-010-envi/raw/refs/heads/master/assets/hasenkopf_core_area.zip) Archive file.
 :::
