@@ -201,7 +201,7 @@
     "href": "worksheets/ws-04.html#convert-geodata-to-envimet",
     "title": "WS-4: Envimet goes Reality - QGIS data manipulation",
     "section": "Convert Geodata to envimet",
-    "text": "Convert Geodata to envimet\nBasically you could now run the Convert Geodata to Envimet plugin.",
+    "text": "Convert Geodata to envimet\nYou can now run the Convert Geodata to Envimet] plug-in. Of course, two different models have to be generated: one for the actual state and one for the planned state.",
     "crumbs": [
       "Worksheets",
       "WS-4: Envimet goes Reality - QGIS data manipulation"
@@ -609,5 +609,27 @@
     "title": "Data and Software",
     "section": "Additional data sources",
     "text": "Additional data sources"
+  },
+  {
+    "objectID": "worksheets/ws-04.html#planning-data",
+    "href": "worksheets/ws-04.html#planning-data",
+    "title": "WS-4: Envimet goes Reality - QGIS data manipulation",
+    "section": "Planning data",
+    "text": "Planning data\nPlanning data is required to compare the production of fresh air between the actual and planned conditions. The available data can be found in the presentation linked above. We use the following screenshot to record the changes in land use, buildings and vegetation based on this. To do this, the map presentation image must be georeferenced. This is done using the tool Layer-&gt;Georeferencer.\nThe basic approach is to find points (so-called ground control points) in the draft plan that can also be identified in the Bing aerial photograph, for example. Using these points, the image is integrated into the geometry of the GIS data and can then be digitized accordingly.\n\nThe basic approach is to find points (so-called ground control points) in the draft plan that can also be identified in the Bing aerial photograph, for example. On the basis of these points, the image is integrated into the geometry of the GIS data and can then be digitized accordingly. After the georeferencing has been successfully carried out, the deviating structures are now integrated into copies of the respective inventory files by manual digitization. The number of floors is indicated for the buildings and can be adopted with a height of 3 m each. The trees were digitized as 3D plant points and assigned to different standard heights of a standard deciduous tree species, depending on their diameter. Paths are recorded as paved.\nSave the files under a unique name in each case, making it clear that the planning layers are meant.",
+    "crumbs": [
+      "Worksheets",
+      "WS-4: Envimet goes Reality - QGIS data manipulation"
+    ]
+  },
+  {
+    "objectID": "worksheets/ws-04.html#help",
+    "href": "worksheets/ws-04.html#help",
+    "title": "WS-4: Envimet goes Reality - QGIS data manipulation",
+    "section": "Help",
+    "text": "Help\n\n\n\n\n\n\nAll files, GCP and the model files and simulation control files generated from it, are included in the ZIP file linked above.",
+    "crumbs": [
+      "Worksheets",
+      "WS-4: Envimet goes Reality - QGIS data manipulation"
+    ]
   }
 ]

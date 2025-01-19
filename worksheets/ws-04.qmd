@@ -218,7 +218,27 @@ To do this, we use the tool [`Vector->Research Tools->Regular Points`] (https://
 We can, for example, create a point every 100 meters. Points at the edge, in buildings, etc. can then be deleted manually, as they require a considerable amount of additional computing time during the simulation. There should not be many more than 50-60 points...
 Save the file as `receptors.gpkg`.
 
+
+## Planning data
+
+Planning data is required to compare the production of fresh air between the actual and planned conditions. The available data can be found in the presentation linked above. We use the following screenshot to record the changes in land use, buildings and vegetation based on this.
+To do this, the map presentation image must be georeferenced. This is done using the tool [`Layer->Georeferencer`](https://docs.qgis.org/3.34/en/docs/user_manual/working_with_raster/georeferencer.html).
+
+The basic approach is to find points (so-called ground control points) in the draft plan that can also be identified in the Bing aerial photograph, for example. Using these points, the image is integrated into the geometry of the GIS data and can then be digitized accordingly.
+
+![](../images/georef.png)
+
+The basic approach is to find points (so-called ground control points) in the draft plan that can also be identified in the Bing aerial photograph, for example. On the basis of these points, the image is integrated into the geometry of the GIS data and can then be digitized accordingly.
+After the georeferencing has been successfully carried out, the deviating structures are now integrated into copies of the respective inventory files by manual digitization. The number of floors is indicated for the buildings and can be adopted with a height of 3 m each. The trees were digitized as 3D plant points and assigned to different standard heights of a standard deciduous tree species, depending on their diameter. Paths are recorded as paved.
+
+Save the files under a unique name in each case, making it clear that the planning layers are meant.
+
 ## Convert Geodata to envimet
 
-Basically you could now run the  [`Convert Geodata to Envimet`](https://youtu.be/FgW1_PRPMWo?si=vgx3kY3uGR7-T995) plugin.
+You can now run the [`Convert Geodata to Envimet`](https://youtu.be/FgW1_PRPMWo?si=vgx3kY3uGR7-T995)] plug-in. Of course, two different models have to be generated: one for the actual state and one for the planned state.
 
+## Help
+
+::: {.callout-tip appearance="simple"}
+All files, GCP and the model files and simulation control files generated from it, are included in the ZIP file linked above.
+:::

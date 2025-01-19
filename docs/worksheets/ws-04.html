@@ -260,7 +260,9 @@ background-size: cover;
   <li><a href="#buildings" id="toc-buildings" class="nav-link" data-scroll-target="#buildings">Buildings</a></li>
   <li><a href="#check-for-missing-data" id="toc-check-for-missing-data" class="nav-link" data-scroll-target="#check-for-missing-data">Check for missing data</a></li>
   <li><a href="#receptors" id="toc-receptors" class="nav-link" data-scroll-target="#receptors">Receptors</a></li>
+  <li><a href="#planning-data" id="toc-planning-data" class="nav-link" data-scroll-target="#planning-data">Planning data</a></li>
   <li><a href="#convert-geodata-to-envimet" id="toc-convert-geodata-to-envimet" class="nav-link" data-scroll-target="#convert-geodata-to-envimet">Convert Geodata to envimet</a></li>
+  <li><a href="#help" id="toc-help" class="nav-link" data-scroll-target="#help">Help</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/gisma-courses/LV-19-d19-010-envi/edit/main/worksheets/ws-04.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gisma-courses/LV-19-d19-010-envi/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -427,9 +429,30 @@ END</code></pre>
 <h2 class="anchored" data-anchor-id="receptors">Receptors</h2>
 <p>So-called receptors can be set up to compare and locally measure continuous values. These work like complex measuring stations in the terrain. To do this, we use the tool [<code>Vector-&gt;Research Tools-&gt;Regular Points</code>] (https://youtu.be/ExgfFEEgeWA?si=nZWgiZR299VQBAR1). We can, for example, create a point every 100 meters. Points at the edge, in buildings, etc. can then be deleted manually, as they require a considerable amount of additional computing time during the simulation. There should not be many more than 50-60 points… Save the file as <code>receptors.gpkg</code>.</p>
 </section>
+<section id="planning-data" class="level2">
+<h2 class="anchored" data-anchor-id="planning-data">Planning data</h2>
+<p>Planning data is required to compare the production of fresh air between the actual and planned conditions. The available data can be found in the presentation linked above. We use the following screenshot to record the changes in land use, buildings and vegetation based on this. To do this, the map presentation image must be georeferenced. This is done using the tool <a href="https://docs.qgis.org/3.34/en/docs/user_manual/working_with_raster/georeferencer.html"><code>Layer-&gt;Georeferencer</code></a>.</p>
+<p>The basic approach is to find points (so-called ground control points) in the draft plan that can also be identified in the Bing aerial photograph, for example. Using these points, the image is integrated into the geometry of the GIS data and can then be digitized accordingly.</p>
+<p><img src="../images/georef.png" class="img-fluid"></p>
+<p>The basic approach is to find points (so-called ground control points) in the draft plan that can also be identified in the Bing aerial photograph, for example. On the basis of these points, the image is integrated into the geometry of the GIS data and can then be digitized accordingly. After the georeferencing has been successfully carried out, the deviating structures are now integrated into copies of the respective inventory files by manual digitization. The number of floors is indicated for the buildings and can be adopted with a height of 3 m each. The trees were digitized as 3D plant points and assigned to different standard heights of a standard deciduous tree species, depending on their diameter. Paths are recorded as paved.</p>
+<p>Save the files under a unique name in each case, making it clear that the planning layers are meant.</p>
+</section>
 <section id="convert-geodata-to-envimet" class="level2">
 <h2 class="anchored" data-anchor-id="convert-geodata-to-envimet">Convert Geodata to envimet</h2>
-<p>Basically you could now run the <a href="https://youtu.be/FgW1_PRPMWo?si=vgx3kY3uGR7-T995"><code>Convert Geodata to Envimet</code></a> plugin.</p>
+<p>You can now run the <a href="https://youtu.be/FgW1_PRPMWo?si=vgx3kY3uGR7-T995"><code>Convert Geodata to Envimet</code></a>] plug-in. Of course, two different models have to be generated: one for the actual state and one for the planned state.</p>
+</section>
+<section id="help" class="level2">
+<h2 class="anchored" data-anchor-id="help">Help</h2>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>All files, GCP and the model files and simulation control files generated from it, are included in the ZIP file linked above.</p>
+</div>
+</div>
+</div>
 
 
 </section>
