@@ -18,7 +18,6 @@ In this context, idealized means under simple meteorological conditions that rep
 
 * [Course Data Server](https://hessenbox.uni-marburg.de/getlink/fi5p6EzMUrtUVFW3DnkFky/envimet) You will find here all kinds of data, literature and tutorials 
 * [ENVI-met software](https://envi-met.info/doku.php?id=start)
-* Please have a look at the **Monde Tutorial videos**
 * Current LTR Qgis Installation
   * Installation of Plugins
     * Geodata to ENVI-met

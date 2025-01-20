@@ -548,7 +548,7 @@
     "href": "worksheets/ws-05.html#things-you-need",
     "title": "WS-5: Simulation runs Hasenkopf",
     "section": "Things you need",
-    "text": "Things you need\n\nCourse Data Server You will find here all kinds of data, literature and tutorials\nENVI-met software\nPlease have a look at the Monde Tutorial videos\nCurrent LTR Qgis Installation\n\nInstallation of Plugins\n\nGeodata to ENVI-met\nOSMDownloader\nQuickOSM\n\n\nEnvi-met Hasenkopf GIS and Modeldata",
+    "text": "Things you need\n\nCourse Data Server You will find here all kinds of data, literature and tutorials\nENVI-met software\nCurrent LTR Qgis Installation\n\nInstallation of Plugins\n\nGeodata to ENVI-met\nOSMDownloader\nQuickOSM\n\n\nEnvi-met Hasenkopf GIS and Modeldata",
     "crumbs": [
       "Worksheets",
       "WS-5: Simulation runs Hasenkopf"
