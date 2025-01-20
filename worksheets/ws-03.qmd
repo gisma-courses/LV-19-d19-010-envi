@@ -1,7 +1,7 @@
 ---
-title: "WS-3: Envimet goes Reality - Concept and data"
-title-block-banner: ../images/envi_met_title.png
-title-block-banner-color: black 
+title: "WS-3: Abstract the complex sufficiently"
+title-block-banner: ../images/envi_met_title_3d.png
+title-block-banner-color: "#600707" 
 ---
 
 ![](../images/mandantory.png){width=10%}

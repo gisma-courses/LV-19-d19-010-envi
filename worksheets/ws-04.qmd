@@ -1,7 +1,7 @@
 ---
-title: "WS-4: Envimet goes Reality - QGIS data manipulation"
-title-block-banner: ../images/envi_met_title.png
-title-block-banner-color: black 
+title: "WS-4: Generating the model domain"
+title-block-banner: ../images/envi_met_title_3d.png
+title-block-banner-color: "#600707"
 ---
 
 ![](../images/mandantory.png){width=10%}

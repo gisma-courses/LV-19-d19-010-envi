@@ -1,8 +1,8 @@
 ---
-title: "WS-1: Warm up ENVImet and Climate Modeling"
+title: "WS-1: Warm up - Climate Modeling"
 
-title-block-banner: ../images/envi_met_title.png
-title-block-banner-color: black 
+title-block-banner: ../images/envi_met_title_3d.png
+title-block-banner-color: "#600707" 
 
 ---
 

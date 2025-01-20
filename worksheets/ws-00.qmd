@@ -1,8 +1,8 @@
 ---
 title:  "WS-HowTo"
 
-title-block-banner: ../images/envi_met_title.png
-title-block-banner-color: black 
+title-block-banner: ../images/envi_met_title_3d.png
+title-block-banner-color: "#600707"
 ---
 
 The Working Sheets will provide weekly assignments related to the general task of reaching out for the course goals.
