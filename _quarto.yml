@@ -29,20 +29,11 @@ website:
     style: "docked"
     collapse-level: 1
     contents:
-      - section: "Modeling Microclimate"
-        contents:
-          - mc_session/mcm1.qmd
+      - mc_session/mcm1.qmd
           # - mc_session/mcm2.qmd
           # - mc_session/mcm3.qmd
       - text: "---"         
-#      - section: "Measure Microclimate"
-#        contents:
-#          - mc_session/mc1.qmd
-#          - mc_session/mc2.qmd
-#      - text: "---"
-      - section: "Software & More"
-        contents:
-          - modeling/modeling-material.qmd
+      - modeling/modeling-material.qmd
 #          - modeling/script-00-interpolation.qmd
       - text: "---"
       - section: "Worksheets"

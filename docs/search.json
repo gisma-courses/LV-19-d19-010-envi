@@ -592,9 +592,8 @@
     "href": "mc_session/mcm1.html",
     "title": "Microclimate Modeling",
     "section": "",
-    "text": "Microclimate, the localized atmospheric conditions that vary from the surrounding area, plays a pivotal role in influencing ecosystems, human activities, and environmental processes. Defined as the set of climatic conditions unique to a specific small-scale geographic area, microclimates encompass nuances in temperature, humidity, wind patterns, and other climatic variables that distinguish a particular locale from its broader surroundings. These localized variations, often influenced by terrain, vegetation, and human activities, constitute the intricate tapestry of microclimates that shape our immediate environments.\nThe study and modeling of microclimates have become increasingly vital in understanding the intricate dynamics of temperature, humidity, wind patterns, and other climatic variables at a fine spatial scale. As global climate change continues to underscore the significance of regional variations, the need for accurate and comprehensive microclimate models becomes more pronounced.\nMicroclimate modeling involves the application of various computational, observational, and analytical techniques to simulate and predict the climatic conditions in specific geographic locations. This interdisciplinary field draws on expertise from meteorology, climatology, ecology, urban planning, and computational sciences to unravel the complex interactions that define microclimates.\nThis comprehensive review delves into the diverse methodologies and advancements employed in modeling microclimates, addressing both the theoretical foundations and practical applications across various domains. From computational approaches like Computational Fluid Dynamics (CFD) to data-driven methods leveraging machine learning, the spectrum of modeling techniques continues to evolve, providing nuanced insights into localized environmental phenomena.\nUnderstanding microclimates is crucial in a range of contexts, including agriculture, urban planning, ecological research, and public health. The intricacies of urban microclimates, for example, influence factors such as heat islands and air quality, impacting the well-being of urban populations. In ecological studies, microclimate modeling is instrumental in elucidating species distributions, biodiversity patterns, and the resilience of ecosystems to environmental changes.\nAdvancements in sensor technologies, including ground-based sensors, unmanned aerial vehicles (UAVs), and satellite observations, contribute to the collection of high-resolution and real-time microclimate data. These technologies enhance the accuracy of models, allowing for more precise simulations and predictions.\nHowever, challenges persist, ranging from the need for improved data resolution and model validation to addressing computational complexities and resource constraints. As we stand at the intersection of technological innovation and environmental awareness, the review navigates through the current state of microclimate modeling, offering insights into ongoing research, case studies exemplifying successful applications, and future directions for advancements in the field.\nBy comprehensively exploring the methodologies, applications, and challenges in microclimate modeling, this review aims to serve as a foundational resource for researchers, practitioners, and policymakers engaged in unraveling the mysteries of localized climatic conditions. In doing so, it contributes to the collective efforts aimed at enhancing our understanding of microclimates and their profound implications on the natural world and human societies.\nHowever, first of all get familar with the boundary layer basic concept of cold air production see p. 693-705.",
+    "text": "Microclimates, or small-scale local atmospheric conditions, play a critical role in ecosystems, human activities, and environmental processes of all kinds. Microclimates are defined as the set of climatic conditions typical of a given small area. Local variations, often influenced by terrain, vegetation, and human activities, form a complex web of microclimates that shape our immediate environment.\nThe study and modeling of microclimates is becoming increasingly important for understanding the complex dynamics of temperature, humidity, wind patterns, and other climate variables at fine spatial scales, especially in urban areas. As the critical importance of regional differences in the context of global climate change becomes more apparent, the need for robust and user-friendly microclimate models is growing.\nMicroclimate modeling is based on the collection and evaluation of physical, statistical, observational, and analytical data. It is a highly interdisciplinary field, with a core of meteorology, climatology, and computer science, but also with large overlaps with, for example, ecology and urban planning.\nIn this course, the microclimate model Envi-met is used to answer typical urban planning questions. The overall goal is to teach the basics of practical application, from data collection and processing to modeling, analysis, and scientific presentation.\nAdvances in sensor technology, including ground-based sensors, drones, and aerial photography, as well as freely available data sets, help to create a realistic and complex modeling base.\nReliable simulation of different planning scenarios requires at least a basic understanding of the most important meteorological processes. As an introduction we refer to the book Practical Meteorology by Roland Stull, especially the chapter Atmospheric Boundary Layer.",
     "crumbs": [
-      "Modeling Microclimate",
       "Microclimate Modeling"
     ]
   },
@@ -626,7 +625,6 @@
     "section": "",
     "text": "Please find all Data Downloads at the Course Data Server Data folder for any file exchange and data related purposes.",
     "crumbs": [
-      "Software & More",
       "Data and Software"
     ]
   },
@@ -637,7 +635,6 @@
     "section": "",
     "text": "Please find all Data Downloads at the Course Data Server Data folder for any file exchange and data related purposes.",
     "crumbs": [
-      "Software & More",
       "Data and Software"
     ]
   },
@@ -648,7 +645,6 @@
     "section": "Specific modeling software",
     "text": "Specific modeling software\nPlease find all Downloads according to ENVI-met at the ENVI-met landing page",
     "crumbs": [
-      "Software & More",
       "Data and Software"
     ]
   },
@@ -659,7 +655,6 @@
     "section": "Common Software",
     "text": "Common Software\nShell — any command line environment will do for the exercises. For Linux we recommend the bash shell. For Windows the Windows command line can be used.\n\nQGIS has become one of the most promising and most integrative open source GIS systems over the last years. Through the processing plugin, it additionally integrates modules from the other leading free GIS solutions. We will need it (if necessary) to prepare or manipulate some of the data.\n\nRegarding installation, for Ubuntu Linux, the Ubuntu GIS package is a good choice. For Windows, we strongly recommend installing everything via the OSGeo4W environment and not the standalone QGIS installation tool.\nFor most of the data pre and postprocessing, we will use the statistical scripting language R and we highly recommend the Rstudio integrated developing environment.\nPlease follow the instructions according to your operating system.",
     "crumbs": [
-      "Software & More",
       "Data and Software"
     ]
   },
@@ -670,7 +665,6 @@
     "section": "Additional data sources",
     "text": "Additional data sources\nYou can find information about the “Zukunftsquartier Hasenkopf” in various places:\n\nCity of Marburg Zukunftsquartier Hasenkopf\nSlides including the winning design\nCitizens’ initiative wirsindhasenkopf Flyer and here “We argue”",
     "crumbs": [
-      "Software & More",
       "Data and Software"
     ]
   },
