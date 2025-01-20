@@ -427,7 +427,7 @@
     "href": "worksheets/ws-04.html#things-you-need",
     "title": "WS-4: Generating the model domain",
     "section": "Things you need",
-    "text": "Things you need\n\nCourse Data Server You will find here all kinds of data, literature and tutorials.\nFor specific project data see Download of the data\nENVI-met software\nPlease have a look at the Monde Tutorial videos\nCurrent LTR Qgis Installation\n\nInstallation of Plugins\n\nGeodata to ENVI-met\nOSMDownloader\nQuickOSM",
+    "text": "Things you need\n\nCourse Data Server You will find here all kinds of data, literature and tutorials.\nFor specific project data see Download of the data\nENVI-met software\nCurrent LTR Qgis Installation\n\nInstallation of Plugins\n\nGeodata to ENVI-met\nOSMDownloader\nQuickOSM",
     "crumbs": [
       "Worksheets",
       "WS-4: Generating the model domain"

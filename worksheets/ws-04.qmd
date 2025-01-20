@@ -21,7 +21,6 @@ Design and impementation of a concrete approach.
 * [Course Data Server](https://hessenbox.uni-marburg.de/getlink/fi5p6EzMUrtUVFW3DnkFky/envimet) You will find here all kinds of data, literature and tutorials.
 * For specific project data see [Download of the data](https://gisma-courses.github.io/LV-19-d19-010-envi/worksheets/ws-04.html#download-of-the-data)
 * [ENVI-met software](https://envi-met.info/doku.php?id=start)
-* Please have a look at the **Monde Tutorial videos**
 * Current LTR Qgis Installation
   * Installation of Plugins
     * Geodata to ENVI-met
