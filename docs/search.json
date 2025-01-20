@@ -98,6 +98,309 @@
     "text": "Current situation at the Hasenkopf site\n\n\n\n\n\n\n\nPlanned situation at the Hasenkopf site\n\n\n\n\n\n\nFigure 1: Hasenkopf residential area expansion\n\n\n\nWidely used in applications as diverse as urban planning, architectural design and energy efficiency, ENVI-met is a 3D micro-climate simulation software. Its functionality goes beyond individual climate parameters and covers a wide spectrum. ENVI-met excels in simulating different climate conditions, including day and night temperatures, humidity, wind speed and solar radiation in urban environments. It can also simulate the impact of different building materials, such as glass and stone, on the surrounding environment.\nThe course will cover the following topics\nBasic concepts Definition of materials Modelling vegetation Preparing the model for simulation Creation of weather files Running a simulation Visualising the results Interpreting the results"
   },
   {
+    "objectID": "worksheets/ws-06.html#goals",
+    "href": "worksheets/ws-06.html#goals",
+    "title": "WS-6: Visualize and Compare Simulation runs",
+    "section": "Goals",
+    "text": "Goals\nFour model runs were created: 2 for the planned expansion, 2 for the actual state, each with simplified meteorological boundary conditions for a radiation situation with little exchange. These model runs are now to be examined with regard to our question. To do this, we formally formulate a hypothesis, which we then examine and evaluate on the basis of the data.",
+    "crumbs": [
+      "Worksheets",
+      "WS-6: Visualize and Compare Simulation runs"
+    ]
+  },
+  {
+    "objectID": "worksheets/ws-06.html#things-you-need",
+    "href": "worksheets/ws-06.html#things-you-need",
+    "title": "WS-6: Visualize and Compare Simulation runs",
+    "section": "Things you need",
+    "text": "Things you need\n\nENVI-met software\nPlease have a look at the following Envi-met tutorials\n\nanalysing simulation data using the Leonardo\ncompare and average data in QGIS\n\nCurrent LTR Qgis Installation\n\nInstallation of Plugins\n\nGeodata to ENVI-met\nOSMDownloader\nQuickOSM\n\n\nSince the simulations are very time-consuming and the resulting Envi-met Hasenkopf GIS and Simulation data sets are very large, they can be downloaded from the external data server (needs VPN network)\n\n\n\n\n\n\n\nPlease note that there are eight directories, a total of four zero-wind simulations and four weak wind simulations, each divided into actual/planned conditions for summer and winter. The data that is of central interest can be found in the subdirectory ‘Atmosphere’.",
+    "crumbs": [
+      "Worksheets",
+      "WS-6: Visualize and Compare Simulation runs"
+    ]
+  },
+  {
+    "objectID": "worksheets/ws-06.html#assignment",
+    "href": "worksheets/ws-06.html#assignment",
+    "title": "WS-6: Visualize and Compare Simulation runs",
+    "section": "Assignment",
+    "text": "Assignment\n\nFormulation of a hypothesis based on the main motivation that the cold air production will be significantly weakened by the expansion plans for the Hasenkopf residential area.\nIdentification of suitable parameters and methods for qualitative and quantitative processing of the hypothesis.\nCreation of maps and tables",
+    "crumbs": [
+      "Worksheets",
+      "WS-6: Visualize and Compare Simulation runs"
+    ]
+  },
+  {
+    "objectID": "worksheets/ws-06.html#hypothesis",
+    "href": "worksheets/ws-06.html#hypothesis",
+    "title": "WS-6: Visualize and Compare Simulation runs",
+    "section": "Hypothesis",
+    "text": "Hypothesis\nThe following hypotheses are examples and should narrow down the further analysis. They can, of course, also be formulated differently or modified.\n\n\n\n\n\n\nH1: In wind-weak radiation weather conditions (WS &gt; 0.5 m/s), a reduction in the supply of fresh air (&gt; 5 %) is to be expected for the affected district of Marburg, Ockershausen.\nH2: In low-wind radiation weather conditions (WS &lt; 0.5 m/s), no significant reduction in the supply of fresh air (less than 5 %) is to be expected for the affected district of Marburg, Ockershausen.",
+    "crumbs": [
+      "Worksheets",
+      "WS-6: Visualize and Compare Simulation runs"
+    ]
+  },
+  {
+    "objectID": "worksheets/ws-06.html#workflow-approach",
+    "href": "worksheets/ws-06.html#workflow-approach",
+    "title": "WS-6: Visualize and Compare Simulation runs",
+    "section": "Workflow approach",
+    "text": "Workflow approach\nAnswering this question requires scientific principles and conceptual approaches. In addition, of course, technical knowledge is required, such as how to extract, visualize, and compare the data of interest.\nThese two problem areas are interrelated, although they are independent of each other.\nIn summary, we need (1) one or more meteorological parameters that describe and quantify the production of fresh air. (2) We have to decide whether we use the area integral over time or a point measurement of these parameters as a proxy variable for our investigation, and then (3) find suitable technical means to carry out these calculations and data extractions. (4) Finally, we have to edit and discuss our hypotheses on this basis.",
+    "crumbs": [
+      "Worksheets",
+      "WS-6: Visualize and Compare Simulation runs"
+    ]
+  },
+  {
+    "objectID": "worksheets/ws-06.html#identification-of-proxy-parameters",
+    "href": "worksheets/ws-06.html#identification-of-proxy-parameters",
+    "title": "WS-6: Visualize and Compare Simulation runs",
+    "section": "Identification of proxy parameters",
+    "text": "Identification of proxy parameters\nFirst of all get familar with the boundary layer basic concept of cold air production see p. 693-705.\nThe simplest approach would be to use a directly calculated variables from the Envi-met simulation runs. Since the supply of fresh air depends on the wind vector and also represents a spatial and temporal integral of the cold air inflow area of Ockershausen, not only the temperature difference is crucial, but also the gravitative/synoptic transport component. However, since the core simulation domain does not cover the entire catchment area, the relative catchment area of the runoff line in the Heiligengrund must serve as a reference point.\nTherefore, according to the avove chapters, suitable parameters could be:\n\nTemperature\nWind direction / wind speed\n\nThe conceptual realisation of both the meteorological and data-technical implementation could be as follows\n\nto identify the appropriate existing variables from the Envi-met parameter list\nto create summary evaluation maps of the model runs and their differences\nto export suitable data layers for further processing and analysis with QGIS\nin QGIS\n\nto calculate the catchment area\nto calculate zonal statistics on the catchment area to quantitatively determine the air mass difference.",
+    "crumbs": [
+      "Worksheets",
+      "WS-6: Visualize and Compare Simulation runs"
+    ]
+  },
+  {
+    "objectID": "worksheets/ws-01.html",
+    "href": "worksheets/ws-01.html",
+    "title": "WS-1: Warm up - Climate Modeling",
+    "section": "",
+    "text": "ENVI-met V5.x is a three-dimensional, non-hydrostatic model for simulating surface-plant-air interactions, It is designed for the microscale with a typical horizontal resolution of 0.5 to 10 m and a typical time frame of 24 to 48 hours with a time step of 1 to 5 seconds. This resolution allows for the analysis of small-scale interactions between individual buildings, surfaces, and plants",
+    "crumbs": [
+      "Worksheets",
+      "WS-1: Warm up - Climate Modeling"
+    ]
+  },
+  {
+    "objectID": "worksheets/ws-01.html#goals",
+    "href": "worksheets/ws-01.html#goals",
+    "title": "WS-1: Warm up - Climate Modeling",
+    "section": "Goals",
+    "text": "Goals\nThis task involves three sub-areas:\n\nto get a first overview about non-hydrostatic 4D climate modeling.\nto get a first insight into the application areas of such simulations.\nto install the software and perform a first simple tutorial simulation",
+    "crumbs": [
+      "Worksheets",
+      "WS-1: Warm up - Climate Modeling"
+    ]
+  },
+  {
+    "objectID": "worksheets/ws-01.html#things-you-need",
+    "href": "worksheets/ws-01.html#things-you-need",
+    "title": "WS-1: Warm up - Climate Modeling",
+    "section": "Things you need",
+    "text": "Things you need\n\nCourse Data Server Tutorials\nCourse Data Server Literature\nENVI-met software",
+    "crumbs": [
+      "Worksheets",
+      "WS-1: Warm up - Climate Modeling"
+    ]
+  },
+  {
+    "objectID": "worksheets/ws-01.html#assignment",
+    "href": "worksheets/ws-01.html#assignment",
+    "title": "WS-1: Warm up - Climate Modeling",
+    "section": "Assignment",
+    "text": "Assignment\nThe studies are intended to provide a first overview of the possibilities of the application. It is a first overview about the subject\nThe tutorials are a selection from the Envimet download area. In particular session_1_apps.pdf and session_1_concepts.pdf are a compilation of the concepts of Envimet and the individual components for the workflow with the individual modules, respectively, created by me. You will also find the links to the Youtube channel if you prefer videos.\nThese two compilations from the Envimet help pages should be sufficient to perform the example modeling “Precipitation”.\nIn the folder Literature you will find chapter1.pdf and chapter3.pdf. Both are reasonably understandable basics for climate modeling from a Belgian textbook. In case of more detailed questions they are worth a look.\nThe task is then as follows:\n\nInstallation of ENVI-met on your computer\nRead session_1_conpepts.pdf for a first introduction to the ENVI-met model concepts (chapter3.pdf could also be helpful here for supplementation and deepening) =&gt; If available, articulate questions problems\nRead session_1_apps.pdf as a basis for the example modeling “Precipitation”. =&gt; If available, articulate questions, problems, etc.\nRun the precipitation simulation (check if it runs) =&gt; If available, articulate questions, problems etc.\nCross-reading of min 2 tutorials (What is the basic idea) =&gt; Prepare a short summary",
+    "crumbs": [
+      "Worksheets",
+      "WS-1: Warm up - Climate Modeling"
+    ]
+  },
+  {
+    "objectID": "worksheets/ws-02.html",
+    "href": "worksheets/ws-02.html",
+    "title": "WS-2: Simple world Hasenkopf",
+    "section": "",
+    "text": "The arguments of the citizens’ initiative wirsindhasenkopf include the following:",
+    "crumbs": [
+      "Worksheets",
+      "WS-2: Simple world Hasenkopf"
+    ]
+  },
+  {
+    "objectID": "worksheets/ws-02.html#goals",
+    "href": "worksheets/ws-02.html#goals",
+    "title": "WS-2: Simple world Hasenkopf",
+    "section": "Goals",
+    "text": "Goals\nThe function of the planned development area as a cold air production area is to be examined quantitatively and in situ by means of a physical modeling. For this purpose, there is an initial site inspection and a step-by-step introduction to the necessary data and techniques.",
+    "crumbs": [
+      "Worksheets",
+      "WS-2: Simple world Hasenkopf"
+    ]
+  },
+  {
+    "objectID": "worksheets/ws-02.html#things-you-need",
+    "href": "worksheets/ws-02.html#things-you-need",
+    "title": "WS-2: Simple world Hasenkopf",
+    "section": "Things you need",
+    "text": "Things you need\n\nWeatherproof and all-terrain clothing",
+    "crumbs": [
+      "Worksheets",
+      "WS-2: Simple world Hasenkopf"
+    ]
+  },
+  {
+    "objectID": "worksheets/ws-02.html#assignment",
+    "href": "worksheets/ws-02.html#assignment",
+    "title": "WS-2: Simple world Hasenkopf",
+    "section": "Assignment",
+    "text": "Assignment\n\nCreate an initial sketch on paper that describes the terrain and special spatial features.\nDigitize this rough sketch with the help of an aerial image database in three classes: arable land , grassland, bushes/trees.\nImport these Shapefiles into Monde and assign class 0200LG from the Envi-met DB Manager for arable land, 0200LG for grassland and 0200LG for bushes/trees.\nRun a complete standard simulation with these values using your knowledge from the first tutorial.l",
+    "crumbs": [
+      "Worksheets",
+      "WS-2: Simple world Hasenkopf"
+    ]
+  },
+  {
+    "objectID": "assets/qgis/hasenkopf-roads_32632.html",
+    "href": "assets/qgis/hasenkopf-roads_32632.html",
+    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
+    "section": "",
+    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright     +proj=longlat +datum=WGS84 +no_defs 0 0     false"
+  },
+  {
+    "objectID": "assets/qgis/hasenkopf-grass_32632.html",
+    "href": "assets/qgis/hasenkopf-grass_32632.html",
+    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
+    "section": "",
+    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright     +proj=longlat +datum=WGS84 +no_defs 0 0     false"
+  },
+  {
+    "objectID": "assets/qgis/hasenkopf-residental_32632.html",
+    "href": "assets/qgis/hasenkopf-residental_32632.html",
+    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
+    "section": "",
+    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright     +proj=longlat +datum=WGS84 +no_defs 0 0     false"
+  },
+  {
+    "objectID": "assets/qgis/hasenkopf-scrub.html",
+    "href": "assets/qgis/hasenkopf-scrub.html",
+    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
+    "section": "",
+    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright      0 0     false"
+  },
+  {
+    "objectID": "assets/qgis/hasenkopf-farmland_32632.html",
+    "href": "assets/qgis/hasenkopf-farmland_32632.html",
+    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
+    "section": "",
+    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright     +proj=longlat +datum=WGS84 +no_defs 0 0     false"
+  },
+  {
+    "objectID": "assets/qgis/hasenkopf-forest.html",
+    "href": "assets/qgis/hasenkopf-forest.html",
+    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
+    "section": "",
+    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright      0 0     false"
+  },
+  {
+    "objectID": "assets/qgis/hasenkopf-scrub_32632.html",
+    "href": "assets/qgis/hasenkopf-scrub_32632.html",
+    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
+    "section": "",
+    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright     +proj=longlat +datum=WGS84 +no_defs 0 0     false"
+  },
+  {
+    "objectID": "assets/qgis/hasenkopf-buildings.html",
+    "href": "assets/qgis/hasenkopf-buildings.html",
+    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
+    "section": "",
+    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright      0 0     false"
+  },
+  {
+    "objectID": "assets/qgis/stadtwald_32632.html",
+    "href": "assets/qgis/stadtwald_32632.html",
+    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
+    "section": "",
+    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     dataset\n\n\n                GEOGCRS[“WGS 84”,ENSEMBLE[“World Geodetic System 1984 ensemble”,MEMBER[“World Geodetic System 1984 (Transit)”],MEMBER[“World Geodetic System 1984 (G730)”],MEMBER[“World Geodetic System 1984 (G873)”],MEMBER[“World Geodetic System 1984 (G1150)”],MEMBER[“World Geodetic System 1984 (G1674)”],MEMBER[“World Geodetic System 1984 (G1762)”],MEMBER[“World Geodetic System 1984 (G2139)”],MEMBER[“World Geodetic System 1984 (G2296)”],ELLIPSOID[“WGS 84”,6378137,298.257223563,LENGTHUNIT[“metre”,1]],ENSEMBLEACCURACY[2.0]],PRIMEM[“Greenwich”,0,ANGLEUNIT[“degree”,0.0174532925199433]],CS[ellipsoidal,2],AXIS[“geodetic latitude (Lat)”,north,ORDER[1],ANGLEUNIT[“degree”,0.0174532925199433]],AXIS[“geodetic longitude (Lon)”,east,ORDER[2],ANGLEUNIT[“degree”,0.0174532925199433]],USAGE[SCOPE[“Horizontal component of 3D system.”],AREA[“World.”],BBOX[-90,-180,90,180]],ID[“EPSG”,4326]] +proj=longlat +datum=WGS84 +no_defs 3452 4326 EPSG:4326 WGS 84 longlat EPSG:7030 true"
+  },
+  {
+    "objectID": "assets/qgis/hasenkopf-buildings_32632.html",
+    "href": "assets/qgis/hasenkopf-buildings_32632.html",
+    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
+    "section": "",
+    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright     +proj=longlat +datum=WGS84 +no_defs 0 0     false"
+  },
+  {
+    "objectID": "assets/qgis/hasenkopf-residental.html",
+    "href": "assets/qgis/hasenkopf-residental.html",
+    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
+    "section": "",
+    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright      0 0     false"
+  },
+  {
+    "objectID": "assets/qgis/hasenkopf-farmland.html",
+    "href": "assets/qgis/hasenkopf-farmland.html",
+    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
+    "section": "",
+    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright      0 0     false"
+  },
+  {
+    "objectID": "assets/qgis/hasenkopf-grass.html",
+    "href": "assets/qgis/hasenkopf-grass.html",
+    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
+    "section": "",
+    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright      0 0     false"
+  },
+  {
+    "objectID": "assets/qgis/hasenkopf-forest_32632.html",
+    "href": "assets/qgis/hasenkopf-forest_32632.html",
+    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
+    "section": "",
+    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright     +proj=longlat +datum=WGS84 +no_defs 0 0     false"
+  },
+  {
+    "objectID": "assets/qgis/hasenkopf-roads.html",
+    "href": "assets/qgis/hasenkopf-roads.html",
+    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
+    "section": "",
+    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright      0 0     false"
+  },
+  {
+    "objectID": "worksheets/ws-00.html",
+    "href": "worksheets/ws-00.html",
+    "title": "WS-HowTo",
+    "section": "",
+    "text": "The Working Sheets will provide weekly assignments related to the general task of reaching out for the course goals.\n\nMandatory assignments (Studienleistung) will be marked as \nGraded examinations (Prüfungsleistung) will be marked as",
+    "crumbs": [
+      "Worksheets",
+      "WS-HowTo"
+    ]
+  },
+  {
+    "objectID": "worksheets/ws-03.html#goals",
+    "href": "worksheets/ws-03.html#goals",
+    "title": "WS-3: Abstract the complex sufficiently",
+    "section": "Goals",
+    "text": "Goals\nNow that the first steps have been taken - namely, the technical and simple hasenkopf example simulations and a rough structuring of the research questions - it is necessary to design a concrete approach.",
+    "crumbs": [
+      "Worksheets",
+      "WS-3: Abstract the complex sufficiently"
+    ]
+  },
+  {
+    "objectID": "worksheets/ws-03.html#things-you-need",
+    "href": "worksheets/ws-03.html#things-you-need",
+    "title": "WS-3: Abstract the complex sufficiently",
+    "section": "Things you need",
+    "text": "Things you need\n\nCourse Data Server You will find here all kinds of data, literature and tutorials\nENVI-met software\nPlease have a look at the Monde Tutorial videos\nQGIS",
+    "crumbs": [
+      "Worksheets",
+      "WS-3: Abstract the complex sufficiently"
+    ]
+  },
+  {
+    "objectID": "worksheets/ws-03.html#assignment",
+    "href": "worksheets/ws-03.html#assignment",
+    "title": "WS-3: Abstract the complex sufficiently",
+    "section": "Assignment",
+    "text": "Assignment\nDesign a concrete modeling approach and a suitable associated modeling concept to assess the performance of Envimet to simulate how are the effects of the Hasenkopf build up plans affecting the fresh air support of Marburg.\nConsider the following aspects:\n\nabiotic endowment of the model domain (relief, soil, site location).\nbiotic features of the model domain (simple/3D vegetation)\nappropriate meteorology for model initialization (ideal, real values)\ntechnical model domain (x,y,z extent, time steps nesting)\nValidation strategy\n\nDesign the necessary work packages you need to divide your team into groups/single workers to achieve the goal.\n\nWP 1 data aquisition (DEM/DSM, vegetation, soil, build up areas, planned hasenkopf build up area, meteo data )\nWP 2 data manipulation using QGIS\n\nWP 2a Vegetation “simple\nWP 2b Vegetation “3D\nWP 2c buildings\nWP 2d Terrain, soil etc.\n\nWP 3 Meteorological data\nWP 4 Model Setup\nWP 6 Simulation\nWP 7 Presentation\n\nThe task is then as follows:\nThe resulting concept should be prepared as a table (similar to the below example), also addressing the literature/data used as well as know shortcomings.\n\nAssignment 1\nFrom your knowledge now prepare a table containing the following information\n\n\n\n\n\n\n\n\n\n\n\nressources needed\nsolution\nreferences\nneeds manipulation\nknowledge available\nWho is doing it\n\n\n\n\nrelief\n1 m DOM\ndownload link etc.\nyes, what kind of\nno, what aditional knowledge do you need\nName(s)\n\n\nsoil properties\nsoil data\naccess has to be clarified\nwho knows\n?\n?\n\n\nsoil vertical structure\nfour levels temperature soil moisture build-in model\nenvi-met\n?\n?\n?\n\n\n…\n…\n…\n…\n…\n…\n\n\n\nAny written notes please put them on comments below.\n\n\nAssignment 2\nIdentify the critical shortcomings to solve these problems. State them clearly and try to offer a solution.\n\n\n\n\n\n\nIt is very important to understand what needs to be done and in which order by looking at the previous sessions and the tutorial.\nThe focus is on identifying the required data, the appropriate data preparation (also think about 3D problems!) and the standard initialisation of Envimet.",
+    "crumbs": [
+      "Worksheets",
+      "WS-3: Abstract the complex sufficiently"
+    ]
+  },
+  {
     "objectID": "worksheets/ws-04.html",
     "href": "worksheets/ws-04.html",
     "title": "WS-4: Generating the model domain",
@@ -197,6 +500,17 @@
     ]
   },
   {
+    "objectID": "worksheets/ws-04.html#planning-data",
+    "href": "worksheets/ws-04.html#planning-data",
+    "title": "WS-4: Generating the model domain",
+    "section": "Planning data",
+    "text": "Planning data\nPlanning data is required to compare the production of fresh air between the actual and planned conditions. The available data can be found in the presentation linked above. We use the following screenshot to record the changes in land use, buildings and vegetation based on this. To do this, the map presentation image must be georeferenced. This is done using the tool Layer-&gt;Georeferencer.\nThe basic approach is to find points (so-called ground control points) in the draft plan that can also be identified in the Bing aerial photograph, for example. Using these points, the image is integrated into the geometry of the GIS data and can then be digitized accordingly.\n\nThe basic approach is to find points (so-called ground control points) in the draft plan that can also be identified in the Bing aerial photograph, for example. On the basis of these points, the image is integrated into the geometry of the GIS data and can then be digitized accordingly.\nAfter the georeferencing has been successfully carried out, the deviating structures are now integrated into copies of the respective inventory files by manual digitization. The number of floors is indicated for the buildings and can be adopted with a height of 3 m each. The trees were digitized as 3D plant points and assigned to different standard heights of a standard deciduous tree species, depending on their diameter. Paths are recorded as paved.\n\nSave the files under a unique name in each case, making it clear that the planning layers are meant.",
+    "crumbs": [
+      "Worksheets",
+      "WS-4: Generating the model domain"
+    ]
+  },
+  {
     "objectID": "worksheets/ws-04.html#convert-geodata-to-envimet",
     "href": "worksheets/ws-04.html#convert-geodata-to-envimet",
     "title": "WS-4: Generating the model domain",
@@ -208,240 +522,14 @@
     ]
   },
   {
-    "objectID": "worksheets/ws-03.html#goals",
-    "href": "worksheets/ws-03.html#goals",
-    "title": "WS-3: Abstract the complex sufficiently",
-    "section": "Goals",
-    "text": "Goals\nNow that the first steps have been taken - namely, the technical and simple hasenkopf example simulations and a rough structuring of the research questions - it is necessary to design a concrete approach.",
+    "objectID": "worksheets/ws-04.html#help",
+    "href": "worksheets/ws-04.html#help",
+    "title": "WS-4: Generating the model domain",
+    "section": "Help",
+    "text": "Help\n\n\n\n\n\n\nAll files, GCP and the model files and simulation control files generated from it, are included in the Envi-met Hasenkopf GIS and Modeldata Archive file.",
     "crumbs": [
       "Worksheets",
-      "WS-3: Abstract the complex sufficiently"
-    ]
-  },
-  {
-    "objectID": "worksheets/ws-03.html#things-you-need",
-    "href": "worksheets/ws-03.html#things-you-need",
-    "title": "WS-3: Abstract the complex sufficiently",
-    "section": "Things you need",
-    "text": "Things you need\n\nCourse Data Server You will find here all kinds of data, literature and tutorials\nENVI-met software\nPlease have a look at the Monde Tutorial videos\nQGIS",
-    "crumbs": [
-      "Worksheets",
-      "WS-3: Abstract the complex sufficiently"
-    ]
-  },
-  {
-    "objectID": "worksheets/ws-03.html#assignment",
-    "href": "worksheets/ws-03.html#assignment",
-    "title": "WS-3: Abstract the complex sufficiently",
-    "section": "Assignment",
-    "text": "Assignment\nDesign a concrete modeling approach and a suitable associated modeling concept to assess the performance of Envimet to simulate how are the effects of the Hasenkopf build up plans affecting the fresh air support of Marburg.\nConsider the following aspects:\n\nabiotic endowment of the model domain (relief, soil, site location).\nbiotic features of the model domain (simple/3D vegetation)\nappropriate meteorology for model initialization (ideal, real values)\ntechnical model domain (x,y,z extent, time steps nesting)\nValidation strategy\n\nDesign the necessary work packages you need to divide your team into groups/single workers to achieve the goal.\n\nWP 1 data aquisition (DEM/DSM, vegetation, soil, build up areas, planned hasenkopf build up area, meteo data )\nWP 2 data manipulation using QGIS\n\nWP 2a Vegetation “simple\nWP 2b Vegetation “3D\nWP 2c buildings\nWP 2d Terrain, soil etc.\n\nWP 3 Meteorological data\nWP 4 Model Setup\nWP 6 Simulation\nWP 7 Presentation\n\nThe task is then as follows:\nThe resulting concept should be prepared as a table (similar to the below example), also addressing the literature/data used as well as know shortcomings.\n\nAssignment 1\nFrom your knowledge now prepare a table containing the following information\n\n\n\n\n\n\n\n\n\n\n\nressources needed\nsolution\nreferences\nneeds manipulation\nknowledge available\nWho is doing it\n\n\n\n\nrelief\n1 m DOM\ndownload link etc.\nyes, what kind of\nno, what aditional knowledge do you need\nName(s)\n\n\nsoil properties\nsoil data\naccess has to be clarified\nwho knows\n?\n?\n\n\nsoil vertical structure\nfour levels temperature soil moisture build-in model\nenvi-met\n?\n?\n?\n\n\n…\n…\n…\n…\n…\n…\n\n\n\nAny written notes please put them on comments below.\n\n\nAssignment 2\nIdentify the critical shortcomings to solve these problems. State them clearly and try to offer a solution.\n\n\n\n\n\n\nIt is very important to understand what needs to be done and in which order by looking at the previous sessions and the tutorial.\nThe focus is on identifying the required data, the appropriate data preparation (also think about 3D problems!) and the standard initialisation of Envimet.",
-    "crumbs": [
-      "Worksheets",
-      "WS-3: Abstract the complex sufficiently"
-    ]
-  },
-  {
-    "objectID": "worksheets/ws-00.html",
-    "href": "worksheets/ws-00.html",
-    "title": "WS-HowTo",
-    "section": "",
-    "text": "The Working Sheets will provide weekly assignments related to the general task of reaching out for the course goals.\n\nMandatory assignments (Studienleistung) will be marked as \nGraded examinations (Prüfungsleistung) will be marked as",
-    "crumbs": [
-      "Worksheets",
-      "WS-HowTo"
-    ]
-  },
-  {
-    "objectID": "assets/qgis/hasenkopf-roads.html",
-    "href": "assets/qgis/hasenkopf-roads.html",
-    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
-    "section": "",
-    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright      0 0     false"
-  },
-  {
-    "objectID": "assets/qgis/hasenkopf-forest_32632.html",
-    "href": "assets/qgis/hasenkopf-forest_32632.html",
-    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
-    "section": "",
-    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright     +proj=longlat +datum=WGS84 +no_defs 0 0     false"
-  },
-  {
-    "objectID": "assets/qgis/hasenkopf-grass.html",
-    "href": "assets/qgis/hasenkopf-grass.html",
-    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
-    "section": "",
-    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright      0 0     false"
-  },
-  {
-    "objectID": "assets/qgis/hasenkopf-farmland.html",
-    "href": "assets/qgis/hasenkopf-farmland.html",
-    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
-    "section": "",
-    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright      0 0     false"
-  },
-  {
-    "objectID": "assets/qgis/hasenkopf-residental.html",
-    "href": "assets/qgis/hasenkopf-residental.html",
-    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
-    "section": "",
-    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright      0 0     false"
-  },
-  {
-    "objectID": "assets/qgis/hasenkopf-buildings_32632.html",
-    "href": "assets/qgis/hasenkopf-buildings_32632.html",
-    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
-    "section": "",
-    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright     +proj=longlat +datum=WGS84 +no_defs 0 0     false"
-  },
-  {
-    "objectID": "assets/qgis/stadtwald_32632.html",
-    "href": "assets/qgis/stadtwald_32632.html",
-    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
-    "section": "",
-    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     dataset\n\n\n                GEOGCRS[“WGS 84”,ENSEMBLE[“World Geodetic System 1984 ensemble”,MEMBER[“World Geodetic System 1984 (Transit)”],MEMBER[“World Geodetic System 1984 (G730)”],MEMBER[“World Geodetic System 1984 (G873)”],MEMBER[“World Geodetic System 1984 (G1150)”],MEMBER[“World Geodetic System 1984 (G1674)”],MEMBER[“World Geodetic System 1984 (G1762)”],MEMBER[“World Geodetic System 1984 (G2139)”],MEMBER[“World Geodetic System 1984 (G2296)”],ELLIPSOID[“WGS 84”,6378137,298.257223563,LENGTHUNIT[“metre”,1]],ENSEMBLEACCURACY[2.0]],PRIMEM[“Greenwich”,0,ANGLEUNIT[“degree”,0.0174532925199433]],CS[ellipsoidal,2],AXIS[“geodetic latitude (Lat)”,north,ORDER[1],ANGLEUNIT[“degree”,0.0174532925199433]],AXIS[“geodetic longitude (Lon)”,east,ORDER[2],ANGLEUNIT[“degree”,0.0174532925199433]],USAGE[SCOPE[“Horizontal component of 3D system.”],AREA[“World.”],BBOX[-90,-180,90,180]],ID[“EPSG”,4326]] +proj=longlat +datum=WGS84 +no_defs 3452 4326 EPSG:4326 WGS 84 longlat EPSG:7030 true"
-  },
-  {
-    "objectID": "assets/qgis/hasenkopf-buildings.html",
-    "href": "assets/qgis/hasenkopf-buildings.html",
-    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
-    "section": "",
-    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright      0 0     false"
-  },
-  {
-    "objectID": "assets/qgis/hasenkopf-scrub_32632.html",
-    "href": "assets/qgis/hasenkopf-scrub_32632.html",
-    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
-    "section": "",
-    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright     +proj=longlat +datum=WGS84 +no_defs 0 0     false"
-  },
-  {
-    "objectID": "assets/qgis/hasenkopf-forest.html",
-    "href": "assets/qgis/hasenkopf-forest.html",
-    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
-    "section": "",
-    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright      0 0     false"
-  },
-  {
-    "objectID": "assets/qgis/hasenkopf-farmland_32632.html",
-    "href": "assets/qgis/hasenkopf-farmland_32632.html",
-    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
-    "section": "",
-    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright     +proj=longlat +datum=WGS84 +no_defs 0 0     false"
-  },
-  {
-    "objectID": "assets/qgis/hasenkopf-scrub.html",
-    "href": "assets/qgis/hasenkopf-scrub.html",
-    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
-    "section": "",
-    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright      0 0     false"
-  },
-  {
-    "objectID": "assets/qgis/hasenkopf-residental_32632.html",
-    "href": "assets/qgis/hasenkopf-residental_32632.html",
-    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
-    "section": "",
-    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright     +proj=longlat +datum=WGS84 +no_defs 0 0     false"
-  },
-  {
-    "objectID": "assets/qgis/hasenkopf-grass_32632.html",
-    "href": "assets/qgis/hasenkopf-grass_32632.html",
-    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
-    "section": "",
-    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright     +proj=longlat +datum=WGS84 +no_defs 0 0     false"
-  },
-  {
-    "objectID": "assets/qgis/hasenkopf-roads_32632.html",
-    "href": "assets/qgis/hasenkopf-roads_32632.html",
-    "title": "Microclimate Modeling - Envi_Met LV-19-d19-010-envi",
-    "section": "",
-    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n    © OpenStreetMap-Mitwirkende https://openstreetmap.org/copyright     +proj=longlat +datum=WGS84 +no_defs 0 0     false"
-  },
-  {
-    "objectID": "worksheets/ws-02.html",
-    "href": "worksheets/ws-02.html",
-    "title": "WS-2: Simple world Hasenkopf",
-    "section": "",
-    "text": "The arguments of the citizens’ initiative wirsindhasenkopf include the following:",
-    "crumbs": [
-      "Worksheets",
-      "WS-2: Simple world Hasenkopf"
-    ]
-  },
-  {
-    "objectID": "worksheets/ws-02.html#goals",
-    "href": "worksheets/ws-02.html#goals",
-    "title": "WS-2: Simple world Hasenkopf",
-    "section": "Goals",
-    "text": "Goals\nThe function of the planned development area as a cold air production area is to be examined quantitatively and in situ by means of a physical modeling. For this purpose, there is an initial site inspection and a step-by-step introduction to the necessary data and techniques.",
-    "crumbs": [
-      "Worksheets",
-      "WS-2: Simple world Hasenkopf"
-    ]
-  },
-  {
-    "objectID": "worksheets/ws-02.html#things-you-need",
-    "href": "worksheets/ws-02.html#things-you-need",
-    "title": "WS-2: Simple world Hasenkopf",
-    "section": "Things you need",
-    "text": "Things you need\n\nWeatherproof and all-terrain clothing",
-    "crumbs": [
-      "Worksheets",
-      "WS-2: Simple world Hasenkopf"
-    ]
-  },
-  {
-    "objectID": "worksheets/ws-02.html#assignment",
-    "href": "worksheets/ws-02.html#assignment",
-    "title": "WS-2: Simple world Hasenkopf",
-    "section": "Assignment",
-    "text": "Assignment\n\nCreate an initial sketch on paper that describes the terrain and special spatial features.\nDigitize this rough sketch with the help of an aerial image database in three classes: arable land , grassland, bushes/trees.\nImport these Shapefiles into Monde and assign class 0200LG from the Envi-met DB Manager for arable land, 0200LG for grassland and 0200LG for bushes/trees.\nRun a complete standard simulation with these values using your knowledge from the first tutorial.l",
-    "crumbs": [
-      "Worksheets",
-      "WS-2: Simple world Hasenkopf"
-    ]
-  },
-  {
-    "objectID": "worksheets/ws-01.html",
-    "href": "worksheets/ws-01.html",
-    "title": "WS-1: Warm up - Climate Modeling",
-    "section": "",
-    "text": "ENVI-met V5.x is a three-dimensional, non-hydrostatic model for simulating surface-plant-air interactions, It is designed for the microscale with a typical horizontal resolution of 0.5 to 10 m and a typical time frame of 24 to 48 hours with a time step of 1 to 5 seconds. This resolution allows for the analysis of small-scale interactions between individual buildings, surfaces, and plants",
-    "crumbs": [
-      "Worksheets",
-      "WS-1: Warm up - Climate Modeling"
-    ]
-  },
-  {
-    "objectID": "worksheets/ws-01.html#goals",
-    "href": "worksheets/ws-01.html#goals",
-    "title": "WS-1: Warm up - Climate Modeling",
-    "section": "Goals",
-    "text": "Goals\nThis task involves three sub-areas:\n\nto get a first overview about non-hydrostatic 4D climate modeling.\nto get a first insight into the application areas of such simulations.\nto install the software and perform a first simple tutorial simulation",
-    "crumbs": [
-      "Worksheets",
-      "WS-1: Warm up - Climate Modeling"
-    ]
-  },
-  {
-    "objectID": "worksheets/ws-01.html#things-you-need",
-    "href": "worksheets/ws-01.html#things-you-need",
-    "title": "WS-1: Warm up - Climate Modeling",
-    "section": "Things you need",
-    "text": "Things you need\n\nCourse Data Server Tutorials\nCourse Data Server Literature\nENVI-met software",
-    "crumbs": [
-      "Worksheets",
-      "WS-1: Warm up - Climate Modeling"
-    ]
-  },
-  {
-    "objectID": "worksheets/ws-01.html#assignment",
-    "href": "worksheets/ws-01.html#assignment",
-    "title": "WS-1: Warm up - Climate Modeling",
-    "section": "Assignment",
-    "text": "Assignment\nThe studies are intended to provide a first overview of the possibilities of the application. It is a first overview about the subject\nThe tutorials are a selection from the Envimet download area. In particular session_1_apps.pdf and session_1_concepts.pdf are a compilation of the concepts of Envimet and the individual components for the workflow with the individual modules, respectively, created by me. You will also find the links to the Youtube channel if you prefer videos.\nThese two compilations from the Envimet help pages should be sufficient to perform the example modeling “Precipitation”.\nIn the folder Literature you will find chapter1.pdf and chapter3.pdf. Both are reasonably understandable basics for climate modeling from a Belgian textbook. In case of more detailed questions they are worth a look.\nThe task is then as follows:\n\nInstallation of ENVI-met on your computer\nRead session_1_conpepts.pdf for a first introduction to the ENVI-met model concepts (chapter3.pdf could also be helpful here for supplementation and deepening) =&gt; If available, articulate questions problems\nRead session_1_apps.pdf as a basis for the example modeling “Precipitation”. =&gt; If available, articulate questions, problems, etc.\nRun the precipitation simulation (check if it runs) =&gt; If available, articulate questions, problems etc.\nCross-reading of min 2 tutorials (What is the basic idea) =&gt; Prepare a short summary",
-    "crumbs": [
-      "Worksheets",
-      "WS-1: Warm up - Climate Modeling"
+      "WS-4: Generating the model domain"
     ]
   },
   {
@@ -482,7 +570,18 @@
     "href": "worksheets/ws-05.html#hands-on---start-a-simulation",
     "title": "WS-5: Simulation runs Hasenkopf",
     "section": "Hands on - Start a simulation",
-    "text": "Hands on - Start a simulation\n\nUnzip the ZIP archive and open the included QGIS project (hasenkopf_core_plan_orig.qgz). We are working in the core_area_new area. See the corresponding grouped folders.\n\norig for the current situation\nplan for the planning\nraster for raster data\n\nFamiliarize yourself with the files. They are grouped according to the Envi-met logic. Each of them contains vegetation (simple/3D), buildings, surfaces/soils and the terrain model, in addition receptors that can be understood as measuring stations in the model area and the already mentioned model area itself.\nFor the first simulation, the Envimet Plugin is started and the data from the original folder is assigned. The DGM is used as the DEM. Note: Enter the ENVIMET_ID as a reference field for the library values to be read.\nSave the models and check it for errors using the Envimet Spaces module.\n\n\n\n\n\n\n\n\n\nCurrent situation at the Hasenkopf site\n\n\n\n\n\n\n\nPlanned situation at the Hasenkopf site\n\n\n\n\n\n\nFigure 1: Hasenkopf residential area expansion\n\n\n\nIs everything OK?\n\nThen start the Envi_met tool Envi-Guide and set up a simulation environment for July 21, 2024 that will run for at least 36 hours.\nSave and start the Envi-Core module. Open the created simulation and start it…\n\n\n\n\n\n\n\nIn the archive subfolder envimet_files you will find the simulation and model files for both runs. You can use these to compare with your own files.",
+    "text": "Hands on - Start a simulation\n\nUnzip the ZIP archive and open the included QGIS project (hasenkopf_core_plan_orig.qgz). We are working in the core_area_new area. See the corresponding grouped folders.\n\norig for the current situation\nplan for the planning\nraster for raster data\n\nFamiliarize yourself with the files. They are grouped according to the Envi-met logic. Each of them contains vegetation (simple/3D), buildings, surfaces/soils and the terrain model, in addition receptors that can be understood as measuring stations in the model area and the already mentioned model area itself.\nFor the first simulation, the Envimet Plugin is started and the data from the original folder is assigned. The DGM is used as the DEM. Note: Enter the ENVIMET_ID as a reference field for the library values to be read.\nSave the models and check it for errors using the Envimet Spaces module.\n\n\n\n\n\n\n\n\n\nCurrent situation at the Hasenkopf site\n\n\n\n\n\n\n\nPlanned situation at the Hasenkopf site\n\n\n\n\n\n\nFigure 1: Hasenkopf residential area expansion",
+    "crumbs": [
+      "Worksheets",
+      "WS-5: Simulation runs Hasenkopf"
+    ]
+  },
+  {
+    "objectID": "worksheets/ws-05.html#everything-ok",
+    "href": "worksheets/ws-05.html#everything-ok",
+    "title": "WS-5: Simulation runs Hasenkopf",
+    "section": "Everything OK?",
+    "text": "Everything OK?\n\nThen start the Envi_met tool Envi-Guide and set up a simulation environment for July 21, 2024 that will run for at least 36 hours.\nSave and start the Envi-Core module. Open the created simulation and start it…\n\n\n\n\n\n\n\nIn the archive subfolder envimet_files you will find the simulation and model files for both runs. You can use these to compare with your own files.",
     "crumbs": [
       "Worksheets",
       "WS-5: Simulation runs Hasenkopf"
@@ -493,7 +592,7 @@
     "href": "mc_session/mcm1.html",
     "title": "Microclimate Modeling",
     "section": "",
-    "text": "Microclimate, the localized atmospheric conditions that vary from the surrounding area, plays a pivotal role in influencing ecosystems, human activities, and environmental processes. Defined as the set of climatic conditions unique to a specific small-scale geographic area, microclimates encompass nuances in temperature, humidity, wind patterns, and other climatic variables that distinguish a particular locale from its broader surroundings. These localized variations, often influenced by terrain, vegetation, and human activities, constitute the intricate tapestry of microclimates that shape our immediate environments.\nThe study and modeling of microclimates have become increasingly vital in understanding the intricate dynamics of temperature, humidity, wind patterns, and other climatic variables at a fine spatial scale. As global climate change continues to underscore the significance of regional variations, the need for accurate and comprehensive microclimate models becomes more pronounced.\nMicroclimate modeling involves the application of various computational, observational, and analytical techniques to simulate and predict the climatic conditions in specific geographic locations. This interdisciplinary field draws on expertise from meteorology, climatology, ecology, urban planning, and computational sciences to unravel the complex interactions that define microclimates.\nThis comprehensive review delves into the diverse methodologies and advancements employed in modeling microclimates, addressing both the theoretical foundations and practical applications across various domains. From computational approaches like Computational Fluid Dynamics (CFD) to data-driven methods leveraging machine learning, the spectrum of modeling techniques continues to evolve, providing nuanced insights into localized environmental phenomena.\nUnderstanding microclimates is crucial in a range of contexts, including agriculture, urban planning, ecological research, and public health. The intricacies of urban microclimates, for example, influence factors such as heat islands and air quality, impacting the well-being of urban populations. In ecological studies, microclimate modeling is instrumental in elucidating species distributions, biodiversity patterns, and the resilience of ecosystems to environmental changes.\nAdvancements in sensor technologies, including ground-based sensors, unmanned aerial vehicles (UAVs), and satellite observations, contribute to the collection of high-resolution and real-time microclimate data. These technologies enhance the accuracy of models, allowing for more precise simulations and predictions.\nHowever, challenges persist, ranging from the need for improved data resolution and model validation to addressing computational complexities and resource constraints. As we stand at the intersection of technological innovation and environmental awareness, the review navigates through the current state of microclimate modeling, offering insights into ongoing research, case studies exemplifying successful applications, and future directions for advancements in the field.\nBy comprehensively exploring the methodologies, applications, and challenges in microclimate modeling, this review aims to serve as a foundational resource for researchers, practitioners, and policymakers engaged in unraveling the mysteries of localized climatic conditions. In doing so, it contributes to the collective efforts aimed at enhancing our understanding of microclimates and their profound implications on the natural world and human societies.",
+    "text": "Microclimate, the localized atmospheric conditions that vary from the surrounding area, plays a pivotal role in influencing ecosystems, human activities, and environmental processes. Defined as the set of climatic conditions unique to a specific small-scale geographic area, microclimates encompass nuances in temperature, humidity, wind patterns, and other climatic variables that distinguish a particular locale from its broader surroundings. These localized variations, often influenced by terrain, vegetation, and human activities, constitute the intricate tapestry of microclimates that shape our immediate environments.\nThe study and modeling of microclimates have become increasingly vital in understanding the intricate dynamics of temperature, humidity, wind patterns, and other climatic variables at a fine spatial scale. As global climate change continues to underscore the significance of regional variations, the need for accurate and comprehensive microclimate models becomes more pronounced.\nMicroclimate modeling involves the application of various computational, observational, and analytical techniques to simulate and predict the climatic conditions in specific geographic locations. This interdisciplinary field draws on expertise from meteorology, climatology, ecology, urban planning, and computational sciences to unravel the complex interactions that define microclimates.\nThis comprehensive review delves into the diverse methodologies and advancements employed in modeling microclimates, addressing both the theoretical foundations and practical applications across various domains. From computational approaches like Computational Fluid Dynamics (CFD) to data-driven methods leveraging machine learning, the spectrum of modeling techniques continues to evolve, providing nuanced insights into localized environmental phenomena.\nUnderstanding microclimates is crucial in a range of contexts, including agriculture, urban planning, ecological research, and public health. The intricacies of urban microclimates, for example, influence factors such as heat islands and air quality, impacting the well-being of urban populations. In ecological studies, microclimate modeling is instrumental in elucidating species distributions, biodiversity patterns, and the resilience of ecosystems to environmental changes.\nAdvancements in sensor technologies, including ground-based sensors, unmanned aerial vehicles (UAVs), and satellite observations, contribute to the collection of high-resolution and real-time microclimate data. These technologies enhance the accuracy of models, allowing for more precise simulations and predictions.\nHowever, challenges persist, ranging from the need for improved data resolution and model validation to addressing computational complexities and resource constraints. As we stand at the intersection of technological innovation and environmental awareness, the review navigates through the current state of microclimate modeling, offering insights into ongoing research, case studies exemplifying successful applications, and future directions for advancements in the field.\nBy comprehensively exploring the methodologies, applications, and challenges in microclimate modeling, this review aims to serve as a foundational resource for researchers, practitioners, and policymakers engaged in unraveling the mysteries of localized climatic conditions. In doing so, it contributes to the collective efforts aimed at enhancing our understanding of microclimates and their profound implications on the natural world and human societies.\nHowever, first of all get familar with the boundary layer basic concept of cold air production see p. 693-705.",
     "crumbs": [
       "Modeling Microclimate",
       "Microclimate Modeling"
@@ -609,27 +708,5 @@
     "title": "Data and Software",
     "section": "Additional data sources",
     "text": "Additional data sources"
-  },
-  {
-    "objectID": "worksheets/ws-04.html#planning-data",
-    "href": "worksheets/ws-04.html#planning-data",
-    "title": "WS-4: Generating the model domain",
-    "section": "Planning data",
-    "text": "Planning data\nPlanning data is required to compare the production of fresh air between the actual and planned conditions. The available data can be found in the presentation linked above. We use the following screenshot to record the changes in land use, buildings and vegetation based on this. To do this, the map presentation image must be georeferenced. This is done using the tool Layer-&gt;Georeferencer.\nThe basic approach is to find points (so-called ground control points) in the draft plan that can also be identified in the Bing aerial photograph, for example. Using these points, the image is integrated into the geometry of the GIS data and can then be digitized accordingly.\n\nThe basic approach is to find points (so-called ground control points) in the draft plan that can also be identified in the Bing aerial photograph, for example. On the basis of these points, the image is integrated into the geometry of the GIS data and can then be digitized accordingly.\nAfter the georeferencing has been successfully carried out, the deviating structures are now integrated into copies of the respective inventory files by manual digitization. The number of floors is indicated for the buildings and can be adopted with a height of 3 m each. The trees were digitized as 3D plant points and assigned to different standard heights of a standard deciduous tree species, depending on their diameter. Paths are recorded as paved.\n\nSave the files under a unique name in each case, making it clear that the planning layers are meant.",
-    "crumbs": [
-      "Worksheets",
-      "WS-4: Generating the model domain"
-    ]
-  },
-  {
-    "objectID": "worksheets/ws-04.html#help",
-    "href": "worksheets/ws-04.html#help",
-    "title": "WS-4: Generating the model domain",
-    "section": "Help",
-    "text": "Help\n\n\n\n\n\n\nAll files, GCP and the model files and simulation control files generated from it, are included in the Envi-met Hasenkopf GIS and Modeldata Archive file.",
-    "crumbs": [
-      "Worksheets",
-      "WS-4: Generating the model domain"
-    ]
   }
 ]
