@@ -663,7 +663,7 @@
     "href": "modeling/modeling-material.html#additional-data-sources",
     "title": "Data and Software",
     "section": "Additional data sources",
-    "text": "Additional data sources\nYou can find information about the “Zukunftsquartier Hasenkopf” in various places:\n\nCity of Marburg Zukunftsquartier Hasenkopf\nSlides including the winning design\nCitizens’ initiative wirsindhasenkopf Flyer and here “We argue”",
+    "text": "Additional data sources\nYou can find information about the “Zukunftsquartier Hasenkopf” in various places:\n\nCity of Marburg Zukunftsquartier Hasenkopf\nSlides including the winning design\nCitizens’ initiative wirsindhasenkopf Flyer and here “We argue”\nEnvi-met Hasenkopf GIS and Modeldata\nDigital Elevation Model DEM and Digital Surface Model DSM files relevant for Marburg can be downloaded from the GDS website of the Hessian Administration for Land Management and Geoinformation\nFor downloading the OSM data it is recommended to use the OSMDownloader extension to QGIS. It simply provides the ability to draw a rectangle and download the complete and currently available OSM data to a file named hasenkopf.osm.\nIf the data has to be digitised manually, it is advisable to use an up-to-date aerial photograph from Bing or Google. These can be easily integrated via XYZ tiles\nThe planning data for the development and sealing were taken from page 23 of the presentation of the winning design via screenshot.",
     "crumbs": [
       "Data and Software"
     ]
